@@ -1,0 +1,266 @@
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Assigned Driver cpu 1.13.a for instance microblaze_0
+microblaze_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+microblaze_0 has been deleted from the project
+Assigned Driver cpu 1.13.a for instance microblaze_0
+microblaze_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Assigned Driver generic 1.00.a for instance plb_v46_0
+plb_v46_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+bram_block_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Assigned Driver generic 1.00.a for instance xps_epc_0
+xps_epc_0 has been added to the project
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 54
+xps_epc_0 (xps_epc) - 
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_TOUT must be greater than 0. The C_PRH0_RDY_TOUT is either set to 0 or it is not specified in the MHS file
+ 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_epc, INSTANCE: xps_epc_0, PARAMETER: C_PRH0_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_epc, INSTANCE: xps_epc_0, PARAMETER: C_PRH0_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_epc, INSTANCE: xps_epc_0, PARAMETER: C_PRH0_RDY_TOUT - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_epc, INSTANCE: xps_epc_0, PARAMETER: C_PRH0_RDY_WIDTH - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_epc_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 54
+xps_epc_0 (xps_epc) - 
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_TOUT must be greater than 0. The C_PRH0_RDY_TOUT is either set to 0 or it is not specified in the MHS file
+ 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_epc_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver uartlite 2.00.a for instance xps_uartlite_0
+xps_uartlite_0 has been added to the project
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 54
+xps_epc_0 (xps_epc) - 
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_TOUT must be greater than 0. The C_PRH0_RDY_TOUT is either set to 0 or it is not specified in the MHS file
+ 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_uartlite, INSTANCE: xps_uartlite_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_uartlite, INSTANCE: xps_uartlite_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_epc_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 54
+xps_epc_0 (xps_epc) - 
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_TOUT must be greater than 0. The C_PRH0_RDY_TOUT is either set to 0 or it is not specified in the MHS file
+ 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_epc_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+xps_uartlite_0 has been deleted from the project
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 54
+xps_epc_0 (xps_epc) - 
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_TOUT must be greater than 0. The C_PRH0_RDY_TOUT is either set to 0 or it is not specified in the MHS file
+ 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_epc_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+plb_v46_0 has been deleted from the project
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 54
+xps_epc_0 (xps_epc) - 
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_TOUT must be greater than 0. The C_PRH0_RDY_TOUT is either set to 0 or it is not specified in the MHS file
+ 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_epc_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+xps_epc_0 has been deleted from the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+bram_block_0 has been deleted from the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Assigned Driver generic 1.00.a for instance plb_v46_0
+plb_v46_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+bram_block_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Assigned Driver gpio 3.00.a for instance xps_gpio_0
+xps_gpio_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_gpio, INSTANCE: xps_gpio_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_gpio, INSTANCE: xps_gpio_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver uartlite 2.00.a for instance xps_uartlite_0
+xps_uartlite_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_uartlite, INSTANCE: xps_uartlite_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_uartlite, INSTANCE: xps_uartlite_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver bram 3.01.a for instance xps_bram_if_cntlr_0
+xps_bram_if_cntlr_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_bram_if_cntlr, INSTANCE: xps_bram_if_cntlr_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_bram_if_cntlr, INSTANCE: xps_bram_if_cntlr_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_bram_if_cntlr, INSTANCE: xps_bram_if_cntlr_0, PARAMETER: C_SPLB_NATIVE_DWIDTH - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Save project successfully
+
+********************************************************************************
+At Local date and time: Wed Oct 04 16:47:50 2023
+ make -f practica2.make simmodel started...
+IF NOT EXIST "bootloops" @mkdir "bootloops"
+cp -f C:/software/electronica/xilinx/14.1/ISE_DS/EDK/sw/lib/microblaze/mb_bootloop.elf bootloops/microblaze_0.elf
+"*********************************************"
+"Creating behavioral simulation models..."
+"*********************************************"
+simgen -p xc3s1000ft256-5 -lang vhdl -intstyle default   -pe microblaze_0 bootloops/microblaze_0.elf -msg __xps/ise/xmsgprops.lst -s isim -X U:/hlocal/temp/ -m behavioral practica2.mhs
+
+Release 14.1 - Simulation Model Generator Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ERROR:EDK:3557 - SimGen does not support spartan3 architecture from EDK 12.1
+   release. Invalid architecture/device specified: spartan3/xc3s1000ft256-5
+make: *** [simulation/behavioral/practica2_setup.tcl] Error 1
+Done!
+Make instance xps_uartlite_0 port RX external with net as port name
+Instance xps_uartlite_0 port RX connector undefined, using xps_uartlite_0_RX
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Make instance xps_uartlite_0 port TX external with net as port name
+Instance xps_uartlite_0 port TX connector undefined, using xps_uartlite_0_TX
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Make instance xps_gpio_0 port GPIO_IO external with net as port name
+Instance xps_gpio_0 port GPIO_IO connector undefined, using xps_gpio_0_GPIO_IO
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Make instance plb_v46_0 port PLB_Clk external with net as port name
+Instance plb_v46_0 port PLB_Clk connector undefined, using plb_v46_0_PLB_Clk
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Make instance plb_v46_0 port SYS_Rst external with net as port name
+Instance plb_v46_0 port SYS_Rst connector undefined, using plb_v46_0_SYS_Rst
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Can't rename external port RX to Rx (already used)
+Can't rename external port RX to Rx (already used)
+Can't rename external port RX to Rx (already used)
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 22 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 29 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - U:\hlocal\temp\practica2.mhs line 37 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Address Map for Processor microblaze_0
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+Generated Addresses Successfully
+Writing filter settings....
+Done writing filter settings to:
+	U:\hlocal\temp\etc\practica2.filters
+Done writing Tab View settings to:
+	U:\hlocal\temp\etc\practica2.gui
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/software/electronica/xilinx/14.1/ISE_DS/EDK/data/TextEditor.cfg>
+Make instance microblaze_0 port MB_RESET external with net as port name
+Instance microblaze_0 port MB_RESET connector undefined, using microblaze_0_MB_RESET
+Can't rename external port microblaze_0_MB_RESET_pin to reset (already used)
