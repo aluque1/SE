@@ -1,0 +1,36 @@
+
+**** Build of configuration Debug for project peripheral_tests_0 ****
+
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:49:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c:61:10: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+Finished building: ../src/testperiph.c
+' '
+Building target: peripheral_tests_0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"peripheral_tests_0.elf"  ./src/testperiph.o ./src/xbram_example.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: peripheral_tests_0.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size peripheral_tests_0.elf  |tee "peripheral_tests_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11690	    384	   2214	  14288	   37d0	peripheral_tests_0.elf
+Finished building: peripheral_tests_0.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck peripheral_tests_0.elf -hw ../../p2_hw_platform/system.xml -pe microblaze_0  |tee "peripheral_tests_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../p2_hw_platform/system.xml -pe microblaze_0
+peripheral_tests_0.elf 
+
+ELF file	: peripheral_tests_0.elf
+elfcheck passed.
+Finished building: peripheral_tests_0.elf.elfcheck
+' '
