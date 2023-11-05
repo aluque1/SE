@@ -1,0 +1,18 @@
+V3 11
+FL /home/ise/ISE/practica01/contadorAscDes_ms.vhd 2023/11/04.23:58:48 P.20131013
+EN work/contadorAscDes_ms 1699138878 \
+      FL /home/ise/ISE/practica01/contadorAscDes_ms.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/contadorAscDes_ms/contadorAscDes_ms_arch 1699138879 \
+      FL /home/ise/ISE/practica01/contadorAscDes_ms.vhd EN work/contadorAscDes_ms 1699138878
+FL /home/ise/ISE/practica01/debouncer.vhd 2023/09/27.15:41:50 P.20131013
+EN work/debouncer 1699138876 FL /home/ise/ISE/practica01/debouncer.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/debouncer/debouncerArch 1699138877 \
+      FL /home/ise/ISE/practica01/debouncer.vhd EN work/debouncer 1699138876
+FL /home/ise/ISE/practica01/practica1.vhd 2023/11/05.00:01:09 P.20131013
+EN work/practica1 1699138880 FL /home/ise/ISE/practica01/practica1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/practica1/Behavioral 1699138881 \
+      FL /home/ise/ISE/practica01/practica1.vhd EN work/practica1 1699138880 \
+      CP debouncer CP contadorAscDes_ms

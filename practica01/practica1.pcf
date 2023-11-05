@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 04 23:02:30 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "led" LOCATE = SITE "L5" LEVEL 1;
+COMP "button" LOCATE = SITE "H4" LEVEL 1;
+COMP "rst" LOCATE = SITE "P12" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,3 @@
+vhdl work "debouncer.vhd"
+vhdl work "contadorAscDes_ms.vhd"
+vhdl work "practica1.vhd"

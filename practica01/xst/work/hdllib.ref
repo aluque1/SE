@@ -1,0 +1,6 @@
+AR debouncer debouncerarch /home/ise/ISE/practica01/debouncer.vhd sub00/vhpl01 1699138877
+EN practica1 NULL /home/ise/ISE/practica01/practica1.vhd sub00/vhpl04 1699138880
+AR practica1 behavioral /home/ise/ISE/practica01/practica1.vhd sub00/vhpl05 1699138881
+EN debouncer NULL /home/ise/ISE/practica01/debouncer.vhd sub00/vhpl00 1699138876
+AR contadorascdes_ms contadorascdes_ms_arch /home/ise/ISE/practica01/contadorAscDes_ms.vhd sub00/vhpl03 1699138879
+EN contadorascdes_ms NULL /home/ise/ISE/practica01/contadorAscDes_ms.vhd sub00/vhpl02 1699138878

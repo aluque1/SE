@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/ise/ISE/practica01/practica1.xst" -ofn "/home/ise/ISE/practica01/practica1.syr" 
+xst -intstyle ise -ifn "/home/ise/ISE/practica01/practica1.xst" -ofn "/home/ise/ISE/practica01/practica1.syr" 
+xst -intstyle ise -ifn "/home/ise/ISE/practica01/practica1.xst" -ofn "/home/ise/ISE/practica01/practica1.syr" 
+xst -intstyle ise -ifn "/home/ise/ISE/practica01/practica1.xst" -ofn "/home/ise/ISE/practica01/practica1.syr" 
+xst -intstyle ise -ifn "/home/ise/ISE/practica01/practica1.xst" -ofn "/home/ise/ISE/practica01/practica1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s1000-ft256-5 practica1.ngc practica1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s1000-ft256-5 practica1.ngc practica1.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o practica1_map.ncd practica1.ngd practica1.pcf 
+par -w -intstyle ise -ol high -t 1 practica1_map.ncd practica1.ncd practica1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml practica1.twx practica1.ncd -o practica1.twr practica1.pcf -ucf constraints.ucf 
