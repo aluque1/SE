@@ -2,25 +2,26 @@
 **** Build of configuration Debug for project vis_teclado ****
 
 make all 
-Building file: ../src/helloworld.c
+Building file: ../src/leerDatos.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../vis_teclado_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o"src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
-' '
-Building file: ../src/platform.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../vis_teclado_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o"src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../vis_teclado_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/leerDatos.d" -MT"src/leerDatos.d" -o"src/leerDatos.o" "../src/leerDatos.c"
+../src/leerDatos.c: In function 'getNumber':
+../src/leerDatos.c:26:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/leerDatos.c:28:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/leerDatos.c:63:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/leerDatos.c: In function 'main':
+../src/leerDatos.c:87:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+Finished building: ../src/leerDatos.c
 ' '
 Building target: vis_teclado.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../vis_teclado_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"vis_teclado.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../vis_teclado_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"vis_teclado.elf"  ./src/leerDatos.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: vis_teclado.elf
 ' '
 Invoking: MicroBlaze Print Size
 mb-size vis_teclado.elf  |tee "vis_teclado.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2662	    292	   2088	   5042	   13b2	vis_teclado.elf
+   6698	    296	   2110	   9104	   2390	vis_teclado.elf
 Finished building: vis_teclado.elf.size
 ' '
 Invoking: Xilinx ELF Check
