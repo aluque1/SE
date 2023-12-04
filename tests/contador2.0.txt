@@ -1,0 +1,1 @@
+Tras descargar el .bit ejecutar GXSPORT y poner todos los bit a '1' (y dar al strobe) para que los leds de la placa extendida funcione.

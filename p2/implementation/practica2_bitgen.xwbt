@@ -1,7 +1,0 @@
-INFILE=U:\hlocal\temp\SE\p2\implementation\practica2.ncd
-OUTFILE=U:\hlocal\temp\SE\p2\implementation\practica2.bit
-FAMILY=Spartan3
-PART=xc3s1000-5ft256
-WORKINGDIR=U:\hlocal\temp\SE\p2\implementation
-LICENSE=ISE
-USER_INFO=210699396_1777489394_210552810_807

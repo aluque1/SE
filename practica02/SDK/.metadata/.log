@@ -1,0 +1,18 @@
+!SESSION 2023-11-22 17:16:05.315 -----------------------------------------------
+eclipse.buildId=Release 14.1 Build SDK_P.15xf
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:19:54.272
+!MESSAGE Indexed 'peripheral_tests_0' (3 sources, 38 headers) in 0,40 sec: 1.245 declarations; 1.352 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0,04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:19:54.712
+!MESSAGE Indexed 'peripheral_tests_bsp_0' (43 sources, 40 headers) in 0,42 sec: 1.010 declarations; 5.077 references; 23 unresolved inclusions; 0 syntax errors; 53 unresolved names (0,86%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:29:52.563
+!MESSAGE Indexed 'vis_teclado' (2 sources, 26 headers) in 0,12 sec: 982 declarations; 1.064 references; 5 unresolved inclusions; 0 syntax errors; 1 unresolved names (0,05%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 17:29:52.579
+!MESSAGE Indexed 'vis_teclado_bsp_0' (0 sources, 8 headers) in 0,02 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
