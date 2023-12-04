@@ -4,6 +4,12 @@
 
 #define XPAR_RS232_UART_1_BASEADDR 0x84000000
 
+
+
+
+
+
+  
 int getNumber (){
 
 	Xuint8 byte;
@@ -57,50 +63,55 @@ int getNumber (){
 			number = (number * 10) + digit;	
 		}
 		number *= sign;
-		if(validNumber == XTRUE && number <= 9 && number >= 0){
+		if(validNumber == XTRUE){
 			return number;
 		}
-		print("This is not a valid number. Has to be number between 0-9\n\r");
+		print("This is not a valid number");
 	}
 }
 
 
 
 
-int operando1, operando2;
+int operando1, operando2, result;
 char key;
 int main()
 {
 	/*
-	// escribe un mensaje en la pantalla del hypertermina
+	// escribe un mensaje en la pantalla del hyperterminal
 	xil_printf("Introduce una letra\n\r");
 	
 	// lee una letra de teclado 
 	key = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
-	// escribe una letra en la pantalla del hyperterminal
 	
-	XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,key);	
+	// escribe una letra en la pantalla del hyperterminal
+	XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,key);
 	print("\r\n");
 	*/
+	
 
-	// escribir mensaje en la pantalla del termite
-	xil_printf("Introduzca el primer operando (debe estar entre 0-9)\n\r");
+	do{ // TODO maybe a while with a break would be better, the prompt before and the print after the while
+		// escribe un mensaje en la pantalla
+		xil_printf("Introduzca el primer operando. Tiene que estar entre 0-9\n\r");
 
-    // lee un número de teclado
-	operando1 = getNumber();
-	xil_printf("Operando 1 : %d\r\n", operando1);
-	// Visualizar en leds
+		// lee un número de teclado
+		operando1 = getNumber();
+		xil_printf("Operando 1: %d\n\r", operando1);
+	}while(operando1 < 0 || operando1 > 9);
 
-	// escribir mensaje en la pantalla del termite
-	xil_printf("Introduzca el primer operando (debe estar entre 0-9)\n\r");
+	do{
+		// escribe un mensaje en la pantalla
+		xil_printf("Introduzca el segundo operando. Tiene que estar entre 0-9\n\r");
 
-	// lee un número de teclado
-	operando2 = getNumber();
-	xil_printf("Operando 2 : %d\r\n", operando2);
-	// Visualizar en leds
+		// lee un número de teclado
+		operando2 = getNumber();
+		xil_printf("Operando 2: %d\n\r", operando2);
+	}while(operando2 < 0 || operando2 > 9);
+
+	result = operando1 - operando2;
+	xil_printf("Resultado = %d\n\r", result);
 
 	print("-- Exiting main() --\r\n");
 	return 0;
-
 
 }

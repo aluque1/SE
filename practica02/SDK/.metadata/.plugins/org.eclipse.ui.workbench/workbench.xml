@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="182" y="182">
 <fastViewData fastViewLocation="1024"/>
@@ -8,18 +8,18 @@
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="157" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="183" y="22"/>
-<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="97" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="141" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="80" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -32,13 +32,23 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="leerDatos.c" partName="leerDatos.c" path="C:/Users/aluqu/Desktop/uni/SE/practica02/SDK/vis_teclado/src/leerDatos.c" title="leerDatos.c" tooltip="vis_teclado/src/leerDatos.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="leerDatos.c" partName="leerDatos.c" path="U:/hlocal/temp/SE/practica02/SDK/vis_teclado/src/leerDatos.c" title="leerDatos.c" tooltip="vis_teclado/src/leerDatos.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vis_teclado/src/leerDatos.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2062" selectionTopPixel="1446"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1872" selectionTopPixel="1266"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xstatus.h" partName="xstatus.h" path="U:/hlocal/temp/SE/practica02/SDK/vis_teclado_bsp_0/microblaze_0/include/xstatus.h" title="xstatus.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xstatus.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vis_teclado_bsp_0/microblaze_0/include/xstatus.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1714" selectionTopPixel="153"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xbasic_types.h" partName="xbasic_types.h" path="U:/hlocal/temp/SE/practica02/SDK/vis_teclado_bsp_0/microblaze_0/include/xbasic_types.h" title="xbasic_types.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xbasic_types.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vis_teclado_bsp_0/microblaze_0/include/xbasic_types.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1071"/>
 </editor>
 </editors>
 <views>
@@ -186,6 +196,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado/src/platform.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado/src/leerDatos.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xstatus.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xbasic_types.h"/>
 </editors>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -223,8 +236,47 @@
 <item historyLabel="xuartlite_l.c" index="3">
 <position info="not_deleted" x="4692" y="18"/>
 </item>
-<item active="true" historyLabel="leerDatos.c" index="2">
+<item historyLabel="leerDatos.c" index="2">
 <position info="not_deleted" x="456" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position/>
+</item>
+<item historyLabel="xil_testcache.c" index="4">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position/>
+</item>
+<item historyLabel="xil_testcache.c" index="4">
+<position info="not_deleted" x="2864" y="10"/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position/>
+</item>
+<item historyLabel="xstatus.h" index="5">
+<position info="not_deleted" x="1714" y="0"/>
+</item>
+<item historyLabel="xbasic_types.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position info="not_deleted" x="37" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position info="not_deleted" x="2503" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position info="not_deleted" x="2499" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="2">
+<position/>
+</item>
+<item active="true" historyLabel="leerDatos.c" index="2">
+<position info="not_deleted" x="1823" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -243,6 +295,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xbasic_types.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xbasic_types.h">
+<persistable path="/vis_teclado_bsp_0/microblaze_0/include/xbasic_types.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xstatus.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xstatus.h">
+<persistable path="/vis_teclado_bsp_0/microblaze_0/include/xstatus.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_testcache.c" tooltip="vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c">
+<persistable path="/vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite_l.c" tooltip="vis_teclado_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c">
 <persistable path="/vis_teclado_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
 </file>
@@ -278,15 +339,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.h" tooltip="vis_teclado/src/platform.h">
 <persistable path="/vis_teclado/src/platform.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="vis_teclado_bsp_0/system.mss">
-<persistable path="/vis_teclado_bsp_0/system.mss"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c">
-<persistable path="/peripheral_tests_0/src/testperiph.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="peripheral_tests_bsp_0/system.mss">
-<persistable path="/peripheral_tests_bsp_0/system.mss"/>
 </file>
 </mruList>
 </workbench>
