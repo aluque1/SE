@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 05 01:47:19 2023
+Mapped Date    : Tue Dec 05 11:54:07 2023
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
@@ -32,16 +32,16 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 9 secs 
-Total CPU  time at the beginning of Placer: 5 secs 
+Total REAL time at the beginning of Placer: 6 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:f826f60f) REAL time: 12 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f825e7b1) REAL time: 7 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:837 - Partially locked IO Bus is found. 
     Following components of the bus are not locked: 
-   	 Comp: leds<0>
+   	 Comp: leds<4>
    	 Comp: leds<5>
    	 Comp: leds<6>
    	 Comp: leds<7>
@@ -49,54 +49,54 @@ WARNING:Place:837 - Partially locked IO Bus is found.
 INFO:Place:834 - Only a subset of IOs are locked. Out of 12 IOs, 8 are locked
    and 4 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:f826f60f) REAL time: 12 secs 
+Phase 2.7  Design Feasibility Check (Checksum:f825e7b1) REAL time: 7 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:f826f60f) REAL time: 12 secs 
+Phase 3.31  Local Placement Optimization (Checksum:f825e7b1) REAL time: 7 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ......
-Phase 4.2  Initial Clock and IO Placement (Checksum:65bf78ff) REAL time: 13 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:65be6aa1) REAL time: 7 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:65bf78ff) REAL time: 13 secs 
+Phase 5.36  Local Placement Optimization (Checksum:65be6aa1) REAL time: 7 secs 
 
 Phase 6.3  Local Placement Optimization
 .....
-Phase 6.3  Local Placement Optimization (Checksum:706604c8) REAL time: 13 secs 
+Phase 6.3  Local Placement Optimization (Checksum:706701aa) REAL time: 7 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:706604c8) REAL time: 13 secs 
+Phase 7.5  Local Placement Optimization (Checksum:706701aa) REAL time: 7 secs 
 
 Phase 8.4  Local Placement Optimization
-..................................
-Phase 8.4  Local Placement Optimization (Checksum:706604c8) REAL time: 15 secs 
+...........................................
+Phase 8.4  Local Placement Optimization (Checksum:706701aa) REAL time: 9 secs 
 
 Phase 9.28  Local Placement Optimization
-Phase 9.28  Local Placement Optimization (Checksum:706604c8) REAL time: 15 secs 
+Phase 9.28  Local Placement Optimization (Checksum:706701aa) REAL time: 9 secs 
 
 Phase 10.8  Global Placement
-.....................................................................
-............
-..............................................................................................................
-.......................................
-.............................................................
-Phase 10.8  Global Placement (Checksum:e54c5d36) REAL time: 23 secs 
+............................................................................................
+...........
+...........................................................................................................................................................................................
+......................................................
+..............................................
+Phase 10.8  Global Placement (Checksum:b5fe4947) REAL time: 12 secs 
 
 Phase 11.29  Local Placement Optimization
-Phase 11.29  Local Placement Optimization (Checksum:e54c5d36) REAL time: 23 secs 
+Phase 11.29  Local Placement Optimization (Checksum:b5fe4947) REAL time: 12 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:e54c5d36) REAL time: 23 secs 
+Phase 12.5  Local Placement Optimization (Checksum:b5fe4947) REAL time: 13 secs 
 
 Phase 13.18  Placement Optimization
-Phase 13.18  Placement Optimization (Checksum:67894be7) REAL time: 41 secs 
+Phase 13.18  Placement Optimization (Checksum:e64351c6) REAL time: 19 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:67894be7) REAL time: 41 secs 
+Phase 14.5  Local Placement Optimization (Checksum:e64351c6) REAL time: 19 secs 
 
-Total REAL time to Placer completion: 41 secs 
-Total CPU  time to Placer completion: 36 secs 
+Total REAL time to Placer completion: 20 secs 
+Total CPU  time to Placer completion: 15 secs 
 Running post-placement packing...
 
 Design Summary
@@ -109,9 +109,9 @@ Logic Utilization:
   Number of Slice Flip Flops:         1,065 out of  15,360    6%
   Number of 4 input LUTs:             2,168 out of  15,360   14%
 Logic Distribution:
-  Number of occupied Slices:          1,417 out of   7,680   18%
-    Number of Slices containing only related logic:   1,417 out of   1,417 100%
-    Number of Slices containing unrelated logic:          0 out of   1,417   0%
+  Number of occupied Slices:          1,361 out of   7,680   17%
+    Number of Slices containing only related logic:   1,361 out of   1,361 100%
+    Number of Slices containing unrelated logic:          0 out of   1,361   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:       2,209 out of  15,360   14%
     Number used as logic:             1,692
@@ -132,8 +132,8 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                4.14
 
 Peak Memory Usage:  4519 MB
-Total REAL time to MAP completion:  43 secs 
-Total CPU time to MAP completion:   37 secs 
+Total REAL time to MAP completion:  20 secs 
+Total CPU time to MAP completion:   16 secs 
 
 Mapping completed.
 See MAP report file "practica2_map.mrp" for details.

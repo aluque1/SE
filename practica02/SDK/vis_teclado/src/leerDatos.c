@@ -81,7 +81,7 @@ int main()
 
 	// Set the direction for all signals to be outputs
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x0);
-	XGpio_DiscreteWrite(&Gpio_LEDs, 1, 0x0);
+	XGpio_DiscreteWrite(&Gpio_LEDs, 1, 0x0); // TODO maybe this shouldn't be here
 
 	valid = XFALSE;
 
