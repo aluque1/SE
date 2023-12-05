@@ -6,11 +6,11 @@ Building file: ../src/leerDatos.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../vis_teclado_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/leerDatos.d" -MT"src/leerDatos.d" -o"src/leerDatos.o" "../src/leerDatos.c"
 ../src/leerDatos.c: In function 'getNumber':
-../src/leerDatos.c:29:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
-../src/leerDatos.c:31:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
-../src/leerDatos.c:66:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/leerDatos.c:28:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/leerDatos.c:30:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/leerDatos.c:65:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
 ../src/leerDatos.c: In function 'main':
-../src/leerDatos.c:90:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/leerDatos.c:87:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
 Finished building: ../src/leerDatos.c
 ' '
 Building target: vis_teclado.elf
@@ -21,7 +21,7 @@ Finished building target: vis_teclado.elf
 Invoking: MicroBlaze Print Size
 mb-size vis_teclado.elf  |tee "vis_teclado.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   8010	    316	   2106	  10432	   28c0	vis_teclado.elf
+   8262	    316	   2096	  10674	   29b2	vis_teclado.elf
 Finished building: vis_teclado.elf.size
 ' '
 Invoking: Xilinx ELF Check

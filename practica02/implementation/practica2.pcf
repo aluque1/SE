@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.15xf on Tue Dec 05 11:54:28 2023
+// Written by: Map P.15xf on Tue Dec 05 19:49:48 2023
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,6 +11,10 @@ COMP "leds<0>" LOCATE = SITE "L5" LEVEL 1;
 COMP "leds<1>" LOCATE = SITE "N2" LEVEL 1;
 COMP "leds<2>" LOCATE = SITE "M3" LEVEL 1;
 COMP "leds<3>" LOCATE = SITE "N1" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "T13" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "L15" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "J13" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "H15" LEVEL 1;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

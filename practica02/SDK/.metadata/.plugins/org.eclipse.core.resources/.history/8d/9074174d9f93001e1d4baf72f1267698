@@ -8,6 +8,7 @@
 #define XPAR_RS232_UART_1_BASEADDR 0x84000000
   
 int getNumber (){
+
 	Xuint8 byte;
 	Xuint8 uartBuffer[16];
 	Xboolean validNumber;
@@ -103,6 +104,7 @@ int main()
 
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, 0x00);
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, result);
+
 
 	print("-- Exiting main() --\r\n");
 	return status;
