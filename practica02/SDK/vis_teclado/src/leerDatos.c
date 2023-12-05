@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-#include <xstatus.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+#include "xgpio.h"
 
 #define XPAR_RS232_UART_1_BASEADDR 0x84000000
-
-
-
-
-
-
   
 int getNumber (){
 
@@ -70,48 +67,36 @@ int getNumber (){
 	}
 }
 
-
-
-
-int operando1, operando2, result;
-char key;
 int main()
 {
-	/*
-	// escribe un mensaje en la pantalla del hyperterminal
-	xil_printf("Introduce una letra\n\r");
-	
-	// lee una letra de teclado 
-	key = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
-	
-	// escribe una letra en la pantalla del hyperterminal
-	XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,key);
-	print("\r\n");
-	*/
-	
+	int operando1;
+	Xboolean valid;
+	XGpio Gpio_LEDs;
+	long status;
+	// Initialize the GPIO driver so that it's ready to use
+	// Device ID in xparameters.h
+	status = XGpio_Initialize(&Gpio_LEDs, XPAR_XPS_GPIO_0_DEVICE_ID);
+	if(status != XST_SUCCESS)
+		return XST_FAILURE;
 
-	do{ // TODO maybe a while with a break would be better, the prompt before and the print after the while
+	// Set the direction for all signals to be outputs
+	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x0);
+	XGpio_DiscreteWrite(&Gpio_LEDs, 1, 0x0);
+
+	valid = XFALSE;
+
+	while(!valid){
 		// escribe un mensaje en la pantalla
 		xil_printf("Introduzca el primer operando. Tiene que estar entre 0-9\n\r");
-
-		// lee un número de teclado
 		operando1 = getNumber();
-		xil_printf("Operando 1: %d\n\r", operando1);
-	}while(operando1 < 0 || operando1 > 9);
+		if(operando1 >= 0 && operando1 <= 9)
+			valid = XTRUE;
+	}
 
-	do{
-		// escribe un mensaje en la pantalla
-		xil_printf("Introduzca el segundo operando. Tiene que estar entre 0-9\n\r");
-
-		// lee un número de teclado
-		operando2 = getNumber();
-		xil_printf("Operando 2: %d\n\r", operando2);
-	}while(operando2 < 0 || operando2 > 9);
-
-	result = operando1 - operando2;
-	xil_printf("Resultado = %d\n\r", result);
+	// Set the GPIO outputs to operando1
+	XGpio_DiscreteWrite(&Gpio_LEDs, 1, operando1);
 
 	print("-- Exiting main() --\r\n");
-	return 0;
+	return status;
 
 }

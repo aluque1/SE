@@ -1,0 +1,106 @@
+#include <stdio.h>
+
+#include <xgpio.h> // Added so GPIO works
+#include <xparameters.h>
+#include <xstatus.h>
+
+#define XPAR_RS232_UART_1_BASEADDR 0x84000000
+  
+int getNumber (){
+
+	Xuint8 byte;
+	Xuint8 uartBuffer[16];
+	Xboolean validNumber;
+	int digitIndex;
+	int digit, number, sign;
+	int c;	
+	
+	while(1){
+		byte = 0x00;
+		digit = 0;
+		digitIndex = 0;
+		number = 0;
+		validNumber = XTRUE;
+	
+		//get bytes from uart until RETURN is entered
+	
+		while(byte != 0x0d && byte != 0x0A){
+			byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+			uartBuffer[digitIndex] = byte; 
+			XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,byte);
+			digitIndex++;
+		}
+			 
+		//calculate number from string of digits
+	
+		for(c = 0; c < (digitIndex - 1); c++){
+			if(c == 0){
+				//check if first byte is a "-"
+				if(uartBuffer[c] == 0x2D){
+					sign = -1;
+					digit = 0;
+				}
+				//check if first byte is a digit
+				else if((uartBuffer[c] >> 4) == 0x03){
+					sign = 1;
+					digit = (uartBuffer[c] & 0x0F);
+				}
+				else	
+					validNumber = XFALSE;	
+			}
+			else{
+				//check byte is a digit
+				if((uartBuffer[c] >> 4) == 0x03){  
+					digit = (uartBuffer[c] & 0x0F);
+				}
+				else	
+					validNumber = XFALSE;				
+			}
+			number = (number * 10) + digit;	
+		}
+		number *= sign;
+		if(validNumber == XTRUE){
+			return number;
+		}
+		print("This is not a valid number");
+	}
+}
+
+
+
+
+int operando1, operando2, result;
+Xboolean valid;
+XGpio Gpio_LEDs;
+long status;
+char key;
+int main()
+{
+	// Initialize the GPIO driver so that it's ready to use
+	// Device ID in xparameters.h
+	status = XGpio_Initialize(&Gpio_LEDs, XPAR_XPS_GPIO_0_DEVICE_ID);
+	if(status != XST_SUCCESS)
+		return XST_FAILURE;
+
+	// Set the direction for all signals to be outputs
+	XGpio_SetDataDirection(&Gpio_LEDs, LED_CHANNEL, 0x00);
+	// Set the GPIO outputs to low
+	XGpio_DiscreteWrite(&Gpio_LEDs, LED_CHANNEL, 0x00);
+
+	valid = XFALSE;
+	while(!valid){
+		// escribe un mensaje en la pantalla
+		xil_printf("Introduzca el primer operando. Tiene que estar entre 0-9\n\r");
+		operando1 = getNumber();
+		if(operando1 <= 9 || operando1 >= 0)
+			valid = XTRUE;
+	}
+	
+	// Set the GPIO outputs to low
+	XGpio_DiscreteWrite(&Gpio_LEDs, LED_CHANNEL,operando1);
+
+
+	print("-- Exiting main() --\r\n");
+	return 0;
+
+}

@@ -1,24 +1,31 @@
 Release 14.1 ngdbuild P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Command Line:
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--p xc3s1000ft256-5 -nt timestamp -bm practica2.bmm
-U:/hlocal/temp/p2/implementation/practica2.ngc -uc practica2.ucf practica2.ngd
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm practica2.bmm
+C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2.ngc -uc
+practica2.ucf practica2.ngd
 
-Reading NGO file "U:/hlocal/temp/p2/implementation/practica2.ngc" ...
+Reading NGO file
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2.ngc" ...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_microblaze_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_microblaze_0_
+wrapper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_plb_v46_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_plb_v46_0_wra
+pper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_xps_bram_if_cntlr_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_xps_bram_if_c
+ntlr_0_wrapper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_bram_block_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_bram_block_0_
+wrapper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_xps_gpio_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_xps_gpio_0_wr
+apper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_xps_uartlite_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_xps_uartlite_
+0_wrapper.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -57,10 +64,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   5
 
-Total memory usage is 4425824 kilobytes
+Total memory usage is 4426008 kilobytes
 
 Writing NGD file "practica2.ngd" ...
-Total REAL time to NGDBUILD completion:  12 sec
-Total CPU time to NGDBUILD completion:   12 sec
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   22 sec
 
 Writing NGDBUILD log file "practica2.bld"...

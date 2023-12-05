@@ -2,8 +2,8 @@
 Release 14.1 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3
--xml practica2.twx practica2.ncd practica2.pcf
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml practica2.twx
+practica2.ncd practica2.pcf
 
 Design file:              practica2.ncd
 Physical constraint file: practica2.pcf
@@ -81,14 +81,14 @@ clk            |   11.206|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Nov 22 17:15:17 2023 
+Analysis completed Tue Dec 05 01:48:58 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4553 MB
+Peak Memory Usage: 4545 MB
 
 
 

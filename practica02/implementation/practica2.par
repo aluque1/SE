@@ -1,20 +1,18 @@
 Release 14.1 par P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-PTO0808::  Wed Nov 22 17:14:49 2023
+DESKTOP-7MIJRM6::  Tue Dec 05 01:48:04 2023
 
 par -w -ol high practica2_map.ncd practica2.ncd practica2.pcf 
 
 
 Constraints file: practica2.pcf.
 Loading device for application Rf_Device from file '3s1000.nph' in environment
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\;C:\software\electronica\xilinx\14.1\ISE_DS\EDK.
+C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
    "practica2" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
-'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
-'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '8080@licalu.fdi.ucm.es'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:54 - 'xc3s1000' is a WebPack part.
 WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
 WARNING:Security:44 - Since no license file was found,
@@ -55,8 +53,8 @@ Device Utilization Summary:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 2 secs 
-Finished initial Timing Analysis.  REAL time: 2 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
    signal.
@@ -131,28 +129,28 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 12110 unrouted;      REAL time: 4 secs 
+Phase  1  : 12110 unrouted;      REAL time: 7 secs 
 
-Phase  2  : 10652 unrouted;      REAL time: 4 secs 
+Phase  2  : 10652 unrouted;      REAL time: 8 secs 
 
-Phase  3  : 3439 unrouted;      REAL time: 5 secs 
+Phase  3  : 3439 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 3675 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 3675 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
 
 Updating file: practica2.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
-Total REAL time to Router completion: 24 secs 
-Total CPU time to Router completion: 22 secs 
+Total REAL time to Router completion: 48 secs 
+Total CPU time to Router completion: 42 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -209,8 +207,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 25 secs 
-Total CPU time to PAR completion: 22 secs 
+Total REAL time to PAR completion: 49 secs 
+Total CPU time to PAR completion: 43 secs 
 
 Peak Memory Usage:  4473 MB
 

@@ -3,47 +3,53 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt
 practica2.ngc  
 PMSPEC -- Overriding Xilinx file
-<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with
-local file
-<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
 
-Using Flow File: U:/hlocal/temp/p2/implementation/fpga.flw 
+Using Flow File:
+C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/fpga.flw 
 Using Option File(s): 
- U:/hlocal/temp/p2/implementation/xflow.opt 
+ C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/xflow.opt 
 
 Creating Script File ... 
 
 #----------------------------------------------#
 # Starting program ngdbuild
 # ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm practica2.bmm
-"U:/hlocal/temp/p2/implementation/practica2.ngc" -uc practica2.ucf practica2.ngd
- 
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2.ngc" -uc
+practica2.ucf practica2.ngd 
 #----------------------------------------------#
 Release 14.1 - ngdbuild P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 PMSPEC -- Overriding Xilinx file
-<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with
-local file
-<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
 
-Command Line:
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--p xc3s1000ft256-5 -nt timestamp -bm practica2.bmm
-U:/hlocal/temp/p2/implementation/practica2.ngc -uc practica2.ucf practica2.ngd
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm practica2.bmm
+C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2.ngc -uc
+practica2.ucf practica2.ngd
 
-Reading NGO file "U:/hlocal/temp/p2/implementation/practica2.ngc" ...
+Reading NGO file
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2.ngc" ...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_microblaze_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_microblaze_0_
+wrapper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_plb_v46_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_plb_v46_0_wra
+pper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_xps_bram_if_cntlr_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_xps_bram_if_c
+ntlr_0_wrapper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_bram_block_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_bram_block_0_
+wrapper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_xps_gpio_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_xps_gpio_0_wr
+apper.ngc"...
 Loading design module
-"U:/hlocal/temp/p2/implementation/practica2_xps_uartlite_0_wrapper.ngc"...
+"C:/Users/aluqu/Desktop/uni/SE/practica02/implementation/practica2_xps_uartlite_
+0_wrapper.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -83,8 +89,8 @@ NGDBUILD Design Results Summary:
   Number of warnings:   5
 
 Writing NGD file "practica2.ngd" ...
-Total REAL time to NGDBUILD completion:  12 sec
-Total CPU time to NGDBUILD completion:   12 sec
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   22 sec
 
 Writing NGDBUILD log file "practica2.bld"...
 
@@ -100,15 +106,13 @@ practica2.pcf
 Release 14.1 - Map P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 PMSPEC -- Overriding Xilinx file
-<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with
-local file
-<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
 Using target part "3s1000ft256-5".
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
-'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
-'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
+'8080@licalu.fdi.ucm.es'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:54 - 'xc3s1000' is a WebPack part.
 WARNING:Security:43 - No license file was found in the standard Xilinx license
 directory.
@@ -126,11 +130,11 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 5 secs 
-Total CPU  time at the beginning of Placer: 2 secs 
+Total REAL time at the beginning of Placer: 9 secs 
+Total CPU  time at the beginning of Placer: 5 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:f826f60f) REAL time: 7 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f826f60f) REAL time: 12 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:837 - Partially locked IO Bus is found. 
@@ -143,31 +147,31 @@ WARNING:Place:837 - Partially locked IO Bus is found.
 INFO:Place:834 - Only a subset of IOs are locked. Out of 12 IOs, 8 are locked
    and 4 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:f826f60f) REAL time: 7 secs 
+Phase 2.7  Design Feasibility Check (Checksum:f826f60f) REAL time: 12 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:f826f60f) REAL time: 7 secs 
+Phase 3.31  Local Placement Optimization (Checksum:f826f60f) REAL time: 12 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ......
-Phase 4.2  Initial Clock and IO Placement (Checksum:65bf78ff) REAL time: 7 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:65bf78ff) REAL time: 13 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:65bf78ff) REAL time: 7 secs 
+Phase 5.36  Local Placement Optimization (Checksum:65bf78ff) REAL time: 13 secs 
 
 Phase 6.3  Local Placement Optimization
 .....
-Phase 6.3  Local Placement Optimization (Checksum:706604c8) REAL time: 7 secs 
+Phase 6.3  Local Placement Optimization (Checksum:706604c8) REAL time: 13 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:706604c8) REAL time: 8 secs 
+Phase 7.5  Local Placement Optimization (Checksum:706604c8) REAL time: 13 secs 
 
 Phase 8.4  Local Placement Optimization
 ..................................
-Phase 8.4  Local Placement Optimization (Checksum:706604c8) REAL time: 9 secs 
+Phase 8.4  Local Placement Optimization (Checksum:706604c8) REAL time: 15 secs 
 
 Phase 9.28  Local Placement Optimization
-Phase 9.28  Local Placement Optimization (Checksum:706604c8) REAL time: 9 secs 
+Phase 9.28  Local Placement Optimization (Checksum:706604c8) REAL time: 15 secs 
 
 Phase 10.8  Global Placement
 .....................................................................
@@ -175,22 +179,22 @@ Phase 10.8  Global Placement
 ..............................................................................................................
 .......................................
 .............................................................
-Phase 10.8  Global Placement (Checksum:e54c5d36) REAL time: 13 secs 
+Phase 10.8  Global Placement (Checksum:e54c5d36) REAL time: 23 secs 
 
 Phase 11.29  Local Placement Optimization
-Phase 11.29  Local Placement Optimization (Checksum:e54c5d36) REAL time: 13 secs 
+Phase 11.29  Local Placement Optimization (Checksum:e54c5d36) REAL time: 23 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:e54c5d36) REAL time: 13 secs 
+Phase 12.5  Local Placement Optimization (Checksum:e54c5d36) REAL time: 23 secs 
 
 Phase 13.18  Placement Optimization
-Phase 13.18  Placement Optimization (Checksum:67894be7) REAL time: 23 secs 
+Phase 13.18  Placement Optimization (Checksum:67894be7) REAL time: 41 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:67894be7) REAL time: 23 secs 
+Phase 14.5  Local Placement Optimization (Checksum:67894be7) REAL time: 41 secs 
 
-Total REAL time to Placer completion: 23 secs 
-Total CPU  time to Placer completion: 19 secs 
+Total REAL time to Placer completion: 41 secs 
+Total CPU  time to Placer completion: 36 secs 
 Running post-placement packing...
 
 Design Summary:
@@ -223,8 +227,8 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                4.14
 
 Peak Memory Usage:  4519 MB
-Total REAL time to MAP completion:  24 secs 
-Total CPU time to MAP completion:   20 secs 
+Total REAL time to MAP completion:  43 secs 
+Total CPU time to MAP completion:   37 secs 
 
 Mapping completed.
 See MAP report file "practica2_map.mrp" for details.
@@ -237,20 +241,18 @@ See MAP report file "practica2_map.mrp" for details.
 #----------------------------------------------#
 Release 14.1 - par P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-PMSPEC -- Overriding Xilinx file <C:/software/electronica/xilinx/14.1/ISE_DS/EDK/data/parBmgr.acd> with local file
-<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/data/parBmgr.acd>
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/14.1/ISE_DS/EDK/data/parBmgr.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/parBmgr.acd>
 
 
 
 Constraints file: practica2.pcf.
 Loading device for application Rf_Device from file '3s1000.nph' in environment
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\;C:\software\electronica\xilinx\14.1\ISE_DS\EDK.
+C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
    "practica2" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
-'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
-'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '8080@licalu.fdi.ucm.es'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:54 - 'xc3s1000' is a WebPack part.
 WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
 WARNING:Security:44 - Since no license file was found,
@@ -291,8 +293,8 @@ Device Utilization Summary:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 2 secs 
-Finished initial Timing Analysis.  REAL time: 2 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
    signal.
@@ -367,28 +369,28 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 12110 unrouted;      REAL time: 4 secs 
+Phase  1  : 12110 unrouted;      REAL time: 7 secs 
 
-Phase  2  : 10652 unrouted;      REAL time: 4 secs 
+Phase  2  : 10652 unrouted;      REAL time: 8 secs 
 
-Phase  3  : 3439 unrouted;      REAL time: 5 secs 
+Phase  3  : 3439 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 3675 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 3675 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
 
 Updating file: practica2.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
-Total REAL time to Router completion: 24 secs 
-Total CPU time to Router completion: 22 secs 
+Total REAL time to Router completion: 48 secs 
+Total CPU time to Router completion: 42 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -445,8 +447,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 25 secs 
-Total CPU time to PAR completion: 22 secs 
+Total REAL time to PAR completion: 49 secs 
+Total CPU time to PAR completion: 43 secs 
 
 Peak Memory Usage:  4473 MB
 
@@ -474,20 +476,18 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 PMSPEC -- Overriding Xilinx file
-<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with
-local file
-<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
 Loading device for application Rf_Device from file '3s1000.nph' in environment
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\;C:\software\electronica\xilinx\1
-4.1\ISE_DS\EDK.
+C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
    "practica2" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
 INFO:Timing:2698 - No timing constraints found, doing default enumeration.
 --------------------------------------------------------------------------------
 Release 14.1 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3
--xml practica2.twx practica2.ncd practica2.pcf
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml practica2.twx
+practica2.ncd practica2.pcf
 
 
 Design file:              practica2.ncd
@@ -512,13 +512,13 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
    calculation.  Please make appropriate modification to SYSTEM_JITTER to
    account for the unsupported Discrete Jitter and Phase Error.
 
-Analysis completed Wed Nov 22 17:15:17 2023
+Analysis completed Tue Dec 05 01:48:58 2023
 --------------------------------------------------------------------------------
 
 Generating Report ...
 
 Number of warnings: 0
 Number of info messages: 6
-Total time: 1 secs 
+Total time: 2 secs 
 
 

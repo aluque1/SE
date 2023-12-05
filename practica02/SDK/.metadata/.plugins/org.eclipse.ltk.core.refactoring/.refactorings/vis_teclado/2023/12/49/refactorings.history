@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vis_teclado/src/leerDatos.txt&apos; to &apos;leerDatos.c&apos;" description="Rename resource &apos;leerDatos.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/leerDatos.txt" name="leerDatos.c" stamp="1701734605733" updateReferences="true"/>
+</session>
