@@ -33,13 +33,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="leerDatos.c" partName="leerDatos.c" path="C:/Users/aluqu/Desktop/uni/SE/practica02/SDK/vis_teclado/src/leerDatos.c" title="leerDatos.c" tooltip="vis_teclado/src/leerDatos.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vis_teclado/src/leerDatos.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2429" selectionTopPixel="1296"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3006" selectionTopPixel="2096"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="C:/Users/aluqu/Desktop/uni/SE/practica02/SDK/vis_teclado_bsp_0/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="2296" selectionTopPixel="980"/>
 </editor>
 </editors>
 <views>
@@ -183,170 +188,163 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado/src/leerDatos.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xgpio.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xstatus.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xbasic_types.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio_sinit.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado/src/testperiph.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/vis_teclado/src/leerDatos.txt"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/vis_teclado/src/leerDatos.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio_sinit.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado/src/leerDatos.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio.c"/>
 </editors>
-<item historyLabel="xbasic_types.h" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="xstatus.h" index="2">
-<position/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="xparameters.h" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="xparameters.h" index="4">
-<position info="not_deleted" x="2296" y="25"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="xstatus.h" index="2">
-<position info="not_deleted" x="4958" y="4"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="1666" y="0"/>
-</item>
-<item historyLabel="xparameters.h" index="4">
-<position info="not_deleted" x="2296" y="25"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="1748" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="1832" y="0"/>
-</item>
-<item historyLabel="xil_testcache.c" index="5">
-<position info="not_deleted" x="2864" y="10"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="2062" y="0"/>
-</item>
-<item historyLabel="xgpio.c" index="6">
-<position info="not_deleted" x="10206" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="2190" y="0"/>
-</item>
-<item historyLabel="xparameters.h" index="4">
-<position info="not_deleted" x="7197" y="3"/>
-</item>
-<item historyLabel="xgpio.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="1947" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="xgpio_sinit.c" index="7">
-<position info="not_deleted" x="5271" y="16"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="xgpio.c" index="6">
-<position info="not_deleted" x="10206" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position/>
-</item>
-<item historyLabel="xgpio.h" index="1">
-<position info="not_deleted" x="7883" y="19"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="1681" y="0"/>
-</item>
-<item historyLabel="xparameters.h" index="4">
-<position info="not_deleted" x="2323" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="1855" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="0">
-<position info="not_deleted" x="1465" y="168"/>
-</item>
-<item historyLabel="xparameters.h" index="4">
-<position info="not_deleted" x="2323" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="8">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="2168" y="0"/>
 </item>
-<item historyLabel="xgpio_sinit.c" index="7">
-<position info="not_deleted" x="2981" y="20"/>
-</item>
-<item historyLabel="testperiph.c" index="8">
-<position info="not_deleted" x="2168" y="0"/>
-</item>
-<item historyLabel="leerDatos.txt" index="9">
-<position info="not_deleted" x="22" y="125"/>
-</item>
-<item historyLabel="testperiph.c" index="8">
-<position info="not_deleted" x="2168" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="10">
+<item historyLabel="leerDatos.c" index="1">
 <position info="not_deleted" x="374" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="8">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1466" y="0"/>
 </item>
-<item historyLabel="leerDatos.c" index="10">
+<item historyLabel="leerDatos.c" index="1">
 <position info="not_deleted" x="2223" y="0"/>
 </item>
-<item historyLabel="xgpio_sinit.c" index="11">
+<item historyLabel="xgpio_sinit.c" index="2">
 <position info="not_deleted" x="2981" y="20"/>
 </item>
-<item historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position/>
 </item>
-<item historyLabel="xil_testcache.c" index="13">
+<item historyLabel="xil_testcache.c" index="4">
 <position info="not_deleted" x="2864" y="10"/>
 </item>
-<item historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position info="not_deleted" x="2116" y="0"/>
 </item>
-<item historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position/>
 </item>
-<item historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position/>
 </item>
-<item historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position info="not_deleted" x="176" y="9"/>
 </item>
-<item historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position info="not_deleted" x="1972" y="0"/>
 </item>
-<item historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position info="not_deleted" x="2524" y="0"/>
 </item>
-<item active="true" historyLabel="leerDatos.c" index="12">
+<item historyLabel="leerDatos.c" index="3">
 <position info="not_deleted" x="2641" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2283" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2282" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2318" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2379" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2378" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="1856" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2535" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2628" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2627" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="3515" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="1445" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2807" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="xparameters.h" index="5">
+<position info="not_deleted" x="2578" y="1"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="1378" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="5">
+<position info="not_deleted" x="2552" y="25"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="1378" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="xparameters.h" index="5">
+<position info="not_deleted" x="2552" y="25"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="xparameters.h" index="5">
+<position info="not_deleted" x="2296" y="25"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="2248" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="xgpio.c" index="6">
+<position info="not_deleted" x="9064" y="18"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="3540" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="3661" y="0"/>
+</item>
+<item historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="3492" y="0"/>
+</item>
+<item active="true" historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="3298" y="90"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -365,6 +363,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio.c" tooltip="vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio.c">
+<persistable path="/vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xparameters.h">
+<persistable path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_testcache.c" tooltip="vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c">
 <persistable path="/vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c"/>
 </file>
@@ -380,14 +384,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="vis_teclado/src/testperiph.c">
 <persistable path="/vis_teclado/src/testperiph.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio.c" tooltip="vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio.c">
-<persistable path="/vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xstatus.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xstatus.h">
 <persistable path="/vis_teclado_bsp_0/microblaze_0/include/xstatus.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xparameters.h">
-<persistable path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xgpio.h">
 <persistable path="/vis_teclado_bsp_0/microblaze_0/include/xgpio.h"/>

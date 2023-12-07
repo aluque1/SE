@@ -67,7 +67,8 @@ implementation/practica2_plb_v46_0_wrapper.ngc \
 implementation/practica2_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/practica2_bram_block_0_wrapper.ngc \
 implementation/practica2_xps_gpio_0_wrapper.ngc \
-implementation/practica2_xps_uartlite_0_wrapper.ngc
+implementation/practica2_xps_uartlite_0_wrapper.ngc \
+implementation/practica2_xps_gpio_1_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

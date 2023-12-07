@@ -1763,24 +1763,6 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/Bus_Error_Det</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SrdBTerm</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SrdDAck</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SwrBTerm</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SwrDAck</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_Sssize&lt;0&gt;</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_Sssize&lt;1&gt;</arg> has no load.
-</msg>
-
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/MPLB_Rst&lt;0&gt;</arg> has no load.
 </msg>
 

@@ -24,14 +24,22 @@ NET "rst" FLOAT;
 
 	#switches placa extendida
 
-#NET DIPSW<1> LOC=P12;
-#NET DIPSW<2> LOC=J1;
-#NET DIPSW<3> LOC=H1;
-#NET DIPSW<4> LOC=H3;
-#NET DIPSW<5> LOC=G2;
-#NET DIPSW<6> LOC=K15;
-#NET DIPSW<7> LOC=K16;
-#NET DIPSW<8> LOC=F15;
+NET switches<0> LOC=P12;
+NET switches<1> LOC=J1;
+NET switches<2> LOC=H1;
+NET switches<3> LOC=H3;
+NET switches<4> LOC=G2;
+NET switches<5> LOC=K15;
+NET switches<6> LOC=K16;
+NET switches<7> LOC=F15;
+NET "switches<0>" FLOAT;
+NET "switches<1>" FLOAT;
+NET "switches<2>" FLOAT;
+NET "switches<3>" FLOAT;
+NET "switches<4>" FLOAT;
+NET "switches<5>" FLOAT;
+NET "switches<6>" FLOAT;
+NET "switches<7>" FLOAT;
 
 #
 	#push buttons placa superior

@@ -44,16 +44,24 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-leds<0>     |    0.678(R)|    0.204(R)|clk_BUFGP         |   0.000|
-leds<1>     |    0.373(R)|    0.407(R)|clk_BUFGP         |   0.000|
-leds<2>     |    1.575(R)|   -0.541(R)|clk_BUFGP         |   0.000|
-leds<3>     |    1.705(R)|   -0.646(R)|clk_BUFGP         |   0.000|
-leds<4>     |    1.016(R)|   -0.141(R)|clk_BUFGP         |   0.000|
-leds<5>     |    1.531(R)|   -0.517(R)|clk_BUFGP         |   0.000|
-leds<6>     |    1.625(R)|   -0.614(R)|clk_BUFGP         |   0.000|
-leds<7>     |    1.614(R)|   -0.594(R)|clk_BUFGP         |   0.000|
-rst         |    3.329(R)|   -0.218(R)|clk_BUFGP         |   0.000|
+leds<0>     |    1.149(R)|   -0.201(R)|clk_BUFGP         |   0.000|
+leds<1>     |    0.833(R)|    0.063(R)|clk_BUFGP         |   0.000|
+leds<2>     |    0.829(R)|    0.063(R)|clk_BUFGP         |   0.000|
+leds<3>     |    1.258(R)|   -0.278(R)|clk_BUFGP         |   0.000|
+leds<4>     |    0.893(R)|   -0.034(R)|clk_BUFGP         |   0.000|
+leds<5>     |    1.179(R)|   -0.239(R)|clk_BUFGP         |   0.000|
+leds<6>     |    0.882(R)|    0.004(R)|clk_BUFGP         |   0.000|
+leds<7>     |    1.244(R)|   -0.278(R)|clk_BUFGP         |   0.000|
+rst         |    3.527(R)|   -0.555(R)|clk_BUFGP         |   0.000|
 rx          |    3.342(R)|   -1.221(R)|clk_BUFGP         |   0.000|
+switches<0> |    2.739(R)|   -1.507(R)|clk_BUFGP         |   0.000|
+switches<1> |    1.149(R)|   -0.201(R)|clk_BUFGP         |   0.000|
+switches<2> |    1.209(R)|   -0.243(R)|clk_BUFGP         |   0.000|
+switches<3> |    1.138(R)|   -0.182(R)|clk_BUFGP         |   0.000|
+switches<4> |    1.162(R)|   -0.210(R)|clk_BUFGP         |   0.000|
+switches<5> |    1.165(R)|   -0.223(R)|clk_BUFGP         |   0.000|
+switches<6> |    0.858(R)|    0.031(R)|clk_BUFGP         |   0.000|
+switches<7> |    1.688(R)|   -0.694(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -61,15 +69,23 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-leds<0>     |    9.459(R)|clk_BUFGP         |   0.000|
-leds<1>     |    9.647(R)|clk_BUFGP         |   0.000|
-leds<2>     |   10.059(R)|clk_BUFGP         |   0.000|
-leds<3>     |    8.987(R)|clk_BUFGP         |   0.000|
-leds<4>     |    9.175(R)|clk_BUFGP         |   0.000|
-leds<5>     |    9.242(R)|clk_BUFGP         |   0.000|
-leds<6>     |    9.777(R)|clk_BUFGP         |   0.000|
-leds<7>     |   10.207(R)|clk_BUFGP         |   0.000|
-tx          |    6.523(R)|clk_BUFGP         |   0.000|
+leds<0>     |    9.145(R)|clk_BUFGP         |   0.000|
+leds<1>     |    9.163(R)|clk_BUFGP         |   0.000|
+leds<2>     |    9.631(R)|clk_BUFGP         |   0.000|
+leds<3>     |    9.685(R)|clk_BUFGP         |   0.000|
+leds<4>     |    9.754(R)|clk_BUFGP         |   0.000|
+leds<5>     |    9.180(R)|clk_BUFGP         |   0.000|
+leds<6>     |    9.461(R)|clk_BUFGP         |   0.000|
+leds<7>     |    9.645(R)|clk_BUFGP         |   0.000|
+switches<0> |    9.130(R)|clk_BUFGP         |   0.000|
+switches<1> |    9.570(R)|clk_BUFGP         |   0.000|
+switches<2> |    9.936(R)|clk_BUFGP         |   0.000|
+switches<3> |    9.840(R)|clk_BUFGP         |   0.000|
+switches<4> |   10.819(R)|clk_BUFGP         |   0.000|
+switches<5> |    9.470(R)|clk_BUFGP         |   0.000|
+switches<6> |    9.529(R)|clk_BUFGP         |   0.000|
+switches<7> |   10.092(R)|clk_BUFGP         |   0.000|
+tx          |    6.534(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -77,11 +93,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   12.270|         |         |         |
+clk            |   10.537|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Dec 07 18:08:40 2023 
+Analysis completed Thu Dec 07 20:31:03 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:

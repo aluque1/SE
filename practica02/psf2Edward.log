@@ -1,6 +1,6 @@
 
 Checking platform configuration ...
-IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
