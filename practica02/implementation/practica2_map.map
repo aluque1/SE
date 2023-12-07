@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 05 19:49:26 2023
+Mapped Date    : Thu Dec 07 18:07:05 2023
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
@@ -32,31 +32,31 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 6 secs 
-Total CPU  time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 9 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:9e2b8cc) REAL time: 7 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:9e2b8cc) REAL time: 11 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:9e2b8cc) REAL time: 7 secs 
+Phase 2.7  Design Feasibility Check (Checksum:9e2b8cc) REAL time: 11 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:9e2b8cc) REAL time: 7 secs 
+Phase 3.31  Local Placement Optimization (Checksum:9e2b8cc) REAL time: 11 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:777b3bbc) REAL time: 7 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:777b3bbc) REAL time: 12 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:777b3bbc) REAL time: 7 secs 
+Phase 5.36  Local Placement Optimization (Checksum:777b3bbc) REAL time: 12 secs 
 
 Phase 6.4  Local Placement Optimization
 ...............................
-Phase 6.4  Local Placement Optimization (Checksum:777b3bbc) REAL time: 9 secs 
+Phase 6.4  Local Placement Optimization (Checksum:777b3bbc) REAL time: 14 secs 
 
 Phase 7.28  Local Placement Optimization
-Phase 7.28  Local Placement Optimization (Checksum:777b3bbc) REAL time: 9 secs 
+Phase 7.28  Local Placement Optimization (Checksum:777b3bbc) REAL time: 14 secs 
 
 Phase 8.8  Global Placement
 ...............................................................................................................
@@ -64,22 +64,22 @@ Phase 8.8  Global Placement
 ......................................................................................
 ............................................................
 ......................................................
-Phase 8.8  Global Placement (Checksum:a679f6a1) REAL time: 14 secs 
+Phase 8.8  Global Placement (Checksum:a679f6a1) REAL time: 21 secs 
 
 Phase 9.29  Local Placement Optimization
-Phase 9.29  Local Placement Optimization (Checksum:a679f6a1) REAL time: 14 secs 
+Phase 9.29  Local Placement Optimization (Checksum:a679f6a1) REAL time: 21 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:a679f6a1) REAL time: 14 secs 
+Phase 10.5  Local Placement Optimization (Checksum:a679f6a1) REAL time: 21 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:a123b4ce) REAL time: 21 secs 
+Phase 11.18  Placement Optimization (Checksum:a123b4ce) REAL time: 33 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:a123b4ce) REAL time: 21 secs 
+Phase 12.5  Local Placement Optimization (Checksum:a123b4ce) REAL time: 33 secs 
 
-Total REAL time to Placer completion: 22 secs 
-Total CPU  time to Placer completion: 19 secs 
+Total REAL time to Placer completion: 33 secs 
+Total CPU  time to Placer completion: 28 secs 
 Running post-placement packing...
 
 Design Summary
@@ -115,8 +115,8 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                4.14
 
 Peak Memory Usage:  4519 MB
-Total REAL time to MAP completion:  23 secs 
-Total CPU time to MAP completion:   20 secs 
+Total REAL time to MAP completion:  34 secs 
+Total CPU time to MAP completion:   29 secs 
 
 Mapping completed.
 See MAP report file "practica2_map.mrp" for details.

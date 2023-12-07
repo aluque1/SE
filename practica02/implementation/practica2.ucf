@@ -47,8 +47,7 @@ NET "rst" FLOAT;
 
 #barra de leds placa extendida
 
-## TODO IF NOT WORK CHANGE TO 0-3
-NET leds<0> LOC=L5; ## TODO cambiado esto para que vaya de 0 a 9 en vez de 1 a 10
+NET leds<0> LOC=L5;
 NET leds<1> LOC=N2;
 NET leds<2> LOC=M3;
 NET leds<3> LOC=N1;

@@ -70,6 +70,7 @@ int main()
 {
 	int operando1 = -1;
 	int operando2 = -1;
+	int wait = -1;
 	XGpio Gpio_LEDs;
 	long status;
 	// Initialize the GPIO driver so that it's ready to use
@@ -82,25 +83,30 @@ int main()
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x00);
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, 0x00);
 
-	while(operando1 <= 0 || operando1 >= 9){
-		// escribe un mensaje en la pantalla
+	// escribe un mensaje en la pantalla
+	while(operando1 < 0 || operando1 > 9){
 		xil_printf("Introduzca el primer operando. Tiene que estar entre 0-9\n\r");
 		operando1 = getNumber();
 	}
 	// Set the GPIO outputs to operando1
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, operando1);
 
+
 	while(operando2 <= 0 || operando2 >= 9){
 		// escribe un mensaje en la pantalla
 		xil_printf("Introduzca el segundo operando. Tiene que estar entre 0-9\n\r");
 		operando2 = getNumber();
 	}
-	// Set the GPIO outputs to operando1
+	// Set the GPIO outputs to operando2
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, 0x00);
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, operando2);
 
-	int result = operando1 - operando2;
+	while(wait != 0){
+		xil_printf("Introduzca 0 para obtener el resultado de %d - %d\n\r", operando1, operando2);
+		wait = getNumber();
+	}
 
+	int result = operando1 - operando2;
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, 0x00);
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, result);
 
