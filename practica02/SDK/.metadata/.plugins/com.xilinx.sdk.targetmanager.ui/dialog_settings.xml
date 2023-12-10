@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="C:\Users\aluqu\Desktop\uni\SE\practica02\SDK\vis_teclado\Debug\vis_teclado.elf" key="p2_hw_platform-microblaze_0-initElf"/>
-	<item value="C:\Users\aluqu\Desktop\uni\SE\practica02\SDK\p2_hw_platform\system_bd.bmm" key="p2_hw_platform-bmmFile"/>
-	<item value="C:\Users\aluqu\Desktop\uni\SE\practica02\SDK\p2_hw_platform\system.bit" key="p2_hw_platform-bitFile"/>
-</section>
