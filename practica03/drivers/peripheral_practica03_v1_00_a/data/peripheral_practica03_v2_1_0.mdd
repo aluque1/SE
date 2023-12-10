@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Users\aluqu\Desktop\uni\SE\practica03/drivers/peripheral_practica03_v1_00_a/data/peripheral_practica03_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sun Dec 10 13:08:50 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER peripheral_practica03
+
+  OPTION supported_peripherals = (peripheral_practica03);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER
