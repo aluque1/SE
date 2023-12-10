@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: practica1.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -107,13 +107,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/ise/ISE/practica01/debouncer.vhd" in Library work.
-Architecture debouncerarch of Entity debouncer is up to date.
-Compiling vhdl file "/home/ise/ISE/practica01/contadorAscDes_ms.vhd" in Library work.
-WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ISE/practica01/contadorAscDes_ms.vhd" is newer than current system time.
-Architecture contadorascdes_ms_arch of Entity contadorascdes_ms is up to date.
+Compiling vhdl file "/home/ise/ISE/practica01/divisor1000HZ.vhd" in Library work.
+Architecture behavioral of Entity divisor1000hz is up to date.
+Compiling vhdl file "/home/ise/ISE/practica01/contador32b.vhd" in Library work.
+Architecture contador32b_arch of Entity contador32b is up to date.
 Compiling vhdl file "/home/ise/ISE/practica01/practica1.vhd" in Library work.
-WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ISE/practica01/practica1.vhd" is newer than current system time.
 Entity <practica1> compiled.
 Entity <practica1> (Architecture <behavioral>) compiled.
 
@@ -122,9 +120,9 @@ Entity <practica1> (Architecture <behavioral>) compiled.
 =========================================================================
 Analyzing hierarchy for entity <practica1> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <debouncer> in library <work> (architecture <debouncerarch>).
+Analyzing hierarchy for entity <divisor1000HZ> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <contadorAscDes_ms> in library <work> (architecture <contadorascdes_ms_arch>).
+Analyzing hierarchy for entity <contador32b> in library <work> (architecture <contador32b_arch>).
 
 
 =========================================================================
@@ -133,11 +131,11 @@ Analyzing hierarchy for entity <contadorAscDes_ms> in library <work> (architectu
 Analyzing Entity <practica1> in library <work> (Architecture <behavioral>).
 Entity <practica1> analyzed. Unit <practica1> generated.
 
-Analyzing Entity <debouncer> in library <work> (Architecture <debouncerarch>).
-Entity <debouncer> analyzed. Unit <debouncer> generated.
+Analyzing Entity <divisor1000HZ> in library <work> (Architecture <behavioral>).
+Entity <divisor1000HZ> analyzed. Unit <divisor1000HZ> generated.
 
-Analyzing Entity <contadorAscDes_ms> in library <work> (Architecture <contadorascdes_ms_arch>).
-Entity <contadorAscDes_ms> analyzed. Unit <contadorAscDes_ms> generated.
+Analyzing Entity <contador32b> in library <work> (Architecture <contador32b_arch>).
+Entity <contador32b> analyzed. Unit <contador32b> generated.
 
 
 =========================================================================
@@ -146,53 +144,37 @@ Entity <contadorAscDes_ms> analyzed. Unit <contadorAscDes_ms> generated.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <debouncer>.
-    Related source file is "/home/ise/ISE/practica01/debouncer.vhd".
-    Found finite state machine <FSM_0> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 4                                              |
-    | Transitions        | 8                                              |
-    | Inputs             | 2                                              |
-    | Outputs            | 5                                              |
-    | Clock              | clk                       (rising_edge)        |
-    | Reset              | rst                       (negative)           |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 00                                             |
-    | Power Up State     | 00                                             |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 1-bit register for signal <aux1>.
-    Found 22-bit up counter for signal <count>.
-    Found 1-bit register for signal <xSync>.
+Synthesizing Unit <divisor1000HZ>.
+    Related source file is "/home/ise/ISE/practica01/divisor1000HZ.vhd".
+    Found 1-bit register for signal <clk_aux>.
+    Found 20-bit up counter for signal <cuenta>.
     Summary:
-	inferred   1 Finite State Machine(s).
 	inferred   1 Counter(s).
-	inferred   2 D-type flip-flop(s).
-Unit <debouncer> synthesized.
-
-
-Synthesizing Unit <contadorAscDes_ms>.
-    Related source file is "/home/ise/ISE/practica01/contadorAscDes_ms.vhd".
-    Found 1-bit register for signal <cuenta_fin>.
-    Found 16-bit updown counter for signal <cuenta>.
-    Found 20-bit up counter for signal <cuenta_aux>.
-    Summary:
-	inferred   2 Counter(s).
 	inferred   1 D-type flip-flop(s).
-Unit <contadorAscDes_ms> synthesized.
+Unit <divisor1000HZ> synthesized.
+
+
+Synthesizing Unit <contador32b>.
+    Related source file is "/home/ise/ISE/practica01/contador32b.vhd".
+    Found 1-bit register for signal <cuenta_fin>.
+    Found 32-bit up counter for signal <cuenta>.
+    Found 32-bit comparator equal for signal <cuenta$cmp_eq0000> created at line 48.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <contador32b> synthesized.
 
 
 Synthesizing Unit <practica1>.
     Related source file is "/home/ise/ISE/practica01/practica1.vhd".
-WARNING:Xst:646 - Signal <buttonDeb> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found finite state machine <FSM_1> for signal <ESTADO>.
+    Found finite state machine <FSM_0> for signal <ESTADO>.
     -----------------------------------------------------------------------
-    | States             | 3                                              |
-    | Transitions        | 6                                              |
-    | Inputs             | 3                                              |
-    | Outputs            | 2                                              |
-    | Clock              | clk                       (rising_edge)        |
+    | States             | 6                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 35                                             |
+    | Clock              | clk_aux                   (rising_edge)        |
     | Reset              | rst                       (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | s0                                             |
@@ -209,12 +191,13 @@ Unit <practica1> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 3
- 16-bit updown counter                                 : 1
+# Counters                                             : 2
  20-bit up counter                                     : 1
- 22-bit up counter                                     : 1
-# Registers                                            : 3
- 1-bit register                                        : 3
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
 
 =========================================================================
 
@@ -222,37 +205,31 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_1> for best encoding.
-Optimizing FSM <ESTADO/FSM> on signal <ESTADO[1:2]> with user encoding.
--------------------
- State | Encoding
--------------------
- s0    | 00
- s1    | 01
- s2    | 10
--------------------
 Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <boton/state/FSM> on signal <state[1:2]> with gray encoding.
+Optimizing FSM <ESTADO/FSM> on signal <ESTADO[1:3]> with user encoding.
 -------------------
  State | Encoding
 -------------------
- 00    | 00
- 01    | 01
- 10    | 11
- 11    | 10
+ s0    | 000
+ s1    | 001
+ s2    | 010
+ s3    | 011
+ s4    | 100
+ s5    | 101
 -------------------
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# FSMs                                                 : 2
-# Counters                                             : 3
- 16-bit updown counter                                 : 1
+# FSMs                                                 : 1
+# Counters                                             : 2
  20-bit up counter                                     : 1
- 22-bit up counter                                     : 1
-# Registers                                            : 3
- Flip-Flops                                            : 3
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
 
 =========================================================================
 
@@ -261,10 +238,6 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <practica1> ...
-
-Optimizing unit <debouncer> ...
-
-Optimizing unit <contadorAscDes_ms> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -276,8 +249,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 65
- Flip-Flops                                            : 65
+# Registers                                            : 57
+ Flip-Flops                                            : 57
 
 =========================================================================
 
@@ -303,33 +276,30 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 4
+# IOs                              : 5
 
 Cell Usage :
 # BELS                             : 233
 #      GND                         : 1
-#      INV                         : 4
+#      INV                         : 3
 #      LUT1                        : 19
-#      LUT2                        : 38
-#      LUT3                        : 4
-#      LUT3_L                      : 1
-#      LUT4                        : 39
-#      LUT4_L                      : 1
-#      MUXCY                       : 66
-#      MUXF5                       : 1
+#      LUT2                        : 24
+#      LUT3                        : 49
+#      LUT4                        : 11
+#      MUXCY                       : 71
+#      MUXF5                       : 2
 #      VCC                         : 1
-#      XORCY                       : 58
-# FlipFlops/Latches                : 65
+#      XORCY                       : 52
+# FlipFlops/Latches                : 57
 #      FDC                         : 23
-#      FDCE                        : 31
+#      FDCE                        : 33
 #      FDE                         : 1
-#      FDP                         : 2
-#      FDPE                        : 8
-# Clock Buffers                    : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 3
+# IO Buffers                       : 4
 #      IBUF                        : 2
-#      OBUF                        : 1
+#      OBUF                        : 2
 =========================================================================
 
 Device utilization summary:
@@ -338,11 +308,11 @@ Device utilization summary:
 Selected Device : 3s1000ft256-5 
 
  Number of Slices:                       56  out of   7680     0%  
- Number of Slice Flip Flops:             65  out of  15360     0%  
+ Number of Slice Flip Flops:             57  out of  15360     0%  
  Number of 4 input LUTs:                106  out of  15360     0%  
- Number of IOs:                           4
- Number of bonded IOBs:                   4  out of    173     2%  
- Number of GCLKs:                         1  out of      8    12%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    173     2%  
+ Number of GCLKs:                         2  out of      8    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -365,26 +335,27 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 65    |
+clk                                | BUFGP                  | 21    |
+divisor/clk_aux1                   | BUFG                   | 36    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
--------------------------------------+------------------------+-------+
-Control Signal                       | Buffer(FF name)        | Load  |
--------------------------------------+------------------------+-------+
-rst                                  | IBUF                   | 38    |
-boton/rst_inv(boton/rst_inv1_INV_0:O)| NONE(boton/aux1)       | 26    |
--------------------------------------+------------------------+-------+
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_aux(rst_aux1:O)                | NONE(contador/cuenta_0)| 33    |
+rst                                | IBUF                   | 23    |
+-----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 6.485ns (Maximum Frequency: 154.204MHz)
-   Minimum input arrival time before clock: 4.308ns
-   Maximum output required time after clock: 6.314ns
-   Maximum combinational path delay: No path found
+   Minimum period: 10.694ns (Maximum Frequency: 93.514MHz)
+   Minimum input arrival time before clock: 4.235ns
+   Maximum output required time after clock: 6.490ns
+   Maximum combinational path delay: 6.407ns
 
 Timing Detail:
 --------------
@@ -392,83 +363,194 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.485ns (frequency: 154.204MHz)
-  Total number of paths / destination ports: 3075 / 104
+  Clock period: 6.153ns (frequency: 162.521MHz)
+  Total number of paths / destination ports: 631 / 22
 -------------------------------------------------------------------------
-Delay:               6.485ns (Levels of Logic = 7)
-  Source:            contador/cuenta_aux_7 (FF)
-  Destination:       contador/cuenta_15 (FF)
+Delay:               6.153ns (Levels of Logic = 7)
+  Source:            divisor/cuenta_7 (FF)
+  Destination:       divisor/clk_aux (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: contador/cuenta_aux_7 to contador/cuenta_15
+  Data Path: divisor/cuenta_7 to divisor/clk_aux
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   1.040  contador/cuenta_aux_7 (contador/cuenta_aux_7)
-     LUT4:I0->O            1   0.479   0.000  contador/cuenta_aux_cmp_eq0000_wg_lut<0> (contador/cuenta_aux_cmp_eq0000_wg_lut<0>)
-     MUXCY:S->O            1   0.435   0.000  contador/cuenta_aux_cmp_eq0000_wg_cy<0> (contador/cuenta_aux_cmp_eq0000_wg_cy<0>)
-     MUXCY:CI->O           1   0.056   0.000  contador/cuenta_aux_cmp_eq0000_wg_cy<1> (contador/cuenta_aux_cmp_eq0000_wg_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  contador/cuenta_aux_cmp_eq0000_wg_cy<2> (contador/cuenta_aux_cmp_eq0000_wg_cy<2>)
-     MUXCY:CI->O           1   0.056   0.000  contador/cuenta_aux_cmp_eq0000_wg_cy<3> (contador/cuenta_aux_cmp_eq0000_wg_cy<3>)
-     MUXCY:CI->O          22   0.265   1.419  contador/cuenta_aux_cmp_eq0000_wg_cy<4> (contador/cuenta_aux_cmp_eq0000)
-     LUT3:I2->O           16   0.479   1.051  contador/cuenta_not00011 (contador/cuenta_not0001)
-     FDCE:CE                   0.524          contador/cuenta_0
+     FDC:C->Q              2   0.626   1.040  divisor/cuenta_7 (divisor/cuenta_7)
+     LUT4:I0->O            1   0.479   0.000  divisor/cuenta_cmp_eq0000_wg_lut<0> (divisor/cuenta_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  divisor/cuenta_cmp_eq0000_wg_cy<0> (divisor/cuenta_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  divisor/cuenta_cmp_eq0000_wg_cy<1> (divisor/cuenta_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  divisor/cuenta_cmp_eq0000_wg_cy<2> (divisor/cuenta_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  divisor/cuenta_cmp_eq0000_wg_cy<3> (divisor/cuenta_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O          21   0.264   1.458  divisor/cuenta_cmp_eq0000_wg_cy<4> (divisor/cuenta_cmp_eq0000)
+     LUT2:I1->O            1   0.479   0.681  divisor/clk_aux_and00001 (divisor/clk_aux_and0000)
+     FDE:CE                    0.524          divisor/clk_aux
     ----------------------------------------
-    Total                      6.485ns (2.974ns logic, 3.511ns route)
-                                       (45.9% logic, 54.1% route)
+    Total                      6.153ns (2.974ns logic, 3.179ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divisor/clk_aux1'
+  Clock period: 10.694ns (frequency: 93.514MHz)
+  Total number of paths / destination ports: 45523 / 69
+-------------------------------------------------------------------------
+Delay:               10.694ns (Levels of Logic = 51)
+  Source:            ESTADO_FSM_FFd3 (FF)
+  Destination:       contador/cuenta_31 (FF)
+  Source Clock:      divisor/clk_aux1 rising
+  Destination Clock: divisor/clk_aux1 rising
+
+  Data Path: ESTADO_FSM_FFd3 to contador/cuenta_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.626   1.216  ESTADO_FSM_FFd3 (ESTADO_FSM_FFd3)
+     LUT3:I0->O           12   0.479   1.009  ESTADO_Out101 (cuentaIn<0>)
+     LUT3:I2->O            1   0.479   0.000  contador/Mcompar_cuenta_cmp_eq0000_lut<0>1 (contador/Mcompar_cuenta_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<0> (contador/Mcompar_cuenta_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<1> (contador/Mcompar_cuenta_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<2> (contador/Mcompar_cuenta_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<3> (contador/Mcompar_cuenta_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<4> (contador/Mcompar_cuenta_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<5> (contador/Mcompar_cuenta_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<6> (contador/Mcompar_cuenta_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<7> (contador/Mcompar_cuenta_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<8> (contador/Mcompar_cuenta_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<9> (contador/Mcompar_cuenta_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<10> (contador/Mcompar_cuenta_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<11> (contador/Mcompar_cuenta_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<12> (contador/Mcompar_cuenta_cmp_eq0000_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<13> (contador/Mcompar_cuenta_cmp_eq0000_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcompar_cuenta_cmp_eq0000_cy<14> (contador/Mcompar_cuenta_cmp_eq0000_cy<14>)
+     MUXCY:CI->O          34   0.246   1.585  contador/Mcompar_cuenta_cmp_eq0000_cy<15> (contador/Mcompar_cuenta_cmp_eq0000_cy<15>)
+     INV:I->O              1   0.479   0.681  contador/cuenta_cmp_eq0000_inv1_INV_0 (contador/cuenta_cmp_eq0000_inv)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<0> (contador/Mcount_cuenta_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<1> (contador/Mcount_cuenta_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<2> (contador/Mcount_cuenta_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<3> (contador/Mcount_cuenta_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<4> (contador/Mcount_cuenta_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<5> (contador/Mcount_cuenta_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<6> (contador/Mcount_cuenta_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<7> (contador/Mcount_cuenta_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<8> (contador/Mcount_cuenta_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<9> (contador/Mcount_cuenta_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<10> (contador/Mcount_cuenta_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<11> (contador/Mcount_cuenta_cy<11>)
+     MUXCY:CI->O           1   0.055   0.000  contador/Mcount_cuenta_cy<12> (contador/Mcount_cuenta_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<13> (contador/Mcount_cuenta_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<14> (contador/Mcount_cuenta_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<15> (contador/Mcount_cuenta_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<16> (contador/Mcount_cuenta_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<17> (contador/Mcount_cuenta_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<18> (contador/Mcount_cuenta_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<19> (contador/Mcount_cuenta_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<20> (contador/Mcount_cuenta_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<21> (contador/Mcount_cuenta_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<22> (contador/Mcount_cuenta_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<23> (contador/Mcount_cuenta_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<24> (contador/Mcount_cuenta_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<25> (contador/Mcount_cuenta_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<26> (contador/Mcount_cuenta_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<27> (contador/Mcount_cuenta_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<28> (contador/Mcount_cuenta_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  contador/Mcount_cuenta_cy<29> (contador/Mcount_cuenta_cy<29>)
+     MUXCY:CI->O           0   0.056   0.000  contador/Mcount_cuenta_cy<30> (contador/Mcount_cuenta_cy<30>)
+     XORCY:CI->O           1   0.786   0.000  contador/Mcount_cuenta_xor<31> (contador/Mcount_cuenta31)
+     FDCE:D                    0.176          contador/cuenta_31
+    ----------------------------------------
+    Total                     10.694ns (6.203ns logic, 4.491ns route)
+                                       (58.0% logic, 42.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.308ns (Levels of Logic = 2)
+Offset:              4.235ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       contador/cuenta_fin (FF)
+  Destination:       divisor/clk_aux (FF)
   Destination Clock: clk rising
 
-  Data Path: rst to contador/cuenta_fin
+  Data Path: rst to divisor/clk_aux
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            40   0.715   1.909  rst_IBUF (rst_IBUF)
-     LUT2:I0->O            1   0.479   0.681  contador/cuenta_fin_and00001 (contador/cuenta_fin_and0000)
-     FDE:CE                    0.524          contador/cuenta_fin
+     IBUF:I->O            25   0.715   1.836  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            1   0.479   0.681  divisor/clk_aux_and00001 (divisor/clk_aux_and0000)
+     FDE:CE                    0.524          divisor/clk_aux
     ----------------------------------------
-    Total                      4.308ns (1.718ns logic, 2.590ns route)
-                                       (39.9% logic, 60.1% route)
+    Total                      4.235ns (1.718ns logic, 2.517ns route)
+                                       (40.6% logic, 59.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'divisor/clk_aux1'
+  Total number of paths / destination ports: 4 / 3
+-------------------------------------------------------------------------
+Offset:              2.637ns (Levels of Logic = 3)
+  Source:            button (PAD)
+  Destination:       ESTADO_FSM_FFd3 (FF)
+  Destination Clock: divisor/clk_aux1 rising
+
+  Data Path: button to ESTADO_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.715   0.953  button_IBUF (ledB_OBUF)
+     LUT4:I1->O            1   0.479   0.000  ESTADO_FSM_FFd3-In_G (N9)
+     MUXF5:I1->O           1   0.314   0.000  ESTADO_FSM_FFd3-In (ESTADO_FSM_FFd3-In)
+     FDC:D                     0.176          ESTADO_FSM_FFd3
+    ----------------------------------------
+    Total                      2.637ns (1.684ns logic, 0.953ns route)
+                                       (63.9% logic, 36.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divisor/clk_aux1'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.314ns (Levels of Logic = 1)
+Offset:              6.490ns (Levels of Logic = 1)
   Source:            ESTADO_FSM_FFd1 (FF)
   Destination:       led (PAD)
-  Source Clock:      clk rising
+  Source Clock:      divisor/clk_aux1 rising
 
   Data Path: ESTADO_FSM_FFd1 to led
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.626   0.779  ESTADO_FSM_FFd1 (ESTADO_FSM_FFd1)
+     FDC:C->Q              9   0.626   0.955  ESTADO_FSM_FFd1 (ESTADO_FSM_FFd1)
      OBUF:I->O                 4.909          led_OBUF (led)
     ----------------------------------------
-    Total                      6.314ns (5.535ns logic, 0.779ns route)
-                                       (87.7% logic, 12.3% route)
+    Total                      6.490ns (5.535ns logic, 0.955ns route)
+                                       (85.3% logic, 14.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.407ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       ledB (PAD)
+
+  Data Path: button to ledB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.715   0.783  button_IBUF (ledB_OBUF)
+     OBUF:I->O                 4.909          ledB_OBUF (ledB)
+    ----------------------------------------
+    Total                      6.407ns (5.624ns logic, 0.783ns route)
+                                       (87.8% logic, 12.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.62 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.78 secs
  
 --> 
 
 
-Total memory usage is 611920 kilobytes
+Total memory usage is 611288 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

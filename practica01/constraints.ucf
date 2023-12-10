@@ -14,7 +14,7 @@ NET clk LOC=T9;
 	#switches placa extendida
 
 NET rst LOC=P12;
-#NET DIPSW<2> LOC=J1;
+#NET button LOC=J1;
 #NET DIPSW<3> LOC=H1;
 #NET DIPSW<4> LOC=H3;
 #NET DIPSW<5> LOC=G2;
@@ -37,15 +37,16 @@ NET button LOC=H4;
 #barra de leds placa extendida
 
 NET led LOC=L5;
-#NET leds<2> LOC=N2;
-#NET leds<3> LOC=M3;
-#NET leds<4> LOC=N1;
+#NET S<2> LOC=N2;
+#NET S<1> LOC=M3;
+#NET S<0> LOC=L4;
+#NET S<0> LOC=N1;
 #NET leds<5> LOC=T13;
 #NET leds<6> LOC=L15;
 #NET leds<7> LOC=J13;
 #NET leds<8> LOC=H15;
 #NET leds<9> LOC=J16;
-#NET leds<10> LOC=J14;
+NET ledB LOC=J14;
 
  
 

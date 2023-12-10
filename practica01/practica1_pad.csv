@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (lin64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Sat Nov  4 23:02:41 2023
+#Sun Dec 10 19:08:58 2023
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -157,10 +157,10 @@ J7,,,GND,,,,,,,,,,,,
 J8,,,GND,,,,,,,,,,,,
 J9,,,GND,,,,,,,,,,,,
 J10,,,GND,,,,,,,,,,,,
-J11,,,VCCO_3,,,3,,,,,any******,,,,
-J12,,,VCCO_3,,,3,,,,,any******,,,,
+J11,,,VCCO_3,,,3,,,,,2.50,,,,
+J12,,,VCCO_3,,,3,,,,,2.50,,,,
 J13,,DIFFM,IO_L39P_3,UNUSED,,3,,,,,,,,,
-J14,,DIFFS,IO_L39N_3,UNUSED,,3,,,,,,,,,
+J14,ledB,IOB,IO_L39N_3,OUTPUT,LVCMOS25*,3,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 J15,,,GND,,,,,,,,,,,,
 J16,,DIFFS,IO_L40N_3/VREF_3,UNUSED,,3,,,,,,,,,
 K1,,DIFFM,IO,UNUSED,,6,,,,,,,,,
@@ -173,7 +173,7 @@ K7,,,GND,,,,,,,,,,,,
 K8,,,GND,,,,,,,,,,,,
 K9,,,GND,,,,,,,,,,,,
 K10,,,GND,,,,,,,,,,,,
-K11,,,VCCO_3,,,3,,,,,any******,,,,
+K11,,,VCCO_3,,,3,,,,,2.50,,,,
 K12,,DIFFS,IO_L23N_3,UNUSED,,3,,,,,,,,,
 K13,,DIFFM,IO_L24P_3,UNUSED,,3,,,,,,,,,
 K14,,DIFFS,IO_L24N_3,UNUSED,,3,,,,,,,,,

@@ -45,35 +45,33 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-button      |    2.691(R)|   -1.127(R)|clk_BUFGP         |   0.000|
-rst         |    2.396(R)|   -0.873(R)|clk_BUFGP         |   0.000|
+rst         |    1.952(R)|   -0.516(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
-
-Clock clk to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-led         |    9.226(R)|clk_BUFGP         |   0.000|
-------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.735|         |         |         |
+clk            |    5.738|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+button         |ledB           |    9.244|
+---------------+---------------+---------+
 
-Analysis completed Sat Nov  4 23:02:45 2023 
+
+Analysis completed Sun Dec 10 17:54:22 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 331 MB
+Peak Memory Usage: 332 MB
 
 
 

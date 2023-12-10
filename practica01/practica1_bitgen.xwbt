@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/ISE/practica01/practica1.ncd
+OUTFILE=/home/ise/ISE/practica01/practica1.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=/home/ise/ISE/practica01
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

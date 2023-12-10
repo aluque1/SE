@@ -8,8 +8,7 @@ entity contadorAscDes_ms is
         clk: IN STD_LOGIC;
         cae: IN STD_LOGIC;
         cde: IN STD_LOGIC;
-        cuenta_fin: OUT STD_LOGIC
-    );
+        cuenta_fin: OUT STD_LOGIC);
 end contadorAscDes_ms;
 
 architecture contadorAscDes_ms_arch of contadorAscDes_ms is

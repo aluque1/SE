@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-localhost.localdomain::  Sat Nov 04 23:02:34 2023
+localhost.localdomain::  Sun Dec 10 19:08:53 2023
 
 par -w -intstyle ise -ol high -t 1 practica1_map.ncd practica1.ncd
 practica1.pcf 
@@ -31,11 +31,11 @@ Device speed data version:  "PRODUCTION 1.39 2013-10-13".
 
 Device Utilization Summary:
 
-   Number of BUFGMUXs                        1 out of 8      12%
-   Number of External IOBs                   4 out of 173     2%
-      Number of LOCed IOBs                   4 out of 4     100%
+   Number of BUFGMUXs                        2 out of 8      25%
+   Number of External IOBs                   5 out of 173     2%
+      Number of LOCed IOBs                   5 out of 5     100%
 
-   Number of Slices                         57 out of 7680    1%
+   Number of Slices                         55 out of 7680    1%
       Number of SLICEMs                      0 out of 3840    0%
 
 
@@ -45,46 +45,49 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 0 secs 
+Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:1ca5669d) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:aa35fc15) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:1ca5669d) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:aa35fc15) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:1ca5669d) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:aa35fc15) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:8a99b53d) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:c0aeda4d) REAL time: 1 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:8a99b53d) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:c0aeda4d) REAL time: 1 secs 
 
 Phase 6.8  Global Placement
-...
 ..
-Phase 6.8  Global Placement (Checksum:579ed2d9) REAL time: 3 secs 
+..
+..
+..
+..
+Phase 6.8  Global Placement (Checksum:8a2ebbd) REAL time: 2 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:579ed2d9) REAL time: 3 secs 
+Phase 7.5  Local Placement Optimization (Checksum:8a2ebbd) REAL time: 2 secs 
 
 Phase 8.18  Placement Optimization
-Phase 8.18  Placement Optimization (Checksum:cba6156f) REAL time: 4 secs 
+Phase 8.18  Placement Optimization (Checksum:e02543cb) REAL time: 2 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:cba6156f) REAL time: 4 secs 
+Phase 9.5  Local Placement Optimization (Checksum:e02543cb) REAL time: 2 secs 
 
-Total REAL time to Placer completion: 4 secs 
-Total CPU  time to Placer completion: 3 secs 
+Total REAL time to Placer completion: 2 secs 
+Total CPU  time to Placer completion: 2 secs 
 Writing design to file practica1.ncd
 
 
@@ -92,30 +95,30 @@ Writing design to file practica1.ncd
 Starting Router
 
 
-Phase  1  : 405 unrouted;      REAL time: 4 secs 
+Phase  1  : 353 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 368 unrouted;      REAL time: 4 secs 
+Phase  2  : 321 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 43 unrouted;      REAL time: 4 secs 
+Phase  3  : 20 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 50 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 60 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: practica1.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Total REAL time to Router completion: 6 secs 
-Total CPU time to Router completion: 5 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -133,7 +136,9 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP |      BUFGMUX0| No   |   36 |  0.130     |  0.785      |
+|     divisor/clk_aux |      BUFGMUX3| No   |   20 |  0.231     |  0.919      |
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP |      BUFGMUX0| No   |   11 |  0.074     |  0.745      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -153,8 +158,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.735ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.915ns|            |       0|           0
+  Autotimespec constraint for clock net div | SETUP       |         N/A|     8.853ns|     N/A|           0
+  isor/clk_aux                              | HOLD        |     0.955ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.074ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.008ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -170,10 +178,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 7 secs 
-Total CPU time to PAR completion: 6 secs 
+Total REAL time to PAR completion: 5 secs 
+Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  643 MB
+Peak Memory Usage:  644 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

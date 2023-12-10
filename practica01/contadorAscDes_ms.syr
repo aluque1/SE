@@ -1,0 +1,394 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Reading design: contadorAscDes_ms.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "contadorAscDes_ms.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "contadorAscDes_ms"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : contadorAscDes_ms
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/ISE/practica01/contadorAscDes_ms.vhd" in Library work.
+Architecture contadorascdes_ms_arch of Entity contadorascdes_ms is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <contadorAscDes_ms> in library <work> (architecture <contadorascdes_ms_arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <contadorAscDes_ms> in library <work> (Architecture <contadorascdes_ms_arch>).
+Entity <contadorAscDes_ms> analyzed. Unit <contadorAscDes_ms> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <contadorAscDes_ms>.
+    Related source file is "/home/ise/ISE/practica01/contadorAscDes_ms.vhd".
+    Found 1-bit register for signal <cuenta_fin>.
+    Found 16-bit updown counter for signal <cuenta>.
+    Found 20-bit up counter for signal <cuenta_aux>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <contadorAscDes_ms> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit updown counter                                 : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit updown counter                                 : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <contadorAscDes_ms> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block contadorAscDes_ms, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : contadorAscDes_ms.ngr
+Top Level Output File Name         : contadorAscDes_ms
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 146
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 19
+#      LUT2                        : 37
+#      LUT3                        : 1
+#      LUT4                        : 9
+#      LUT4_L                      : 1
+#      MUXCY                       : 39
+#      VCC                         : 1
+#      XORCY                       : 36
+# FlipFlops/Latches                : 37
+#      FDC                         : 20
+#      FDCE                        : 16
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 3
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                       36  out of   7680     0%  
+ Number of Slice Flip Flops:             37  out of  15360     0%  
+ Number of 4 input LUTs:                 69  out of  15360     0%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    173     2%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 37    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 36    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.485ns (Maximum Frequency: 154.204MHz)
+   Minimum input arrival time before clock: 4.874ns
+   Maximum output required time after clock: 6.216ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.485ns (frequency: 154.204MHz)
+  Total number of paths / destination ports: 1222 / 54
+-------------------------------------------------------------------------
+Delay:               6.485ns (Levels of Logic = 7)
+  Source:            cuenta_aux_7 (FF)
+  Destination:       cuenta_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cuenta_aux_7 to cuenta_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  cuenta_aux_7 (cuenta_aux_7)
+     LUT4:I0->O            1   0.479   0.000  cuenta_aux_cmp_eq0000_wg_lut<0> (cuenta_aux_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  cuenta_aux_cmp_eq0000_wg_cy<0> (cuenta_aux_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  cuenta_aux_cmp_eq0000_wg_cy<1> (cuenta_aux_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  cuenta_aux_cmp_eq0000_wg_cy<2> (cuenta_aux_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  cuenta_aux_cmp_eq0000_wg_cy<3> (cuenta_aux_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O          22   0.265   1.419  cuenta_aux_cmp_eq0000_wg_cy<4> (cuenta_aux_cmp_eq0000)
+     LUT3:I2->O           16   0.479   1.051  cuenta_not00011 (cuenta_not0001)
+     FDCE:CE                   0.524          cuenta_0
+    ----------------------------------------
+    Total                      6.485ns (2.974ns logic, 3.511ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 185 / 33
+-------------------------------------------------------------------------
+Offset:              4.874ns (Levels of Logic = 18)
+  Source:            cae (PAD)
+  Destination:       cuenta_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: cae to cuenta_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.715   1.204  cae_IBUF (cae_IBUF)
+     INV:I->O              1   0.479   0.681  cae_inv2_INV_0 (cae_inv)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<0> (Mcount_cuenta_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<1> (Mcount_cuenta_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<2> (Mcount_cuenta_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<3> (Mcount_cuenta_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<4> (Mcount_cuenta_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<5> (Mcount_cuenta_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<6> (Mcount_cuenta_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<7> (Mcount_cuenta_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<8> (Mcount_cuenta_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<9> (Mcount_cuenta_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<10> (Mcount_cuenta_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<11> (Mcount_cuenta_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<12> (Mcount_cuenta_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_cuenta_cy<13> (Mcount_cuenta_cy<13>)
+     MUXCY:CI->O           0   0.056   0.000  Mcount_cuenta_cy<14> (Mcount_cuenta_cy<14>)
+     XORCY:CI->O           1   0.786   0.000  Mcount_cuenta_xor<15> (Result<15>)
+     FDCE:D                    0.176          cuenta_15
+    ----------------------------------------
+    Total                      4.874ns (2.989ns logic, 1.885ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            cuenta_fin (FF)
+  Destination:       cuenta_fin (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cuenta_fin to cuenta_fin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.626   0.681  cuenta_fin (cuenta_fin_OBUF)
+     OBUF:I->O                 4.909          cuenta_fin_OBUF (cuenta_fin)
+    ----------------------------------------
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.64 secs
+ 
+--> 
+
+
+Total memory usage is 608368 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
