@@ -162,7 +162,8 @@ entity peripheral_practica03 is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    --USER ports added here
+    switches : in std_logic_vector(7 downto 0);
+	 leds : out std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------

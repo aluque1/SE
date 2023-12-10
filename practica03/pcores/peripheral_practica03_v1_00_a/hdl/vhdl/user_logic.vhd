@@ -97,7 +97,8 @@ entity user_logic is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    --USER ports added here
+    switches : in std_logic_vector(7 downto 0);
+	 leds : out std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -172,18 +173,33 @@ begin
   slv_read_ack      <= Bus2IP_RdCE(0) or Bus2IP_RdCE(1) or Bus2IP_RdCE(2) or Bus2IP_RdCE(3);
 
   -- implement slave model software accessible register(s)
-  SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
+  SUMADOR_REGS : process( slv_reg0, slv_reg1, slv_reg2, Bus2IP_Clk, Bus2IP_Reset ) is 
+  begin
+  
+	if BUS2IP_Reset = '1' then
+		slv_reg3 <= (others => '0');
+	elsif rising_edge(Bus2IP_Clk) then 
+		if slv_reg(31) = '0' then
+			slv_reg3 <= slv_reg1 + slv_reg2;
+		elsif slv_reg(31) = '0' then
+			slv_reg3 <= slv_reg1 + slv_reg2;
+		end if;
+	end if;
+  end process SUMADOR_REGS;
+  leds <= switches;
+ 
+ SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
   begin
 
-    if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+	if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
       if Bus2IP_Reset = '1' then
         slv_reg0 <= (others => '0');
         slv_reg1 <= (others => '0');
         slv_reg2 <= (others => '0');
-        slv_reg3 <= (others => '0');
+        -- slv_reg3 <= (others => '0');
       else
         case slv_reg_write_sel is
-          when "1000" =>
+          when "1000" => 
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
                 slv_reg0(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
@@ -201,12 +217,12 @@ begin
                 slv_reg2(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
               end if;
             end loop;
-          when "0001" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg3(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
-              end if;
-            end loop;
+          --when "0001" =>
+            --for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
+              --if ( Bus2IP_BE(byte_index) = '1' ) then
+                --slv_reg3(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
+              --end if;
+            --end loop;
           when others => null;
         end case;
       end if;

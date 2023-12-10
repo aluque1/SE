@@ -80,4 +80,7 @@ PORT Sl_MWrErr = Sl_MWrErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPL
 PORT Sl_MRdErr = Sl_MRdErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MIRQ = Sl_MIRQ, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 
+PORT switches = "", DIR = I, VEC = [7:0], ENDIAN = LITTLE
+PORT leds = "", DIR = O, VEC = [7:0], ENDIAN = LITTLE
+
 END

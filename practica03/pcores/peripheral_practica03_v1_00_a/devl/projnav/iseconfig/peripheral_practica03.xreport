@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-10T13:13:17</DateModified>
+  <DateModified>2023-12-10T19:05:12</DateModified>
   <ModuleName>peripheral_practica03</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/aluqu/Desktop/uni/SE/practica03/pcores/peripheral_practica03_v1_00_a/devl/projnav/iseconfig/peripheral_practica03.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/aluqu/Desktop/uni/SE/practica03/pcores/peripheral_practica03_v1_00_a/devl/projnav</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/aluqu/Desktop/uni/SE/practica03/pcores/peripheral_practica03_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
   <DateInitialized>2023-12-10T13:13:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

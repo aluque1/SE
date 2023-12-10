@@ -5,9 +5,6 @@
  PORT rst = microblaze_0_MB_RESET, DIR = I, SIGIS = RST
  PORT rx = xps_uartlite_0_RX, DIR = I
  PORT tx = xps_uartlite_0_TX, DIR = O
- PORT leds = xps_gpio_0_GPIO_IO, DIR = IO, VEC = [0:7]
- PORT switches = xps_gpio_1_GPIO_IO, DIR = IO, VEC = [0:7]
- PORT clk = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
 
 
 BEGIN microblaze
@@ -41,17 +38,6 @@ BEGIN bram_block
  BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
 END
 
-BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_0
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x81420000
- PARAMETER C_HIGHADDR = 0x8142ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO = xps_gpio_0_GPIO_IO
- PORT GPIO_IO_I = xps_gpio_0_GPIO_IO_I
-END
-
 BEGIN xps_uartlite
  PARAMETER INSTANCE = xps_uartlite_0
  PARAMETER HW_VER = 1.02.a
@@ -64,21 +50,13 @@ BEGIN xps_uartlite
  PORT TX = xps_uartlite_0_TX
 END
 
-BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_1
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x81400000
- PARAMETER C_HIGHADDR = 0x8140ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO = xps_gpio_1_GPIO_IO
-END
-
 BEGIN peripheral_practica03
  PARAMETER INSTANCE = peripheral_practica03_0
  PARAMETER HW_VER = 1.00.a
  PARAMETER C_BASEADDR = 0xCB000000
  PARAMETER C_HIGHADDR = 0xCB0000FF
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT leds = peripheral_practica03_0_leds
+ PORT switches = peripheral_practica03_0_leds
 END
 
