@@ -850,3 +850,28 @@ Done writing filter settings to:
 	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.filters
 Done writing Tab View settings to:
 	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.gui
+Assigned Driver peripheral_practica03 1.00.a for instance peripheral_practica03_0
+peripheral_practica03_0 has been added to the project
+WARNING:EDK:2137 - Peripheral peripheral_practica03_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral peripheral_practica03_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcb000000-0xcb00ffff) peripheral_practica03_0	plb_v46_0
+Generated Addresses Successfully
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.gui

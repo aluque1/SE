@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Users\aluqu\Desktop\uni\SE\practica03\pcores\peripheral_practica03_v1_00_a\devl\synthesis\peripheral_practica03_xst.prj"
+-top peripheral_practica03
+-p virtex6
+-ofn "C:\Users\aluqu\Desktop\uni\SE\practica03\pcores\peripheral_practica03_v1_00_a\devl\synthesis\peripheral_practica03_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib peripheral_practica03_v1_00_a
