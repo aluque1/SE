@@ -2760,3 +2760,51 @@ Xilinx Software Development Kit
 Xilinx EDK 14.1 Build EDK_P.15xf
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Tue Dec 12 19:07:56 2023
+ make -f practica03.make bits started...
+make: Nothing to be done for `bits'.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Dec 12 19:08:41 2023
+ make -f practica03.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Dec 12 19:08:42 2023
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\practica03\SDK\SDK_Export\hw\practica03.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Dec 12 20:33:35 2023
+ make -f practica03.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Dec 12 20:33:35 2023
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\practica03\SDK\SDK_Export\hw\practica03.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica03\etc\practica03.gui

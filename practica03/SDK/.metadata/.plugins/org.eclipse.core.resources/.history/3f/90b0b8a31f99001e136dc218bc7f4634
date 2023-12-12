@@ -1,0 +1,25 @@
+/*
+ * peripheral_practica03_prog.c
+ *
+ *  Created on: 12 Dec 2023
+ *      Author: aluqu
+ */
+
+/*****************************
+ * 		Include Files
+*******************************/
+#include "peripheral_practica03_prog.h"
+/**************************
+ * 		Function Definitions
+***************************/
+
+
+/*
+* @ param baseaddr_p is the base address of the MY_PERIPHERAL instance to be worked on.
+*
+* @return
+*
+* - XST_SUCCESS if all self-test code passed
+* - XST_FAILURE if any self-test code failed
+*
+*/
