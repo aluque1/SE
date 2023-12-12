@@ -148,7 +148,22 @@ architecture IMP of user_logic is
 begin
 
   --USER logic implementation added here
+  SUMADOR_REGS : process( slv_reg0, slv_reg1, slv_reg2, Bus2IP_Clk, Bus2IP_Reset ) is 
+  begin
 
+  if BUS2IP_Reset = '1' then
+    slv_reg3 <= (others => '0');
+  elsif rising_edge(Bus2IP_Clk) then 
+    if slv_reg0(31) = '0' then
+      slv_reg3 <= slv_reg1 + slv_reg2;
+    elsif slv_reg0(31) = '0' then
+      slv_reg3 <= slv_reg1 + slv_reg2;
+    end if;
+  end if;
+  end process SUMADOR_REGS;
+
+  leds <= switches;
+  
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
   -- 
@@ -173,20 +188,6 @@ begin
   slv_read_ack      <= Bus2IP_RdCE(0) or Bus2IP_RdCE(1) or Bus2IP_RdCE(2) or Bus2IP_RdCE(3);
 
   -- implement slave model software accessible register(s)
-  SUMADOR_REGS : process( slv_reg0, slv_reg1, slv_reg2, Bus2IP_Clk, Bus2IP_Reset ) is 
-  begin
-  
-	if BUS2IP_Reset = '1' then
-		slv_reg3 <= (others => '0');
-	elsif rising_edge(Bus2IP_Clk) then 
-		if slv_reg(31) = '0' then
-			slv_reg3 <= slv_reg1 + slv_reg2;
-		elsif slv_reg(31) = '0' then
-			slv_reg3 <= slv_reg1 + slv_reg2;
-		end if;
-	end if;
-  end process SUMADOR_REGS;
-  leds <= switches;
  
  SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
   begin
@@ -229,7 +230,8 @@ begin
     end if;
 
   end process SLAVE_REG_WRITE_PROC;
-
+  
+ 
   -- implement slave model software accessible register(s) read mux
   SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, slv_reg1, slv_reg2, slv_reg3 ) is
   begin

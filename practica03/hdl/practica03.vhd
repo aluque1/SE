@@ -12,9 +12,9 @@ entity practica03 is
     rst : in std_logic;
     rx : in std_logic;
     tx : out std_logic;
-    leds : inout std_logic_vector(0 to 7);
-    switches : inout std_logic_vector(0 to 7);
-    clk : in std_logic
+    clk : in std_logic;
+    switches : in std_logic_vector(7 downto 0);
+    leds : out std_logic_vector(7 downto 0)
   );
 end practica03;
 
@@ -627,7 +627,7 @@ architecture STRUCTURE of practica03 is
       PLB_Clk : in std_logic;
       SYS_Rst : in std_logic;
       PLB_Rst : out std_logic;
-      SPLB_Rst : out std_logic_vector(0 to 3);
+      SPLB_Rst : out std_logic_vector(0 to 2);
       MPLB_Rst : out std_logic_vector(0 to 1);
       PLB_dcrAck : out std_logic;
       PLB_dcrDBus : out std_logic_vector(0 to 31);
@@ -651,22 +651,22 @@ architecture STRUCTURE of practica03 is
       M_type : in std_logic_vector(0 to 5);
       M_wrBurst : in std_logic_vector(0 to 1);
       M_wrDBus : in std_logic_vector(0 to 63);
-      Sl_addrAck : in std_logic_vector(0 to 3);
-      Sl_MRdErr : in std_logic_vector(0 to 7);
-      Sl_MWrErr : in std_logic_vector(0 to 7);
-      Sl_MBusy : in std_logic_vector(0 to 7);
-      Sl_rdBTerm : in std_logic_vector(0 to 3);
-      Sl_rdComp : in std_logic_vector(0 to 3);
-      Sl_rdDAck : in std_logic_vector(0 to 3);
-      Sl_rdDBus : in std_logic_vector(0 to 127);
-      Sl_rdWdAddr : in std_logic_vector(0 to 15);
-      Sl_rearbitrate : in std_logic_vector(0 to 3);
-      Sl_SSize : in std_logic_vector(0 to 7);
-      Sl_wait : in std_logic_vector(0 to 3);
-      Sl_wrBTerm : in std_logic_vector(0 to 3);
-      Sl_wrComp : in std_logic_vector(0 to 3);
-      Sl_wrDAck : in std_logic_vector(0 to 3);
-      Sl_MIRQ : in std_logic_vector(0 to 7);
+      Sl_addrAck : in std_logic_vector(0 to 2);
+      Sl_MRdErr : in std_logic_vector(0 to 5);
+      Sl_MWrErr : in std_logic_vector(0 to 5);
+      Sl_MBusy : in std_logic_vector(0 to 5);
+      Sl_rdBTerm : in std_logic_vector(0 to 2);
+      Sl_rdComp : in std_logic_vector(0 to 2);
+      Sl_rdDAck : in std_logic_vector(0 to 2);
+      Sl_rdDBus : in std_logic_vector(0 to 95);
+      Sl_rdWdAddr : in std_logic_vector(0 to 11);
+      Sl_rearbitrate : in std_logic_vector(0 to 2);
+      Sl_SSize : in std_logic_vector(0 to 5);
+      Sl_wait : in std_logic_vector(0 to 2);
+      Sl_wrBTerm : in std_logic_vector(0 to 2);
+      Sl_wrComp : in std_logic_vector(0 to 2);
+      Sl_wrDAck : in std_logic_vector(0 to 2);
+      Sl_MIRQ : in std_logic_vector(0 to 5);
       PLB_MIRQ : out std_logic_vector(0 to 1);
       PLB_ABus : out std_logic_vector(0 to 31);
       PLB_UABus : out std_logic_vector(0 to 31);
@@ -698,13 +698,13 @@ architecture STRUCTURE of practica03 is
       PLB_rdPendReq : out std_logic;
       PLB_wrPendReq : out std_logic;
       PLB_rdBurst : out std_logic;
-      PLB_rdPrim : out std_logic_vector(0 to 3);
+      PLB_rdPrim : out std_logic_vector(0 to 2);
       PLB_reqPri : out std_logic_vector(0 to 1);
       PLB_size : out std_logic_vector(0 to 3);
       PLB_type : out std_logic_vector(0 to 2);
       PLB_wrBurst : out std_logic;
       PLB_wrDBus : out std_logic_vector(0 to 31);
-      PLB_wrPrim : out std_logic_vector(0 to 3);
+      PLB_wrPrim : out std_logic_vector(0 to 2);
       PLB_SaddrAck : out std_logic;
       PLB_SMRdErr : out std_logic_vector(0 to 1);
       PLB_SMWrErr : out std_logic_vector(0 to 1);
@@ -797,60 +797,6 @@ architecture STRUCTURE of practica03 is
     );
   end component;
 
-  component practica03_xps_gpio_0_wrapper is
-    port (
-      SPLB_Clk : in std_logic;
-      SPLB_Rst : in std_logic;
-      PLB_ABus : in std_logic_vector(0 to 31);
-      PLB_UABus : in std_logic_vector(0 to 31);
-      PLB_PAValid : in std_logic;
-      PLB_SAValid : in std_logic;
-      PLB_rdPrim : in std_logic;
-      PLB_wrPrim : in std_logic;
-      PLB_masterID : in std_logic_vector(0 to 0);
-      PLB_abort : in std_logic;
-      PLB_busLock : in std_logic;
-      PLB_RNW : in std_logic;
-      PLB_BE : in std_logic_vector(0 to 3);
-      PLB_MSize : in std_logic_vector(0 to 1);
-      PLB_size : in std_logic_vector(0 to 3);
-      PLB_type : in std_logic_vector(0 to 2);
-      PLB_lockErr : in std_logic;
-      PLB_wrDBus : in std_logic_vector(0 to 31);
-      PLB_wrBurst : in std_logic;
-      PLB_rdBurst : in std_logic;
-      PLB_wrPendReq : in std_logic;
-      PLB_rdPendReq : in std_logic;
-      PLB_wrPendPri : in std_logic_vector(0 to 1);
-      PLB_rdPendPri : in std_logic_vector(0 to 1);
-      PLB_reqPri : in std_logic_vector(0 to 1);
-      PLB_TAttribute : in std_logic_vector(0 to 15);
-      Sl_addrAck : out std_logic;
-      Sl_SSize : out std_logic_vector(0 to 1);
-      Sl_wait : out std_logic;
-      Sl_rearbitrate : out std_logic;
-      Sl_wrDAck : out std_logic;
-      Sl_wrComp : out std_logic;
-      Sl_wrBTerm : out std_logic;
-      Sl_rdDBus : out std_logic_vector(0 to 31);
-      Sl_rdWdAddr : out std_logic_vector(0 to 3);
-      Sl_rdDAck : out std_logic;
-      Sl_rdComp : out std_logic;
-      Sl_rdBTerm : out std_logic;
-      Sl_MBusy : out std_logic_vector(0 to 1);
-      Sl_MWrErr : out std_logic_vector(0 to 1);
-      Sl_MRdErr : out std_logic_vector(0 to 1);
-      Sl_MIRQ : out std_logic_vector(0 to 1);
-      IP2INTC_Irpt : out std_logic;
-      GPIO_IO_I : in std_logic_vector(0 to 7);
-      GPIO_IO_O : out std_logic_vector(0 to 7);
-      GPIO_IO_T : out std_logic_vector(0 to 7);
-      GPIO2_IO_I : in std_logic_vector(0 to 31);
-      GPIO2_IO_O : out std_logic_vector(0 to 31);
-      GPIO2_IO_T : out std_logic_vector(0 to 31)
-    );
-  end component;
-
   component practica03_xps_uartlite_0_wrapper is
     port (
       SPLB_Clk : in std_logic;
@@ -901,7 +847,7 @@ architecture STRUCTURE of practica03 is
     );
   end component;
 
-  component practica03_xps_gpio_1_wrapper is
+  component practica03_peripheral_practica03_0_wrapper is
     port (
       SPLB_Clk : in std_logic;
       SPLB_Rst : in std_logic;
@@ -945,22 +891,8 @@ architecture STRUCTURE of practica03 is
       Sl_MWrErr : out std_logic_vector(0 to 1);
       Sl_MRdErr : out std_logic_vector(0 to 1);
       Sl_MIRQ : out std_logic_vector(0 to 1);
-      IP2INTC_Irpt : out std_logic;
-      GPIO_IO_I : in std_logic_vector(0 to 7);
-      GPIO_IO_O : out std_logic_vector(0 to 7);
-      GPIO_IO_T : out std_logic_vector(0 to 7);
-      GPIO2_IO_I : in std_logic_vector(0 to 31);
-      GPIO2_IO_O : out std_logic_vector(0 to 31);
-      GPIO2_IO_T : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component IOBUF is
-    port (
-      I : in std_logic;
-      IO : inout std_logic;
-      O : out std_logic;
-      T : in std_logic
+      switches : in std_logic_vector(7 downto 0);
+      leds : out std_logic_vector(7 downto 0)
     );
   end component;
 
@@ -975,6 +907,8 @@ architecture STRUCTURE of practica03 is
   signal net_gnd10 : std_logic_vector(0 to 9);
   signal net_gnd32 : std_logic_vector(0 to 31);
   signal net_gnd4096 : std_logic_vector(0 to 4095);
+  signal peripheral_practica03_0_leds : std_logic_vector(7 downto 0);
+  signal peripheral_practica03_0_switches : std_logic_vector(7 downto 0);
   signal plb_v46_0_M_ABort : std_logic_vector(0 to 1);
   signal plb_v46_0_M_ABus : std_logic_vector(0 to 63);
   signal plb_v46_0_M_BE : std_logic_vector(0 to 7);
@@ -1021,7 +955,7 @@ architecture STRUCTURE of practica03 is
   signal plb_v46_0_PLB_rdBurst : std_logic;
   signal plb_v46_0_PLB_rdPendPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_rdPendReq : std_logic;
-  signal plb_v46_0_PLB_rdPrim : std_logic_vector(0 to 3);
+  signal plb_v46_0_PLB_rdPrim : std_logic_vector(0 to 2);
   signal plb_v46_0_PLB_reqPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_size : std_logic_vector(0 to 3);
   signal plb_v46_0_PLB_type : std_logic_vector(0 to 2);
@@ -1029,24 +963,24 @@ architecture STRUCTURE of practica03 is
   signal plb_v46_0_PLB_wrDBus : std_logic_vector(0 to 31);
   signal plb_v46_0_PLB_wrPendPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_wrPendReq : std_logic;
-  signal plb_v46_0_PLB_wrPrim : std_logic_vector(0 to 3);
-  signal plb_v46_0_SPLB_Rst : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_MBusy : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_MIRQ : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_MRdErr : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_MWrErr : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_SSize : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_addrAck : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdBTerm : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdComp : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdDAck : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdDBus : std_logic_vector(0 to 127);
-  signal plb_v46_0_Sl_rdWdAddr : std_logic_vector(0 to 15);
-  signal plb_v46_0_Sl_rearbitrate : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wait : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wrBTerm : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wrComp : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wrDAck : std_logic_vector(0 to 3);
+  signal plb_v46_0_PLB_wrPrim : std_logic_vector(0 to 2);
+  signal plb_v46_0_SPLB_Rst : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_MBusy : std_logic_vector(0 to 5);
+  signal plb_v46_0_Sl_MIRQ : std_logic_vector(0 to 5);
+  signal plb_v46_0_Sl_MRdErr : std_logic_vector(0 to 5);
+  signal plb_v46_0_Sl_MWrErr : std_logic_vector(0 to 5);
+  signal plb_v46_0_Sl_SSize : std_logic_vector(0 to 5);
+  signal plb_v46_0_Sl_addrAck : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_rdBTerm : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_rdComp : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_rdDAck : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_rdDBus : std_logic_vector(0 to 95);
+  signal plb_v46_0_Sl_rdWdAddr : std_logic_vector(0 to 11);
+  signal plb_v46_0_Sl_rearbitrate : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_wait : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_wrBTerm : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_wrComp : std_logic_vector(0 to 2);
+  signal plb_v46_0_Sl_wrDAck : std_logic_vector(0 to 2);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr : std_logic_vector(0 to 31);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Clk : std_logic;
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Din : std_logic_vector(0 to 31);
@@ -1054,12 +988,6 @@ architecture STRUCTURE of practica03 is
   signal xps_bram_if_cntlr_0_PORTA_BRAM_EN : std_logic;
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Rst : std_logic;
   signal xps_bram_if_cntlr_0_PORTA_BRAM_WEN : std_logic_vector(0 to 3);
-  signal xps_gpio_0_GPIO_IO_I : std_logic_vector(0 to 7);
-  signal xps_gpio_0_GPIO_IO_O : std_logic_vector(0 to 7);
-  signal xps_gpio_0_GPIO_IO_T : std_logic_vector(0 to 7);
-  signal xps_gpio_1_GPIO_IO_I : std_logic_vector(0 to 7);
-  signal xps_gpio_1_GPIO_IO_O : std_logic_vector(0 to 7);
-  signal xps_gpio_1_GPIO_IO_T : std_logic_vector(0 to 7);
   signal xps_uartlite_0_RX : std_logic;
   signal xps_uartlite_0_TX : std_logic;
 
@@ -1068,9 +996,8 @@ architecture STRUCTURE of practica03 is
   attribute BOX_TYPE of practica03_plb_v46_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica03_xps_bram_if_cntlr_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica03_bram_block_0_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of practica03_xps_gpio_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica03_xps_uartlite_0_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of practica03_xps_gpio_1_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of practica03_peripheral_practica03_0_wrapper : component is "user_black_box";
 
 begin
 
@@ -1080,6 +1007,8 @@ begin
   xps_uartlite_0_RX <= rx;
   tx <= xps_uartlite_0_TX;
   plb_v46_0_PLB_Clk <= clk;
+  peripheral_practica03_0_switches <= switches;
+  leds <= peripheral_practica03_0_leds;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -1862,26 +1791,26 @@ begin
       BRAM_Dout_B => net_gnd32
     );
 
-  xps_gpio_0 : practica03_xps_gpio_0_wrapper
+  xps_uartlite_0 : practica03_xps_uartlite_0_wrapper
     port map (
       SPLB_Clk => plb_v46_0_PLB_Clk,
       SPLB_Rst => plb_v46_0_SPLB_Rst(1),
       PLB_ABus => plb_v46_0_PLB_ABus,
-      PLB_UABus => plb_v46_0_PLB_UABus,
       PLB_PAValid => plb_v46_0_PLB_PAValid,
+      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
+      PLB_RNW => plb_v46_0_PLB_RNW,
+      PLB_BE => plb_v46_0_PLB_BE,
+      PLB_size => plb_v46_0_PLB_size,
+      PLB_type => plb_v46_0_PLB_type,
+      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
+      PLB_UABus => plb_v46_0_PLB_UABus,
       PLB_SAValid => plb_v46_0_PLB_SAValid,
       PLB_rdPrim => plb_v46_0_PLB_rdPrim(1),
       PLB_wrPrim => plb_v46_0_PLB_wrPrim(1),
-      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
       PLB_abort => plb_v46_0_PLB_abort,
       PLB_busLock => plb_v46_0_PLB_busLock,
-      PLB_RNW => plb_v46_0_PLB_RNW,
-      PLB_BE => plb_v46_0_PLB_BE,
       PLB_MSize => plb_v46_0_PLB_MSize,
-      PLB_size => plb_v46_0_PLB_size,
-      PLB_type => plb_v46_0_PLB_type,
       PLB_lockErr => plb_v46_0_PLB_lockErr,
-      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
       PLB_wrBurst => plb_v46_0_PLB_wrBurst,
       PLB_rdBurst => plb_v46_0_PLB_rdBurst,
       PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
@@ -1896,45 +1825,41 @@ begin
       Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(1),
       Sl_wrDAck => plb_v46_0_Sl_wrDAck(1),
       Sl_wrComp => plb_v46_0_Sl_wrComp(1),
-      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(1),
       Sl_rdDBus => plb_v46_0_Sl_rdDBus(32 to 63),
-      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(4 to 7),
       Sl_rdDAck => plb_v46_0_Sl_rdDAck(1),
       Sl_rdComp => plb_v46_0_Sl_rdComp(1),
-      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(1),
       Sl_MBusy => plb_v46_0_Sl_MBusy(2 to 3),
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(2 to 3),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(2 to 3),
+      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(1),
+      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(4 to 7),
+      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(1),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(2 to 3),
-      IP2INTC_Irpt => open,
-      GPIO_IO_I => xps_gpio_0_GPIO_IO_I,
-      GPIO_IO_O => xps_gpio_0_GPIO_IO_O,
-      GPIO_IO_T => xps_gpio_0_GPIO_IO_T,
-      GPIO2_IO_I => net_gnd32,
-      GPIO2_IO_O => open,
-      GPIO2_IO_T => open
+      RX => xps_uartlite_0_RX,
+      TX => xps_uartlite_0_TX,
+      Interrupt => open
     );
 
-  xps_uartlite_0 : practica03_xps_uartlite_0_wrapper
+  peripheral_practica03_0 : practica03_peripheral_practica03_0_wrapper
     port map (
       SPLB_Clk => plb_v46_0_PLB_Clk,
       SPLB_Rst => plb_v46_0_SPLB_Rst(2),
       PLB_ABus => plb_v46_0_PLB_ABus,
-      PLB_PAValid => plb_v46_0_PLB_PAValid,
-      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
-      PLB_RNW => plb_v46_0_PLB_RNW,
-      PLB_BE => plb_v46_0_PLB_BE,
-      PLB_size => plb_v46_0_PLB_size,
-      PLB_type => plb_v46_0_PLB_type,
-      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
       PLB_UABus => plb_v46_0_PLB_UABus,
+      PLB_PAValid => plb_v46_0_PLB_PAValid,
       PLB_SAValid => plb_v46_0_PLB_SAValid,
       PLB_rdPrim => plb_v46_0_PLB_rdPrim(2),
       PLB_wrPrim => plb_v46_0_PLB_wrPrim(2),
+      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
       PLB_abort => plb_v46_0_PLB_abort,
       PLB_busLock => plb_v46_0_PLB_busLock,
+      PLB_RNW => plb_v46_0_PLB_RNW,
+      PLB_BE => plb_v46_0_PLB_BE,
       PLB_MSize => plb_v46_0_PLB_MSize,
+      PLB_size => plb_v46_0_PLB_size,
+      PLB_type => plb_v46_0_PLB_type,
       PLB_lockErr => plb_v46_0_PLB_lockErr,
+      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
       PLB_wrBurst => plb_v46_0_PLB_wrBurst,
       PLB_rdBurst => plb_v46_0_PLB_rdBurst,
       PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
@@ -1949,200 +1874,18 @@ begin
       Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(2),
       Sl_wrDAck => plb_v46_0_Sl_wrDAck(2),
       Sl_wrComp => plb_v46_0_Sl_wrComp(2),
+      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(2),
       Sl_rdDBus => plb_v46_0_Sl_rdDBus(64 to 95),
+      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(8 to 11),
       Sl_rdDAck => plb_v46_0_Sl_rdDAck(2),
       Sl_rdComp => plb_v46_0_Sl_rdComp(2),
+      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(2),
       Sl_MBusy => plb_v46_0_Sl_MBusy(4 to 5),
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(4 to 5),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(4 to 5),
-      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(2),
-      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(8 to 11),
-      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(2),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(4 to 5),
-      RX => xps_uartlite_0_RX,
-      TX => xps_uartlite_0_TX,
-      Interrupt => open
-    );
-
-  xps_gpio_1 : practica03_xps_gpio_1_wrapper
-    port map (
-      SPLB_Clk => plb_v46_0_PLB_Clk,
-      SPLB_Rst => plb_v46_0_SPLB_Rst(3),
-      PLB_ABus => plb_v46_0_PLB_ABus,
-      PLB_UABus => plb_v46_0_PLB_UABus,
-      PLB_PAValid => plb_v46_0_PLB_PAValid,
-      PLB_SAValid => plb_v46_0_PLB_SAValid,
-      PLB_rdPrim => plb_v46_0_PLB_rdPrim(3),
-      PLB_wrPrim => plb_v46_0_PLB_wrPrim(3),
-      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
-      PLB_abort => plb_v46_0_PLB_abort,
-      PLB_busLock => plb_v46_0_PLB_busLock,
-      PLB_RNW => plb_v46_0_PLB_RNW,
-      PLB_BE => plb_v46_0_PLB_BE,
-      PLB_MSize => plb_v46_0_PLB_MSize,
-      PLB_size => plb_v46_0_PLB_size,
-      PLB_type => plb_v46_0_PLB_type,
-      PLB_lockErr => plb_v46_0_PLB_lockErr,
-      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
-      PLB_wrBurst => plb_v46_0_PLB_wrBurst,
-      PLB_rdBurst => plb_v46_0_PLB_rdBurst,
-      PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
-      PLB_rdPendReq => plb_v46_0_PLB_rdPendReq,
-      PLB_wrPendPri => plb_v46_0_PLB_wrPendPri,
-      PLB_rdPendPri => plb_v46_0_PLB_rdPendPri,
-      PLB_reqPri => plb_v46_0_PLB_reqPri,
-      PLB_TAttribute => plb_v46_0_PLB_TAttribute,
-      Sl_addrAck => plb_v46_0_Sl_addrAck(3),
-      Sl_SSize => plb_v46_0_Sl_SSize(6 to 7),
-      Sl_wait => plb_v46_0_Sl_wait(3),
-      Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(3),
-      Sl_wrDAck => plb_v46_0_Sl_wrDAck(3),
-      Sl_wrComp => plb_v46_0_Sl_wrComp(3),
-      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(3),
-      Sl_rdDBus => plb_v46_0_Sl_rdDBus(96 to 127),
-      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(12 to 15),
-      Sl_rdDAck => plb_v46_0_Sl_rdDAck(3),
-      Sl_rdComp => plb_v46_0_Sl_rdComp(3),
-      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(3),
-      Sl_MBusy => plb_v46_0_Sl_MBusy(6 to 7),
-      Sl_MWrErr => plb_v46_0_Sl_MWrErr(6 to 7),
-      Sl_MRdErr => plb_v46_0_Sl_MRdErr(6 to 7),
-      Sl_MIRQ => plb_v46_0_Sl_MIRQ(6 to 7),
-      IP2INTC_Irpt => open,
-      GPIO_IO_I => xps_gpio_1_GPIO_IO_I,
-      GPIO_IO_O => xps_gpio_1_GPIO_IO_O,
-      GPIO_IO_T => xps_gpio_1_GPIO_IO_T,
-      GPIO2_IO_I => net_gnd32,
-      GPIO2_IO_O => open,
-      GPIO2_IO_T => open
-    );
-
-  iobuf_0 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(0),
-      IO => leds(0),
-      O => xps_gpio_0_GPIO_IO_I(0),
-      T => xps_gpio_0_GPIO_IO_T(0)
-    );
-
-  iobuf_1 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(1),
-      IO => leds(1),
-      O => xps_gpio_0_GPIO_IO_I(1),
-      T => xps_gpio_0_GPIO_IO_T(1)
-    );
-
-  iobuf_2 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(2),
-      IO => leds(2),
-      O => xps_gpio_0_GPIO_IO_I(2),
-      T => xps_gpio_0_GPIO_IO_T(2)
-    );
-
-  iobuf_3 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(3),
-      IO => leds(3),
-      O => xps_gpio_0_GPIO_IO_I(3),
-      T => xps_gpio_0_GPIO_IO_T(3)
-    );
-
-  iobuf_4 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(4),
-      IO => leds(4),
-      O => xps_gpio_0_GPIO_IO_I(4),
-      T => xps_gpio_0_GPIO_IO_T(4)
-    );
-
-  iobuf_5 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(5),
-      IO => leds(5),
-      O => xps_gpio_0_GPIO_IO_I(5),
-      T => xps_gpio_0_GPIO_IO_T(5)
-    );
-
-  iobuf_6 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(6),
-      IO => leds(6),
-      O => xps_gpio_0_GPIO_IO_I(6),
-      T => xps_gpio_0_GPIO_IO_T(6)
-    );
-
-  iobuf_7 : IOBUF
-    port map (
-      I => xps_gpio_0_GPIO_IO_O(7),
-      IO => leds(7),
-      O => xps_gpio_0_GPIO_IO_I(7),
-      T => xps_gpio_0_GPIO_IO_T(7)
-    );
-
-  iobuf_8 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(0),
-      IO => switches(0),
-      O => xps_gpio_1_GPIO_IO_I(0),
-      T => xps_gpio_1_GPIO_IO_T(0)
-    );
-
-  iobuf_9 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(1),
-      IO => switches(1),
-      O => xps_gpio_1_GPIO_IO_I(1),
-      T => xps_gpio_1_GPIO_IO_T(1)
-    );
-
-  iobuf_10 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(2),
-      IO => switches(2),
-      O => xps_gpio_1_GPIO_IO_I(2),
-      T => xps_gpio_1_GPIO_IO_T(2)
-    );
-
-  iobuf_11 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(3),
-      IO => switches(3),
-      O => xps_gpio_1_GPIO_IO_I(3),
-      T => xps_gpio_1_GPIO_IO_T(3)
-    );
-
-  iobuf_12 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(4),
-      IO => switches(4),
-      O => xps_gpio_1_GPIO_IO_I(4),
-      T => xps_gpio_1_GPIO_IO_T(4)
-    );
-
-  iobuf_13 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(5),
-      IO => switches(5),
-      O => xps_gpio_1_GPIO_IO_I(5),
-      T => xps_gpio_1_GPIO_IO_T(5)
-    );
-
-  iobuf_14 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(6),
-      IO => switches(6),
-      O => xps_gpio_1_GPIO_IO_I(6),
-      T => xps_gpio_1_GPIO_IO_T(6)
-    );
-
-  iobuf_15 : IOBUF
-    port map (
-      I => xps_gpio_1_GPIO_IO_O(7),
-      IO => switches(7),
-      O => xps_gpio_1_GPIO_IO_I(7),
-      T => xps_gpio_1_GPIO_IO_T(7)
+      switches => peripheral_practica03_0_switches,
+      leds => peripheral_practica03_0_leds
     );
 
 end architecture STRUCTURE;

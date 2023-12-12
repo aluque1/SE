@@ -33,18 +33,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="leerDatos.c" partName="leerDatos.c" path="C:/Users/aluqu/Desktop/uni/SE/practica02/SDK/vis_teclado/src/leerDatos.c" title="leerDatos.c" tooltip="vis_teclado/src/leerDatos.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vis_teclado/src/leerDatos.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3006" selectionTopPixel="2096"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="C:/Users/aluqu/Desktop/uni/SE/practica02/SDK/vis_teclado_bsp_0/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="vis_teclado_bsp_0/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="2296" selectionTopPixel="980"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3676" selectionTopPixel="2116"/>
 </editor>
 </editors>
 <views>
@@ -56,8 +51,7 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
+<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -195,13 +189,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_testcache.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/vis_teclado_bsp_0/microblaze_0/include/xparameters.h"/>
 </editors>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="2168" y="0"/>
-</item>
-<item historyLabel="leerDatos.c" index="1">
-<position info="not_deleted" x="374" y="0"/>
-</item>
 <item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1466" y="0"/>
 </item>
@@ -343,8 +332,14 @@
 <item historyLabel="leerDatos.c" index="3">
 <position info="not_deleted" x="3492" y="0"/>
 </item>
-<item active="true" historyLabel="leerDatos.c" index="3">
+<item historyLabel="leerDatos.c" index="3">
 <position info="not_deleted" x="3298" y="90"/>
+</item>
+<item historyLabel="xparameters.h" index="7">
+<position info="not_deleted" x="3176" y="0"/>
+</item>
+<item active="true" historyLabel="leerDatos.c" index="3">
+<position info="not_deleted" x="1887" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

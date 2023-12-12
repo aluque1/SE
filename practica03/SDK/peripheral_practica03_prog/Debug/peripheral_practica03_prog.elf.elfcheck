@@ -1,0 +1,9 @@
+elfcheck
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../practica03_hw_platform/system.xml -pe
+microblaze_0 peripheral_practica03_prog.elf 
+
+ELF file	: peripheral_practica03_prog.elf
+elfcheck passed.

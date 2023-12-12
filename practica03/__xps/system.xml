@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Sun Dec 10 19:45:49 2023">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Tue Dec 12 01:46:44 2023">
 
   <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="C:/Users/aluqu/Desktop/uni/SE/practica03/practica03.xmp" SPEEDGRADE="-5"/>
 
@@ -18,6 +18,25 @@
     <PORT DIR="O" MHS_INDEX="2" NAME="tx" SIGNAME="xps_uartlite_0_TX">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[uart_0]" INSTANCE="xps_uartlite_0" PORT="TX"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" MHS_INDEX="3" NAME="clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
+      <CONNECTIONS>
+        <CONNECTION BUSINTERFACE="[DPLB:IPLB:DLMB:ILMB]" INSTANCE="microblaze_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_Clk"/>
+        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="SPLB_Clk"/>
+        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="SPLB_Clk"/>
+        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="peripheral_practica03_0" PORT="SPLB_Clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="4" MSB="7" NAME="switches" RIGHT="0" SIGNAME="peripheral_practica03_0_switches">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="peripheral_practica03_0" PORT="switches"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="5" MSB="7" NAME="leds" RIGHT="0" SIGNAME="peripheral_practica03_0_leds">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="peripheral_practica03_0" PORT="leds"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -257,7 +276,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT BUS="DPLB:IPLB:DLMB:ILMB:M_AXI_DP:M_AXI_IP:M_AXI_DC:M_AXI_IC:M0_AXIS:S0_AXIS:M1_AXIS:S1_AXIS:M2_AXIS:S2_AXIS:M3_AXIS:S3_AXIS:M4_AXIS:S4_AXIS:M5_AXIS:S5_AXIS:M6_AXIS:S6_AXIS:M7_AXIS:S7_AXIS:M8_AXIS:S8_AXIS:M9_AXIS:S9_AXIS:M10_AXIS:S10_AXIS:M11_AXIS:S11_AXIS:M12_AXIS:S12_AXIS:M13_AXIS:S13_AXIS:M14_AXIS:S14_AXIS:M15_AXIS:S15_AXIS" DEF_SIGNAME="plb_v46_0_PLB_Clk" DIR="I" MPD_INDEX="0" NAME="CLK" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
-          <CONNECTIONS/>
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="clk"/>
+          </CONNECTIONS>
         </PORT>
         <PORT BUS="DLMB:ILMB" DEF_SIGNAME="__BUS__" DIR="I" MPD_INDEX="1" NAME="RESET" SIGIS="RST" SIGNAME="__NOC__"/>
         <PORT BUS="INTERRUPT" DEF_SIGNAME="__BUS__" DIR="I" MPD_INDEX="3" NAME="INTERRUPT" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="__NOC__"/>
@@ -2376,7 +2397,9 @@
       </PARAMETERS>
       <PORTS>
         <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="PLB_Clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
-          <CONNECTIONS/>
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="clk"/>
+          </CONNECTIONS>
         </PORT>
         <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="1" NAME="SYS_Rst" SIGIS="RST" SIGNAME="microblaze_0_MB_RESET">
           <CONNECTIONS>
@@ -2951,7 +2974,9 @@
       </PARAMETERS>
       <PORTS>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_Clk" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
-          <CONNECTIONS/>
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="clk"/>
+          </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_SPLB_Rst" DIR="I" MPD_INDEX="1" NAME="SPLB_Rst" SIGIS="RST" SIGNAME="plb_v46_0_SPLB_Rst">
           <CONNECTIONS>
@@ -3382,7 +3407,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_Clk" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
-          <CONNECTIONS/>
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="clk"/>
+          </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_SPLB_Rst" DIR="I" MPD_INDEX="1" NAME="SPLB_Rst" SIGIS="RST" SIGNAME="plb_v46_0_SPLB_Rst">
           <CONNECTIONS>
@@ -3675,18 +3702,20 @@
         <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="0" MPD_INDEX="43" MSB="7" NAME="leds" RIGHT="0" SIGNAME="peripheral_practica03_0_leds" VECFORMULA="[7:0]">
+        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="0" MPD_INDEX="42" MSB="7" NAME="switches" RIGHT="0" SIGNAME="peripheral_practica03_0_switches" VECFORMULA="[7:0]">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="peripheral_practica03_0" PORT="switches"/>
+            <CONNECTION INSTANCE="External Ports" PORT="switches"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="1" MPD_INDEX="42" MSB="7" NAME="switches" RIGHT="0" SIGNAME="peripheral_practica03_0_leds" VECFORMULA="[7:0]">
+        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="1" MPD_INDEX="43" MSB="7" NAME="leds" RIGHT="0" SIGNAME="peripheral_practica03_0_leds" VECFORMULA="[7:0]">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="peripheral_practica03_0" PORT="leds"/>
+            <CONNECTION INSTANCE="External Ports" PORT="leds"/>
           </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_Clk" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
-          <CONNECTIONS/>
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="clk"/>
+          </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_SPLB_Rst" DIR="I" MPD_INDEX="1" NAME="SPLB_Rst" SIGIS="RST" SIGNAME="plb_v46_0_SPLB_Rst">
           <CONNECTIONS>

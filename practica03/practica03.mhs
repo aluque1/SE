@@ -5,6 +5,9 @@
  PORT rst = microblaze_0_MB_RESET, DIR = I, SIGIS = RST
  PORT rx = xps_uartlite_0_RX, DIR = I
  PORT tx = xps_uartlite_0_TX, DIR = O
+ PORT clk = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+ PORT switches = peripheral_practica03_0_switches, DIR = I, VEC = [7:0]
+ PORT leds = peripheral_practica03_0_leds, DIR = O, VEC = [7:0]
 
 
 BEGIN microblaze
@@ -56,7 +59,7 @@ BEGIN peripheral_practica03
  PARAMETER C_BASEADDR = 0xCB000000
  PARAMETER C_HIGHADDR = 0xCB0000FF
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT switches = peripheral_practica03_0_switches
  PORT leds = peripheral_practica03_0_leds
- PORT switches = peripheral_practica03_0_leds
 END
 

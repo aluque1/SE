@@ -1,0 +1,12 @@
+!SESSION 2023-12-12 01:51:56.810 -----------------------------------------------
+eclipse.buildId=Release 14.1 Build SDK_P.15xf
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-12 01:57:34.198
+!MESSAGE Indexed 'peripheral_practica03_prog' (0 sources, 21 headers) in 0.22 sec: 143 declarations; 311 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.22%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-12 01:57:34.650
+!MESSAGE Indexed 'peripheral_practica03_prog_bsp_0' (37 sources, 37 headers) in 0.45 sec: 886 declarations; 4,302 references; 23 unresolved inclusions; 0 syntax errors; 49 unresolved names (0.94%)

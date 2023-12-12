@@ -12,9 +12,9 @@ entity practica03_stub is
     rst : in std_logic;
     rx : in std_logic;
     tx : out std_logic;
-    leds : inout std_logic_vector(0 to 7);
-    switches : inout std_logic_vector(0 to 7);
-    clk : in std_logic
+    clk : in std_logic;
+    switches : in std_logic_vector(7 downto 0);
+    leds : out std_logic_vector(7 downto 0)
   );
 end practica03_stub;
 
@@ -25,9 +25,9 @@ architecture STRUCTURE of practica03_stub is
       rst : in std_logic;
       rx : in std_logic;
       tx : out std_logic;
-      leds : inout std_logic_vector(0 to 7);
-      switches : inout std_logic_vector(0 to 7);
-      clk : in std_logic
+      clk : in std_logic;
+      switches : in std_logic_vector(7 downto 0);
+      leds : out std_logic_vector(7 downto 0)
     );
   end component;
 
@@ -41,9 +41,9 @@ begin
       rst => rst,
       rx => rx,
       tx => tx,
-      leds => leds,
+      clk => clk,
       switches => switches,
-      clk => clk
+      leds => leds
     );
 
 end architecture STRUCTURE;

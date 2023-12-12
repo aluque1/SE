@@ -66,7 +66,7 @@ int getNumber (){
 	}
 }
 
-// Write the num to leds
+// Write the num to leds do it inline
 void gpio_write(XGpio leds, int num){
 	XGpio_DiscreteWrite(&leds, 1, 0x00);
 	XGpio_DiscreteWrite(&leds, 1, num);
@@ -145,7 +145,7 @@ int main()
 		operando2 = XGpio_DiscreteRead(&Gpio_SWs, 1);
 		gpio_write(Gpio_LEDs, operando2);
 		break;
-
+	// do default
 	}
 
 	print("-- Exiting main() --\r\n");

@@ -2,4 +2,38 @@
 **** Build of configuration Debug for project vis_teclado ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/leerDatos.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../vis_teclado_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/leerDatos.d" -MT"src/leerDatos.d" -o"src/leerDatos.o" "../src/leerDatos.c"
+../src/leerDatos.c: In function 'getNumber':
+../src/leerDatos.c:28:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/leerDatos.c:30:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/leerDatos.c:65:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/leerDatos.c: In function 'main':
+../src/leerDatos.c:131:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+Finished building: ../src/leerDatos.c
+' '
+Building target: vis_teclado.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../vis_teclado_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"vis_teclado.elf"  ./src/leerDatos.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vis_teclado.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size vis_teclado.elf  |tee "vis_teclado.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9330	    332	   2106	  11768	   2df8	vis_teclado.elf
+Finished building: vis_teclado.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck vis_teclado.elf -hw ../../p2_hw_platform/system.xml -pe microblaze_0  |tee "vis_teclado.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../p2_hw_platform/system.xml -pe microblaze_0
+vis_teclado.elf 
+
+ELF file	: vis_teclado.elf
+elfcheck passed.
+Finished building: vis_teclado.elf.elfcheck
+' '

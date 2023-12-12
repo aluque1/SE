@@ -28,6 +28,10 @@ Read MPD definitions ...
 Overriding IP level properties ...
 
 Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'clk' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
 
 Performing IP level DRCs on properties...
 
@@ -160,21 +164,24 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 10 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 21 - Copying cache
 implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 25 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 28 - Copying cache
 implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 35 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 38 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 41 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 44 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 35 - elaborating IP
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 38 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -182,8 +189,28 @@ Inserting wrapper level ...
 Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
-ERROR:EDK:4072 - INSTANCE: plb_v46_0, PORT: PLB_Clk - port is driven by a
-   sourceless connector -
-   C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 18 
 Completion time: 0.00 seconds
-ERROR:EDK:440 - platgen failed with errors!
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:peripheral_practica03_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 56 - Running XST
+synthesis
+
+Running NGCBUILD ...
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/practica03.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 20.00 seconds
