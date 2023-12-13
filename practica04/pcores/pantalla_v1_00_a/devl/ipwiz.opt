@@ -1,0 +1,9 @@
+-batch 
+-create pantalla 
+-ver 1.00.a 
+-dir "C:\Users\aluqu\Desktop\uni\SE\practica04" 
+-lang vhdl 
+-bus plbv46 s 
+-wfifo 1 512 
+-xps 
+-driver 
