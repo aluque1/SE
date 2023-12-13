@@ -22,10 +22,11 @@ int getNumber();
 
 int main() {
 	Xuint32 valor, baseaddr;
+	baseaddr = XPAR_PERIPHERAL_PRACTICA03_0_BASEADDR;
 
 	print("-- Bienvenido --\n\r");
 
-	print("Introduzca nuumero para reg0 (0 suma, 1 resta): \n\r");
+	print("Introduzca numero para reg0 (0 suma, 1 resta): \n\r");
 	valor = getNumber();
 	// escribir a reg0 y mostrar valor
 	MY_PERIPHERAL_mWriteSlaveReg0(baseaddr, 0, valor);
@@ -44,7 +45,7 @@ int main() {
 	// escribir a reg2 y mostrar valor
 	MY_PERIPHERAL_mWriteSlaveReg2(baseaddr, 0, valor);
 	valor = MY_PERIPHERAL_mReadSlaveReg2(baseaddr, 0);
-	xil_printf("Escrito: %d en reg0\n\r", valor);
+	xil_printf("Escrito: %d en reg2\n\r", valor);
 
 	//mostrar reg3 por pantalla
 	valor = MY_PERIPHERAL_mReadSlaveReg0(baseaddr, 0);
@@ -56,7 +57,6 @@ int main() {
 	xil_printf("%d\n\r", valor);
 
 	print("-- Exiting main() --\r\n");
-
 	return XST_SUCCESS;
 }
 
@@ -117,6 +117,15 @@ XStatus periphal_practica03_prog_SelfTest(void * baseaddr_p)
 	}
 	
 	// reg3 WRITE is desactivated through the VHDL
+	xil_printf(" - write 1 to slave register 3 word 0\n\r");
+	MY_PERIPHERAL_mWriteSlaveReg3(baseaddr, 0, 1);
+	Reg32Value = MY_PERIPHERAL_mReadSlaveReg3(baseaddr, 0);
+	xil_printf(" - read %d from register 3 word 0\n\r", Reg32Value);
+	if (Reg32Value != 1)
+	{
+		xil_printf(" - slave register 3 word 0 write/read failed\n\r");
+		return XST_FAILURE;
+	}
 
 	return XST_SUCCESS;
 }

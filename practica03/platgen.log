@@ -178,6 +178,9 @@ implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
 C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 44 - Copying cache
 implementation netlist
+IPNAME:peripheral_practica03 INSTANCE:peripheral_practica03_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 56 - Copying cache
+implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
@@ -186,7 +189,7 @@ C:\Users\aluqu\Desktop\uni\SE\practica03\practica03.mhs line 38 - elaborating IP
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds

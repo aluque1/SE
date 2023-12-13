@@ -147,22 +147,26 @@ architecture IMP of user_logic is
 
 begin
 
-  --USER logic implementation added here
+  -- USER logic implementation added here
   SUMADOR_REGS : process( slv_reg0, slv_reg1, slv_reg2, Bus2IP_Clk, Bus2IP_Reset ) is 
   begin
 
-  if BUS2IP_Reset = '1' then
-    slv_reg3 <= (others => '0');
-  elsif rising_edge(Bus2IP_Clk) then 
-    if slv_reg0(31) = '0' then
-      slv_reg3 <= slv_reg1 + slv_reg2;
-    elsif slv_reg0(31) = '0' then
-      slv_reg3 <= slv_reg1 + slv_reg2;
+    if rising_edge(Bus2IP_Clk) then
+      if Bus2IP_Reset = '1' then
+        slv_reg3 <= (others => '0');
+      else 
+        if slv_reg0(31) = '0' then
+          slv_reg3 <= slv_reg1 + slv_reg2;
+        else 
+          slv_reg3 <= slv_reg1 - slv_reg2;
+        end if;
+      end if;
     end if;
-  end if;
+    
   end process SUMADOR_REGS;
 
   leds <= switches;
+ 
   
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
@@ -197,7 +201,7 @@ begin
         slv_reg0 <= (others => '0');
         slv_reg1 <= (others => '0');
         slv_reg2 <= (others => '0');
-        -- slv_reg3 <= (others => '0');
+        --slv_reg3 <= (others => '0');
       else
         case slv_reg_write_sel is
           when "1000" => 

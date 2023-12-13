@@ -4,19 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/peripheral_practica03_prog.c \
-../src/peripheral_practica03_prog_selftest.c 
+../src/peripheral_practica03_prog.c 
 
 LD_SRCS += \
 ../src/lscript.ld 
 
 OBJS += \
-./src/peripheral_practica03_prog.o \
-./src/peripheral_practica03_prog_selftest.o 
+./src/peripheral_practica03_prog.o 
 
 C_DEPS += \
-./src/peripheral_practica03_prog.d \
-./src/peripheral_practica03_prog_selftest.d 
+./src/peripheral_practica03_prog.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
