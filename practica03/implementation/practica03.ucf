@@ -55,16 +55,16 @@ NET "switches<7>" FLOAT;
 
 #barra de leds placa extendida
 
-NET leds<0> LOC=L5;
-NET leds<1> LOC=N2;
-NET leds<2> LOC=M3;
-NET leds<3> LOC=N1;
-NET leds<4> LOC=T13;
-NET leds<5> LOC=L15;
-NET leds<6> LOC=J13;
-NET leds<7> LOC=H15;
-#NET leds<8> LOC=J16;
-#NET leds<9> LOC=J14;
+#NET leds<9> LOC=L5;
+#NET leds<8> LOC=N2;
+NET leds<7> LOC=M3;
+NET leds<6> LOC=N1;
+NET leds<5> LOC=T13;
+NET leds<4> LOC=L15;
+NET leds<3> LOC=J13;
+NET leds<2> LOC=H15;
+NET leds<1> LOC=J16;
+NET leds<0> LOC=J14;
 NET "leds<0>" FLOAT;
 NET "leds<1>" FLOAT;
 NET "leds<2>" FLOAT;

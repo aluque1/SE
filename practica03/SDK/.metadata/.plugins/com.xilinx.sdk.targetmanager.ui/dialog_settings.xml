@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\aluqu\Desktop\uni\SE\practica03\SDK\practica03_hw_platform\system_bd.bmm" key="practica03_hw_platform-bmmFile"/>
-	<item value="C:\Users\aluqu\Desktop\uni\SE\practica03\SDK\peripheral_practica03_prog\Debug\peripheral_practica03_prog.elf" key="practica03_hw_platform-microblaze_0-initElf"/>
-	<item value="C:\Users\aluqu\Desktop\uni\SE\practica03\SDK\practica03_hw_platform\system.bit" key="practica03_hw_platform-bitFile"/>
+	<item value="U:\hlocal\temp\SE\practica03\SDK\practica03_hw_platform\system_bd.bmm" key="practica03_hw_platform-bmmFile"/>
+	<item value="U:\hlocal\temp\SE\practica03\SDK\peripheral_practica03_prog\Debug\peripheral_practica03_prog.elf" key="practica03_hw_platform-microblaze_0-initElf"/>
+	<item value="U:\hlocal\temp\SE\practica03\SDK\practica03_hw_platform\system.bit" key="practica03_hw_platform-bitFile"/>
 </section>

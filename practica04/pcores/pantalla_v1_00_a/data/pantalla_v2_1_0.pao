@@ -7,7 +7,7 @@
 lib proc_common_v3_00_a  all 
 lib plbv46_slave_single_v1_01_a  all 
 lib wrpfifo_v5_01_a  all 
-lib pantalla_v1_00_a counter vhdl
+lib pantalla_v1_00_a counter2 vhdl
 lib pantalla_v1_00_a vgacore vhdl
 lib pantalla_v1_00_a user_logic vhdl
 lib pantalla_v1_00_a pantalla vhdl

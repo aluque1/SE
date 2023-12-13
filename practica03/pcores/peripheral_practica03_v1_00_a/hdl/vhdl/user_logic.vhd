@@ -184,7 +184,7 @@ begin
       end if;
   end process;
 
-  cuenta_max <= "00000010111110101111000010000000";
+  cuenta_max <= "00000001011111010111100001000000";
   --contador hasta el valor de slv_reg3
   contador : process( clk_aux, Bus2IP_Reset ) is
     begin
@@ -200,11 +200,11 @@ begin
   end process;
 
   ledsMux: leds <=
-                  slv_reg0(7 downto 0) when switches(1 downto 0) = "00" else
-                  slv_reg1(7 downto 0) when switches(1 downto 0) = "01" else
-                  slv_reg2(7 downto 0) when switches(1 downto 0) = "10" else
-                  slv_reg3(7 downto 0) when switches(1 downto 0) = "11" else
-                  cuentaC(7 downto 0) when switches(3) = '0' else
+						cuentaC(7 downto 0) when switches(7) = '1' else
+                  slv_reg0(24 to 31) when switches(1 downto 0) = "00" else
+                  slv_reg1(24 to 31) when switches(1 downto 0) = "01" else
+                  slv_reg2(24 to 31) when switches(1 downto 0) = "10" else
+                  slv_reg3(24 to 31) when switches(1 downto 0) = "11" else
                   (others => '0');
  
   

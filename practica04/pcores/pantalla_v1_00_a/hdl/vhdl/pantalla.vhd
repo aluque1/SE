@@ -165,7 +165,9 @@ entity pantalla is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    --USER ports added here
+    hsyncb: out std_logic;
+		vsyncb: out std_logic;							-- vertical (frame) sync
+		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -497,7 +499,9 @@ begin
     port map
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
-      --USER ports mapped here
+      hsyncb => hsyncb,
+		  vsyncb => vsyncb,
+		  rgb => rgb,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

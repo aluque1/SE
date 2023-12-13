@@ -8,6 +8,9 @@
  PORT leds = xps_gpio_0_GPIO_IO, DIR = IO, VEC = [0:7]
  PORT switches = xps_gpio_1_GPIO_IO, DIR = IO, VEC = [0:7]
  PORT clk = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+ PORT hsyncb = pantalla_0_hsyncb, DIR = O
+ PORT vsyncb = pantalla_0_vsyncb, DIR = O
+ PORT rgb = pantalla_0_rgb, DIR = O, VEC = [0:8]
 
 
 BEGIN microblaze
@@ -42,11 +45,11 @@ BEGIN bram_block
 END
 
 BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_0
+ PARAMETER INSTANCE = xps_gpio_LEDS
  PARAMETER HW_VER = 2.00.a
  PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x81420000
- PARAMETER C_HIGHADDR = 0x8142ffff
+ PARAMETER C_BASEADDR = 0x84014000
+ PARAMETER C_HIGHADDR = 0x840141ff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT GPIO_IO = xps_gpio_0_GPIO_IO
  PORT GPIO_IO_I = xps_gpio_0_GPIO_IO_I
@@ -65,12 +68,23 @@ BEGIN xps_uartlite
 END
 
 BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_1
+ PARAMETER INSTANCE = xps_gpio_SW
  PARAMETER HW_VER = 2.00.a
  PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x81400000
- PARAMETER C_HIGHADDR = 0x8140ffff
+ PARAMETER C_BASEADDR = 0x84018000
+ PARAMETER C_HIGHADDR = 0x840181ff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT GPIO_IO = xps_gpio_1_GPIO_IO
+END
+
+BEGIN pantalla
+ PARAMETER INSTANCE = pantalla_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xcd400000
+ PARAMETER C_HIGHADDR = 0xcd40ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT hsyncb = pantalla_0_hsyncb
+ PORT vsyncb = pantalla_0_vsyncb
+ PORT rgb = pantalla_0_rgb
 END
 

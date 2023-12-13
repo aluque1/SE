@@ -26,7 +26,7 @@
 -- Filename:          user_logic.vhd
 -- Version:           1.00.a
 -- Description:       User logic.
--- Date:              Wed Dec 13 14:02:27 2023 (by Create and Import Peripheral Wizard)
+-- Date:              Thu Oct 31 14:05:13 2013 (by Create and Import Peripheral Wizard)
 -- VHDL Standard:     VHDL'93
 ------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -104,7 +104,9 @@ entity user_logic is
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
     -- ADD USER PORTS ABOVE THIS LINE ------------------
-
+		hsyncb: out std_logic;
+		vsyncb: out std_logic;							-- vertical (frame) sync
+		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
     -- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
     Bus2IP_Clk                     : in  std_logic;
@@ -140,9 +142,140 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
+	component vgacore
+		port
+		(
+			reset: in std_logic;	-- reset
+			clock: in std_logic; -- 12,5 MHz
+			hsyncb: out std_logic;	-- horizontal (line) sync
+			load: in std_logic;
+			color: in std_logic_vector(8 downto 0); -- color
+			rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
+			vsyncb: out std_logic;	-- vertical (frame) sync
+			rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
+		);
+	end component;
+component counter2 IS
+		GENERIC (
+			numBits_g: INTEGER := 8
+		);
+		PORT (
+			rst		: IN  STD_LOGIC;
+			clk		: IN  STD_LOGIC;
+			inc_in	: IN  STD_LOGIC;
+			d_out		: OUT STD_LOGIC_VECTOR (numBits_g-1 DOWNTO 0)
+		);
+	END component;
+	type statesLectura is (estadoEsperaLectura, estadoEnviarDato);
+	signal currentStateLectura, nextStateLectura : statesLectura;
 
+	signal load, incContador : std_logic;
+	signal clock : std_logic;
+	signal timeOut, cuenta, ciclo : std_logic_vector(1 DOWNTO 0);
+	signal rectangulo : std_logic_vector(6 DOWNTO 0);
+	signal color : std_logic_vector(8 DOWNTO 0);
+	signal fifo_rdreq_cmb : std_logic;
+	
 begin
+timeOut <= "11"; -- 12,5 MHz
 
+	PROCESS (Bus2IP_Reset, Bus2IP_Clk, timeOut, cuenta)
+	BEGIN
+		if Bus2IP_Reset='1' then
+			cuenta <= (OTHERS =>'0');
+		elsif Bus2IP_Clk'event and Bus2IP_Clk='1' then
+			if cuenta = timeOut then
+				clock <= '1';
+				cuenta <= (OTHERS =>'0');
+			else
+				clock <= '0';
+				cuenta <= cuenta + 1;
+			end if;
+		end if;
+	END PROCESS;
+
+
+	rectangulo(0) <= WFIFO2IP_Data(31);
+	rectangulo(1) <= WFIFO2IP_Data(30);
+	rectangulo(2) <= WFIFO2IP_Data(29);
+	rectangulo(3) <= WFIFO2IP_Data(28);
+	rectangulo(4) <= WFIFO2IP_Data(27);
+	rectangulo(5) <= WFIFO2IP_Data(26);
+	rectangulo(6) <= WFIFO2IP_Data(25);
+	
+	color(0) <= WFIFO2IP_Data(8);
+	color(1) <= WFIFO2IP_Data(7);
+	color(2) <= WFIFO2IP_Data(6);
+	color(3) <= WFIFO2IP_Data(5);
+	color(4) <= WFIFO2IP_Data(4);
+	color(5) <= WFIFO2IP_Data(3);
+	color(6) <= WFIFO2IP_Data(2);
+	color(7) <= WFIFO2IP_Data(1);
+	color(8) <= WFIFO2IP_Data(0);
+
+	vga: vgacore
+		port map
+		(
+			reset => Bus2IP_Reset,
+			clock => clock, -- 12,5 MHz
+			hsyncb => hsyncb,
+			load => load,
+			color => color,
+			rectangulo => rectangulo,
+			vsyncb => vsyncb,
+			rgb => rgb
+		);
+
+		sincro : counter2 
+		GENERIC MAP (
+			numBits_g => 2
+		)
+		PORT MAP (
+			rst		=> Bus2IP_Reset,
+			clk		=> Bus2IP_Clk,
+			inc_in	=> incContador,
+			d_out		=> ciclo
+		);
+		
+		-- Maquinas de estados		
+		unidadDeControl: process(currentStateLectura, WFIFO2IP_empty, timeOut, ciclo)
+		begin
+		
+			nextStateLectura <= currentStateLectura;
+			load <= '0';
+			incContador <= '0';
+			fifo_rdreq_cmb <= '0';
+		
+			case currentStateLectura is
+			
+				when estadoEsperaLectura =>
+					if (WFIFO2IP_empty = '0') then
+						fifo_rdreq_cmb <= '1';
+						nextStateLectura   <= estadoEnviarDato ;
+					end if;
+					
+				when estadoEnviarDato =>
+					load <= '1';
+					incContador <= '1';
+					if (ciclo = timeOut) then
+						nextStateLectura   <= estadoEsperaLectura;
+					end if;
+								
+			end case;
+		end process unidadDeControl;
+
+		state: process (Bus2IP_Clk)
+		begin			  
+			  if Bus2IP_Clk'EVENT and Bus2IP_Clk='1' then
+				 if Bus2IP_Reset = '1' then
+					currentStateLectura <= estadoEsperaLectura;
+					IP2WFIFO_RdReq <= '0';
+				 else
+					currentStateLectura <= nextStateLectura;
+					IP2WFIFO_RdReq <= fifo_rdreq_cmb;
+				 end if;
+			  end if;
+		end process state;
   --USER logic implementation added here
 
   ------------------------------------------

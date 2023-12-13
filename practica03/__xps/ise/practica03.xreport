@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-13T00:48:11</DateModified>
+  <DateModified>2023-12-13T17:33:38</DateModified>
   <ModuleName>practica03</ModuleName>
-  <SummaryTimeStamp>2023-12-13T00:48:11</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/aluqu/Desktop/uni/SE/practica03/__xps/ise/practica03.xreport</SavedFilePath>
+  <SummaryTimeStamp>2023-12-13T17:33:38</SummaryTimeStamp>
+  <SavedFilePath>U:/hlocal/temp/SE/practica03/__xps/ise/practica03.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>C:/Users/aluqu/Desktop/uni/SE/practica03/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>U:/hlocal/temp/SE/practica03/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2023-12-09T21:08:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

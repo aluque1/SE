@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Wed Dec 13 14:06:08 2023">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Wed Dec 13 16:29:42 2023">
 
-  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="C:/Users/aluqu/Desktop/uni/SE/practica04/practica04.xmp" SPEEDGRADE="-5"/>
+  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="U:/hlocal/temp/SE/practica04/practica04.xmp" SPEEDGRADE="-5"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" MHS_INDEX="0" NAME="rst" SIGIS="RST" SIGNAME="microblaze_0_MB_RESET">
@@ -22,12 +22,12 @@
     </PORT>
     <PORT DIR="IO" ENDIAN="BIG" LEFT="0" LSB="7" MHS_INDEX="3" MSB="0" NAME="leds" RIGHT="7" SIGNAME="xps_gpio_0_GPIO_IO">
       <CONNECTIONS>
-        <CONNECTION BUSINTERFACE="[gpio_0]" INSTANCE="xps_gpio_0" PORT="GPIO_IO"/>
+        <CONNECTION BUSINTERFACE="[gpio_0]" INSTANCE="xps_gpio_LEDS" PORT="GPIO_IO"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="IO" ENDIAN="BIG" LEFT="0" LSB="7" MHS_INDEX="4" MSB="0" NAME="switches" RIGHT="7" SIGNAME="xps_gpio_1_GPIO_IO">
       <CONNECTIONS>
-        <CONNECTION BUSINTERFACE="[gpio_0]" INSTANCE="xps_gpio_1" PORT="GPIO_IO"/>
+        <CONNECTION BUSINTERFACE="[gpio_0]" INSTANCE="xps_gpio_SW" PORT="GPIO_IO"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" MHS_INDEX="5" NAME="clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
@@ -35,9 +35,25 @@
         <CONNECTION BUSINTERFACE="[DPLB:IPLB:DLMB:ILMB]" INSTANCE="microblaze_0" PORT="CLK"/>
         <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="SPLB_Clk"/>
-        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="SPLB_Clk"/>
+        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="SPLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="SPLB_Clk"/>
-        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="SPLB_Clk"/>
+        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="SPLB_Clk"/>
+        <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="SPLB_Clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="6" NAME="hsyncb" SIGNAME="pantalla_0_hsyncb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pantalla_0" PORT="hsyncb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="7" NAME="vsyncb" SIGNAME="pantalla_0_vsyncb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pantalla_0" PORT="vsyncb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" ENDIAN="BIG" LEFT="0" LSB="8" MHS_INDEX="8" MSB="0" NAME="rgb" RIGHT="8" SIGNAME="pantalla_0_rgb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pantalla_0" PORT="rgb"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -47,7 +63,7 @@
       <DESCRIPTION TYPE="SHORT">MicroBlaze</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The MicroBlaze 32 bit soft processor</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_30_a/doc/microblaze.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_30_a/doc/microblaze.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -2353,7 +2369,7 @@
             <ROUTEPNT INDEX="0" INSTANCE="plb_v46_0"/>
           </ACCESSROUTE>
         </MEMRANGE>
-        <MEMRANGE BASEDECIMAL="2168586240" BASENAME="C_BASEADDR" BASEVALUE="0x81420000" HIGHDECIMAL="2168651775" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x8142ffff" INSTANCE="xps_gpio_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" IS_VALID="TRUE" MEMTYPE="REGISTER" SIZE="65536" SIZEABRV="64K">
+        <MEMRANGE BASEDECIMAL="2214674432" BASENAME="C_BASEADDR" BASEVALUE="0x84014000" HIGHDECIMAL="2214674943" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x840141ff" INSTANCE="xps_gpio_LEDS" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" IS_VALID="TRUE" MEMTYPE="REGISTER" SIZE="512" SIZEABRV="512">
           <ACCESSROUTE>
             <ROUTEPNT INDEX="0" INSTANCE="plb_v46_0"/>
           </ACCESSROUTE>
@@ -2363,7 +2379,12 @@
             <ROUTEPNT INDEX="0" INSTANCE="plb_v46_0"/>
           </ACCESSROUTE>
         </MEMRANGE>
-        <MEMRANGE BASEDECIMAL="2168455168" BASENAME="C_BASEADDR" BASEVALUE="0x81400000" HIGHDECIMAL="2168520703" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x8140ffff" INSTANCE="xps_gpio_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" IS_VALID="TRUE" MEMTYPE="REGISTER" SIZE="65536" SIZEABRV="64K">
+        <MEMRANGE BASEDECIMAL="2214690816" BASENAME="C_BASEADDR" BASEVALUE="0x84018000" HIGHDECIMAL="2214691327" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x840181ff" INSTANCE="xps_gpio_SW" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" IS_VALID="TRUE" MEMTYPE="REGISTER" SIZE="512" SIZEABRV="512">
+          <ACCESSROUTE>
+            <ROUTEPNT INDEX="0" INSTANCE="plb_v46_0"/>
+          </ACCESSROUTE>
+        </MEMRANGE>
+        <MEMRANGE BASEDECIMAL="3443523584" BASENAME="C_BASEADDR" BASEVALUE="0xcd400000" HIGHDECIMAL="3443589119" HIGHNAME="C_HIGHADDR" HIGHVALUE="0xcd40ffff" INSTANCE="pantalla_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" IS_VALID="TRUE" MEMTYPE="REGISTER" SIZE="65536" SIZEABRV="64K">
           <ACCESSROUTE>
             <ROUTEPNT INDEX="0" INSTANCE="plb_v46_0"/>
           </ACCESSROUTE>
@@ -2371,21 +2392,22 @@
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="xps_bram_if_cntlr_0"/>
-        <PERIPHERAL INSTANCE="xps_gpio_0"/>
+        <PERIPHERAL INSTANCE="xps_gpio_LEDS"/>
         <PERIPHERAL INSTANCE="xps_uartlite_0"/>
-        <PERIPHERAL INSTANCE="xps_gpio_1"/>
+        <PERIPHERAL INSTANCE="xps_gpio_SW"/>
+        <PERIPHERAL INSTANCE="pantalla_0"/>
       </PERIPHERALS>
     </MODULE>
     <MODULE BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" HWVERSION="1.05.a" INSTANCE="plb_v46_0" IPTYPE="BUS" MHS_INDEX="1" MODCLASS="BUS" MODTYPE="plb_v46">
       <DESCRIPTION TYPE="SHORT">Processor Local Bus (PLB) 4.6</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">'Xilinx 64-bit Processor Local Bus (PLB) consists of a bus control unit, a watchdog timer, and separate address, write, and read data path units with a a three-cycle only arbitration feature'</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/doc/plb_v46.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/doc/plb_v46.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
         <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="0" NAME="C_PLBV46_NUM_MASTERS" TYPE="integer" VALUE="2"/>
-        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_PLBV46_NUM_SLAVES" TYPE="integer" VALUE="4"/>
+        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="1" NAME="C_PLBV46_NUM_SLAVES" TYPE="integer" VALUE="5"/>
         <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="2" NAME="C_PLBV46_MID_WIDTH" TYPE="integer" VALUE="1"/>
         <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="3" NAME="C_PLBV46_AWIDTH" TYPE="integer" VALUE="32"/>
         <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="4" NAME="C_PLBV46_DWIDTH" TYPE="integer" VALUE="32"/>
@@ -2416,12 +2438,13 @@
         <PORT DEF_SIGNAME="plb_v46_0_PLB_Rst" DIR="O" MPD_INDEX="2" NAME="PLB_Rst" SIGIS="RST" SIGNAME="plb_v46_0_PLB_Rst">
           <CONNECTIONS/>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_SPLB_Rst" DIR="O" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="3" MSB="0" NAME="SPLB_Rst" RIGHT="3" SIGIS="RST" SIGNAME="plb_v46_0_SPLB_Rst" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_SPLB_Rst" DIR="O" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="3" MSB="0" NAME="SPLB_Rst" RIGHT="4" SIGIS="RST" SIGNAME="plb_v46_0_SPLB_Rst" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="SPLB_Rst"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="SPLB_Rst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="SPLB_Rst"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="SPLB_Rst"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="SPLB_Rst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="SPLB_Rst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="SPLB_Rst"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_MPLB_Rst" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="4" MSB="0" NAME="MPLB_Rst" RIGHT="1" SIGIS="RST" SIGNAME="plb_v46_0_MPLB_Rst" VECFORMULA="[0:C_PLBV46_NUM_MASTERS-1]">
@@ -2529,132 +2552,148 @@
             <CONNECTION BUSINTERFACE="[DPLB]" INSTANCE="microblaze_0" PORT="DPLB_M_wrDBus"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_addrAck" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="27" MSB="0" NAME="Sl_addrAck" RIGHT="3" SIGNAME="plb_v46_0_Sl_addrAck" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_addrAck" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="27" MSB="0" NAME="Sl_addrAck" RIGHT="4" SIGNAME="plb_v46_0_Sl_addrAck" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_addrAck"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_addrAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_addrAck"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_addrAck"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_addrAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_addrAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_addrAck"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_MRdErr" DIR="I" ENDIAN="BIG" LEFT="0" LSB="7" MPD_INDEX="28" MSB="0" NAME="Sl_MRdErr" RIGHT="7" SIGNAME="plb_v46_0_Sl_MRdErr" VECFORMULA="[0:(C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS)-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_MRdErr" DIR="I" ENDIAN="BIG" LEFT="0" LSB="9" MPD_INDEX="28" MSB="0" NAME="Sl_MRdErr" RIGHT="9" SIGNAME="plb_v46_0_Sl_MRdErr" VECFORMULA="[0:(C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS)-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_MRdErr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_MRdErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_MRdErr"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_MRdErr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_MRdErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_MRdErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_MRdErr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_MWrErr" DIR="I" ENDIAN="BIG" LEFT="0" LSB="7" MPD_INDEX="29" MSB="0" NAME="Sl_MWrErr" RIGHT="7" SIGNAME="plb_v46_0_Sl_MWrErr" VECFORMULA="[0:(C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS)-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_MWrErr" DIR="I" ENDIAN="BIG" LEFT="0" LSB="9" MPD_INDEX="29" MSB="0" NAME="Sl_MWrErr" RIGHT="9" SIGNAME="plb_v46_0_Sl_MWrErr" VECFORMULA="[0:(C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS)-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_MWrErr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_MWrErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_MWrErr"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_MWrErr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_MWrErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_MWrErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_MWrErr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_MBusy" DIR="I" ENDIAN="BIG" LEFT="0" LSB="7" MPD_INDEX="30" MSB="0" NAME="Sl_MBusy" RIGHT="7" SIGNAME="plb_v46_0_Sl_MBusy" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS - 1 ]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_MBusy" DIR="I" ENDIAN="BIG" LEFT="0" LSB="9" MPD_INDEX="30" MSB="0" NAME="Sl_MBusy" RIGHT="9" SIGNAME="plb_v46_0_Sl_MBusy" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS - 1 ]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_MBusy"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_MBusy"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_MBusy"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_MBusy"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_MBusy"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_MBusy"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_MBusy"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdBTerm" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="31" MSB="0" NAME="Sl_rdBTerm" RIGHT="3" SIGNAME="plb_v46_0_Sl_rdBTerm" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdBTerm" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="31" MSB="0" NAME="Sl_rdBTerm" RIGHT="4" SIGNAME="plb_v46_0_Sl_rdBTerm" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_rdBTerm"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_rdBTerm"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_rdBTerm"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_rdBTerm"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_rdBTerm"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_rdBTerm"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_rdBTerm"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdComp" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="32" MSB="0" NAME="Sl_rdComp" RIGHT="3" SIGNAME="plb_v46_0_Sl_rdComp" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdComp" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="32" MSB="0" NAME="Sl_rdComp" RIGHT="4" SIGNAME="plb_v46_0_Sl_rdComp" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_rdComp"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_rdComp"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_rdComp"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_rdComp"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_rdComp"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_rdComp"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_rdComp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdDAck" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="33" MSB="0" NAME="Sl_rdDAck" RIGHT="3" SIGNAME="plb_v46_0_Sl_rdDAck" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdDAck" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="33" MSB="0" NAME="Sl_rdDAck" RIGHT="4" SIGNAME="plb_v46_0_Sl_rdDAck" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_rdDAck"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_rdDAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_rdDAck"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_rdDAck"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_rdDAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_rdDAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_rdDAck"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdDBus" DIR="I" ENDIAN="BIG" LEFT="0" LSB="127" MPD_INDEX="34" MSB="0" NAME="Sl_rdDBus" RIGHT="127" SIGNAME="plb_v46_0_Sl_rdDBus" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*C_PLBV46_DWIDTH-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdDBus" DIR="I" ENDIAN="BIG" LEFT="0" LSB="159" MPD_INDEX="34" MSB="0" NAME="Sl_rdDBus" RIGHT="159" SIGNAME="plb_v46_0_Sl_rdDBus" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*C_PLBV46_DWIDTH-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_rdDBus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_rdDBus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_rdDBus"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_rdDBus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_rdDBus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_rdDBus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_rdDBus"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdWdAddr" DIR="I" ENDIAN="BIG" LEFT="0" LSB="15" MPD_INDEX="35" MSB="0" NAME="Sl_rdWdAddr" RIGHT="15" SIGNAME="plb_v46_0_Sl_rdWdAddr" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*4-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_rdWdAddr" DIR="I" ENDIAN="BIG" LEFT="0" LSB="19" MPD_INDEX="35" MSB="0" NAME="Sl_rdWdAddr" RIGHT="19" SIGNAME="plb_v46_0_Sl_rdWdAddr" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*4-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_rdWdAddr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_rdWdAddr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_rdWdAddr"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_rdWdAddr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_rdWdAddr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_rdWdAddr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_rdWdAddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_rearbitrate" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="36" MSB="0" NAME="Sl_rearbitrate" RIGHT="3" SIGNAME="plb_v46_0_Sl_rearbitrate" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_rearbitrate" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="36" MSB="0" NAME="Sl_rearbitrate" RIGHT="4" SIGNAME="plb_v46_0_Sl_rearbitrate" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_rearbitrate"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_rearbitrate"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_rearbitrate"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_rearbitrate"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_rearbitrate"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_rearbitrate"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_rearbitrate"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_SSize" DIR="I" ENDIAN="BIG" LEFT="0" LSB="7" MPD_INDEX="37" MSB="0" NAME="Sl_SSize" RIGHT="7" SIGNAME="plb_v46_0_Sl_SSize" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*2-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_SSize" DIR="I" ENDIAN="BIG" LEFT="0" LSB="9" MPD_INDEX="37" MSB="0" NAME="Sl_SSize" RIGHT="9" SIGNAME="plb_v46_0_Sl_SSize" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*2-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_SSize"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_SSize"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_SSize"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_SSize"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_SSize"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_SSize"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_SSize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_wait" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="38" MSB="0" NAME="Sl_wait" RIGHT="3" SIGNAME="plb_v46_0_Sl_wait" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_wait" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="38" MSB="0" NAME="Sl_wait" RIGHT="4" SIGNAME="plb_v46_0_Sl_wait" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_wait"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_wait"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_wait"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_wait"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_wait"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_wait"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_wait"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_wrBTerm" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="39" MSB="0" NAME="Sl_wrBTerm" RIGHT="3" SIGNAME="plb_v46_0_Sl_wrBTerm" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_wrBTerm" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="39" MSB="0" NAME="Sl_wrBTerm" RIGHT="4" SIGNAME="plb_v46_0_Sl_wrBTerm" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_wrBTerm"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_wrBTerm"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_wrBTerm"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_wrBTerm"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_wrBTerm"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_wrBTerm"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_wrBTerm"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_wrComp" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="40" MSB="0" NAME="Sl_wrComp" RIGHT="3" SIGNAME="plb_v46_0_Sl_wrComp" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_wrComp" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="40" MSB="0" NAME="Sl_wrComp" RIGHT="4" SIGNAME="plb_v46_0_Sl_wrComp" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_wrComp"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_wrComp"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_wrComp"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_wrComp"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_wrComp"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_wrComp"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_wrComp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_wrDAck" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="41" MSB="0" NAME="Sl_wrDAck" RIGHT="3" SIGNAME="plb_v46_0_Sl_wrDAck" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_wrDAck" DIR="I" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="41" MSB="0" NAME="Sl_wrDAck" RIGHT="4" SIGNAME="plb_v46_0_Sl_wrDAck" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_wrDAck"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_wrDAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_wrDAck"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_wrDAck"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_wrDAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_wrDAck"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_wrDAck"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_Sl_MIRQ" DIR="I" ENDIAN="BIG" LEFT="0" LSB="7" MPD_INDEX="42" MSB="0" NAME="Sl_MIRQ" RIGHT="7" SIGNAME="plb_v46_0_Sl_MIRQ" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_Sl_MIRQ" DIR="I" ENDIAN="BIG" LEFT="0" LSB="9" MPD_INDEX="42" MSB="0" NAME="Sl_MIRQ" RIGHT="9" SIGNAME="plb_v46_0_Sl_MIRQ" VECFORMULA="[0:C_PLBV46_NUM_SLAVES*C_PLBV46_NUM_MASTERS-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="Sl_MIRQ"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="Sl_MIRQ"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="Sl_MIRQ"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="Sl_MIRQ"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="Sl_MIRQ"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="Sl_MIRQ"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_MIRQ" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="43" MSB="0" NAME="PLB_MIRQ" RIGHT="1" SIGNAME="plb_v46_0_PLB_MIRQ" VECFORMULA="[0:C_PLBV46_NUM_MASTERS-1]">
@@ -2666,25 +2705,28 @@
         <PORT DEF_SIGNAME="plb_v46_0_PLB_ABus" DIR="O" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="44" MSB="0" NAME="PLB_ABus" RIGHT="31" SIGNAME="plb_v46_0_PLB_ABus" VECFORMULA="[0:31]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_ABus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_ABus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_ABus"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_ABus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_ABus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_ABus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_ABus"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_UABus" DIR="O" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="45" MSB="0" NAME="PLB_UABus" RIGHT="31" SIGNAME="plb_v46_0_PLB_UABus" VECFORMULA="[0:31]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_UABus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_UABus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_UABus"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_UABus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_UABus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_UABus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_UABus"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_BE" DIR="O" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="46" MSB="0" NAME="PLB_BE" RIGHT="3" SIGNAME="plb_v46_0_PLB_BE" VECFORMULA="[0:(C_PLBV46_DWIDTH/8)-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_BE"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_BE"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_BE"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_BE"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_BE"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_BE"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_BE"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_MAddrAck" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="47" MSB="0" NAME="PLB_MAddrAck" RIGHT="1" SIGNAME="plb_v46_0_PLB_MAddrAck" VECFORMULA="[0:C_PLBV46_NUM_MASTERS-1]">
@@ -2768,169 +2810,190 @@
         <PORT DEF_SIGNAME="plb_v46_0_PLB_PAValid" DIR="O" MPD_INDEX="60" NAME="PLB_PAValid" SIGNAME="plb_v46_0_PLB_PAValid">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_PAValid"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_PAValid"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_PAValid"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_PAValid"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_PAValid"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_PAValid"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_PAValid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_RNW" DIR="O" MPD_INDEX="61" NAME="PLB_RNW" SIGNAME="plb_v46_0_PLB_RNW">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_RNW"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_RNW"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_RNW"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_RNW"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_RNW"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_RNW"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_RNW"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_SAValid" DIR="O" MPD_INDEX="62" NAME="PLB_SAValid" SIGNAME="plb_v46_0_PLB_SAValid">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_SAValid"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_SAValid"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_SAValid"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_SAValid"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_SAValid"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_SAValid"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_SAValid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_abort" DIR="O" MPD_INDEX="63" NAME="PLB_abort" SIGNAME="plb_v46_0_PLB_abort">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_abort"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_abort"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_abort"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_abort"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_abort"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_abort"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_abort"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_busLock" DIR="O" MPD_INDEX="64" NAME="PLB_busLock" SIGNAME="plb_v46_0_PLB_busLock">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_busLock"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_busLock"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_busLock"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_busLock"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_busLock"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_busLock"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_busLock"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_TAttribute" DIR="O" ENDIAN="BIG" LEFT="0" LSB="15" MPD_INDEX="65" MSB="0" NAME="PLB_TAttribute" RIGHT="15" SIGNAME="plb_v46_0_PLB_TAttribute" VECFORMULA="[0:15]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_TAttribute"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_TAttribute"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_TAttribute"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_TAttribute"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_TAttribute"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_TAttribute"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_TAttribute"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_lockErr" DIR="O" MPD_INDEX="66" NAME="PLB_lockErr" SIGNAME="plb_v46_0_PLB_lockErr">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_lockErr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_lockErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_lockErr"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_lockErr"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_lockErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_lockErr"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_lockErr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_masterID" DIR="O" MPD_INDEX="67" NAME="PLB_masterID" SIGNAME="plb_v46_0_PLB_masterID" VECFORMULA="[0:C_PLBV46_MID_WIDTH-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_masterID"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_masterID"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_masterID"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_masterID"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_masterID"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_masterID"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_masterID"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_MSize" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="68" MSB="0" NAME="PLB_MSize" RIGHT="1" SIGNAME="plb_v46_0_PLB_MSize" VECFORMULA="[0:1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_MSize"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_MSize"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_MSize"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_MSize"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_MSize"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_MSize"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_MSize"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_rdPendPri" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="69" MSB="0" NAME="PLB_rdPendPri" RIGHT="1" SIGNAME="plb_v46_0_PLB_rdPendPri" VECFORMULA="[0:1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_rdPendPri"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_rdPendPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_rdPendPri"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_rdPendPri"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_rdPendPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_rdPendPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_rdPendPri"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_wrPendPri" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="70" MSB="0" NAME="PLB_wrPendPri" RIGHT="1" SIGNAME="plb_v46_0_PLB_wrPendPri" VECFORMULA="[0:1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_wrPendPri"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_wrPendPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_wrPendPri"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_wrPendPri"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_wrPendPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_wrPendPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_wrPendPri"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_rdPendReq" DIR="O" MPD_INDEX="71" NAME="PLB_rdPendReq" SIGNAME="plb_v46_0_PLB_rdPendReq">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_rdPendReq"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_rdPendReq"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_rdPendReq"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_rdPendReq"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_rdPendReq"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_rdPendReq"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_rdPendReq"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_wrPendReq" DIR="O" MPD_INDEX="72" NAME="PLB_wrPendReq" SIGNAME="plb_v46_0_PLB_wrPendReq">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_wrPendReq"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_wrPendReq"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_wrPendReq"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_wrPendReq"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_wrPendReq"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_wrPendReq"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_wrPendReq"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_rdBurst" DIR="O" MPD_INDEX="73" NAME="PLB_rdBurst" SIGNAME="plb_v46_0_PLB_rdBurst">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_rdBurst"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_rdBurst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_rdBurst"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_rdBurst"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_rdBurst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_rdBurst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_rdBurst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_PLB_rdPrim" DIR="O" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="74" MSB="0" NAME="PLB_rdPrim" RIGHT="3" SIGNAME="plb_v46_0_PLB_rdPrim" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_PLB_rdPrim" DIR="O" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="74" MSB="0" NAME="PLB_rdPrim" RIGHT="4" SIGNAME="plb_v46_0_PLB_rdPrim" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_rdPrim"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_rdPrim"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_rdPrim"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_rdPrim"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_rdPrim"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_rdPrim"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_rdPrim"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_reqPri" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="75" MSB="0" NAME="PLB_reqPri" RIGHT="1" SIGNAME="plb_v46_0_PLB_reqPri" VECFORMULA="[0:1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_reqPri"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_reqPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_reqPri"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_reqPri"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_reqPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_reqPri"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_reqPri"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_size" DIR="O" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="76" MSB="0" NAME="PLB_size" RIGHT="3" SIGNAME="plb_v46_0_PLB_size" VECFORMULA="[0:3]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_size"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_size"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_size"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_size"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_size"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_size"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_size"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_type" DIR="O" ENDIAN="BIG" LEFT="0" LSB="2" MPD_INDEX="77" MSB="0" NAME="PLB_type" RIGHT="2" SIGNAME="plb_v46_0_PLB_type" VECFORMULA="[0:2]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_type"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_type"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_type"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_type"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_type"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_type"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_type"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_wrBurst" DIR="O" MPD_INDEX="78" NAME="PLB_wrBurst" SIGNAME="plb_v46_0_PLB_wrBurst">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_wrBurst"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_wrBurst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_wrBurst"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_wrBurst"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_wrBurst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_wrBurst"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_wrBurst"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_wrDBus" DIR="O" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="79" MSB="0" NAME="PLB_wrDBus" RIGHT="31" SIGNAME="plb_v46_0_PLB_wrDBus" VECFORMULA="[0:C_PLBV46_DWIDTH-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_wrDBus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_wrDBus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_wrDBus"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_wrDBus"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_wrDBus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_wrDBus"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_wrDBus"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DEF_SIGNAME="plb_v46_0_PLB_wrPrim" DIR="O" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="80" MSB="0" NAME="PLB_wrPrim" RIGHT="3" SIGNAME="plb_v46_0_PLB_wrPrim" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
+        <PORT DEF_SIGNAME="plb_v46_0_PLB_wrPrim" DIR="O" ENDIAN="BIG" LEFT="0" LSB="4" MPD_INDEX="80" MSB="0" NAME="PLB_wrPrim" RIGHT="4" SIGNAME="plb_v46_0_PLB_wrPrim" VECFORMULA="[0:C_PLBV46_NUM_SLAVES-1]">
           <CONNECTIONS>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="PLB_wrPrim"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_0" PORT="PLB_wrPrim"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_LEDS" PORT="PLB_wrPrim"/>
             <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="PLB_wrPrim"/>
-            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_1" PORT="PLB_wrPrim"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_gpio_SW" PORT="PLB_wrPrim"/>
+            <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="pantalla_0" PORT="PLB_wrPrim"/>
           </CONNECTIONS>
         </PORT>
         <PORT DEF_SIGNAME="plb_v46_0_PLB_SaddrAck" DIR="O" MPD_INDEX="81" NAME="PLB_SaddrAck" SIGNAME="plb_v46_0_PLB_SaddrAck">
@@ -3004,7 +3067,7 @@
       <DESCRIPTION TYPE="SHORT">XPS BRAM Controller</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">Attaches BRAM to the PLBV46</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/doc/xps_bram_if_cntlr.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/doc/xps_bram_if_cntlr.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -3338,7 +3401,7 @@
       <DESCRIPTION TYPE="SHORT">Block RAM (BRAM) Block</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The BRAM Block is a configurable memory module that attaches to a variety of BRAM Interface Controllers.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/doc/bram_block.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/doc/bram_block.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -3417,16 +3480,16 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE HWVERSION="2.00.a" INSTANCE="xps_gpio_0" IPTYPE="PERIPHERAL" MHS_INDEX="4" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
+    <MODULE HWVERSION="2.00.a" INSTANCE="xps_gpio_LEDS" IPTYPE="PERIPHERAL" MHS_INDEX="4" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">General Purpose Input/Output (GPIO) core for the PLBV46 bus.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
-        <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="3" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81420000"/>
-        <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="4" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x8142ffff"/>
+        <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="3" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x84014000"/>
+        <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="4" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x840141ff"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="2" NAME="C_SPLB_AWIDTH" TYPE="INTEGER" VALUE="32"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="3" NAME="C_SPLB_DWIDTH" TYPE="INTEGER" VALUE="32"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="4" NAME="C_SPLB_P2P" TYPE="INTEGER" VALUE="0"/>
@@ -3739,7 +3802,7 @@
         </IOINTERFACE>
       </IOINTERFACES>
       <MEMORYMAP>
-        <MEMRANGE BASEDECIMAL="2168586240" BASENAME="C_BASEADDR" BASEVALUE="0x81420000" HIGHDECIMAL="2168651775" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x8142ffff" MEMTYPE="REGISTER" MINSIZE="0x200" SIZE="65536" SIZEABRV="64K">
+        <MEMRANGE BASEDECIMAL="2214674432" BASENAME="C_BASEADDR" BASEVALUE="0x84014000" HIGHDECIMAL="2214674943" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x840141ff" MEMTYPE="REGISTER" MINSIZE="0x200" SIZE="512" SIZEABRV="512">
           <SLAVES>
             <SLAVE BUSINTERFACE="SPLB"/>
           </SLAVES>
@@ -3750,7 +3813,7 @@
       <DESCRIPTION TYPE="SHORT">XPS UART (Lite)</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">Generic UART (Universal Asynchronous Receiver/Transmitter) for PLBV46 bus.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/doc/xps_uartlite.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/doc/xps_uartlite.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -4059,16 +4122,16 @@
         </MEMRANGE>
       </MEMORYMAP>
     </MODULE>
-    <MODULE HWVERSION="2.00.a" INSTANCE="xps_gpio_1" IPTYPE="PERIPHERAL" MHS_INDEX="6" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
+    <MODULE HWVERSION="2.00.a" INSTANCE="xps_gpio_SW" IPTYPE="PERIPHERAL" MHS_INDEX="6" MODCLASS="PERIPHERAL" MODTYPE="xps_gpio">
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">General Purpose Input/Output (GPIO) core for the PLBV46 bus.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
-        <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="3" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x81400000"/>
-        <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="4" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x8140ffff"/>
+        <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="3" MPD_INDEX="0" MSB="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x84018000"/>
+        <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" ASSIGNMENT="REQUIRE" CHANGEDBY="USER" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LSB="31" MHS_INDEX="4" MPD_INDEX="1" MSB="0" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x840181ff"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="2" NAME="C_SPLB_AWIDTH" TYPE="INTEGER" VALUE="32"/>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="3" NAME="C_SPLB_DWIDTH" TYPE="INTEGER" VALUE="32"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="4" NAME="C_SPLB_P2P" TYPE="INTEGER" VALUE="0"/>
@@ -4379,7 +4442,308 @@
         </IOINTERFACE>
       </IOINTERFACES>
       <MEMORYMAP>
-        <MEMRANGE BASEDECIMAL="2168455168" BASENAME="C_BASEADDR" BASEVALUE="0x81400000" HIGHDECIMAL="2168520703" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x8140ffff" MEMTYPE="REGISTER" MINSIZE="0x200" SIZE="65536" SIZEABRV="64K">
+        <MEMRANGE BASEDECIMAL="2214690816" BASENAME="C_BASEADDR" BASEVALUE="0x84018000" HIGHDECIMAL="2214691327" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x840181ff" MEMTYPE="REGISTER" MINSIZE="0x200" SIZE="512" SIZEABRV="512">
+          <SLAVES>
+            <SLAVE BUSINTERFACE="SPLB"/>
+          </SLAVES>
+        </MEMRANGE>
+      </MEMORYMAP>
+    </MODULE>
+    <MODULE HWVERSION="1.00.a" INSTANCE="pantalla_0" IPTYPE="PERIPHERAL" MHS_INDEX="7" MODCLASS="PERIPHERAL" MODTYPE="pantalla">
+      <DESCRIPTION TYPE="SHORT">PANTALLA</DESCRIPTION>
+      <LICENSEINFO ICON_NAME="ps_core_local"/>
+      <PARAMETERS>
+        <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="0" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0xcd400000"/>
+        <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="1" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0xcd40ffff"/>
+        <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="2" NAME="C_SPLB_AWIDTH" TYPE="INTEGER" VALUE="32"/>
+        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="3" NAME="C_SPLB_DWIDTH" TYPE="INTEGER" VALUE="32"/>
+        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="4" NAME="C_SPLB_NUM_MASTERS" TYPE="INTEGER" VALUE="2"/>
+        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="5" NAME="C_SPLB_MID_WIDTH" TYPE="INTEGER" VALUE="1"/>
+        <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="6" NAME="C_SPLB_NATIVE_DWIDTH" TYPE="INTEGER" VALUE="32"/>
+        <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="7" NAME="C_SPLB_P2P" TYPE="INTEGER" VALUE="0"/>
+        <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="8" NAME="C_SPLB_SUPPORT_BURSTS" TYPE="INTEGER" VALUE="0"/>
+        <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="9" NAME="C_SPLB_SMALLEST_MASTER" TYPE="INTEGER" VALUE="32"/>
+        <PARAMETER ASSIGNMENT="OPTIONAL_UPDATE" MPD_INDEX="10" NAME="C_SPLB_CLK_PERIOD_PS" TYPE="INTEGER" VALUE="10000"/>
+        <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="11" NAME="C_INCLUDE_DPHASE_TIMER" TYPE="INTEGER" VALUE="0"/>
+        <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="42" NAME="hsyncb" SIGNAME="pantalla_0_hsyncb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="hsyncb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="43" NAME="vsyncb" SIGNAME="pantalla_0_vsyncb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="vsyncb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LEFT="0" LSB="8" MHS_INDEX="2" MPD_INDEX="44" MSB="0" NAME="rgb" RIGHT="8" SIGNAME="pantalla_0_rgb" VECFORMULA="[0:8]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="rgb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_Clk" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_SPLB_Rst" DIR="I" MPD_INDEX="1" NAME="SPLB_Rst" SIGIS="RST" SIGNAME="plb_v46_0_SPLB_Rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="SPLB_Rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_ABus" DIR="I" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="2" MSB="0" NAME="PLB_ABus" RIGHT="31" SIGNAME="plb_v46_0_PLB_ABus" VECFORMULA="[0:31]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_ABus"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_UABus" DIR="I" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="3" MSB="0" NAME="PLB_UABus" RIGHT="31" SIGNAME="plb_v46_0_PLB_UABus" VECFORMULA="[0:31]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_UABus"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_PAValid" DIR="I" MPD_INDEX="4" NAME="PLB_PAValid" SIGNAME="plb_v46_0_PLB_PAValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_PAValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_SAValid" DIR="I" MPD_INDEX="5" NAME="PLB_SAValid" SIGNAME="plb_v46_0_PLB_SAValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_SAValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_rdPrim" DIR="I" MPD_INDEX="6" NAME="PLB_rdPrim" SIGNAME="plb_v46_0_PLB_rdPrim">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_rdPrim"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_wrPrim" DIR="I" MPD_INDEX="7" NAME="PLB_wrPrim" SIGNAME="plb_v46_0_PLB_wrPrim">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_wrPrim"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_masterID" DIR="I" MPD_INDEX="8" NAME="PLB_masterID" SIGNAME="plb_v46_0_PLB_masterID" VECFORMULA="[0:(C_SPLB_MID_WIDTH-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_masterID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_abort" DIR="I" MPD_INDEX="9" NAME="PLB_abort" SIGNAME="plb_v46_0_PLB_abort">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_abort"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_busLock" DIR="I" MPD_INDEX="10" NAME="PLB_busLock" SIGNAME="plb_v46_0_PLB_busLock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_busLock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_RNW" DIR="I" MPD_INDEX="11" NAME="PLB_RNW" SIGNAME="plb_v46_0_PLB_RNW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_RNW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_BE" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="12" MSB="0" NAME="PLB_BE" RIGHT="3" SIGNAME="plb_v46_0_PLB_BE" VECFORMULA="[0:((C_SPLB_DWIDTH/8)-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_BE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_MSize" DIR="I" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="13" MSB="0" NAME="PLB_MSize" RIGHT="1" SIGNAME="plb_v46_0_PLB_MSize" VECFORMULA="[0:1]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_MSize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_size" DIR="I" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="14" MSB="0" NAME="PLB_size" RIGHT="3" SIGNAME="plb_v46_0_PLB_size" VECFORMULA="[0:3]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_size"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_type" DIR="I" ENDIAN="BIG" LEFT="0" LSB="2" MPD_INDEX="15" MSB="0" NAME="PLB_type" RIGHT="2" SIGNAME="plb_v46_0_PLB_type" VECFORMULA="[0:2]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_type"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_lockErr" DIR="I" MPD_INDEX="16" NAME="PLB_lockErr" SIGNAME="plb_v46_0_PLB_lockErr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_lockErr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_wrDBus" DIR="I" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="17" MSB="0" NAME="PLB_wrDBus" RIGHT="31" SIGNAME="plb_v46_0_PLB_wrDBus" VECFORMULA="[0:(C_SPLB_DWIDTH-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_wrDBus"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_wrBurst" DIR="I" MPD_INDEX="18" NAME="PLB_wrBurst" SIGNAME="plb_v46_0_PLB_wrBurst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_wrBurst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_rdBurst" DIR="I" MPD_INDEX="19" NAME="PLB_rdBurst" SIGNAME="plb_v46_0_PLB_rdBurst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_rdBurst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_wrPendReq" DIR="I" MPD_INDEX="20" NAME="PLB_wrPendReq" SIGNAME="plb_v46_0_PLB_wrPendReq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_wrPendReq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_rdPendReq" DIR="I" MPD_INDEX="21" NAME="PLB_rdPendReq" SIGNAME="plb_v46_0_PLB_rdPendReq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_rdPendReq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_wrPendPri" DIR="I" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="22" MSB="0" NAME="PLB_wrPendPri" RIGHT="1" SIGNAME="plb_v46_0_PLB_wrPendPri" VECFORMULA="[0:1]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_wrPendPri"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_rdPendPri" DIR="I" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="23" MSB="0" NAME="PLB_rdPendPri" RIGHT="1" SIGNAME="plb_v46_0_PLB_rdPendPri" VECFORMULA="[0:1]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_rdPendPri"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_reqPri" DIR="I" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="24" MSB="0" NAME="PLB_reqPri" RIGHT="1" SIGNAME="plb_v46_0_PLB_reqPri" VECFORMULA="[0:1]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_reqPri"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_TAttribute" DIR="I" ENDIAN="BIG" LEFT="0" LSB="15" MPD_INDEX="25" MSB="0" NAME="PLB_TAttribute" RIGHT="15" SIGNAME="plb_v46_0_PLB_TAttribute" VECFORMULA="[0:15]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_TAttribute"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_addrAck" DIR="O" MPD_INDEX="26" NAME="Sl_addrAck" SIGNAME="plb_v46_0_Sl_addrAck">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_addrAck"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_SSize" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="27" MSB="0" NAME="Sl_SSize" RIGHT="1" SIGNAME="plb_v46_0_Sl_SSize" VECFORMULA="[0:1]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_SSize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_wait" DIR="O" MPD_INDEX="28" NAME="Sl_wait" SIGNAME="plb_v46_0_Sl_wait">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_wait"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_rearbitrate" DIR="O" MPD_INDEX="29" NAME="Sl_rearbitrate" SIGNAME="plb_v46_0_Sl_rearbitrate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_rearbitrate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_wrDAck" DIR="O" MPD_INDEX="30" NAME="Sl_wrDAck" SIGNAME="plb_v46_0_Sl_wrDAck">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_wrDAck"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_wrComp" DIR="O" MPD_INDEX="31" NAME="Sl_wrComp" SIGNAME="plb_v46_0_Sl_wrComp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_wrComp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_wrBTerm" DIR="O" MPD_INDEX="32" NAME="Sl_wrBTerm" SIGNAME="plb_v46_0_Sl_wrBTerm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_wrBTerm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_rdDBus" DIR="O" ENDIAN="BIG" LEFT="0" LSB="31" MPD_INDEX="33" MSB="0" NAME="Sl_rdDBus" RIGHT="31" SIGNAME="plb_v46_0_Sl_rdDBus" VECFORMULA="[0:(C_SPLB_DWIDTH-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_rdDBus"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_rdWdAddr" DIR="O" ENDIAN="BIG" LEFT="0" LSB="3" MPD_INDEX="34" MSB="0" NAME="Sl_rdWdAddr" RIGHT="3" SIGNAME="plb_v46_0_Sl_rdWdAddr" VECFORMULA="[0:3]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_rdWdAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_rdDAck" DIR="O" MPD_INDEX="35" NAME="Sl_rdDAck" SIGNAME="plb_v46_0_Sl_rdDAck">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_rdDAck"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_rdComp" DIR="O" MPD_INDEX="36" NAME="Sl_rdComp" SIGNAME="plb_v46_0_Sl_rdComp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_rdComp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_rdBTerm" DIR="O" MPD_INDEX="37" NAME="Sl_rdBTerm" SIGNAME="plb_v46_0_Sl_rdBTerm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_rdBTerm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_MBusy" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="38" MSB="0" NAME="Sl_MBusy" RIGHT="1" SIGNAME="plb_v46_0_Sl_MBusy" VECFORMULA="[0:(C_SPLB_NUM_MASTERS-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MBusy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_MWrErr" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="39" MSB="0" NAME="Sl_MWrErr" RIGHT="1" SIGNAME="plb_v46_0_Sl_MWrErr" VECFORMULA="[0:(C_SPLB_NUM_MASTERS-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MWrErr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_MRdErr" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="40" MSB="0" NAME="Sl_MRdErr" RIGHT="1" SIGNAME="plb_v46_0_Sl_MRdErr" VECFORMULA="[0:(C_SPLB_NUM_MASTERS-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MRdErr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_Sl_MIRQ" DIR="O" ENDIAN="BIG" LEFT="0" LSB="1" MPD_INDEX="41" MSB="0" NAME="Sl_MIRQ" RIGHT="1" SIGNAME="plb_v46_0_Sl_MIRQ" VECFORMULA="[0:(C_SPLB_NUM_MASTERS-1)]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MIRQ"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="plb_v46_0" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">
+          <PORTMAPS>
+            <PORTMAP DIR="I" PHYSICAL="SPLB_Clk"/>
+            <PORTMAP DIR="I" PHYSICAL="SPLB_Rst"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_ABus"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_UABus"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_PAValid"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_SAValid"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_rdPrim"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_wrPrim"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_masterID"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_abort"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_busLock"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_RNW"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_BE"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_MSize"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_size"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_type"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_lockErr"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_wrDBus"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_wrBurst"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_rdBurst"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_wrPendReq"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_rdPendReq"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_wrPendPri"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_rdPendPri"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_reqPri"/>
+            <PORTMAP DIR="I" PHYSICAL="PLB_TAttribute"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_addrAck"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_SSize"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_wait"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_rearbitrate"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_wrDAck"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_wrComp"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_wrBTerm"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_rdDBus"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_rdWdAddr"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_rdDAck"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_rdComp"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_rdBTerm"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_MBusy"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_MWrErr"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_MRdErr"/>
+            <PORTMAP DIR="O" PHYSICAL="Sl_MIRQ"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+      <MEMORYMAP>
+        <MEMRANGE BASEDECIMAL="3443523584" BASENAME="C_BASEADDR" BASEVALUE="0xcd400000" HIGHDECIMAL="3443589119" HIGHNAME="C_HIGHADDR" HIGHVALUE="0xcd40ffff" MEMTYPE="REGISTER" MINSIZE="0x400" SIZE="65536" SIZEABRV="64K">
           <SLAVES>
             <SLAVE BUSINTERFACE="SPLB"/>
           </SLAVES>
