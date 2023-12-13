@@ -98,7 +98,7 @@ entity user_logic is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     switches : in std_logic_vector(7 downto 0);
-	 leds : out std_logic_vector(7 downto 0);
+	  leds : out std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -131,7 +131,10 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
-
+  signal clk_aux : std_logic;
+  signal cuenta : std_logic_vector(31 downto 0);
+  signal cuentaC : std_logic_vector(31 downto 0);
+  signal cuenta_max : std_logic_vector(31 downto 0);
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -165,7 +168,44 @@ begin
     
   end process SUMADOR_REGS;
 
-  leds <= switches;
+  --contador de 1Hz
+  frequency_divider : process( Bus2IP_Clk, Bus2IP_Reset ) is
+    begin
+      if (Bus2IP_Reset = '1') then
+        clk_aux <= '0';
+        cuenta <= (others => '0');
+      elsif rising_edge(Bus2IP_Clk) then
+        if cuenta = cuenta_max then
+          cuenta <= (others => '0');
+          clk_aux <= not clk_aux;
+        else
+          cuenta <= cuenta + 1;
+        end if;
+      end if;
+  end process;
+
+  cuenta_max <= "00000010111110101111000010000000";
+  --contador hasta el valor de slv_reg3
+  contador : process( clk_aux, Bus2IP_Reset ) is
+    begin
+      if (Bus2IP_Reset = '1') then
+        cuentaC <= (others => '0');
+      elsif rising_edge(clk_aux) then
+        if cuentaC = slv_reg3 then
+          cuentaC <= (others => '0');
+        else
+          cuentaC <= cuentaC + 1;
+        end if;
+      end if;
+  end process;
+
+  ledsMux: leds <=
+                  slv_reg0(7 downto 0) when switches(1 downto 0) = "00" else
+                  slv_reg1(7 downto 0) when switches(1 downto 0) = "01" else
+                  slv_reg2(7 downto 0) when switches(1 downto 0) = "10" else
+                  slv_reg3(7 downto 0) when switches(1 downto 0) = "11" else
+                  cuentaC(7 downto 0) when switches(3) = '0' else
+                  (others => '0');
  
   
   ------------------------------------------
