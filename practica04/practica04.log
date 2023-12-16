@@ -3355,3 +3355,921 @@ Creating bit map...
 Saving bit stream in "practica04.bit".
 Bitstream generation is complete.
 Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Fri Dec 15 18:25:25 2023
+ make -f practica04.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst practica04.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst practica04.mhs 
+
+WARNING:EDK - INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable
+   is set to '8080@licalu.fdi.ucm.es'.
+   INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+   INFO:Security:71 - If a license for part 'xc3s1000' is available, it will be
+   possible to use 'XPS_TDP' instead of 'XPS'.
+   WARNING:Security:43 - No license file was found in the standard Xilinx
+   license directory.
+   WARNING:Security:44 - Since no license file was found,
+          please run the Xilinx License Configuration Manager
+          (xlcm or "Manage Xilinx Licenses")
+          to assist in obtaining a license.
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+   current version of Xilinx tools will continue to function, but you no longer
+   qualify for Xilinx software updates or new releases.
+
+
+Parse C:/Users/aluqu/Desktop/uni/SE/practica04/practica04.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'clk' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0x84014000-0x840141ff) xps_gpio_LEDS	plb_v46_0
+  (0x84018000-0x840181ff) xps_gpio_SW	plb_v46_0
+  (0xcd400000-0xcd40ffff) pantalla_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 5 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_LEDS - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_SW - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: pantalla, INSTANCE:pantalla_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   C:\Users\aluqu\Desktop\uni\SE\practica04\pcores\pantalla_v1_00_a\data\pantall
+   a_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: pantalla, INSTANCE:pantalla_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Users\aluqu\Desktop\uni\SE\practica04\pcores\pantalla_v1_00_a\data\pantall
+   a_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: pantalla, INSTANCE:pantalla_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\Users\aluqu\Desktop\uni\SE\practica04\pcores\pantalla_v1_00_a\data\pantall
+   a_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 5 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: pantalla_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
+   implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs line 41 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:microblaze_0 - C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs
+line 16 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:plb_v46_0 - C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs
+line 24 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:xps_bram_if_cntlr_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs line 31 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:bram_block_0 - C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs
+line 41 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:xps_gpio_leds - C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs
+line 47 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:xps_uartlite_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs line 58 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:xps_gpio_sw - C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs
+line 70 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:pantalla_0 - C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs
+line 80 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+IPNAME:practica04_microblaze_0_wrapper INSTANCE:microblaze_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs line 16 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc3s1000ft256-5 -intstyle silent -i -sd .. practica04_microblaze_0_wrapper.ngc
+../practica04_microblaze_0_wrapper
+
+Reading NGO file
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/microblaze_0_wrapper/pr
+actica04_microblaze_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../practica04_microblaze_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  3 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../practica04_microblaze_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/practica04.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 374.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "practica04_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt practica04.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt
+practica04.ngc  
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File:
+C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/fpga.flw 
+Using Option File(s): 
+ C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm practica04.bmm
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04.ngc" -uc
+practica04.ucf practica04.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm practica04.bmm
+C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04.ngc -uc
+practica04.ucf practica04.ngd
+
+Reading NGO file
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04.ngc" ...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_microblaze_0
+_wrapper.ngc"...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_plb_v46_0_wr
+apper.ngc"...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_bram_if_
+cntlr_0_wrapper.ngc"...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_bram_block_0
+_wrapper.ngc"...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_gpio_led
+s_wrapper.ngc"...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_uartlite
+_0_wrapper.ngc"...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_gpio_sw_
+wrapper.ngc"...
+Loading design module
+"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_pantalla_0_w
+rapper.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "practica04.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "practica04.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'pantalla_0/pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKE
+   T_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'pantalla_0/pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKE
+   T_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   7
+
+Writing NGD file "practica04.ngd" ...
+Total REAL time to NGDBUILD completion:  19 sec
+Total CPU time to NGDBUILD completion:   19 sec
+
+Writing NGDBUILD log file "practica04.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o practica04_map.ncd -pr b -ol high -timing -detail practica04.ngd
+practica04.pcf 
+#----------------------------------------------#
+Release 14.1 - Map P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s1000ft256-5".
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'8080@licalu.fdi.ucm.es'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3s1000' is a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+Writing file practica04_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 10 secs 
+Total CPU  time at the beginning of Placer: 5 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:bf60e919) REAL time: 12 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: switches<4>
+   	 Comp: switches<5>
+   	 Comp: switches<6>
+   	 Comp: switches<7>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: leds<4>
+   	 Comp: leds<5>
+   	 Comp: leds<6>
+   	 Comp: leds<7>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 31 IOs, 23 are locked
+   and 8 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:bf60e919) REAL time: 12 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:bf60e919) REAL time: 12 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+....
+Phase 4.2  Initial Clock and IO Placement (Checksum:4ec7c7f6) REAL time: 13 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:4ec7c7f6) REAL time: 13 secs 
+
+Phase 6.3  Local Placement Optimization
+....
+Phase 6.3  Local Placement Optimization (Checksum:54a5fff6) REAL time: 13 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:54a5fff6) REAL time: 13 secs 
+
+Phase 8.4  Local Placement Optimization
+.................................
+............................................
+Phase 8.4  Local Placement Optimization (Checksum:54a5fff6) REAL time: 17 secs 
+
+Phase 9.28  Local Placement Optimization
+Phase 9.28  Local Placement Optimization (Checksum:54a5fff6) REAL time: 17 secs 
+
+Phase 10.8  Global Placement
+...................................
+...............................................................................
+..........
+Phase 10.8  Global Placement (Checksum:e6598668) REAL time: 19 secs 
+
+Phase 11.29  Local Placement Optimization
+Phase 11.29  Local Placement Optimization (Checksum:e6598668) REAL time: 19 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:e6598668) REAL time: 19 secs 
+
+Phase 13.18  Placement Optimization
+Phase 13.18  Placement Optimization (Checksum:b23badc0) REAL time: 26 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:b23badc0) REAL time: 26 secs 
+
+Total REAL time to Placer completion: 26 secs 
+Total CPU  time to Placer completion: 21 secs 
+Running post-placement packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:         1,374 out of  15,360    8
+  Number of 4 input LUTs:             2,603 out of  15,360   16
+Logic Distribution:
+  Number of occupied Slices:          1,631 out of   7,680   21
+    Number of Slices containing only related logic:   1,631 out of   1,631 100
+    Number of Slices containing unrelated logic:          0 out of   1,631   0
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,645 out of  15,360   17
+    Number used as logic:             1,975
+    Number used as a route-thru:         42
+    Number used for Dual Port RAMs:     528
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     100
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 31 out of     173   17
+    IOB Flip Flops:                      21
+  Number of RAMB16s:                     17 out of      24   70
+  Number of MULT18X18s:                   3 out of      24   12
+  Number of BUFGMUXs:                     2 out of       8   25
+
+Average Fanout of Non-Clock Nets:                4.08
+
+Peak Memory Usage:  4520 MB
+Total REAL time to MAP completion:  28 secs 
+Total CPU time to MAP completion:   22 secs 
+
+Mapping completed.
+See MAP report file "practica04_map.mrp" for details.
+
+
+
+#----------------------------------------------#
+# Starting program par
+# par -w -ol high practica04_map.ncd practica04.ncd practica04.pcf 
+#----------------------------------------------#
+Release 14.1 - par P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/14.1/ISE_DS/EDK/data/parBmgr.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/parBmgr.acd>
+
+
+
+Constraints file: practica04.pcf.
+Loading device for application Rf_Device from file '3s1000.nph' in environment
+C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
+   "practica04" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '8080@licalu.fdi.ucm.es'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3s1000' is a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.39 2012-04-23".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        2 out of 8      25
+   Number of External IOBs                  31 out of 173    17
+      Number of LOCed IOBs                  23 out of 31     74
+
+   Number of MULT18X18s                      3 out of 24     12
+   Number of RAMB16s                        17 out of 24     70
+   Number of Slices                       1631 out of 7680   21
+      Number of SLICEMs                    324 out of 3840    8
+
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 6 secs 
+Finished initial Timing Analysis.  REAL time: 6 secs 
+
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<1> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<2> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<3> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<4> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<5> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<6> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<7> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<8> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<9> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<10> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<11> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<12> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<13> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<14> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<15> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<16> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<30> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<31> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<0> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<1> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<2> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<3> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<4> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<5> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<8> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<9> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<13> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<14> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<20> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<24> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<25> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<26> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<27> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<28> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<29> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 14587 unrouted;      REAL time: 7 secs 
+
+Phase  2  : 12838 unrouted;      REAL time: 8 secs 
+
+Phase  3  : 4240 unrouted;      REAL time: 10 secs 
+
+Phase  4  : 4240 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Updating file: practica04.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+WARNING:Route:455 - CLK Net:hsyncb_OBUF may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 18 secs 
+Total CPU time to Router completion: 14 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP |      BUFGMUX3| No   | 1339 |  0.496     |  1.108      |
++---------------------+--------------+------+------+------------+-------------+
+|pantalla_0/pantalla_ |              |      |      |            |             |
+|0/USER_LOGIC_I/clock |              |      |      |            |             |
+|                     |      BUFGMUX4| No   |   78 |  0.292     |  0.947      |
++---------------------+--------------+------+------+------------+-------------+
+|         hsyncb_OBUF |         Local|      |    7 |  0.484     |  3.074      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH  | SETUP       |     6.465ns|    13.535ns|       0|           0
+  50| HOLD        |     0.628ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 19 secs 
+Total CPU time to PAR completion: 14 secs 
+
+Peak Memory Usage:  4473 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 54
+Number of info messages: 0
+
+Writing design to file practica04.ncd
+
+
+
+PAR done!
+
+
+
+#----------------------------------------------#
+# Starting program post_par_trce
+# trce -e 3 -xml practica04.twx practica04.ncd practica04.pcf 
+#----------------------------------------------#
+Release 14.1 - Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+Loading device for application Rf_Device from file '3s1000.nph' in environment
+C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
+   "practica04" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml practica04.twx
+practica04.ncd practica04.pcf
+
+
+Design file:              practica04.ncd
+Physical constraint file: practica04.pcf
+Device,speed:             xc3s1000,-5 (PRODUCTION 1.39 2012-04-23)
+Report level:             error report
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+   50 Ohm transmission line loading model.  For the details of this model, and
+   for more information on accounting for different loading conditions, please
+   see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
+   'Phase Error' calculations, these terms will be zero in the Clock Uncertainty
+   calculation.  Please make appropriate modification to SYSTEM_JITTER to
+   account for the unsupported Discrete Jitter and Phase Error.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
+
+Constraints cover 149776 paths, 0 nets, and 12864 connections
+
+Design statistics:
+   Minimum period:  13.535ns (Maximum frequency:  73.883MHz)
+
+
+Analysis completed Fri Dec 15 18:34:29 2023
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 5
+Total time: 3 secs 
+
+
+xflow done!
+touch __xps/practica04_routed
+xilperl C:/Xilinx/14.1/ISE_DS/EDK/data/fpga_impl/observe_par.pl -error yes implementation/practica04.par
+Analyzing implementation/practica04.par
+"*********************************************"
+"Running Bitgen.."
+"*********************************************"
+cd implementation & bitgen -w -f bitgen.ut practica04 & cd ..
+Release 14.1 - Bitgen P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+Loading device for application Rf_Device from file '3s1000.nph' in environment
+C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
+   "practica04" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
+Opened constraints file practica04.pcf.
+
+Fri Dec 15 18:34:33 2023
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'8080@licalu.fdi.ucm.es'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3s1000' is a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Creating bit map...
+Saving bit stream in "practica04.bit".
+Bitstream generation is complete.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Dec 15 18:38:57 2023
+ make -f practica04.make exporttosdk started...
+Done!
+
+********************************************************************************
+At Local date and time: Fri Dec 15 18:38:57 2023
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\practica04\SDK\SDK_Export\hw\practica04.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica04\etc\practica04.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica04\etc\practica04.gui

@@ -192,3 +192,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-12-04 17:16:51.535
 !MESSAGE Indexed 'test_pdf_bsp_0' (43 sources, 40 headers) in 0.38 sec: 1,010 declarations; 5,077 references; 23 unresolved inclusions; 0 syntax errors; 53 unresolved names (0.86%)
+!SESSION 2023-12-15 19:24:05.671 -----------------------------------------------
+eclipse.buildId=Release 14.1 Build SDK_P.15xf
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-15 19:26:27.693
+!MESSAGE Indexed 'peripheral_tests_0' (3 sources, 38 headers) in 0.45 sec: 1,246 declarations; 1,360 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-15 19:26:28.121
+!MESSAGE Indexed 'peripheral_tests_bsp_0' (43 sources, 40 headers) in 0.42 sec: 1,010 declarations; 5,077 references; 23 unresolved inclusions; 0 syntax errors; 57 unresolved names (0.93%)

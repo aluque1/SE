@@ -18,9 +18,9 @@
 /******************************************************************/
 
 
-/* Definitions for peripheral PERIPHERAL_PRACTICA03_0 */
-#define XPAR_PERIPHERAL_PRACTICA03_0_BASEADDR 0xCB000000
-#define XPAR_PERIPHERAL_PRACTICA03_0_HIGHADDR 0xCB0000FF
+/* Definitions for peripheral PANTALLA_0 */
+#define XPAR_PANTALLA_0_BASEADDR 0xCD400000
+#define XPAR_PANTALLA_0_HIGHADDR 0xCD40FFFF
 
 
 /******************************************************************/
@@ -60,6 +60,27 @@
 #define XPAR_BRAM_0_WRITE_ACCESS 0
 #define XPAR_BRAM_0_BASEADDR 0x00000000
 #define XPAR_BRAM_0_HIGHADDR 0x00007FFF
+
+
+/******************************************************************/
+
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 2
+
+/* Definitions for peripheral XPS_GPIO_LEDS */
+#define XPAR_XPS_GPIO_LEDS_BASEADDR 0x84014000
+#define XPAR_XPS_GPIO_LEDS_HIGHADDR 0x840141FF
+#define XPAR_XPS_GPIO_LEDS_DEVICE_ID 0
+#define XPAR_XPS_GPIO_LEDS_INTERRUPT_PRESENT 0
+#define XPAR_XPS_GPIO_LEDS_IS_DUAL 0
+
+
+/* Definitions for peripheral XPS_GPIO_SW */
+#define XPAR_XPS_GPIO_SW_BASEADDR 0x84018000
+#define XPAR_XPS_GPIO_SW_HIGHADDR 0x840181FF
+#define XPAR_XPS_GPIO_SW_DEVICE_ID 1
+#define XPAR_XPS_GPIO_SW_INTERRUPT_PRESENT 0
+#define XPAR_XPS_GPIO_SW_IS_DUAL 0
 
 
 /******************************************************************/

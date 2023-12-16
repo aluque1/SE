@@ -154,32 +154,32 @@ Phase 5.36  Local Placement Optimization (Checksum:355ffef2) REAL time: 7 secs
 
 Phase 6.4  Local Placement Optimization
 ...............................
-Phase 6.4  Local Placement Optimization (Checksum:355ffef2) REAL time: 9 secs 
+Phase 6.4  Local Placement Optimization (Checksum:355ffef2) REAL time: 8 secs 
 
 Phase 7.28  Local Placement Optimization
-Phase 7.28  Local Placement Optimization (Checksum:355ffef2) REAL time: 9 secs 
+Phase 7.28  Local Placement Optimization (Checksum:355ffef2) REAL time: 8 secs 
 
 Phase 8.8  Global Placement
 ....................................................
 .............
 ...............................................................................................
 ..........................................
-Phase 8.8  Global Placement (Checksum:5ae5bfc5) REAL time: 13 secs 
+Phase 8.8  Global Placement (Checksum:5ae5bfc5) REAL time: 12 secs 
 
 Phase 9.29  Local Placement Optimization
-Phase 9.29  Local Placement Optimization (Checksum:5ae5bfc5) REAL time: 13 secs 
+Phase 9.29  Local Placement Optimization (Checksum:5ae5bfc5) REAL time: 12 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:5ae5bfc5) REAL time: 13 secs 
+Phase 10.5  Local Placement Optimization (Checksum:5ae5bfc5) REAL time: 12 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:e9156e3) REAL time: 21 secs 
+Phase 11.18  Placement Optimization (Checksum:e9156e3) REAL time: 18 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:e9156e3) REAL time: 21 secs 
+Phase 12.5  Local Placement Optimization (Checksum:e9156e3) REAL time: 18 secs 
 
-Total REAL time to Placer completion: 21 secs 
-Total CPU  time to Placer completion: 17 secs 
+Total REAL time to Placer completion: 18 secs 
+Total CPU  time to Placer completion: 14 secs 
 Running post-placement packing...
 
 Design Summary:
@@ -211,9 +211,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                4.07
 
-Peak Memory Usage:  4538 MB
-Total REAL time to MAP completion:  22 secs 
-Total CPU time to MAP completion:   18 secs 
+Peak Memory Usage:  4519 MB
+Total REAL time to MAP completion:  19 secs 
+Total CPU time to MAP completion:   15 secs 
 
 Mapping completed.
 See MAP report file "practica2_map.mrp" for details.
@@ -358,9 +358,9 @@ Phase  1  : 12650 unrouted;      REAL time: 5 secs
 
 Phase  2  : 11047 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 3862 unrouted;      REAL time: 7 secs 
+Phase  3  : 3862 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 4057 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  4  : 4057 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
@@ -368,14 +368,14 @@ Updating file: practica2.ncd with current fully routed design.
 
 Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
 
-Total REAL time to Router completion: 27 secs 
-Total CPU time to Router completion: 22 secs 
+Total REAL time to Router completion: 26 secs 
+Total CPU time to Router completion: 21 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -432,8 +432,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 27 secs 
-Total CPU time to PAR completion: 23 secs 
+Total REAL time to PAR completion: 26 secs 
+Total CPU time to PAR completion: 22 secs 
 
 Peak Memory Usage:  4473 MB
 
@@ -497,7 +497,7 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
    calculation.  Please make appropriate modification to SYSTEM_JITTER to
    account for the unsupported Discrete Jitter and Phase Error.
 
-Analysis completed Tue Dec 12 00:57:18 2023
+Analysis completed Fri Dec 15 19:23:53 2023
 --------------------------------------------------------------------------------
 
 Generating Report ...
