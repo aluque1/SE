@@ -1,0 +1,164 @@
+#ucf para la Spartan 3S100 con los puntos de los displays 7-seg
+#salida del oscilador a 100MHz
+#
+#NET clk_in LOC=T9;
+#
+#salida del oscilador a 50MHz
+NET clk LOC=P8;
+NET "clk" FLOAT;
+
+# entradas /salidas puerto serie
+NET rx LOC=G5;
+NET "rx" FLOAT;
+NET tx LOC=J2;
+NET "tx" FLOAT;
+
+# para el banner
+NET row_serial_out LOC=P12;
+NET "row_serial_out" FLOAT;
+NET row_clk LOC=J1;
+NET "row_clk" FLOAT;
+NET reset_out LOC=H1;
+NET "reset_out" FLOAT;
+NET col_serial_out LOC=H3;
+NET "col_serial_out" FLOAT;
+NET col_clk LOC=G2;
+NET "col_clk" FLOAT;
+NET reset2_out LOC=K15;
+NET "reset2_out" FLOAT;
+
+
+# para el keypad
+net s<3> loc=F2;
+net s<3> iostandard=LVCMOS25;
+net s<2> loc=G4;
+net s<2> iostandard=LVCMOS25;
+net s<1> loc=G3;
+net s<1> iostandard=LVCMOS25;
+net s<0> loc=G1;
+net s<0> iostandard=LVCMOS25;
+
+net r<3> loc=J14;
+net r<3> iostandard=LVCMOS25;
+net r<2> loc=H14;
+net r<2> iostandard=LVCMOS25;
+net r<1> loc=M4;
+net r<1> iostandard=LVCMOS25;
+net r<0> loc=P1;
+net r<0> iostandard=LVCMOS25;
+
+	#switches placa superior
+
+NET rst LOC=K4;
+NET "rst" FLOAT;
+#NET SW<2> LOC=K3;
+#NET SW<3> LOC=K2;
+#NET SW<4> LOC=J4;
+
+	#switches placa extendida
+
+#NET switches<0> LOC=P12;
+#NET switches<1> LOC=J1;
+#NET switches<2> LOC=H1;
+#NET switches<3> LOC=H3;
+#NET switches<4> LOC=G2;
+#NET switches<5> LOC=K15;
+#NET switches<6> LOC=K16;
+#NET switches<7> LOC=F15;
+#NET "switches<0>" FLOAT;
+#NET "switches<1>" FLOAT;
+#NET "switches<2>" FLOAT;
+#NET "switches<3>" FLOAT;
+#NET "switches<4>" FLOAT;
+#NET "switches<5>" FLOAT;
+#NET "switches<6>" FLOAT;
+#NET "switches<7>" FLOAT;
+
+#
+	#push buttons placa superior
+#NET SW2 LOC=E11; 
+#NET SW3 LOC=A13; 
+
+	# Push button placa extendida
+#NET pushb1 LOC=H4;
+#NET pushb2 LOC=L5;
+#NET pushb3 LOC=N2;
+#NET pushb4 LOC=M3;
+
+
+#barra de leds placa extendida
+
+#NET leds<0> LOC=L5;
+#NET leds<1> LOC=N2;
+#NET leds<2> LOC=M3;
+#NET leds<3> LOC=N1;
+#NET leds<4> LOC=T13;
+#NET leds<5> LOC=L15;
+#NET leds<6> LOC=J13;
+#NET leds<7> LOC=H15;
+#NET leds<8> LOC=J16;
+#NET leds<9> LOC=J14;
+#NET "leds<0>" FLOAT;
+#NET "leds<1>" FLOAT;
+#NET "leds<2>" FLOAT;
+#NET "leds<3>" FLOAT;
+#NET "leds<4>" FLOAT;
+#NET "leds<5>" FLOAT;
+#NET "leds<6>" FLOAT;
+#NET "leds<7>" FLOAT;
+#NET "leds<8>" FLOAT;
+#NET "leds<9>" FLOAT;
+
+
+ 
+
+#Display 7-segmentos 
+#
+#		   S0
+#		   ---
+#	    S5	|	|s1
+#		    S6
+#		   ---
+#	    S4	|	|S2
+#
+#		   ---
+#		   S3				punto
+
+
+#Display 7-segmentos de la placa superior
+
+#net display<0> loc=R10;
+#net display<1> loc=P10;
+#net display<2> loc=M11;
+#NET display<3> loc=M6;
+#NET display<4> loc=N6;
+#NET display<5> loc=T7;
+#NET display<6> loc=R7;
+#NET display<7> loc=N11;  # punto
+
+
+
+#Display 7-segmentos de la parte izquierda de la placa extendida:
+
+#NET displayi<0> LOC=H14;
+#NET displayi<1> LOC=M4;
+#NET displayi<2> LOC=P1;
+#NET displayi<3> LOC=N3;
+#NET displayi<4> LOC=M15;
+#NET displayi<5> LOC=H13;
+#NET displayi<6> LOC=G16;
+#NET displayi<7> LOC=N15;  # punto
+
+
+
+
+#Display 7-segmentos de la parte derecha de la placa extendida
+
+#NET displayd<0> loc=E2;
+#NET displayd<1> loc=E1;
+#NET displayd<2> loc=F3;
+#NET displayd<3> loc=F2;
+#NET displayd<4> loc=G4;
+#NET displayd<5> loc=G3;
+#NET displayd<6> loc=G1;
+#NET displayd<7> loc=H4; # punto

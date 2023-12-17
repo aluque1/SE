@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "platform.h": "c",
+        "xparameters.h": "c",
+        "xbasic_types.h": "c",
+        "xil_cache.h": "c"
+    }
+}

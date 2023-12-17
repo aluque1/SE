@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/keypad_v1_00_a/data/keypad_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sun Dec 17 18:10:30 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER keypad
+
+  OPTION supported_peripherals = (keypad);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER
