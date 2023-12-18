@@ -4,22 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/testperiph.c \
-../src/xbram_example.c \
-../src/xgpio_tapp_example.c 
+../src/pantalla.c \
+../src/pantalla_selftest.c 
 
 LD_SRCS += \
 ../src/lscript.ld 
 
 OBJS += \
-./src/testperiph.o \
-./src/xbram_example.o \
-./src/xgpio_tapp_example.o 
+./src/pantalla.o \
+./src/pantalla_selftest.o 
 
 C_DEPS += \
-./src/testperiph.d \
-./src/xbram_example.d \
-./src/xgpio_tapp_example.d 
+./src/pantalla.d \
+./src/pantalla_selftest.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -179,9 +179,9 @@ begin
 	if reset = '1' then
 		desp <= "000000000";
 	elsif rising_edge(clock) then
-		if buttons(0) = '1' then
+		if buttons(0) = '0' then
 			desp <= desp + 1;
-		elsif buttons(1) = '1' then
+		elsif buttons(1) = '0' then
 			desp <= desp - 1;
 		end if;
 	end if;
@@ -189,7 +189,7 @@ end process;
 
 process (hcnt, vcnt, desp)
 begin
-	if (vcnt(9 downto 8)="00" and hcnt(8 downto 6) = desp(2 downto 0)) then
+	if (hcnt >= desp and hcnt < desp + 63) then
 		rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));
 	else
 		rgb <= "000000000";

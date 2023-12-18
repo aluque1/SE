@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 TABLE OF CONTENTS
@@ -570,17 +570,17 @@ Design Statistics
 # IOs                              : 33
 
 Cell Usage :
-# BELS                             : 3448
+# BELS                             : 3446
 #      GND                         : 25
-#      INV                         : 31
+#      INV                         : 30
 #      LUT1                        : 69
-#      LUT2                        : 285
+#      LUT2                        : 276
 #      LUT2_D                      : 12
 #      LUT2_L                      : 24
-#      LUT3                        : 821
+#      LUT3                        : 830
 #      LUT3_D                      : 26
 #      LUT3_L                      : 28
-#      LUT4                        : 1061
+#      LUT4                        : 1060
 #      LUT4_D                      : 26
 #      LUT4_L                      : 39
 #      MULT_AND                    : 34
@@ -624,10 +624,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     2001  out of   7680    26%  
+ Number of Slices:                     1993  out of   7680    25%  
  Number of Slice Flip Flops:           2155  out of  15360    14%  
- Number of 4 input LUTs:               3050  out of  15360    19%  
-    Number used as logic:              2422
+ Number of 4 input LUTs:               3048  out of  15360    19%  
+    Number used as logic:              2420
     Number used as Shift registers:     100
     Number used as RAMs:                528
  Number of IOs:                          33
@@ -680,7 +680,7 @@ Speed Grade: -5
 
    Minimum period: 11.888ns (Maximum Frequency: 84.119MHz)
    Minimum input arrival time before clock: 4.468ns
-   Maximum output required time after clock: 15.308ns
+   Maximum output required time after clock: 13.978ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -805,7 +805,7 @@ Offset:              4.468ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'pantalla_0/pantalla_0/USER_LOGIC_I/clock1'
   Total number of paths / destination ports: 72 / 18
 -------------------------------------------------------------------------
-Offset:              4.253ns (Levels of Logic = 12)
+Offset:              4.122ns (Levels of Logic = 12)
   Source:            buttons<0> (PAD)
   Destination:       pantalla_0/pantalla_0/USER_LOGIC_I/vga/desp_8 (FF)
   Destination Clock: pantalla_0/pantalla_0/USER_LOGIC_I/clock1 rising
@@ -814,10 +814,10 @@ Offset:              4.253ns (Levels of Logic = 12)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            11   0.715   0.972  buttons_0_IBUF (buttons_0_IBUF)
+     IBUF:I->O            11   0.715   1.142  buttons_0_IBUF (buttons_0_IBUF)
      begin scope: 'pantalla_0'
-     INV:I->O              1   0.479   0.681  pantalla_0/USER_LOGIC_I/vga/buttons<0>_inv2_INV_0 (pantalla_0/USER_LOGIC_I/vga/buttons<0>_inv)
-     MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<0> (pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<0>)
+     LUT2:I1->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_desp_lut<0> (pantalla_0/USER_LOGIC_I/vga/Mcount_desp_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<0> (pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<0>)
      MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<1> (pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<1>)
      MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<2> (pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<2>)
      MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<3> (pantalla_0/USER_LOGIC_I/vga/Mcount_desp_cy<3>)
@@ -828,12 +828,12 @@ Offset:              4.253ns (Levels of Logic = 12)
      XORCY:CI->O           1   0.786   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_desp_xor<8> (pantalla_0/USER_LOGIC_I/vga/Result<8>)
      FDCE:D                    0.176          pantalla_0/USER_LOGIC_I/vga/desp_8
     ----------------------------------------
-    Total                      4.253ns (2.600ns logic, 1.653ns route)
-                                       (61.1% logic, 38.9% route)
+    Total                      4.122ns (2.980ns logic, 1.142ns route)
+                                       (72.3% logic, 27.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pantalla_0/hsyncb'
-  Total number of paths / destination ports: 307 / 10
+  Total number of paths / destination ports: 289 / 10
 -------------------------------------------------------------------------
 Offset:              11.881ns (Levels of Logic = 7)
   Source:            pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_5 (FF)
@@ -849,7 +849,7 @@ Offset:              11.881ns (Levels of Logic = 7)
      LUT3:I1->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_6 (pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_6)
      MUXF5:I0->O           1   0.314   0.000  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_4_f5 (pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_4_f5)
      MUXF6:I0->O           1   0.298   0.976  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_2_f6 (pantalla_0/USER_LOGIC_I/vga/_varindex0000<0>)
-     LUT2:I0->O            1   0.479   0.681  pantalla_0/USER_LOGIC_I/vga/rgb<0>2 (rgb<8>)
+     LUT3:I0->O            1   0.479   0.681  pantalla_0/USER_LOGIC_I/vga/rgb<0>1 (rgb<8>)
      end scope: 'pantalla_0'
      OBUF:I->O                 4.909          rgb_8_OBUF (rgb<8>)
     ----------------------------------------
@@ -860,7 +860,7 @@ Offset:              11.881ns (Levels of Logic = 7)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pantalla_0/pantalla_0/USER_LOGIC_I/clock1'
   Total number of paths / destination ports: 964 / 10
 -------------------------------------------------------------------------
-Offset:              15.308ns (Levels of Logic = 9)
+Offset:              13.978ns (Levels of Logic = 8)
   Source:            pantalla_0/pantalla_0/USER_LOGIC_I/vga/desp_0 (FF)
   Destination:       rgb<0> (PAD)
   Source Clock:      pantalla_0/pantalla_0/USER_LOGIC_I/clock1 rising
@@ -874,14 +874,13 @@ Offset:              15.308ns (Levels of Logic = 9)
      LUT3:I1->O            1   0.479   0.704  pantalla_0/USER_LOGIC_I/vga/rgb_addsub0000<8>_SW0 (N17)
      LUT4:I3->O            1   0.479   0.851  pantalla_0/USER_LOGIC_I/vga/rgb_addsub0000<8> (pantalla_0/USER_LOGIC_I/vga/rgb_addsub0000<8>)
      LUT2:I1->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/Mcompar_rgb_cmp_lt0000_lut<8> (pantalla_0/USER_LOGIC_I/vga/Mcompar_rgb_cmp_lt0000_lut<8>)
-     MUXCY:S->O            1   0.644   0.740  pantalla_0/USER_LOGIC_I/vga/Mcompar_rgb_cmp_lt0000_cy<8> (pantalla_0/USER_LOGIC_I/vga/Mcompar_rgb_cmp_lt0000_cy<8>)
-     LUT4:I2->O            9   0.479   1.125  pantalla_0/USER_LOGIC_I/vga/rgb<0>11 (pantalla_0/USER_LOGIC_I/vga/N42)
-     LUT2:I1->O            1   0.479   0.681  pantalla_0/USER_LOGIC_I/vga/rgb<8>1 (rgb<0>)
+     MUXCY:S->O            9   0.644   1.014  pantalla_0/USER_LOGIC_I/vga/Mcompar_rgb_cmp_lt0000_cy<8> (pantalla_0/USER_LOGIC_I/vga/Mcompar_rgb_cmp_lt0000_cy<8>)
+     LUT3:I2->O            1   0.479   0.681  pantalla_0/USER_LOGIC_I/vga/rgb<8>1 (rgb<0>)
      end scope: 'pantalla_0'
      OBUF:I->O                 4.909          rgb_0_OBUF (rgb<0>)
     ----------------------------------------
-    Total                     15.308ns (9.053ns logic, 6.255ns route)
-                                       (59.1% logic, 40.9% route)
+    Total                     13.978ns (8.574ns logic, 5.404ns route)
+                                       (61.3% logic, 38.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -906,12 +905,12 @@ Offset:              6.491ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 91.00 secs
-Total CPU time to Xst completion: 91.06 secs
+Total REAL time to Xst completion: 49.00 secs
+Total CPU time to Xst completion: 48.97 secs
  
 --> 
 
-Total memory usage is 4577948 kilobytes
+Total memory usage is 4609272 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  371 (   0 filtered)

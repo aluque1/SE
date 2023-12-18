@@ -193,6 +193,9 @@ implementation netlist
 IPNAME:xps_gpio INSTANCE:xps_gpio_sw -
 C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs line 71 - Copying cache
 implementation netlist
+IPNAME:pantalla INSTANCE:pantalla_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica04\practica04.mhs line 81 - Copying cache
+implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
@@ -227,4 +230,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 26.00 seconds
+Total run time: 15.00 seconds
