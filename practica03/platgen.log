@@ -164,23 +164,6 @@ Creating hardware output directories ...
 Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
-IPNAME:microblaze INSTANCE:microblaze_0 -
-U:\hlocal\temp\SE\practica03\practica03.mhs line 13 - Copying cache
-implementation netlist
-IPNAME:plb_v46 INSTANCE:plb_v46_0 - U:\hlocal\temp\SE\practica03\practica03.mhs
-line 21 - Copying cache implementation netlist
-IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-U:\hlocal\temp\SE\practica03\practica03.mhs line 28 - Copying cache
-implementation netlist
-IPNAME:bram_block INSTANCE:bram_block_0 -
-U:\hlocal\temp\SE\practica03\practica03.mhs line 38 - Copying cache
-implementation netlist
-IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-U:\hlocal\temp\SE\practica03\practica03.mhs line 44 - Copying cache
-implementation netlist
-IPNAME:peripheral_practica03 INSTANCE:peripheral_practica03_0 -
-U:\hlocal\temp\SE\practica03\practica03.mhs line 56 - Copying cache
-implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
@@ -205,14 +188,26 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:microblaze_0 - U:\hlocal\temp\SE\practica03\practica03.mhs line 13 -
+Running XST synthesis
+INSTANCE:plb_v46_0 - U:\hlocal\temp\SE\practica03\practica03.mhs line 21 -
+Running XST synthesis
+INSTANCE:xps_bram_if_cntlr_0 - U:\hlocal\temp\SE\practica03\practica03.mhs line
+28 - Running XST synthesis
+INSTANCE:bram_block_0 - U:\hlocal\temp\SE\practica03\practica03.mhs line 38 -
+Running XST synthesis
+INSTANCE:xps_uartlite_0 - U:\hlocal\temp\SE\practica03\practica03.mhs line 44 -
+Running XST synthesis
 INSTANCE:peripheral_practica03_0 - U:\hlocal\temp\SE\practica03\practica03.mhs
 line 56 - Running XST synthesis
 
 Running NGCBUILD ...
+IPNAME:practica03_microblaze_0_wrapper INSTANCE:microblaze_0 -
+U:\hlocal\temp\SE\practica03\practica03.mhs line 13 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/practica03.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 13.00 seconds
+Total run time: 232.00 seconds

@@ -22,9 +22,6 @@
 /************************** Function Definitions ***************************/
 
 int getNumber();
-void apartado_1(int baseaddr, int posicion, int color);
-void apartado_2(int baseaddr, int posicion, int color);
-void apartado_3(int baseaddr, int posicion, int color);
 
 /* 
 Ejemplo de escritura en la FIFO
@@ -49,48 +46,44 @@ int main()
     int option = getNumber();
 
     switch(option){
-        case 1:
-            print("-- Apartado 1 --\n\r");
-            apartado_1(screen_addr);
+    case 1:
+    	print("-- Apartado 1 --\n\r");
+    	// ask for a color (0 = red, 1 = green, 2 = dark green)
+    	do{
+    		print("Introduzca un color. 0 = rojo, 1 = verde, 2 = verde oscuro\n\r");
+    		color = getNumber();
+    	}while(color < 0 || color > 2);
+    	// ask for the row
+    	do {
+    		print("Introduzca la fila. Tiene que estar entre 0-15\n\r");
+    		row = getNumber();
+    	}while(row < 0 || row > 15);
+
+    	// ask for the column
+    	do {
+    		print("Introduzca la columna. Tiene que estar entre 0-7\n\r");
+    		column = getNumber();
+    	}while(column < 0 || column > 7);
+    	// calculate the position
+    	posicion = column * N_ROWS + row;
+    	data = ((color & 0x1FF) << 23)| (posicion & 0x7F);
+    	PANTALLA_mWriteToFIFO(screen_addr, 0, data);
+    	break;
+    case 2:
+    	print("-- Apartado 2 --\n\r");
+    	break;
+    case 3:
+    	print("-- Apartado 3 --\n\r");
             break;
-        case 2:
-            print("-- Apartado 2 --\n\r");
-            break;
-        case 3:
-            print("-- Apartado 3 --\n\r");
-            break;
-        default:
-            print("Opcion no valida\n\r");
-            break;
+    default:
+    	print("Opcion no valida\n\r");
+    	break;
     }
 
     print("-- Exiting main() --\r\n");
     return 0;
 }
 
-void apartado_1(int baseaddr){
-    int posicion, color, data, row, column;
-    // ask for a color (0 = red, 1 = green, 2 = dark green)
-    while(color < 0 || color > 2){
-        print("Introduzca un color. 0 = rojo, 1 = verde, 2 = verde oscuro\n\r");
-        color = getNumber();
-    }
-    // ask for the row
-    while(row < 0 || row > 15){
-        print("Introduzca un numero. Tiene que estar entre 0-15\n\r");
-        row = getNumber();
-    }
-    // ask for the column
-    while(column < 0 || column > 7){
-        print("Introduzca un numero. Tiene que estar entre 0-7\n\r");
-        column = getNumber();
-    }
-
-    // calculate the position
-    posicion = column * N_ROWS + row;
-    data = ((color & 0x1FF) << 23)| (posicion & 0x7F);
-    PANTALLA_mWriteToFIFO(screen_addr, 0, data);
-}
 
 int getNumber (){
 	Xuint8 byte;
@@ -110,9 +103,9 @@ int getNumber (){
 		//get bytes from uart until RETURN is entered
 	
 		while(byte != 0x0d && byte != 0x0A){
-			byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+			byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
 			uartBuffer[digitIndex] = byte; 
-			XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,byte);
+			XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR,byte);
 			digitIndex++;
 		}
 			 
