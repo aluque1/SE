@@ -187,13 +187,14 @@ begin
 	end if;
 end process;
 
-rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4))) 
-	when vcnt(9 downto 8)="00" and (hcnt >= desp and hcnt < desp + 63)
-	else "000000000"
-;
-
-
-
+process (hcnt, vcnt, desp)
+begin
+	if (hcnt >= desp and hcnt < desp + 63) then
+		rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));
+	else
+		rgb <= "000000000";
+	end if;
+end process;
 
 ---------------------------------------------------------------------
 end vgacore_arch;
