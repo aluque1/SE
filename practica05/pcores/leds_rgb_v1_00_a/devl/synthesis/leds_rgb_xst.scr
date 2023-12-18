@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\devl\synthesis\leds_rgb_xst.prj"
+-top leds_rgb
+-p virtex6
+-ofn "C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\devl\synthesis\leds_rgb_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib leds_rgb_v1_00_a

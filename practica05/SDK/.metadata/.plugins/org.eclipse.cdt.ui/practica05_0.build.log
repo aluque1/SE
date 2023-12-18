@@ -2,4 +2,38 @@
 **** Build of configuration Debug for project practica05_0 ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../practica05_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:45:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c:53:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c: In function 'getNumber':
+../src/testperiph.c:88:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:90:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+Finished building: ../src/testperiph.c
+' '
+Building target: practica05_0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../practica05_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"practica05_0.elf"  ./src/banner.o ./src/banner_selftest.o ./src/keypad.o ./src/keypad_selftest.o ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: practica05_0.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size practica05_0.elf  |tee "practica05_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7278	    296	   2088	   9662	   25be	practica05_0.elf
+Finished building: practica05_0.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck practica05_0.elf -hw ../../practica05_hw_platform/system.xml -pe microblaze_0  |tee "practica05_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../practica05_hw_platform/system.xml -pe
+microblaze_0 practica05_0.elf 
+
+ELF file	: practica05_0.elf
+elfcheck passed.
+Finished building: practica05_0.elf.elfcheck
+' '

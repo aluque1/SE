@@ -1,0 +1,10 @@
+-batch 
+-create leds_rgb 
+-ver 1.00.a 
+-dir "C:\Users\aluqu\Desktop\uni\SE\practica05" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 3 
+-xps 
+-ise 
+-driver 

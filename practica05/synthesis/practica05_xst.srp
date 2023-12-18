@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 TABLE OF CONTENTS
@@ -72,355 +72,355 @@ Analyzing hierarchy for entity <practica05> in library <work> (architecture <STR
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <practica05> in library <work> (Architecture <STRUCTURE>).
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'INTERRUPT_ACK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'MB_Halted' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'MB_Error' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'LOCKSTEP_OUT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'INSTR_ADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'IFETCH' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'I_AS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DATA_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DATA_ADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'D_AS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'READ_STROBE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'WRITE_STROBE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'BYTE_ENABLE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_WDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_WSTRB' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_WLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_WVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_BREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IP_RREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_WDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_WSTRB' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_WLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_WVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_BREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DP_RREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWUSER' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_WDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_WSTRB' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_WLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_WVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_WUSER' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_BREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARUSER' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_IC_RREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWUSER' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_WDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_WSTRB' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_WLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_WVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_WUSER' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_BREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARADDR' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARLEN' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARBURST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARPROT' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARQOS' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARUSER' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M_AXI_DC_RREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DBG_TDO' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Instruction' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Valid_Instr' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_PC' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Reg_Write' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Reg_Addr' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_MSR_Reg' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_PID_Reg' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_New_Reg_Value' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Exception_Taken' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Exception_Kind' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Jump_Taken' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Delay_Slot' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Data_Address' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Data_Access' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Data_Read' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Data_Write' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Data_Write_Value' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Data_Byte_Enable' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_DCache_Req' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_DCache_Hit' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_DCache_Rdy' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_DCache_Read' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_ICache_Req' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_ICache_Hit' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_ICache_Rdy' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_OF_PipeRun' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_EX_PipeRun' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_MEM_PipeRun' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_MB_Halted' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'Trace_Jump_Hit' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL0_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL0_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL0_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL0_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL0_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL0_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL1_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL1_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL1_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL1_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL1_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL1_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL2_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL2_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL2_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL2_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL2_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL2_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL3_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL3_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL3_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL3_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL3_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL3_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL4_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL4_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL4_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL4_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL4_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL4_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL5_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL5_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL5_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL5_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL5_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL5_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL6_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL6_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL6_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL6_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL6_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL6_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL7_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL7_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL7_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL7_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL7_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL7_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL8_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL8_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL8_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL8_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL8_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL8_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL9_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL9_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL9_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL9_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL9_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL9_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL10_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL10_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL10_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL10_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL10_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL10_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL11_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL11_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL11_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL11_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL11_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL11_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL12_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL12_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL12_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL12_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL12_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL12_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL13_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL13_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL13_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL13_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL13_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL13_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL14_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL14_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL14_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL14_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL14_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL14_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL15_S_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL15_S_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL15_M_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL15_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL15_M_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'FSL15_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M0_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M0_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M0_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S0_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M1_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M1_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M1_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S1_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M2_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M2_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M2_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S2_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M3_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M3_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M3_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S3_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M4_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M4_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M4_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S4_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M5_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M5_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M5_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S5_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M6_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M6_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M6_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S6_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M7_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M7_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M7_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S7_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M8_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M8_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M8_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S8_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M9_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M9_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M9_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S9_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M10_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M10_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M10_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S10_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M11_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M11_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M11_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S11_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M12_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M12_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M12_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S12_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M13_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M13_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M13_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S13_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M14_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M14_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M14_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S14_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M15_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M15_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'M15_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'S15_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'practica05_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_Rst' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'MPLB_Rst' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_dcrAck' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_dcrDBus' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SaddrAck' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SMRdErr' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SMWrErr' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SMBusy' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SrdBTerm' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SrdComp' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SrdDAck' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SrdDBus' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SrdWdAddr' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_Srearbitrate' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_Sssize' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_Swait' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SwrBTerm' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SwrComp' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'PLB_SwrDAck' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1694: Unconnected output port 'Bus_Error_Det' of component 'practica05_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1848: Unconnected output port 'BRAM_Din_B' of component 'practica05_bram_block_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1866: Unconnected output port 'Interrupt' of component 'practica05_xps_uartlite_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'INTERRUPT_ACK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'MB_Halted' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'MB_Error' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'LOCKSTEP_OUT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'INSTR_ADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'IFETCH' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'I_AS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DATA_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DATA_ADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'D_AS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'READ_STROBE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'WRITE_STROBE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'BYTE_ENABLE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_AWVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_WDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_WSTRB' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_WLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_WVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_BREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_ARVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IP_RREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_AWVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_WDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_WSTRB' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_WLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_WVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_BREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_ARVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DP_RREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_AWUSER' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_WDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_WSTRB' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_WLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_WVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_WUSER' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_BREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_ARUSER' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_IC_RREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_AWUSER' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_WDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_WSTRB' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_WLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_WVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_WUSER' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_BREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARADDR' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARLEN' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARBURST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARPROT' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARQOS' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_ARUSER' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M_AXI_DC_RREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DBG_TDO' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Instruction' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Valid_Instr' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_PC' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Reg_Write' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Reg_Addr' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_MSR_Reg' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_PID_Reg' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_New_Reg_Value' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Exception_Taken' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Exception_Kind' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Jump_Taken' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Delay_Slot' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Data_Address' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Data_Access' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Data_Read' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Data_Write' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Data_Write_Value' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Data_Byte_Enable' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_DCache_Req' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_DCache_Hit' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_DCache_Rdy' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_DCache_Read' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_ICache_Req' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_ICache_Hit' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_ICache_Rdy' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_OF_PipeRun' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_EX_PipeRun' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_MEM_PipeRun' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_MB_Halted' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'Trace_Jump_Hit' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL0_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL0_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL0_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL0_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL0_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL0_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL1_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL1_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL1_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL1_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL1_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL1_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL2_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL2_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL2_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL2_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL2_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL2_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL3_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL3_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL3_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL3_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL3_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL3_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL4_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL4_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL4_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL4_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL4_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL4_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL5_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL5_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL5_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL5_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL5_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL5_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL6_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL6_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL6_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL6_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL6_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL6_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL7_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL7_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL7_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL7_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL7_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL7_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL8_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL8_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL8_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL8_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL8_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL8_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL9_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL9_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL9_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL9_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL9_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL9_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL10_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL10_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL10_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL10_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL10_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL10_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL11_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL11_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL11_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL11_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL11_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL11_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL12_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL12_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL12_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL12_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL12_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL12_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL13_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL13_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL13_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL13_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL13_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL13_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL14_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL14_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL14_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL14_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL14_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL14_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL15_S_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL15_S_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL15_M_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL15_M_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL15_M_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'FSL15_M_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M0_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M0_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M0_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S0_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M1_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M1_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M1_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S1_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M2_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M2_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M2_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S2_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M3_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M3_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M3_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S3_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M4_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M4_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M4_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S4_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M5_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M5_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M5_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S5_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M6_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M6_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M6_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S6_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M7_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M7_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M7_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S7_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M8_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M8_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M8_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S8_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M9_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M9_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M9_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S9_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M10_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M10_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M10_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S10_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M11_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M11_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M11_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S11_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M12_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M12_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M12_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S12_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M13_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M13_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M13_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S13_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M14_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M14_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M14_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S14_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M15_AXIS_TLAST' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M15_AXIS_TDATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'M15_AXIS_TVALID' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'S15_AXIS_TREADY' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1153: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'practica05_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_Rst' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'MPLB_Rst' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_dcrAck' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_dcrDBus' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SaddrAck' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SMRdErr' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SMWrErr' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SMBusy' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SrdBTerm' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SrdComp' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SrdDAck' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SrdDBus' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SrdWdAddr' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_Srearbitrate' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_Sssize' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_Swait' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SwrBTerm' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SwrComp' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'PLB_SwrDAck' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1754: Unconnected output port 'Bus_Error_Det' of component 'practica05_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1908: Unconnected output port 'BRAM_Din_B' of component 'practica05_bram_block_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/hdl/practica05.vhd" line 1926: Unconnected output port 'Interrupt' of component 'practica05_xps_uartlite_0_wrapper'.
 Entity <practica05> analyzed. Unit <practica05> generated.
 
 
@@ -452,6 +452,7 @@ Reading core <../implementation/practica05_bram_block_0_wrapper.ngc>.
 Reading core <../implementation/practica05_xps_uartlite_0_wrapper.ngc>.
 Reading core <../implementation/practica05_banner_0_wrapper.ngc>.
 Reading core <../implementation/practica05_keypad_0_wrapper.ngc>.
+Reading core <../implementation/practica05_leds_rgb_0_wrapper.ngc>.
 Loading core <practica05_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
 Loading core <practica05_plb_v46_0_wrapper> for timing and area information for instance <plb_v46_0>.
 Loading core <practica05_xps_bram_if_cntlr_0_wrapper> for timing and area information for instance <xps_bram_if_cntlr_0>.
@@ -459,6 +460,7 @@ Loading core <practica05_bram_block_0_wrapper> for timing and area information f
 Loading core <practica05_xps_uartlite_0_wrapper> for timing and area information for instance <xps_uartlite_0>.
 Loading core <practica05_banner_0_wrapper> for timing and area information for instance <banner_0>.
 Loading core <practica05_keypad_0_wrapper> for timing and area information for instance <keypad_0>.
+Loading core <practica05_leds_rgb_0_wrapper> for timing and area information for instance <leds_rgb_0>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -496,12 +498,15 @@ INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2> 
-INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 6 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 7 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
 INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
@@ -511,8 +516,11 @@ INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENC
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
-INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 6 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 7 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
 INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1> 
 
 Final Macro Processing ...
 
@@ -543,43 +551,43 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 18
+# IOs                              : 21
 
 Cell Usage :
-# BELS                             : 3631
-#      GND                         : 24
-#      INV                         : 37
-#      LUT1                        : 96
-#      LUT2                        : 305
+# BELS                             : 3963
+#      GND                         : 25
+#      INV                         : 40
+#      LUT1                        : 117
+#      LUT2                        : 332
 #      LUT2_D                      : 12
-#      LUT2_L                      : 23
-#      LUT3                        : 940
+#      LUT2_L                      : 26
+#      LUT3                        : 1006
 #      LUT3_D                      : 27
-#      LUT3_L                      : 30
-#      LUT4                        : 1043
-#      LUT4_D                      : 25
+#      LUT3_L                      : 29
+#      LUT4                        : 1092
+#      LUT4_D                      : 33
 #      LUT4_L                      : 37
 #      MULT_AND                    : 34
-#      MUXCY                       : 223
+#      MUXCY                       : 268
 #      MUXCY_L                     : 161
-#      MUXF5                       : 367
+#      MUXF5                       : 452
 #      MUXF6                       : 5
 #      MUXF7                       : 2
 #      MUXF8                       : 1
-#      VCC                         : 6
-#      XORCY                       : 233
-# FlipFlops/Latches                : 2157
+#      VCC                         : 7
+#      XORCY                       : 257
+# FlipFlops/Latches                : 2384
 #      FD                          : 5
-#      FDC                         : 58
+#      FDC                         : 82
 #      FDCE                        : 73
 #      FDE                         : 200
 #      FDP                         : 6
 #      FDPE                        : 8
-#      FDR                         : 867
-#      FDRE                        : 840
+#      FDR                         : 953
+#      FDRE                        : 956
 #      FDRS                        : 15
 #      FDRSE                       : 4
-#      FDS                         : 36
+#      FDS                         : 37
 #      FDSE                        : 45
 # RAMS                             : 369
 #      RAM16X1D                    : 352
@@ -589,9 +597,9 @@ Cell Usage :
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 17
+# IO Buffers                       : 20
 #      IBUF                        : 6
-#      OBUF                        : 11
+#      OBUF                        : 14
 # MULTs                            : 3
 #      MULT18X18S                  : 3
 =========================================================================
@@ -601,14 +609,14 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     2086  out of   7680    27%  
- Number of Slice Flip Flops:           2157  out of  15360    14%  
- Number of 4 input LUTs:               3363  out of  15360    21%  
-    Number used as logic:              2575
+ Number of Slices:                     2275  out of   7680    29%  
+ Number of Slice Flip Flops:           2384  out of  15360    15%  
+ Number of 4 input LUTs:               3539  out of  15360    23%  
+    Number used as logic:              2751
     Number used as Shift registers:      84
     Number used as RAMs:                704
- Number of IOs:                          18
- Number of bonded IOBs:                  18  out of    173    10%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    173    12%  
  Number of BRAMs:                        17  out of     24    70%  
  Number of MULT18X18s:                    3  out of     24    12%  
  Number of GCLKs:                         3  out of      8    37%  
@@ -634,7 +642,7 @@ Clock Information:
 ------------------------------------------------+--------------------------------------------------------------+-------+
 Clock Signal                                    | Clock buffer(FF name)                                        | Load  |
 ------------------------------------------------+--------------------------------------------------------------+-------+
-clk                                             | BUFGP                                                        | 2511  |
+clk                                             | BUFGP                                                        | 2738  |
 N0                                              | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
 banner_0/banner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                         | 67    |
 keypad_0/keypad_0/USER_LOGIC_I/reloj121         | BUFG                                                         | 35    |
@@ -648,6 +656,7 @@ Control Signal                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 plb_v46_0/SPLB_Rst<2>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST:Q)                                                                            | NONE(banner_0/banner_0/USER_LOGIC_I/mybanner/ce_row_clk)                                                                                             | 105   |
 plb_v46_0/SPLB_Rst<3>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST:Q)                                                                            | NONE(keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/aux1)                                                                                             | 40    |
+plb_v46_0/SPLB_Rst<4>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST:Q)                                                                            | NONE(leds_rgb_0/leds_rgb_0/USER_LOGIC_I/cnt_blue_0)                                                                                                  | 24    |
 microblaze_0/Trace_EX_PipeRun(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I:LO)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
 microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1(microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1:Q)                               | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -668,7 +677,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 183160 / 7450
+  Total number of paths / destination ports: 185002 / 7991
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -766,9 +775,9 @@ Delay:               6.134ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 297 / 297
+  Total number of paths / destination ports: 298 / 298
 -------------------------------------------------------------------------
-Offset:              4.463ns (Levels of Logic = 2)
+Offset:              4.468ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       microblaze_0/microblaze_0/LOCKSTEP_Out_3765 (FF)
   Destination Clock: clk rising
@@ -777,11 +786,11 @@ Offset:              4.463ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           295   0.715   2.856  rst_IBUF (rst_IBUF)
+     IBUF:I->O           296   0.715   2.861  rst_IBUF (rst_IBUF)
      begin scope: 'microblaze_0'
      FDR:R                     0.892          microblaze_0/LOCKSTEP_Out_111
     ----------------------------------------
-    Total                      4.463ns (1.607ns logic, 2.856ns route)
+    Total                      4.468ns (1.607ns logic, 2.861ns route)
                                        (36.0% logic, 64.0% route)
 
 =========================================================================
@@ -809,7 +818,7 @@ Offset:              5.481ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 95 / 5
+  Total number of paths / destination ports: 167 / 8
 -------------------------------------------------------------------------
 Offset:              12.594ns (Levels of Logic = 9)
   Source:            banner_0/banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (FF)
@@ -885,14 +894,14 @@ Offset:              8.027ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 94.00 secs
-Total CPU time to Xst completion: 93.58 secs
+Total REAL time to Xst completion: 48.00 secs
+Total CPU time to Xst completion: 47.66 secs
  
 --> 
 
-Total memory usage is 4577980 kilobytes
+Total memory usage is 4609272 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)
-Number of infos    :   40 (   0 filtered)
+Number of infos    :   46 (   0 filtered)
 

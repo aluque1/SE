@@ -20,7 +20,10 @@ entity practica05_stub is
     col_clk : out std_logic;
     reset2_out : out std_logic;
     s : out std_logic_vector(3 downto 0);
-    r : in std_logic_vector(3 downto 0)
+    r : in std_logic_vector(3 downto 0);
+    red : out std_logic;
+    green : out std_logic;
+    blue : out std_logic
   );
 end practica05_stub;
 
@@ -39,7 +42,10 @@ architecture STRUCTURE of practica05_stub is
       col_clk : out std_logic;
       reset2_out : out std_logic;
       s : out std_logic_vector(3 downto 0);
-      r : in std_logic_vector(3 downto 0)
+      r : in std_logic_vector(3 downto 0);
+      red : out std_logic;
+      green : out std_logic;
+      blue : out std_logic
     );
   end component;
 
@@ -61,7 +67,10 @@ begin
       col_clk => col_clk,
       reset2_out => reset2_out,
       s => s,
-      r => r
+      r => r,
+      red => red,
+      green => green,
+      blue => blue
     );
 
 end architecture STRUCTURE;

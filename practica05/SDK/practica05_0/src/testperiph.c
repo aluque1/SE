@@ -44,7 +44,11 @@ int main()
 
    print("---Entering main---\n\r");
 
-   xil_printf(" Pulse una tecla cualquiera \n\r");
+   print(" LED's \n\r");
+
+
+   print(" KEYPAD \n\r");
+   print(" Pulse una tecla cualquiera \n\r");
    Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
    xil_printf("   Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
    KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0,0);

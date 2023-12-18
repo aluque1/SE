@@ -46,7 +46,7 @@ INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
    C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 78 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
-   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   PARAMETER C_PLBV46_NUM_SLAVES value to 5 -
    C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 79 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
@@ -89,11 +89,23 @@ INFO:EDK:4130 - IPNAME: keypad, INSTANCE:keypad_0 - tool is overriding PARAMETER
    C_SPLB_MID_WIDTH value to 1 -
    C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\keypad_v1_00_a\data\keypad_v2
    _1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: leds_rgb, INSTANCE:leds_rgb_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rg
+   b_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: leds_rgb, INSTANCE:leds_rgb_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rg
+   b_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: leds_rgb, INSTANCE:leds_rgb_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rg
+   b_v2_1_0.mpd line 29 
 
 Checking platform address map ...
 
 Checking platform configuration ...
-IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 5 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
@@ -119,6 +131,10 @@ INFO:EDK:4060 - INSTANCE: banner_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
    propagated to this IP. Please make sure that you have specified the frequency
    of the top-level clock port, and that the clocks are properly connected.
 INFO:EDK:4060 - INSTANCE: keypad_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
+   implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: leds_rgb_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
    implement clock DRCs for the parameter. Top-level frequency could not be
    propagated to this IP. Please make sure that you have specified the frequency
    of the top-level clock port, and that the clocks are properly connected.
@@ -180,27 +196,27 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 19 - Copying cache
-implementation netlist
-IPNAME:plb_v46 INSTANCE:plb_v46_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 27 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 22 - Copying cache
 implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 34 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 37 - Copying cache
 implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 44 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 47 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 50 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 53 - Copying cache
 implementation netlist
 IPNAME:banner INSTANCE:banner_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 62 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 65 - Copying cache
+implementation netlist
+IPNAME:keypad INSTANCE:keypad_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 79 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 44 - elaborating IP
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 47 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -221,10 +237,14 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:plb_v46_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs
+line 30 - Running XST synthesis
 INSTANCE:banner_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line
-62 - Running XST synthesis
+65 - Running XST synthesis
 INSTANCE:keypad_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line
-76 - Running XST synthesis
+79 - Running XST synthesis
+INSTANCE:leds_rgb_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs
+line 89 - Running XST synthesis
 
 Running NGCBUILD ...
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
@@ -233,4 +253,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 33.00 seconds
+Total run time: 37.00 seconds

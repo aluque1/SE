@@ -20,7 +20,10 @@ entity practica05 is
     col_clk : out std_logic;
     reset2_out : out std_logic;
     s : out std_logic_vector(3 downto 0);
-    r : in std_logic_vector(3 downto 0)
+    r : in std_logic_vector(3 downto 0);
+    red : out std_logic;
+    green : out std_logic;
+    blue : out std_logic
   );
 end practica05;
 
@@ -633,7 +636,7 @@ architecture STRUCTURE of practica05 is
       PLB_Clk : in std_logic;
       SYS_Rst : in std_logic;
       PLB_Rst : out std_logic;
-      SPLB_Rst : out std_logic_vector(0 to 3);
+      SPLB_Rst : out std_logic_vector(0 to 4);
       MPLB_Rst : out std_logic_vector(0 to 1);
       PLB_dcrAck : out std_logic;
       PLB_dcrDBus : out std_logic_vector(0 to 31);
@@ -657,22 +660,22 @@ architecture STRUCTURE of practica05 is
       M_type : in std_logic_vector(0 to 5);
       M_wrBurst : in std_logic_vector(0 to 1);
       M_wrDBus : in std_logic_vector(0 to 63);
-      Sl_addrAck : in std_logic_vector(0 to 3);
-      Sl_MRdErr : in std_logic_vector(0 to 7);
-      Sl_MWrErr : in std_logic_vector(0 to 7);
-      Sl_MBusy : in std_logic_vector(0 to 7);
-      Sl_rdBTerm : in std_logic_vector(0 to 3);
-      Sl_rdComp : in std_logic_vector(0 to 3);
-      Sl_rdDAck : in std_logic_vector(0 to 3);
-      Sl_rdDBus : in std_logic_vector(0 to 127);
-      Sl_rdWdAddr : in std_logic_vector(0 to 15);
-      Sl_rearbitrate : in std_logic_vector(0 to 3);
-      Sl_SSize : in std_logic_vector(0 to 7);
-      Sl_wait : in std_logic_vector(0 to 3);
-      Sl_wrBTerm : in std_logic_vector(0 to 3);
-      Sl_wrComp : in std_logic_vector(0 to 3);
-      Sl_wrDAck : in std_logic_vector(0 to 3);
-      Sl_MIRQ : in std_logic_vector(0 to 7);
+      Sl_addrAck : in std_logic_vector(0 to 4);
+      Sl_MRdErr : in std_logic_vector(0 to 9);
+      Sl_MWrErr : in std_logic_vector(0 to 9);
+      Sl_MBusy : in std_logic_vector(0 to 9);
+      Sl_rdBTerm : in std_logic_vector(0 to 4);
+      Sl_rdComp : in std_logic_vector(0 to 4);
+      Sl_rdDAck : in std_logic_vector(0 to 4);
+      Sl_rdDBus : in std_logic_vector(0 to 159);
+      Sl_rdWdAddr : in std_logic_vector(0 to 19);
+      Sl_rearbitrate : in std_logic_vector(0 to 4);
+      Sl_SSize : in std_logic_vector(0 to 9);
+      Sl_wait : in std_logic_vector(0 to 4);
+      Sl_wrBTerm : in std_logic_vector(0 to 4);
+      Sl_wrComp : in std_logic_vector(0 to 4);
+      Sl_wrDAck : in std_logic_vector(0 to 4);
+      Sl_MIRQ : in std_logic_vector(0 to 9);
       PLB_MIRQ : out std_logic_vector(0 to 1);
       PLB_ABus : out std_logic_vector(0 to 31);
       PLB_UABus : out std_logic_vector(0 to 31);
@@ -704,13 +707,13 @@ architecture STRUCTURE of practica05 is
       PLB_rdPendReq : out std_logic;
       PLB_wrPendReq : out std_logic;
       PLB_rdBurst : out std_logic;
-      PLB_rdPrim : out std_logic_vector(0 to 3);
+      PLB_rdPrim : out std_logic_vector(0 to 4);
       PLB_reqPri : out std_logic_vector(0 to 1);
       PLB_size : out std_logic_vector(0 to 3);
       PLB_type : out std_logic_vector(0 to 2);
       PLB_wrBurst : out std_logic;
       PLB_wrDBus : out std_logic_vector(0 to 31);
-      PLB_wrPrim : out std_logic_vector(0 to 3);
+      PLB_wrPrim : out std_logic_vector(0 to 4);
       PLB_SaddrAck : out std_logic;
       PLB_SMRdErr : out std_logic_vector(0 to 1);
       PLB_SMWrErr : out std_logic_vector(0 to 1);
@@ -955,6 +958,56 @@ architecture STRUCTURE of practica05 is
     );
   end component;
 
+  component practica05_leds_rgb_0_wrapper is
+    port (
+      SPLB_Clk : in std_logic;
+      SPLB_Rst : in std_logic;
+      PLB_ABus : in std_logic_vector(0 to 31);
+      PLB_UABus : in std_logic_vector(0 to 31);
+      PLB_PAValid : in std_logic;
+      PLB_SAValid : in std_logic;
+      PLB_rdPrim : in std_logic;
+      PLB_wrPrim : in std_logic;
+      PLB_masterID : in std_logic_vector(0 to 0);
+      PLB_abort : in std_logic;
+      PLB_busLock : in std_logic;
+      PLB_RNW : in std_logic;
+      PLB_BE : in std_logic_vector(0 to 3);
+      PLB_MSize : in std_logic_vector(0 to 1);
+      PLB_size : in std_logic_vector(0 to 3);
+      PLB_type : in std_logic_vector(0 to 2);
+      PLB_lockErr : in std_logic;
+      PLB_wrDBus : in std_logic_vector(0 to 31);
+      PLB_wrBurst : in std_logic;
+      PLB_rdBurst : in std_logic;
+      PLB_wrPendReq : in std_logic;
+      PLB_rdPendReq : in std_logic;
+      PLB_wrPendPri : in std_logic_vector(0 to 1);
+      PLB_rdPendPri : in std_logic_vector(0 to 1);
+      PLB_reqPri : in std_logic_vector(0 to 1);
+      PLB_TAttribute : in std_logic_vector(0 to 15);
+      Sl_addrAck : out std_logic;
+      Sl_SSize : out std_logic_vector(0 to 1);
+      Sl_wait : out std_logic;
+      Sl_rearbitrate : out std_logic;
+      Sl_wrDAck : out std_logic;
+      Sl_wrComp : out std_logic;
+      Sl_wrBTerm : out std_logic;
+      Sl_rdDBus : out std_logic_vector(0 to 31);
+      Sl_rdWdAddr : out std_logic_vector(0 to 3);
+      Sl_rdDAck : out std_logic;
+      Sl_rdComp : out std_logic;
+      Sl_rdBTerm : out std_logic;
+      Sl_MBusy : out std_logic_vector(0 to 1);
+      Sl_MWrErr : out std_logic_vector(0 to 1);
+      Sl_MRdErr : out std_logic_vector(0 to 1);
+      Sl_MIRQ : out std_logic_vector(0 to 1);
+      red : out std_logic;
+      green : out std_logic;
+      blue : out std_logic
+    );
+  end component;
+
   -- Internal signals
 
   signal banner_0_col_clk : std_logic;
@@ -965,6 +1018,9 @@ architecture STRUCTURE of practica05 is
   signal banner_0_row_serial_out : std_logic;
   signal keypad_0_R : std_logic_vector(3 downto 0);
   signal keypad_0_S : std_logic_vector(3 downto 0);
+  signal leds_rgb_0_blue : std_logic;
+  signal leds_rgb_0_green : std_logic;
+  signal leds_rgb_0_red : std_logic;
   signal microblaze_0_MB_RESET : std_logic;
   signal net_gnd0 : std_logic;
   signal net_gnd1 : std_logic_vector(0 downto 0);
@@ -1020,7 +1076,7 @@ architecture STRUCTURE of practica05 is
   signal plb_v46_0_PLB_rdBurst : std_logic;
   signal plb_v46_0_PLB_rdPendPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_rdPendReq : std_logic;
-  signal plb_v46_0_PLB_rdPrim : std_logic_vector(0 to 3);
+  signal plb_v46_0_PLB_rdPrim : std_logic_vector(0 to 4);
   signal plb_v46_0_PLB_reqPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_size : std_logic_vector(0 to 3);
   signal plb_v46_0_PLB_type : std_logic_vector(0 to 2);
@@ -1028,24 +1084,24 @@ architecture STRUCTURE of practica05 is
   signal plb_v46_0_PLB_wrDBus : std_logic_vector(0 to 31);
   signal plb_v46_0_PLB_wrPendPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_wrPendReq : std_logic;
-  signal plb_v46_0_PLB_wrPrim : std_logic_vector(0 to 3);
-  signal plb_v46_0_SPLB_Rst : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_MBusy : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_MIRQ : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_MRdErr : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_MWrErr : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_SSize : std_logic_vector(0 to 7);
-  signal plb_v46_0_Sl_addrAck : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdBTerm : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdComp : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdDAck : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_rdDBus : std_logic_vector(0 to 127);
-  signal plb_v46_0_Sl_rdWdAddr : std_logic_vector(0 to 15);
-  signal plb_v46_0_Sl_rearbitrate : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wait : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wrBTerm : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wrComp : std_logic_vector(0 to 3);
-  signal plb_v46_0_Sl_wrDAck : std_logic_vector(0 to 3);
+  signal plb_v46_0_PLB_wrPrim : std_logic_vector(0 to 4);
+  signal plb_v46_0_SPLB_Rst : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_MBusy : std_logic_vector(0 to 9);
+  signal plb_v46_0_Sl_MIRQ : std_logic_vector(0 to 9);
+  signal plb_v46_0_Sl_MRdErr : std_logic_vector(0 to 9);
+  signal plb_v46_0_Sl_MWrErr : std_logic_vector(0 to 9);
+  signal plb_v46_0_Sl_SSize : std_logic_vector(0 to 9);
+  signal plb_v46_0_Sl_addrAck : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_rdBTerm : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_rdComp : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_rdDAck : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_rdDBus : std_logic_vector(0 to 159);
+  signal plb_v46_0_Sl_rdWdAddr : std_logic_vector(0 to 19);
+  signal plb_v46_0_Sl_rearbitrate : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_wait : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_wrBTerm : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_wrComp : std_logic_vector(0 to 4);
+  signal plb_v46_0_Sl_wrDAck : std_logic_vector(0 to 4);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr : std_logic_vector(0 to 31);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Clk : std_logic;
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Din : std_logic_vector(0 to 31);
@@ -1064,6 +1120,7 @@ architecture STRUCTURE of practica05 is
   attribute BOX_TYPE of practica05_xps_uartlite_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica05_banner_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica05_keypad_0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of practica05_leds_rgb_0_wrapper : component is "user_black_box";
 
 begin
 
@@ -1081,6 +1138,9 @@ begin
   reset2_out <= banner_0_reset2_out;
   s <= keypad_0_S;
   keypad_0_R <= r;
+  red <= leds_rgb_0_red;
+  green <= leds_rgb_0_green;
+  blue <= leds_rgb_0_blue;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -2010,6 +2070,55 @@ begin
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(6 to 7),
       S => keypad_0_S,
       R => keypad_0_R
+    );
+
+  leds_rgb_0 : practica05_leds_rgb_0_wrapper
+    port map (
+      SPLB_Clk => plb_v46_0_PLB_Clk,
+      SPLB_Rst => plb_v46_0_SPLB_Rst(4),
+      PLB_ABus => plb_v46_0_PLB_ABus,
+      PLB_UABus => plb_v46_0_PLB_UABus,
+      PLB_PAValid => plb_v46_0_PLB_PAValid,
+      PLB_SAValid => plb_v46_0_PLB_SAValid,
+      PLB_rdPrim => plb_v46_0_PLB_rdPrim(4),
+      PLB_wrPrim => plb_v46_0_PLB_wrPrim(4),
+      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
+      PLB_abort => plb_v46_0_PLB_abort,
+      PLB_busLock => plb_v46_0_PLB_busLock,
+      PLB_RNW => plb_v46_0_PLB_RNW,
+      PLB_BE => plb_v46_0_PLB_BE,
+      PLB_MSize => plb_v46_0_PLB_MSize,
+      PLB_size => plb_v46_0_PLB_size,
+      PLB_type => plb_v46_0_PLB_type,
+      PLB_lockErr => plb_v46_0_PLB_lockErr,
+      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
+      PLB_wrBurst => plb_v46_0_PLB_wrBurst,
+      PLB_rdBurst => plb_v46_0_PLB_rdBurst,
+      PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
+      PLB_rdPendReq => plb_v46_0_PLB_rdPendReq,
+      PLB_wrPendPri => plb_v46_0_PLB_wrPendPri,
+      PLB_rdPendPri => plb_v46_0_PLB_rdPendPri,
+      PLB_reqPri => plb_v46_0_PLB_reqPri,
+      PLB_TAttribute => plb_v46_0_PLB_TAttribute,
+      Sl_addrAck => plb_v46_0_Sl_addrAck(4),
+      Sl_SSize => plb_v46_0_Sl_SSize(8 to 9),
+      Sl_wait => plb_v46_0_Sl_wait(4),
+      Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(4),
+      Sl_wrDAck => plb_v46_0_Sl_wrDAck(4),
+      Sl_wrComp => plb_v46_0_Sl_wrComp(4),
+      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(4),
+      Sl_rdDBus => plb_v46_0_Sl_rdDBus(128 to 159),
+      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(16 to 19),
+      Sl_rdDAck => plb_v46_0_Sl_rdDAck(4),
+      Sl_rdComp => plb_v46_0_Sl_rdComp(4),
+      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(4),
+      Sl_MBusy => plb_v46_0_Sl_MBusy(8 to 9),
+      Sl_MWrErr => plb_v46_0_Sl_MWrErr(8 to 9),
+      Sl_MRdErr => plb_v46_0_Sl_MRdErr(8 to 9),
+      Sl_MIRQ => plb_v46_0_Sl_MIRQ(8 to 9),
+      red => leds_rgb_0_red,
+      green => leds_rgb_0_green,
+      blue => leds_rgb_0_blue
     );
 
 end architecture STRUCTURE;

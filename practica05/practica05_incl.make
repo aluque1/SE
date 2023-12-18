@@ -132,7 +132,9 @@ pcores/banner_v1_00_a/hdl/vhdl/banner.vhd \
 pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd \
 pcores/keypad_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/keypad_v1_00_a/hdl/vhdl/keypad.vhd \
-pcores/keypad_v1_00_a/hdl/vhdl/teclaDetect.vhd
+pcores/keypad_v1_00_a/hdl/vhdl/teclaDetect.vhd \
+pcores/leds_rgb_v1_00_a/hdl/vhdl/user_logic.vhd \
+pcores/leds_rgb_v1_00_a/hdl/vhdl/leds_rgb.vhd
 
 WRAPPER_NGC_FILES = implementation/practica05_microblaze_0_wrapper.ngc \
 implementation/practica05_plb_v46_0_wrapper.ngc \
@@ -140,7 +142,8 @@ implementation/practica05_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/practica05_bram_block_0_wrapper.ngc \
 implementation/practica05_xps_uartlite_0_wrapper.ngc \
 implementation/practica05_banner_0_wrapper.ngc \
-implementation/practica05_keypad_0_wrapper.ngc
+implementation/practica05_keypad_0_wrapper.ngc \
+implementation/practica05_leds_rgb_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

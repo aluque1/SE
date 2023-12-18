@@ -14,6 +14,9 @@
  PORT reset2_out = banner_0_reset2_out, DIR = O
  PORT s = keypad_0_S, DIR = O, VEC = [3:0]
  PORT r = keypad_0_R, DIR = I, VEC = [3:0]
+ PORT red = leds_rgb_0_red, DIR = O
+ PORT green = leds_rgb_0_green, DIR = O
+ PORT blue = leds_rgb_0_blue, DIR = O
 
 
 BEGIN microblaze
@@ -81,5 +84,14 @@ BEGIN keypad
  BUS_INTERFACE SPLB = plb_v46_0
  PORT S = keypad_0_S
  PORT R = keypad_0_R
+END
+
+BEGIN leds_rgb
+ PARAMETER INSTANCE = leds_rgb_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT red = leds_rgb_0_red
+ PORT green = leds_rgb_0_green
+ PORT blue = leds_rgb_0_blue
 END
 
