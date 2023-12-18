@@ -14,9 +14,11 @@
 
 /*************************** Const and Defines *****************************/
 
-#define ROJO 0x000001C0
-#define VERDE 0x00000038
-#define VERDE_OSCURO 0x00000018
+#define AZUL 				0x000001C0
+#define VERDE 				0x00000038
+#define VERDE_OSCURO		0x00000018
+#define ROJO 				0x00000007
+#define BLANCO				0X000001FF
 #define N_ROWS 16
 
 /************************** Function Definitions ***************************/
@@ -35,7 +37,7 @@ Ejemplo de escritura en la FIFO
 int main()
 {
     int screen_addr = XPAR_PANTALLA_0_BASEADDR;
-    int posicion, color, data, row, column;
+    int posicion, colorCode, color, data, row, column;
 
     print("-- Bienvenido a la practica 4 --\n\r");
     print("-- Elija una opcion: \n\r");
@@ -50,9 +52,29 @@ int main()
     	print("-- Apartado 1 --\n\r");
     	// ask for a color (0 = red, 1 = green, 2 = dark green)
     	do{
-    		print("Introduzca un color. 0 = rojo, 1 = verde, 2 = verde oscuro\n\r");
-    		color = getNumber();
-    	}while(color < 0 || color > 2);
+    		print("Introduzca un color. 0 = rojo, 1 = verde, 2 = verde oscuro, 3 = azul, 4 = blanco\n\r");
+    		colorCode = getNumber();
+    		switch(colorCode){
+    		case 0:
+    			color = ROJO;
+    			break;
+    		case 1:
+    			color = VERDE;
+    			break;
+    		case 2:
+    			color = VERDE_OSCURO;
+    			break;
+    		case 3:
+    			color = AZUL;
+    			break;
+    		case 4:
+    			color = BLANCO;
+    			break;
+    		default:
+    			print("Opcion no valida\n\r");
+    			break;
+    		}
+    	}while(colorCode < 0 || colorCode > 4);
     	// ask for the row
     	do {
     		print("Introduzca la fila. Tiene que estar entre 0-15\n\r");
