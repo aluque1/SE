@@ -6,8 +6,8 @@
 
 NET clk LOC=P8;
 #push buttons placa superior
-#NET SW2 LOC=E11; 
-#NET SW3 LOC=A13; 
+NET buttons<0> LOC=E11; 
+NET buttons<1> LOC=A13; 
 ## System level constraints
 NET clk TNM_NET = clk;
 TIMESPEC TS_clk = PERIOD clk 20000 ps;

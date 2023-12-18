@@ -38,6 +38,7 @@ entity vgacore is
 		rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 		vsyncb: out std_logic;	-- vertical (frame) sync
 		rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
+		buttons: in std_logic_vector(1 downto 0) -- botones
 	);
 end vgacore;
 
@@ -45,6 +46,7 @@ architecture vgacore_arch of vgacore is
 
 signal hcnt: std_logic_vector(8 downto 0);	-- horizontal pixel counter
 signal vcnt: std_logic_vector(9 downto 0);	-- vertical line counter
+signal desp: std_logic_vector(8 downto 0); -- desplazamiento
 type ram_type is array (0 to 127) of std_logic_vector(8 downto 0);
 signal RAM : ram_type :=
 (
@@ -161,7 +163,7 @@ end process;
 
 -- A partir de aqui escribir la parte de dibujar en la pantalla
 
--- Dibujamos rectángulos de 16x8
+-- Dibujamos rectï¿½ngulos de 16x8
 -- vcnt(8 downto 4)x hcnt(6 downto 3)
 process(clock, load, rectangulo)
 begin
@@ -172,14 +174,28 @@ begin
 		end if;
 end process;
 
-process(vcnt, hcnt, RAM)
+desplazamiento: process(clock, reset)
 begin
-if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
-rgb<=RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));
-else
-rgb<="000000000";
-end if;
+	if reset = '1' then
+		desp <= "000000000";
+	elsif rising_edge(clock) then
+		if buttons(0) = '1' then
+			desp <= desp + 1;
+		elsif buttons(1) = '1' then
+			desp <= desp - 1;
+		end if;
+	end if;
 end process;
+
+end vgacore_arch;
+
+rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4))) 
+	when vcnt(9 downto 8)="00" and (hcnt >= desp and hcnt < desp + 63)
+	else "000000000"
+;
+
+
+
 
 ---------------------------------------------------------------------
 end vgacore_arch;
