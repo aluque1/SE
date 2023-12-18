@@ -168,7 +168,7 @@ entity pantalla is
     hsyncb: out std_logic;
 		vsyncb: out std_logic;							-- vertical (frame) sync
 		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
-    buttons: in std_logic_vector(1 downto 0) -- botones
+    buttons: in std_logic_vector(1 downto 0); -- botones
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------

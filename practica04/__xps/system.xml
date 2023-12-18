@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Mon Dec 18 18:07:20 2023">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Mon Dec 18 20:08:40 2023">
 
   <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="C:/Users/aluqu/Desktop/uni/SE/practica04/practica04.xmp" SPEEDGRADE="-5"/>
 
@@ -54,6 +54,11 @@
     <PORT DIR="O" ENDIAN="BIG" LEFT="0" LSB="8" MHS_INDEX="8" MSB="0" NAME="rgb" RIGHT="8" SIGNAME="pantalla_0_rgb">
       <CONNECTIONS>
         <CONNECTION INSTANCE="pantalla_0" PORT="rgb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="9" MSB="1" NAME="buttons" RIGHT="0" SIGNAME="net_buttons">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pantalla_0" PORT="buttons"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -4481,6 +4486,11 @@
         <PORT DIR="O" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LEFT="0" LSB="8" MHS_INDEX="2" MPD_INDEX="44" MSB="0" NAME="rgb" RIGHT="8" SIGNAME="pantalla_0_rgb" VECFORMULA="[0:8]">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="rgb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="1" LSB="0" MHS_INDEX="3" MPD_INDEX="45" MSB="1" NAME="buttons" RIGHT="0" SIGNAME="net_buttons" VECFORMULA="[1:0]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="buttons"/>
           </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_Clk" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">

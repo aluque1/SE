@@ -56,7 +56,8 @@ entity practica04_pantalla_0_wrapper is
     Sl_MIRQ : out std_logic_vector(0 to 1);
     hsyncb : out std_logic;
     vsyncb : out std_logic;
-    rgb : out std_logic_vector(0 to 8)
+    rgb : out std_logic_vector(0 to 8);
+    buttons : in std_logic_vector(1 downto 0)
   );
 end practica04_pantalla_0_wrapper;
 
@@ -123,7 +124,8 @@ architecture STRUCTURE of practica04_pantalla_0_wrapper is
       Sl_MIRQ : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       hsyncb : out std_logic;
       vsyncb : out std_logic;
-      rgb : out std_logic_vector(0 to 8)
+      rgb : out std_logic_vector(0 to 8);
+      buttons : in std_logic_vector(1 downto 0)
     );
   end component;
 
@@ -190,7 +192,8 @@ begin
       Sl_MIRQ => Sl_MIRQ,
       hsyncb => hsyncb,
       vsyncb => vsyncb,
-      rgb => rgb
+      rgb => rgb,
+      buttons => buttons
     );
 
 end architecture STRUCTURE;

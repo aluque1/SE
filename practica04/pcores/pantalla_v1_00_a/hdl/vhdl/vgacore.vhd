@@ -37,7 +37,7 @@ entity vgacore is
 		color: in std_logic_vector(8 downto 0); -- color
 		rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 		vsyncb: out std_logic;	-- vertical (frame) sync
-		rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
+		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
 		buttons: in std_logic_vector(1 downto 0) -- botones
 	);
 end vgacore;
@@ -186,8 +186,6 @@ begin
 		end if;
 	end if;
 end process;
-
-end vgacore_arch;
 
 rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4))) 
 	when vcnt(9 downto 8)="00" and (hcnt >= desp and hcnt < desp + 63)

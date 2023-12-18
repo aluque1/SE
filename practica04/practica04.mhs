@@ -11,6 +11,7 @@
  PORT hsyncb = pantalla_0_hsyncb, DIR = O
  PORT vsyncb = pantalla_0_vsyncb, DIR = O
  PORT rgb = pantalla_0_rgb, DIR = O, VEC = [0:8]
+ PORT buttons = net_buttons, DIR = I, VEC = [1:0]
 
 
 BEGIN microblaze
@@ -86,5 +87,6 @@ BEGIN pantalla
  PORT hsyncb = pantalla_0_hsyncb
  PORT vsyncb = pantalla_0_vsyncb
  PORT rgb = pantalla_0_rgb
+ PORT buttons = net_buttons
 END
 

@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Wed Dec 13 16:40:23 2023">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Mon Dec 18 20:12:43 2023">
 
-  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="U:/hlocal/temp/SE/practica04/practica04.xmp" SPEEDGRADE="-5"/>
+  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="C:/Users/aluqu/Desktop/uni/SE/practica04/practica04.xmp" SPEEDGRADE="-5"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" MHS_INDEX="0" NAME="rst" SIGIS="RST" SIGNAME="microblaze_0_MB_RESET">
@@ -56,6 +56,11 @@
         <CONNECTION INSTANCE="pantalla_0" PORT="rgb"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="9" MSB="1" NAME="buttons" RIGHT="0" SIGNAME="net_buttons">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pantalla_0" PORT="buttons"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <MODULES>
@@ -63,7 +68,7 @@
       <DESCRIPTION TYPE="SHORT">MicroBlaze</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The MicroBlaze 32 bit soft processor</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_30_a/doc/microblaze.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_30_a/doc/microblaze.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -2530,7 +2535,7 @@
       <DESCRIPTION TYPE="SHORT">Processor Local Bus (PLB) 4.6</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">'Xilinx 64-bit Processor Local Bus (PLB) consists of a bus control unit, a watchdog timer, and separate address, write, and read data path units with a a three-cycle only arbitration feature'</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/doc/plb_v46.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/doc/plb_v46.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -3229,7 +3234,7 @@
       <DESCRIPTION TYPE="SHORT">XPS BRAM Controller</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">Attaches BRAM to the PLBV46</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/doc/xps_bram_if_cntlr.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/doc/xps_bram_if_cntlr.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -3585,7 +3590,7 @@
       <DESCRIPTION TYPE="SHORT">Block RAM (BRAM) Block</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The BRAM Block is a configurable memory module that attaches to a variety of BRAM Interface Controllers.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/doc/bram_block.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/doc/bram_block.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -3678,7 +3683,7 @@
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">General Purpose Input/Output (GPIO) core for the PLBV46 bus.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -4048,7 +4053,7 @@
       <DESCRIPTION TYPE="SHORT">XPS UART (Lite)</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">Generic UART (Universal Asynchronous Receiver/Transmitter) for PLBV46 bus.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/doc/xps_uartlite.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/doc/xps_uartlite.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -4393,7 +4398,7 @@
       <DESCRIPTION TYPE="SHORT">XPS General Purpose IO</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">General Purpose Input/Output (GPIO) core for the PLBV46 bus.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/doc/xps_gpio.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -4789,6 +4794,11 @@
         <PORT DIR="O" ENDIAN="BIG" IS_INSTANTIATED="TRUE" LEFT="0" LSB="8" MHS_INDEX="2" MPD_INDEX="44" MSB="0" NAME="rgb" RIGHT="8" SIGNAME="pantalla_0_rgb" VECFORMULA="[0:8]">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="rgb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="1" LSB="0" MHS_INDEX="3" MPD_INDEX="45" MSB="1" NAME="buttons" RIGHT="0" SIGNAME="net_buttons" VECFORMULA="[1:0]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="buttons"/>
           </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="plb_v46_0_PLB_Clk" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="plb_v46_0_PLB_Clk">

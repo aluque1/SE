@@ -17,7 +17,8 @@ entity practica04_stub is
     clk : in std_logic;
     hsyncb : out std_logic;
     vsyncb : out std_logic;
-    rgb : out std_logic_vector(0 to 8)
+    rgb : out std_logic_vector(0 to 8);
+    buttons : in std_logic_vector(1 downto 0)
   );
 end practica04_stub;
 
@@ -33,7 +34,8 @@ architecture STRUCTURE of practica04_stub is
       clk : in std_logic;
       hsyncb : out std_logic;
       vsyncb : out std_logic;
-      rgb : out std_logic_vector(0 to 8)
+      rgb : out std_logic_vector(0 to 8);
+      buttons : in std_logic_vector(1 downto 0)
     );
   end component;
 
@@ -52,7 +54,8 @@ begin
       clk => clk,
       hsyncb => hsyncb,
       vsyncb => vsyncb,
-      rgb => rgb
+      rgb => rgb,
+      buttons => buttons
     );
 
 end architecture STRUCTURE;

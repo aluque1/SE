@@ -81,5 +81,5 @@ PORT Sl_MIRQ = Sl_MIRQ, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT hsyncb = "", DIR = O
 PORT vsyncb = "", DIR = O
 PORT rgb = "", DIR = O, vec = [0:8]
-PORT buttons = "", DIR = 0, vec = [0:1]
+PORT buttons = "", DIR = I, vec = [1:0]
 END

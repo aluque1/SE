@@ -107,7 +107,7 @@ entity user_logic is
 		hsyncb: out std_logic;
 		vsyncb: out std_logic;							-- vertical (frame) sync
 		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
-		buttons: in std_logic_vector(1 downto 0) -- botones
+		buttons: in std_logic_vector(1 downto 0); -- botones
     -- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
     Bus2IP_Clk                     : in  std_logic;
@@ -153,7 +153,7 @@ architecture IMP of user_logic is
 			color: in std_logic_vector(8 downto 0); -- color
 			rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 			vsyncb: out std_logic;	-- vertical (frame) sync
-			rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
+			rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
 			buttons: in std_logic_vector(1 downto 0) -- botones
 		);
 	end component;

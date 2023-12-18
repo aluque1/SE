@@ -17,7 +17,8 @@ entity practica04 is
     clk : in std_logic;
     hsyncb : out std_logic;
     vsyncb : out std_logic;
-    rgb : out std_logic_vector(0 to 8)
+    rgb : out std_logic_vector(0 to 8);
+    buttons : in std_logic_vector(1 downto 0)
   );
 end practica04;
 
@@ -1004,7 +1005,8 @@ architecture STRUCTURE of practica04 is
       Sl_MIRQ : out std_logic_vector(0 to 1);
       hsyncb : out std_logic;
       vsyncb : out std_logic;
-      rgb : out std_logic_vector(0 to 8)
+      rgb : out std_logic_vector(0 to 8);
+      buttons : in std_logic_vector(1 downto 0)
     );
   end component;
 
@@ -1020,6 +1022,7 @@ architecture STRUCTURE of practica04 is
   -- Internal signals
 
   signal microblaze_0_MB_RESET : std_logic;
+  signal net_buttons : std_logic_vector(1 downto 0);
   signal net_gnd0 : std_logic;
   signal net_gnd1 : std_logic_vector(0 downto 0);
   signal net_gnd2 : std_logic_vector(1 downto 0);
@@ -1140,6 +1143,7 @@ begin
   hsyncb <= pantalla_0_hsyncb;
   vsyncb <= pantalla_0_vsyncb;
   rgb <= pantalla_0_rgb;
+  net_buttons <= buttons;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -2123,7 +2127,8 @@ begin
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(8 to 9),
       hsyncb => pantalla_0_hsyncb,
       vsyncb => pantalla_0_vsyncb,
-      rgb => pantalla_0_rgb
+      rgb => pantalla_0_rgb,
+      buttons => net_buttons
     );
 
   iobuf_0 : IOBUF
