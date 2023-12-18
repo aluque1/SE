@@ -189,7 +189,7 @@ end process;
 
 process (hcnt, vcnt, desp)
 begin
-	if (vcnt(9 downto 8)="00" and (hcnt >= desp and hcnt < desp + 63)) then
+	if (vcnt(9 downto 8)="00" and hcnt(8 downto 6) = desp(2 downto 0)) then
 		rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));
 	else
 		rgb <= "000000000";
