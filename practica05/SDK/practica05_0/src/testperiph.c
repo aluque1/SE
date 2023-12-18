@@ -41,11 +41,33 @@ int getNumner();
 int main() 
 {
    Xuint32 Reg32Value, TeclaOld;
+   Xuint32 opt;
 
    print("---Entering main---\n\r");
 
    print(" LED's \n\r");
-
+   print("Que color quieres cambiar de intensidad (1 = rojo, 2 = verde, 3 = azul)\n\r");
+   opt = getNumber();
+   switch (opt){
+   case 1:
+	   print("Introduce la intensidad del color rojo (0-255)\n\r");
+	   Reg32Value = getNumber();
+	   LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 0, Reg32Value);
+	   break;
+   case 2:
+	   print("Introduce la intensidad del color verde (0-255)\n\r");
+	   Reg32Value = getNumber();
+	   LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 1, Reg32Value);
+	   break;
+   case 3:
+	   print("Introduce la intensidad del color azul (0-255)\n\r");
+	   Reg32Value = getNumber();
+	   LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 2, Reg32Value);
+	   break;
+	default:
+		print("Opcion no valida\n\r");
+		break;
+   }
 
    print(" KEYPAD \n\r");
    print(" Pulse una tecla cualquiera \n\r");
@@ -56,8 +78,8 @@ int main()
    while (1){
 	   if (Reg32Value != TeclaOld)
 		   xil_printf("    Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
-	   TeclaOld=Reg32Value;
-	   Reg32Value =KEYPAD_mReadReg (XPAR_KEYPAD_0_BASEADDR, 0);
+	   TeclaOld = Reg32Value;
+	   Reg32Value = KEYPAD_mReadReg (XPAR_KEYPAD_0_BASEADDR, 0);
 	   KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0,0); /* Se escribe un 0 en el registro del teclado para borrar la �ltima tecla le�da */
 	   
    }

@@ -6,10 +6,10 @@ Building file: ../src/pantalla.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../practica04_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.d" -o"src/pantalla.o" "../src/pantalla.c"
 ../src/pantalla.c: In function 'main':
-../src/pantalla.c:42:5: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/pantalla.c:33:5: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
 ../src/pantalla.c: In function 'getNumber':
-../src/pantalla.c:128:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
-../src/pantalla.c:130:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/pantalla.c:119:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/pantalla.c:121:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
 Finished building: ../src/pantalla.c
 ' '
 Building target: practica04_tests_0.elf

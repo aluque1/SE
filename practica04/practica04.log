@@ -5868,3 +5868,37 @@ Xilinx Software Development Kit
 Xilinx EDK 14.1 Build EDK_P.15xf
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica04\etc\practica04.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica04\etc\practica04.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Mon Dec 18 18:07:25 2023
+ make -f practica04.make bits started...
+make: Nothing to be done for `bits'.
+Done!
+
+********************************************************************************
+At Local date and time: Mon Dec 18 18:07:36 2023
+ make -f practica04.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Mon Dec 18 18:07:36 2023
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\practica04\SDK\SDK_Export\hw\practica04.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica04\etc\practica04.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\practica04\etc\practica04.gui
