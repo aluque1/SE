@@ -6,8 +6,9 @@ Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
 __xps/ise/xmsgprops.lst practica05.mhs 
 
 WARNING:EDK - INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable
-   is set to '8080@licalu.fdi.ucm.es'.
-   INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+   is set to '1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
+   INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+   '1717@fdilicencias1;2100@fdilicencias1'.
    INFO:Security:71 - If a license for part 'xc3s1000' is available, it will be
    possible to use 'XPS_TDP' instead of 'XPS'.
    WARNING:Security:43 - No license file was found in the standard Xilinx
@@ -21,7 +22,7 @@ WARNING:EDK - INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable
    qualify for Xilinx software updates or new releases.
 
 
-Parse C:/Users/aluqu/Desktop/uni/SE/practica05/practica05.mhs ...
+Parse U:/hlocal/temp/SE/practica05/practica05.mhs ...
 
 Read MPD definitions ...
 
@@ -39,83 +40,71 @@ Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
 Address Map for Processor microblaze_0
   (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
   (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
-  (0xc5800000-0xc580ffff) banner_0	plb_v46_0
+  (0xc7200000-0xc720ffff) leds_rgb_0	plb_v46_0
   (0xc9600000-0xc960ffff) keypad_0	plb_v46_0
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
    PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
-   \plb_v46_v2_1_0.mpd line 78 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 78 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
-   PARAMETER C_PLBV46_NUM_SLAVES value to 5 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
-   \plb_v46_v2_1_0.mpd line 79 
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 79 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
    PARAMETER C_PLBV46_MID_WIDTH value to 1 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
-   \plb_v46_v2_1_0.mpd line 80 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 80 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
    PARAMETER C_PLBV46_DWIDTH value to 32 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
-   \plb_v46_v2_1_0.mpd line 82 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 82 
 INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
    PARAMETER C_MEMSIZE value to 0x8000 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
-   ata\bram_block_v2_1_0.mpd line 76 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 76 
 INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
    overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
-   \data\xps_uartlite_v2_1_0.mpd line 83 
-INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
-   C_SPLB_DWIDTH value to 32 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\banner_v1_00_a\data\banner_v2
-   _1_0.mpd line 27 
-INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
-   C_SPLB_NUM_MASTERS value to 2 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\banner_v1_00_a\data\banner_v2
-   _1_0.mpd line 28 
-INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
-   C_SPLB_MID_WIDTH value to 1 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\banner_v1_00_a\data\banner_v2
-   _1_0.mpd line 29 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \xps_uartlite_v1_02_a\data\xps_uartlite_v2_1_0.mpd line 83 
 INFO:EDK:4130 - IPNAME: keypad, INSTANCE:keypad_0 - tool is overriding PARAMETER
    C_SPLB_DWIDTH value to 32 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\keypad_v1_00_a\data\keypad_v2
-   _1_0.mpd line 27 
+   U:\hlocal\temp\SE\practica05\pcores\keypad_v1_00_a\data\keypad_v2_1_0.mpd
+   line 27 
 INFO:EDK:4130 - IPNAME: keypad, INSTANCE:keypad_0 - tool is overriding PARAMETER
    C_SPLB_NUM_MASTERS value to 2 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\keypad_v1_00_a\data\keypad_v2
-   _1_0.mpd line 28 
+   U:\hlocal\temp\SE\practica05\pcores\keypad_v1_00_a\data\keypad_v2_1_0.mpd
+   line 28 
 INFO:EDK:4130 - IPNAME: keypad, INSTANCE:keypad_0 - tool is overriding PARAMETER
    C_SPLB_MID_WIDTH value to 1 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\keypad_v1_00_a\data\keypad_v2
-   _1_0.mpd line 29 
+   U:\hlocal\temp\SE\practica05\pcores\keypad_v1_00_a\data\keypad_v2_1_0.mpd
+   line 29 
 INFO:EDK:4130 - IPNAME: leds_rgb, INSTANCE:leds_rgb_0 - tool is overriding
    PARAMETER C_SPLB_DWIDTH value to 32 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rg
-   b_v2_1_0.mpd line 27 
+   U:\hlocal\temp\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rgb_v2_1_0.mpd
+   line 27 
 INFO:EDK:4130 - IPNAME: leds_rgb, INSTANCE:leds_rgb_0 - tool is overriding
    PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rg
-   b_v2_1_0.mpd line 28 
+   U:\hlocal\temp\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rgb_v2_1_0.mpd
+   line 28 
 INFO:EDK:4130 - IPNAME: leds_rgb, INSTANCE:leds_rgb_0 - tool is overriding
    PARAMETER C_SPLB_MID_WIDTH value to 1 -
-   C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rg
-   b_v2_1_0.mpd line 29 
+   U:\hlocal\temp\SE\practica05\pcores\leds_rgb_v1_00_a\data\leds_rgb_v2_1_0.mpd
+   line 29 
 
 Checking platform address map ...
 
 Checking platform configuration ...
-IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 5 slave(s) 
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
    will be driven to GND -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 412 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 412 
 WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
    Port will be driven to GND -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 413 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 413 
 
 Performing Clock DRCs...
 INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
@@ -124,10 +113,6 @@ INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
    top-level clock port, and that the clocks are properly connected.
 INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
    not implement clock DRCs for the parameter. Top-level frequency could not be
-   propagated to this IP. Please make sure that you have specified the frequency
-   of the top-level clock port, and that the clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: banner_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
-   implement clock DRCs for the parameter. Top-level frequency could not be
    propagated to this IP. Please make sure that you have specified the frequency
    of the top-level clock port, and that the clocks are properly connected.
 INFO:EDK:4060 - INSTANCE: keypad_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
@@ -144,28 +129,28 @@ Performing Reset DRCs...
 Overriding system level properties...
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_D_PLB value to 1 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 230 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 230 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_D_LMB value to 0 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 231 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 231 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_I_PLB value to 1 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 233 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 233 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_I_LMB value to 0 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 234 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 234 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_ADDR_TAG_BITS value to 0 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 334 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 334 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_DCACHE_ADDR_TAG value to 0 -
-   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
-   ata\microblaze_v2_1_0.mpd line 364 
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \microblaze_v8_30_a\data\microblaze_v2_1_0.mpd line 364 
 
 Running system level update procedures...
 
@@ -196,27 +181,26 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 22 - Copying cache
+U:\hlocal\temp\SE\practica05\practica05.mhs line 16 - Copying cache
 implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 37 - Copying cache
+U:\hlocal\temp\SE\practica05\practica05.mhs line 31 - Copying cache
 implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 47 - Copying cache
+U:\hlocal\temp\SE\practica05\practica05.mhs line 41 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 53 - Copying cache
+U:\hlocal\temp\SE\practica05\practica05.mhs line 47 - Copying cache
 implementation netlist
-IPNAME:banner INSTANCE:banner_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 65 - Copying cache
-implementation netlist
-IPNAME:keypad INSTANCE:keypad_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 79 - Copying cache
+IPNAME:keypad INSTANCE:keypad_0 - U:\hlocal\temp\SE\practica05\practica05.mhs
+line 59 - Copying cache implementation netlist
+IPNAME:leds_rgb INSTANCE:leds_rgb_0 -
+U:\hlocal\temp\SE\practica05\practica05.mhs line 69 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 47 - elaborating IP
+U:\hlocal\temp\SE\practica05\practica05.mhs line 41 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -237,14 +221,12 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:plb_v46_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs
-line 30 - Running XST synthesis
-INSTANCE:banner_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line
-65 - Running XST synthesis
-INSTANCE:keypad_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line
-79 - Running XST synthesis
-INSTANCE:leds_rgb_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs
-line 89 - Running XST synthesis
+INSTANCE:plb_v46_0 - U:\hlocal\temp\SE\practica05\practica05.mhs line 24 -
+Running XST synthesis
+INSTANCE:keypad_0 - U:\hlocal\temp\SE\practica05\practica05.mhs line 59 -
+Running XST synthesis
+INSTANCE:leds_rgb_0 - U:\hlocal\temp\SE\practica05\practica05.mhs line 69 -
+Running XST synthesis
 
 Running NGCBUILD ...
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
@@ -253,4 +235,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 37.00 seconds
+Total run time: 28.00 seconds

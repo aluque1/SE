@@ -28,6 +28,11 @@
 #define XPAR_KEYPAD_0_HIGHADDR 0xC960FFFF
 
 
+/* Definitions for peripheral LEDS_RGB_0 */
+#define XPAR_LEDS_RGB_0_BASEADDR 0xC7200000
+#define XPAR_LEDS_RGB_0_HIGHADDR 0xC720FFFF
+
+
 /******************************************************************/
 
 /* Definitions for driver BRAM */

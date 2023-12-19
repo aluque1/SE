@@ -2,11 +2,11 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="xilinx.gnu.mb.exe.debug.1168206132;xilinx.gnu.mb.exe.debug.1168206132.">
+<instance id="xilinx.gnu.mb.exe.debug.1154885316;xilinx.gnu.mb.exe.debug.1154885316.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
@@ -198,11 +198,11 @@
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.mb.exe.release.805273833;xilinx.gnu.mb.exe.release.805273833.">
+<instance id="xilinx.gnu.mb.exe.release.1990676025;xilinx.gnu.mb.exe.release.1990676025.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
@@ -394,11 +394,11 @@
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.mb.exe.debug.1168206132;xilinx.gnu.mb.exe.debug.1168206132.;xilinx.gnu.mb.c.toolchain.compiler.debug.1259848876;xilinx.gnu.compiler.input.220450638">
+<instance id="xilinx.gnu.mb.exe.debug.1154885316;xilinx.gnu.mb.exe.debug.1154885316.;xilinx.gnu.mb.c.toolchain.compiler.debug.667094737;xilinx.gnu.compiler.input.1170188353">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
-<includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>

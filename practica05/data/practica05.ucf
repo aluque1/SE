@@ -14,29 +14,15 @@ NET tx LOC=J2;
 NET "tx" FLOAT;
 
 ####LEDS COLORES
-#NET RED_pin LOC=P12;
-#NET GREEN_pin LOC=H1;
-#NET BLUE_pin LOC=J1;
-NET red LOC=E15;
-NET green LOC=D16;
-NET blue LOC=J16;
-#NET USER2_RED_pin LOC=J14;
-#NET USER2_GREEN_pin LOC=N15;
-#NET USER2_BLUE_pin LOC=G16;
-
-# para el banner
-NET row_serial_out LOC=P12;
-NET "row_serial_out" FLOAT;
-NET row_clk LOC=J1;
-NET "row_clk" FLOAT;
-NET reset_out LOC=H1;
-NET "reset_out" FLOAT;
-NET col_serial_out LOC=H3;
-NET "col_serial_out" FLOAT;
-NET col_clk LOC=G2;
-NET "col_clk" FLOAT;
-NET reset2_out LOC=K15;
-NET "reset2_out" FLOAT;
+NET red LOC=P12;
+NET green LOC=H1;
+NET blue LOC=J1;
+#NET red LOC=E15;
+#NET green LOC=D16;
+#NET blue LOC=J16;
+#NET red LOC=J14;
+#NET green LOC=N15;
+#NET blue LOC=G16;
 
 
 # para el keypad

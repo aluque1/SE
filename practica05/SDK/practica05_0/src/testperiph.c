@@ -33,6 +33,7 @@
 #include "xbasic_types.h"
 #include "banner.h"
 #include "keypad.h"
+#include "leds_rgb.h"
 
 //** Function Definitions **//
 int getNumner();
@@ -40,35 +41,55 @@ int getNumner();
 int main()
 {
 	Xuint32 Reg32Value, TeclaOld;
-	Xuint32 opt;
+	Xuint32 opt, led_color;
+
+	init_leds();
 
 	print("---Entering main---\n\r");
 
 	print("##### LED's #####\n\r");
-	print("Que color quieres cambiar de intensidad (1 = rojo, 2 = verde, 3 = azul)\n\r");
-	opt = getNumber();
-	switch (opt)
-	{ // IDEA, use the keypad to introduce the hex code for the color
-	case 1:
-		print("Introduce la intensidad del color rojo (0-255)\n\r");
-		Reg32Value = getNumber();
-		LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 0, Reg32Value);
-		break;
-	case 2:
-		print("Introduce la intensidad del color verde (0-255)\n\r");
-		Reg32Value = getNumber();
-		LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 1, Reg32Value);
-		break;
-	case 3:
-		print("Introduce la intensidad del color azul (0-255)\n\r");
-		Reg32Value = getNumber();
-		LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 2, Reg32Value);
-		break;
-	default:
-		print("Opcion no valida\n\r");
-		break;
+	do{
+		led_color = -1;
+		print("1  : Cambiar intensidad del rojo\n\r");
+		print("2  : Cambiar intensidad del verde\n\r");
+		print("3  : Cambiar intensidad del azul\n\r");
+		print("0  : Salir\n\r");
+		opt = getNumber();
+		switch(opt){
+		case 0:
+			print("Saliendo ...\n\r");
+			break;
+		case 1:
+			while(led_color < 0 || led_color > 255){
+				print("Introduce la intensidad del color rojo (0-255)\n\r");
+				led_color = getNumber();
+			}
+			LEDS_RGB_mWriteSlaveReg0(XPAR_LEDS_RGB_0_BASEADDR, 0, !led_color);
+			break;
+		case 2:
+			while(led_color < 0 || led_color > 255){
+				print("Introduce la intensidad del color verde (0-255)\n\r");
+				led_color = getNumber();
+			}
+			LEDS_RGB_mWriteSlaveReg1(XPAR_LEDS_RGB_0_BASEADDR, 0, !led_color);
+			break;
+		case 3:
+			while(led_color < 0 || led_color > 255){
+				print("Introduce la intensidad del color azul (0-255)\n\r");
+				led_color = getNumber();
+			}
+			LEDS_RGB_mWriteSlaveReg2(XPAR_LEDS_RGB_0_BASEADDR, 0, !led_color);
+			break;
+		default:
+			print("No es una opcion valida.\n\r");
+			break;
+		}
 	}
+	while(opt != 0);
 
+	print("---Exiting main---\n\r");
+	return 0;
+	/*
 	print("##### KEYPAD #####\n\r");
 	print(" Pulse una tecla cualquiera \n\r");
 	Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
@@ -81,12 +102,13 @@ int main()
 			xil_printf("    Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
 		TeclaOld = Reg32Value;
 		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
-		KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 0); /* Se escribe un 0 en el registro del teclado para borrar la ultima tecla leida */
+		KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 0); // Se escribe un 0 en el registro del teclado para borrar la ultima tecla leida
 	}
+	*/
 
 	/* enter a hex code for the color with the keypad and use that hex to get the rgb code */
 	/* use the rgb code to change the intensity of the color */
-	print("##### Testing keypad and hexcodes #####\n\r");
+	/*print("##### Testing keypad and hexcodes #####\n\r");
 	Xuint32 hex_color[6];
 	int cont = 0;
 	while (cont < 6)
@@ -102,15 +124,12 @@ int main()
 	Xuint32 green = (hex_color[2] * 16) + hex_color[3];
 	Xuint32 blue = (hex_color[4] * 16) + hex_color[5];
 	// change the intensity of the color
-	LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 0, red);
-	LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 1, green);
-	LEDS_mWriteReg(XPAR_LEDS_0_BASEADDR, 2, blue);
+	LEDS_RGB_mWriteSlaveReg0(XPAR_LEDS_RGB_0_BASEADDR, 0, red);
+	LEDS_RGB_mWriteSlaveReg1(XPAR_LEDS_RGB_0_BASEADDR, 1, green);
+	LEDS_RGB_mWriteSlaveReg2(XPAR_LEDS_RGB_0_BASEADDR, 2, blue);
 
 	print(" MIRA LOS LEDs \n\r");
-
-	print("---Exiting main---\n\r");
-
-	return 0;
+	*/
 }
 
 int getNumber()

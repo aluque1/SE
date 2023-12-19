@@ -12,18 +12,12 @@ entity practica05_stub is
     rst : in std_logic;
     rx : in std_logic;
     tx : out std_logic;
-    clk : in std_logic;
-    row_serial_out : out std_logic;
-    row_clk : out std_logic;
-    reset_out : out std_logic;
-    col_serial_out : out std_logic;
-    col_clk : out std_logic;
-    reset2_out : out std_logic;
     s : out std_logic_vector(3 downto 0);
     r : in std_logic_vector(3 downto 0);
     red : out std_logic;
     green : out std_logic;
-    blue : out std_logic
+    blue : out std_logic;
+    clk : in std_logic
   );
 end practica05_stub;
 
@@ -34,18 +28,12 @@ architecture STRUCTURE of practica05_stub is
       rst : in std_logic;
       rx : in std_logic;
       tx : out std_logic;
-      clk : in std_logic;
-      row_serial_out : out std_logic;
-      row_clk : out std_logic;
-      reset_out : out std_logic;
-      col_serial_out : out std_logic;
-      col_clk : out std_logic;
-      reset2_out : out std_logic;
       s : out std_logic_vector(3 downto 0);
       r : in std_logic_vector(3 downto 0);
       red : out std_logic;
       green : out std_logic;
-      blue : out std_logic
+      blue : out std_logic;
+      clk : in std_logic
     );
   end component;
 
@@ -59,18 +47,12 @@ begin
       rst => rst,
       rx => rx,
       tx => tx,
-      clk => clk,
-      row_serial_out => row_serial_out,
-      row_clk => row_clk,
-      reset_out => reset_out,
-      col_serial_out => col_serial_out,
-      col_clk => col_clk,
-      reset2_out => reset2_out,
       s => s,
       r => r,
       red => red,
       green => green,
-      blue => blue
+      blue => blue,
+      clk => clk
     );
 
 end architecture STRUCTURE;
