@@ -47,6 +47,9 @@ architecture vgacore_arch of vgacore is
 signal hcnt: std_logic_vector(8 downto 0);	-- horizontal pixel counter
 signal vcnt: std_logic_vector(9 downto 0);	-- vertical line counter
 signal desp: std_logic_vector(8 downto 0); -- desplazamiento
+signal cuentaDiv: std_logic_vector(23 downto 0); -- cuenta divisor
+signal cuentaAux: std_logic_vector(23 downto 0); -- cuenta actual
+signal clkDiv: std_logic; -- clock divisor
 type ram_type is array (0 to 127) of std_logic_vector(8 downto 0);
 signal RAM : ram_type :=
 (
@@ -96,6 +99,7 @@ signal hsyncbAux : std_logic;
 begin
 
 hsyncb <= hsyncbAux;
+cuentaDiv <= "000101111101011110000100";
 
 A: process(clock,reset)
 begin
@@ -174,11 +178,26 @@ begin
 		end if;
 end process;
 
-desplazamiento: process(clock, reset)
+divisorFreq: process(clock, reset)
+begin
+	if reset = '1' then
+		cuentaAux <= "000000000000000000000000";
+		clkDiv <= '0';
+	elsif rising_edge(clock) then
+		if cuentaAux = cuentaDiv then
+			cuentaAux <= "000000000000000000000000";
+			clkDiv <= not(clkDiv);
+		else
+			cuentaAux <= cuentaAux + 1;
+		end if;
+	end if;
+end process;
+
+desplazamiento: process(clkDiv, reset)
 begin
 	if reset = '1' then
 		desp <= "000000000";
-	elsif rising_edge(clock) then
+	elsif rising_edge(clkDiv) then
 		if buttons(0) = '0' then
 			desp <= desp + 1;
 		elsif buttons(1) = '0' then
@@ -189,7 +208,7 @@ end process;
 
 process (hcnt, vcnt, desp)
 begin
-	if (hcnt >= desp and hcnt < desp + 63) then
+	if (vcnt(9 downto 8) = "00" and (hcnt >= desp and hcnt < desp + 63)) then
 		rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));
 	else
 		rgb <= "000000000";
