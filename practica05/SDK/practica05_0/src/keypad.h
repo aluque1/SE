@@ -1,9 +1,9 @@
 /*****************************************************************************
-* Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/keypad_v1_00_a/src/keypad.h
-* Version:           1.00.a
-* Description:       keypad Driver Header File
-* Date:              Sun Dec 17 18:10:30 2023 (by Create and Import Peripheral Wizard)
-*****************************************************************************/
+ * Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/keypad_v1_00_a/src/keypad.h
+ * Version:           1.00.a
+ * Description:       keypad Driver Header File
+ * Date:              Sun Dec 17 18:10:30 2023 (by Create and Import Peripheral Wizard)
+ *****************************************************************************/
 
 #ifndef KEYPAD_H
 #define KEYPAD_H
@@ -16,7 +16,6 @@
 
 /************************** Constant Definitions ***************************/
 
-
 /**
  * User Logic Slave Space Offsets
  * -- SLV_REG0 : user logic slave module register 0
@@ -25,7 +24,6 @@
 #define KEYPAD_SLV_REG0_OFFSET (KEYPAD_USER_SLV_SPACE_OFFSET + 0x00000000)
 
 /**************************** Type Definitions *****************************/
-
 
 /***************** Macros (Inline Functions) Definitions *******************/
 
@@ -47,7 +45,7 @@
  *
  */
 #define KEYPAD_mWriteReg(BaseAddress, RegOffset, Data) \
- 	Xil_Out32((BaseAddress) + (RegOffset), (Xuint32)(Data))
+	Xil_Out32((BaseAddress) + (RegOffset), (Xuint32)(Data))
 
 /**
  *
@@ -67,8 +65,7 @@
  *
  */
 #define KEYPAD_mReadReg(BaseAddress, RegOffset) \
- 	Xil_In32((BaseAddress) + (RegOffset))
-
+	Xil_In32((BaseAddress) + (RegOffset))
 
 /**
  *
@@ -87,13 +84,12 @@
  *
  */
 #define KEYPAD_mWriteSlaveReg0(BaseAddress, RegOffset, Value) \
- 	Xil_Out32((BaseAddress) + (KEYPAD_SLV_REG0_OFFSET) + (RegOffset), (Xuint32)(Value))
+	Xil_Out32((BaseAddress) + (KEYPAD_SLV_REG0_OFFSET) + (RegOffset), (Xuint32)(Value))
 
 #define KEYPAD_mReadSlaveReg0(BaseAddress, RegOffset) \
- 	Xil_In32((BaseAddress) + (KEYPAD_SLV_REG0_OFFSET) + (RegOffset))
+	Xil_In32((BaseAddress) + (KEYPAD_SLV_REG0_OFFSET) + (RegOffset))
 
 /************************** Function Prototypes ****************************/
-
 
 /**
  *
@@ -114,6 +110,6 @@
  * @note    Self test may fail if data memory and device are not on the same bus.
  *
  */
-XStatus KEYPAD_SelfTest(void * baseaddr_p);
+XStatus KEYPAD_SelfTest(void *baseaddr_p);
 
 #endif /** KEYPAD_H */
