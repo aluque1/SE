@@ -1,9 +1,9 @@
 /*****************************************************************************
-* Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/banner_v1_00_a/src/banner.h
-* Version:           1.00.a
-* Description:       banner Driver Header File
-* Date:              Sat Dec 16 19:06:47 2023 (by Create and Import Peripheral Wizard)
-*****************************************************************************/
+ * Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/banner_v1_00_a/src/banner.h
+ * Version:           1.00.a
+ * Description:       banner Driver Header File
+ * Date:              Sat Dec 16 19:06:47 2023 (by Create and Import Peripheral Wizard)
+ *****************************************************************************/
 
 #ifndef BANNER_H
 #define BANNER_H
@@ -18,7 +18,7 @@
 
 /**
  * User definitions for the banner
- */ 
+ */
 
 /**
  * User Logic Slave Space Offsets
@@ -79,7 +79,7 @@
  *
  */
 #define BANNER_mWriteReg(BaseAddress, RegOffset, Data) \
- 	Xil_Out32((BaseAddress) + (RegOffset), (Xuint32)(Data))
+    Xil_Out32((BaseAddress) + (RegOffset), (Xuint32)(Data))
 
 /**
  *
@@ -99,8 +99,7 @@
  *
  */
 #define BANNER_mReadReg(BaseAddress, RegOffset) \
- 	Xil_In32((BaseAddress) + (RegOffset))
-
+    Xil_In32((BaseAddress) + (RegOffset))
 
 /**
  *
@@ -116,7 +115,7 @@
  *
  */
 #define BANNER_mResetWriteFIFO(BaseAddress) \
- 	Xil_Out32((BaseAddress)+(BANNER_WRFIFO_RST_OFFSET), WRFIFO_RESET)
+    Xil_Out32((BaseAddress) + (BANNER_WRFIFO_RST_OFFSET), WRFIFO_RESET)
 
 /**
  *
@@ -133,9 +132,9 @@
  *
  */
 #define BANNER_mWriteFIFOFull(BaseAddress) \
- 	((Xil_In32((BaseAddress)+(BANNER_WRFIFO_SR_OFFSET)) & WRFIFO_FULL_MASK) == WRFIFO_FULL_MASK)
+    ((Xil_In32((BaseAddress) + (BANNER_WRFIFO_SR_OFFSET)) & WRFIFO_FULL_MASK) == WRFIFO_FULL_MASK)
 #define BANNER_mWriteFIFOVacancy(BaseAddress) \
- 	(Xil_In32((BaseAddress)+(BANNER_WRFIFO_SR_OFFSET)) & WRFIFO_VAC_MASK)
+    (Xil_In32((BaseAddress) + (BANNER_WRFIFO_SR_OFFSET)) & WRFIFO_VAC_MASK)
 
 /**
  *
@@ -153,10 +152,9 @@
  *
  */
 #define BANNER_mWriteToFIFO(BaseAddress, DataOffset, Data) \
- 	Xil_Out32((BaseAddress) + (BANNER_WRFIFO_DATA_OFFSET) + (DataOffset), (Xuint32)(Data))
+    Xil_Out32((BaseAddress) + (BANNER_WRFIFO_DATA_OFFSET) + (DataOffset), (Xuint32)(Data))
 
 /************************** Function Prototypes ****************************/
-
 
 /**
  *
@@ -177,24 +175,23 @@
  * @note    Self test may fail if data memory and device are not on the same bus.
  *
  */
-XStatus BANNER_SelfTest(void * baseaddr_p);
+XStatus BANNER_SelfTest(void *baseaddr_p);
 
 /************************ USER DEFINED FUNCTIONS ************************/
- /**
-  * Write a datum to the banner.
-  * @param  row   Row of the datum.
-  * @param  col   Column of the datum.
-  * @param  datum Datum to write.
-  * @return None.
-  */
- void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum);
+/**
+ * Write a datum to the banner.
+ * @param  row   Row of the datum.
+ * @param  col   Column of the datum.
+ * @param  datum Datum to write.
+ * @return None.
+ */
+void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum);
 
- /**
-  * Initialize the banner driver.
-  * @param  None.
-  * @return None.
-  */
- void banner_init();
-
+/**
+ * Initialize the banner driver.
+ * @param  None.
+ * @return None.
+ */
+void banner_init();
 
 #endif /** BANNER_H */

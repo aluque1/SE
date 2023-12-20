@@ -1,10 +1,9 @@
 /*****************************************************************************
-* Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/banner_v1_00_a/src/banner.c
-* Version:           1.00.a
-* Description:       banner Driver Source File
-* Date:              Sat Dec 16 19:06:47 2023 (by Create and Import Peripheral Wizard)
-*****************************************************************************/
-
+ * Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/banner_v1_00_a/src/banner.c
+ * Version:           1.00.a
+ * Description:       banner Driver Source File
+ * Date:              Sat Dec 16 19:06:47 2023 (by Create and Import Peripheral Wizard)
+ *****************************************************************************/
 
 /***************************** Include Files *******************************/
 
@@ -13,20 +12,26 @@
 
 /************************** Function Definitions ***************************/
 
-void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum){
-    while(BANNER_mWriteFIFOFull(XPAR_BANNER_0_BASEADDR)) {}
-    Xuint32 data;
-    data = ((row & 0xFF) << (31 - 7)) + ((col & 0xFF) << (31 - 15)) + ((datum & 0xFF) << (31 - 23));
-    BANNER_mWriteToFIFO(XPAR_BANNER_0_BASEADDR, 0, data);
+void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum)
+{
+	while (BANNER_mWriteFIFOFull(XPAR_BANNER_0_BASEADDR))
+	{
+	}
+	Xuint32 data;
+	data = ((row & 0xFF) << (31 - 7)) + ((col & 0xFF) << (31 - 15)) + ((datum & 0xFF) << (31 - 23));
+	BANNER_mWriteToFIFO(XPAR_BANNER_0_BASEADDR, 0, data);
 }
 
-void banner_init(){
+void banner_init()
+{
 	Xuint32 row, col, datum, data;
 	datum = 0x0;
-	for(row = 0; row < 7; ++row){
-		for(col = 0; col < 8; ++col){
-			data = (( row & 0xff ) << (31 -7)) +  (( col & 0xff ) << (31 -15)) + (( datum & 0xff ) << (31 -23));
-			BANNER_mWriteToFIFO( XPAR_BANNER_0_BASEADDR , 0, data );
+	for (row = 0; row < 7; ++row)
+	{
+		for (col = 0; col < 8; ++col)
+		{
+			data = ((row & 0xff) << (31 - 7)) + ((col & 0xff) << (31 - 15)) + ((datum & 0xff) << (31 - 23));
+			BANNER_mWriteToFIFO(XPAR_BANNER_0_BASEADDR, 0, data);
 		}
 	}
 }
