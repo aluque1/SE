@@ -47,8 +47,8 @@ architecture vgacore_arch of vgacore is
 	component debouncer
 		port
 		(
-			reset: IN std_logic;
-			clock: IN std_logic;
+			rst: IN std_logic;
+			clk: IN std_logic;
 			x: IN std_logic;
 			xDeb: OUT std_logic;
 			xDebFallingEdge: OUT std_logic;

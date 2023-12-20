@@ -130,7 +130,8 @@ C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhd
 pcores/pantalla_v1_00_a/hdl/vhdl/counter2.vhd \
 pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd \
 pcores/pantalla_v1_00_a/hdl/vhdl/user_logic.vhd \
-pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd
+pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd \
+pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd
 
 WRAPPER_NGC_FILES = implementation/practica04_microblaze_0_wrapper.ngc \
 implementation/practica04_plb_v46_0_wrapper.ngc \
