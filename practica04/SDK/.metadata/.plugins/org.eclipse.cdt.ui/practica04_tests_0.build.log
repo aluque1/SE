@@ -6,10 +6,10 @@ Building file: ../src/pantalla.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../practica04_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.d" -o"src/pantalla.o" "../src/pantalla.c"
 ../src/pantalla.c: In function 'main':
-../src/pantalla.c:33:5: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/pantalla.c:32:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
 ../src/pantalla.c: In function 'getNumber':
-../src/pantalla.c:101:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
-../src/pantalla.c:103:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/pantalla.c:107:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/pantalla.c:109:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
 Finished building: ../src/pantalla.c
 ' '
 Building target: practica04_tests_0.elf
@@ -20,7 +20,7 @@ Finished building target: practica04_tests_0.elf
 Invoking: MicroBlaze Print Size
 mb-size practica04_tests_0.elf  |tee "practica04_tests_0.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   6738	    296	   2094	   9128	   23a8	practica04_tests_0.elf
+   6654	    296	   2088	   9038	   234e	practica04_tests_0.elf
 Finished building: practica04_tests_0.elf.size
 ' '
 Invoking: Xilinx ELF Check

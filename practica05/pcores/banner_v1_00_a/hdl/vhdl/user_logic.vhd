@@ -109,7 +109,6 @@ entity user_logic is
 		row_serial_out: out std_logic; 
 		row_clk: out std_logic; 
 		reset_out: out std_logic;
-		reset2_out: out std_logic;
     -- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
     Bus2IP_Clk                     : in  std_logic;
@@ -155,7 +154,6 @@ component  bannerDesp is
 		row_serial_out: out std_logic; 
 		row_clk: out std_logic; 
 		reset_out: out std_logic;
-		reset2_out: out std_logic;
 		fila: in std_logic_vector (2 downto 0);
 		columna: in std_logic_vector ( 2 downto 0);
 		dato: in std_logic_vector (4 downto 0);
@@ -185,7 +183,6 @@ mybanner: bannerDesp port map (
 		row_serial_out =>row_serial_out,
 		row_clk =>row_clk,
 		reset_out=>reset_out, 
-		reset2_out=>reset2_out, 
 		fila => fila,
 		columna => columna,
 		dato => dato,

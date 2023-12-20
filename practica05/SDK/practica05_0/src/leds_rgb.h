@@ -10,6 +10,7 @@
 
 /***************************** Include Files *******************************/
 
+#include <stdio.h>
 #include "xbasic_types.h"
 #include "xstatus.h"
 #include "xil_io.h"
@@ -129,6 +130,7 @@
  */
 XStatus LEDS_RGB_SelfTest(void * baseaddr_p);
 
-void init_leds();
+void leds_init();
+void do_leds();
 
 #endif /** LEDS_RGB_H */

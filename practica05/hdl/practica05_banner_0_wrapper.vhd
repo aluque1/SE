@@ -58,8 +58,7 @@ entity practica05_banner_0_wrapper is
     row_clk : out std_logic;
     reset_out : out std_logic;
     col_serial_out : out std_logic;
-    col_clk : out std_logic;
-    reset2_out : out std_logic
+    col_clk : out std_logic
   );
 end practica05_banner_0_wrapper;
 
@@ -128,8 +127,7 @@ architecture STRUCTURE of practica05_banner_0_wrapper is
       row_clk : out std_logic;
       reset_out : out std_logic;
       col_serial_out : out std_logic;
-      col_clk : out std_logic;
-      reset2_out : out std_logic
+      col_clk : out std_logic
     );
   end component;
 
@@ -137,8 +135,8 @@ begin
 
   banner_0 : banner
     generic map (
-      C_BASEADDR => X"c5800000",
-      C_HIGHADDR => X"c580ffff",
+      C_BASEADDR => X"ffffffff",
+      C_HIGHADDR => X"00000000",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,
@@ -198,8 +196,7 @@ begin
       row_clk => row_clk,
       reset_out => reset_out,
       col_serial_out => col_serial_out,
-      col_clk => col_clk,
-      reset2_out => reset2_out
+      col_clk => col_clk
     );
 
 end architecture STRUCTURE;

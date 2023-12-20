@@ -11,3 +11,21 @@
 #include "xparameters.h"
 
 /************************** Function Definitions ***************************/
+
+void do_keypad()
+{
+    Xuint32 Reg32Value, TeclaOld;
+    print(" Pulse una tecla cualquiera \n\r");
+    Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
+    xil_printf("   Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
+    KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 0);
+    TeclaOld = Reg32Value;
+    while (1)
+    {
+        if (Reg32Value != TeclaOld)
+            xil_printf("    Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
+        TeclaOld = Reg32Value;
+        Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0) >> 28;
+        KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 0); // Se escribe un 0 en el registro del teclado para borrar la ultima tecla leida
+    }
+}

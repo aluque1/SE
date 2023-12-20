@@ -6,7 +6,7 @@
 @REM #
 @REM # Command line for ngdbuild
 @REM #
-ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm practica05.bmm "U:/hlocal/temp/SE/practica05/implementation/practica05.ngc" -uc practica05.ucf practica05.ngd 
+ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm practica05.bmm "C:/Users/aluqu/Desktop/uni/SE/practica05/implementation/practica05.ngc" -uc practica05.ucf practica05.ngd 
 
 @REM #
 @REM # Command line for map

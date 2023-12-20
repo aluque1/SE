@@ -10,9 +10,11 @@
 
 /***************************** Include Files *******************************/
 
+#include <stdio.h>
 #include "xbasic_types.h"
 #include "xstatus.h"
 #include "xil_io.h"
+#include "xparameters.h"
 
 /************************** Constant Definitions ***************************/
 
@@ -111,5 +113,7 @@
  *
  */
 XStatus KEYPAD_SelfTest(void *baseaddr_p);
+
+void do_keypad();
 
 #endif /** KEYPAD_H */

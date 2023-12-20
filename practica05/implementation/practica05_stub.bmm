@@ -1,4 +1,4 @@
-// File: U:\hlocal\temp\SE\practica05\implementation\practica05_stub.bmm
+// File: C:\Users\aluqu\Desktop\uni\SE\practica05\implementation\practica05_stub.bmm
 
 ADDRESS_MAP microblaze_0 MICROBLAZE 100
 	ADDRESS_SPACE bram_block_0_combined COMBINED [0x00000000:0x00007fff]

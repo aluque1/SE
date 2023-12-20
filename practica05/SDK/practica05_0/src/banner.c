@@ -25,7 +25,7 @@ void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum)
 void banner_init()
 {
 	Xuint32 row, col, datum, data;
-	datum = 0x0;
+	datum = 0x05;
 	for (row = 0; row < 7; ++row)
 	{
 		for (col = 0; col < 8; ++col)
@@ -35,3 +35,4 @@ void banner_init()
 		}
 	}
 }
+
