@@ -3,59 +3,61 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt
 practica04.ngc  
 PMSPEC -- Overriding Xilinx file
-<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
-<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with
+local file
+<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
 
-Using Flow File:
-C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/fpga.flw 
+Using Flow File: U:/hlocal/temp/SE/practica04/implementation/fpga.flw 
 Using Option File(s): 
- C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/xflow.opt 
+ U:/hlocal/temp/SE/practica04/implementation/xflow.opt 
 
 Creating Script File ... 
 
 #----------------------------------------------#
 # Starting program ngdbuild
 # ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm practica04.bmm
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04.ngc" -uc
-practica04.ucf practica04.ngd 
+"U:/hlocal/temp/SE/practica04/implementation/practica04.ngc" -uc practica04.ucf
+practica04.ngd 
 #----------------------------------------------#
 Release 14.1 - ngdbuild P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 PMSPEC -- Overriding Xilinx file
-<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
-<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with
+local file
+<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
 
-Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
-xc3s1000ft256-5 -nt timestamp -bm practica04.bmm
-C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04.ngc -uc
-practica04.ucf practica04.ngd
+Command Line:
+C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-p xc3s1000ft256-5 -nt timestamp -bm practica04.bmm
+U:/hlocal/temp/SE/practica04/implementation/practica04.ngc -uc practica04.ucf
+practica04.ngd
 
-Reading NGO file
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04.ngc" ...
+Reading NGO file "U:/hlocal/temp/SE/practica04/implementation/practica04.ngc"
+...
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_microblaze_0
-_wrapper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_microblaze_0_wrapper.ngc
+"...
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_plb_v46_0_wr
-apper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_plb_v46_0_wrapper.ngc"..
+.
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_bram_if_
-cntlr_0_wrapper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_xps_bram_if_cntlr_0_wrap
+per.ngc"...
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_bram_block_0
-_wrapper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_bram_block_0_wrapper.ngc
+"...
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_gpio_led
-s_wrapper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_xps_gpio_leds_wrapper.ng
+c"...
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_uartlite
-_0_wrapper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_xps_uartlite_0_wrapper.n
+gc"...
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_xps_gpio_sw_
-wrapper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_xps_gpio_sw_wrapper.ngc"
+...
 Loading design module
-"C:/Users/aluqu/Desktop/uni/SE/practica04/implementation/practica04_pantalla_0_w
-rapper.ngc"...
+"U:/hlocal/temp/SE/practica04/implementation/practica04_pantalla_0_wrapper.ngc".
+..
 Gathering constraint information from source properties...
 Done.
 
@@ -103,8 +105,8 @@ NGDBUILD Design Results Summary:
   Number of warnings:   7
 
 Writing NGD file "practica04.ngd" ...
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   11 sec
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   12 sec
 
 Writing NGDBUILD log file "practica04.bld"...
 
@@ -120,13 +122,15 @@ practica04.pcf
 Release 14.1 - Map P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 PMSPEC -- Overriding Xilinx file
-<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
-<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with
+local file
+<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
 Using target part "3s1000ft256-5".
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
-'8080@licalu.fdi.ucm.es'.
-INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'1717@fdilicencias1;2100@fdilicencias1'.
 INFO:Security:54 - 'xc3s1000' is a WebPack part.
 WARNING:Security:43 - No license file was found in the standard Xilinx license
 directory.
@@ -144,11 +148,11 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 5 secs 
+Total REAL time at the beginning of Placer: 3 secs 
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:c2938836) REAL time: 7 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:88f71f3b) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:837 - Partially locked IO Bus is found. 
@@ -168,53 +172,53 @@ WARNING:Place:837 - Partially locked IO Bus is found.
 INFO:Place:834 - Only a subset of IOs are locked. Out of 33 IOs, 25 are locked
    and 8 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:c2938836) REAL time: 7 secs 
+Phase 2.7  Design Feasibility Check (Checksum:88f71f3b) REAL time: 5 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:c2938836) REAL time: 7 secs 
+Phase 3.31  Local Placement Optimization (Checksum:88f71f3b) REAL time: 5 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ....
-Phase 4.2  Initial Clock and IO Placement (Checksum:6654926e) REAL time: 7 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:3adc5d84) REAL time: 5 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:6654926e) REAL time: 7 secs 
+Phase 5.36  Local Placement Optimization (Checksum:3adc5d84) REAL time: 5 secs 
 
 Phase 6.3  Local Placement Optimization
 ....
-Phase 6.3  Local Placement Optimization (Checksum:6e390861) REAL time: 7 secs 
+Phase 6.3  Local Placement Optimization (Checksum:42d60a66) REAL time: 5 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:6e390861) REAL time: 7 secs 
+Phase 7.5  Local Placement Optimization (Checksum:42d60a66) REAL time: 5 secs 
 
 Phase 8.4  Local Placement Optimization
 .................................
-..........................
-Phase 8.4  Local Placement Optimization (Checksum:6e390861) REAL time: 10 secs 
+............................
+Phase 8.4  Local Placement Optimization (Checksum:42d60a66) REAL time: 7 secs 
 
 Phase 9.28  Local Placement Optimization
-Phase 9.28  Local Placement Optimization (Checksum:6e390861) REAL time: 10 secs 
+Phase 9.28  Local Placement Optimization (Checksum:42d60a66) REAL time: 8 secs 
 
 Phase 10.8  Global Placement
 .................................
-..............
-........
-Phase 10.8  Global Placement (Checksum:3ec566b0) REAL time: 11 secs 
+................
+.........
+Phase 10.8  Global Placement (Checksum:10a7d262) REAL time: 8 secs 
 
 Phase 11.29  Local Placement Optimization
-Phase 11.29  Local Placement Optimization (Checksum:3ec566b0) REAL time: 11 secs 
+Phase 11.29  Local Placement Optimization (Checksum:10a7d262) REAL time: 8 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:3ec566b0) REAL time: 11 secs 
+Phase 12.5  Local Placement Optimization (Checksum:10a7d262) REAL time: 9 secs 
 
 Phase 13.18  Placement Optimization
-Phase 13.18  Placement Optimization (Checksum:83eb530) REAL time: 15 secs 
+Phase 13.18  Placement Optimization (Checksum:157824d7) REAL time: 13 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:83eb530) REAL time: 15 secs 
+Phase 14.5  Local Placement Optimization (Checksum:157824d7) REAL time: 13 secs 
 
-Total REAL time to Placer completion: 15 secs 
-Total CPU  time to Placer completion: 12 secs 
+Total REAL time to Placer completion: 13 secs 
+Total CPU  time to Placer completion: 13 secs 
 Running post-placement packing...
 
 Design Summary:
@@ -222,14 +226,14 @@ Number of errors:      0
 Number of warnings:    2
 Logic Utilization:
   Number of Slice Flip Flops:         1,460 out of  15,360    9%
-  Number of 4 input LUTs:             2,731 out of  15,360   17%
+  Number of 4 input LUTs:             2,737 out of  15,360   17%
 Logic Distribution:
-  Number of occupied Slices:          1,773 out of   7,680   23%
-    Number of Slices containing only related logic:   1,773 out of   1,773 100%
-    Number of Slices containing unrelated logic:          0 out of   1,773   0%
+  Number of occupied Slices:          1,821 out of   7,680   23%
+    Number of Slices containing only related logic:   1,821 out of   1,821 100%
+    Number of Slices containing unrelated logic:          0 out of   1,821   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,796 out of  15,360   18%
-    Number used as logic:             2,103
+  Total Number of 4 input LUTs:       2,802 out of  15,360   18%
+    Number used as logic:             2,109
     Number used as a route-thru:         65
     Number used for Dual Port RAMs:     528
       (Two LUTs used per Dual Port RAM)
@@ -246,8 +250,8 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                4.05
 
-Peak Memory Usage:  4537 MB
-Total REAL time to MAP completion:  16 secs 
+Peak Memory Usage:  4536 MB
+Total REAL time to MAP completion:  14 secs 
 Total CPU time to MAP completion:   13 secs 
 
 Mapping completed.
@@ -261,18 +265,19 @@ See MAP report file "practica04_map.mrp" for details.
 #----------------------------------------------#
 Release 14.1 - par P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-PMSPEC -- Overriding Xilinx file <C:/Xilinx/14.1/ISE_DS/EDK/data/parBmgr.acd> with local file
-<C:/Xilinx/14.1/ISE_DS/ISE/data/parBmgr.acd>
+PMSPEC -- Overriding Xilinx file <C:/software/electronica/xilinx/14.1/ISE_DS/EDK/data/parBmgr.acd> with local file
+<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/data/parBmgr.acd>
 
 
 
 Constraints file: practica04.pcf.
 Loading device for application Rf_Device from file '3s1000.nph' in environment
-C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
+C:\software\electronica\xilinx\14.1\ISE_DS\ISE\;C:\software\electronica\xilinx\14.1\ISE_DS\EDK.
    "practica04" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '8080@licalu.fdi.ucm.es'.
-INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'1717@fdilicencias2.fdi.ucm.es;2100@fdilicencias2.fdi.ucm.es'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to '1717@fdilicencias1;2100@fdilicencias1'.
 INFO:Security:54 - 'xc3s1000' is a WebPack part.
 WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
 WARNING:Security:44 - Since no license file was found,
@@ -300,7 +305,7 @@ Device Utilization Summary:
 
    Number of MULT18X18s                      3 out of 24     12%
    Number of RAMB16s                        17 out of 24     70%
-   Number of Slices                       1773 out of 7680   23%
+   Number of Slices                       1821 out of 7680   23%
       Number of SLICEMs                    324 out of 3840    8%
 
 
@@ -308,8 +313,8 @@ Device Utilization Summary:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
    signal.
@@ -384,29 +389,29 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 15266 unrouted;      REAL time: 5 secs 
+Phase  1  : 15310 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 13395 unrouted;      REAL time: 6 secs 
+Phase  2  : 13428 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 3890 unrouted;      REAL time: 7 secs 
+Phase  3  : 3905 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 3890 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  4  : 3905 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
 Updating file: practica04.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
 WARNING:Route:455 - CLK Net:hsyncb_OBUF may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:pantalla_0/pantalla_0/USER_LOGIC_I/vga/clkDiv may have excessive skew because 
       5 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 11 secs 
+Total REAL time to Router completion: 10 secs 
 Total CPU time to Router completion: 8 secs 
 
 Partition Implementation Status
@@ -425,17 +430,17 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP |      BUFGMUX3| No   | 1363 |  0.433     |  1.050      |
+|           clk_BUFGP |      BUFGMUX3| No   | 1371 |  0.416     |  1.035      |
 +---------------------+--------------+------+------+------------+-------------+
 |pantalla_0/pantalla_ |              |      |      |            |             |
 |0/USER_LOGIC_I/clock |              |      |      |            |             |
-|                     |      BUFGMUX4| No   |  121 |  0.322     |  0.936      |
+|                     |      BUFGMUX4| No   |  122 |  0.325     |  0.938      |
 +---------------------+--------------+------+------+------------+-------------+
-|         hsyncb_OBUF |         Local|      |    7 |  0.243     |  2.841      |
+|         hsyncb_OBUF |         Local|      |    7 |  0.239     |  2.882      |
 +---------------------+--------------+------+------+------------+-------------+
 |pantalla_0/pantalla_ |              |      |      |            |             |
 |0/USER_LOGIC_I/vga/c |              |      |      |            |             |
-|               lkDiv |         Local|      |    6 |  0.934     |  1.921      |
+|               lkDiv |         Local|      |    6 |  0.911     |  1.835      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -455,8 +460,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH  | SETUP       |     7.160ns|    12.840ns|       0|           0
-  50%                                       | HOLD        |     0.674ns|            |       0|           0
+  TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH  | SETUP       |     6.524ns|    13.476ns|       0|           0
+  50%                                       | HOLD        |     0.523ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -469,8 +474,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 12 secs 
-Total CPU time to PAR completion: 8 secs 
+Total REAL time to PAR completion: 10 secs 
+Total CPU time to PAR completion: 9 secs 
 
 Peak Memory Usage:  4473 MB
 
@@ -499,17 +504,19 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 PMSPEC -- Overriding Xilinx file
-<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
-<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+<C:/software/electronica/xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with
+local file
+<C:/software/electronica/xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
 Loading device for application Rf_Device from file '3s1000.nph' in environment
-C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK.
+C:\software\electronica\xilinx\14.1\ISE_DS\ISE\;C:\software\electronica\xilinx\1
+4.1\ISE_DS\EDK.
    "practica04" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
 --------------------------------------------------------------------------------
 Release 14.1 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml practica04.twx
-practica04.ncd practica04.pcf
+C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3
+-xml practica04.twx practica04.ncd practica04.pcf
 
 
 Design file:              practica04.ncd
@@ -540,13 +547,13 @@ Timing summary:
 
 Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
 
-Constraints cover 149776 paths, 0 nets, and 12946 connections
+Constraints cover 149776 paths, 0 nets, and 12964 connections
 
 Design statistics:
-   Minimum period:  12.840ns (Maximum frequency:  77.882MHz)
+   Minimum period:  13.476ns (Maximum frequency:  74.206MHz)
 
 
-Analysis completed Wed Dec 20 15:12:24 2023
+Analysis completed Wed Dec 20 15:55:53 2023
 --------------------------------------------------------------------------------
 
 Generating Report ...

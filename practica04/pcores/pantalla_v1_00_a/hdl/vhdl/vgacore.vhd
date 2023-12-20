@@ -68,6 +68,7 @@ signal buttDeb1FallingEdge: std_logic; -- boton 1 debounced falling edge
 signal buttDeb2FallingEdge: std_logic; -- boton 2 debounced falling edge
 signal buttDeb1RisingEdge: std_logic; -- boton 1 debounced rising edge
 signal buttDeb2RisingEdge: std_logic; -- boton 2 debounced rising edge
+signal hdesp: std_logic_vector(8 downto 0);
 
 type ram_type is array (0 to 127) of std_logic_vector(8 downto 0);
 signal RAM : ram_type :=
@@ -119,6 +120,7 @@ begin
 
 hsyncb <= hsyncbAux;
 cuentaDiv <= "000101111101011110000100";
+hdesp <= hcnt - desp;
 
 A: process(clock,reset)
 begin
@@ -251,7 +253,7 @@ end process;
 process (hcnt, vcnt, desp)
 begin
 	if (vcnt(9 downto 8) = "00" and (hcnt >= desp and hcnt < desp + 63)) then
-		rgb <= RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));
+		rgb <= RAM(conv_integer(hdesp(5 downto 3)&vcnt(7 downto 4)));
 	else
 		rgb <= "000000000";
 	end if;
