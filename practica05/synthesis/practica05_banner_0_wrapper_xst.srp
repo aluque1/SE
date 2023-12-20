@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
 TABLE OF CONTENTS
@@ -278,9 +278,9 @@ Entity <practica05_banner_0_wrapper> (Architecture <STRUCTURE>) compiled.
 Analyzing hierarchy for entity <practica05_banner_0_wrapper> in library <work> (architecture <STRUCTURE>).
 
 Analyzing hierarchy for entity <banner> in library <banner_v1_00_a> (architecture <IMP>) with generics.
-	C_BASEADDR = "11111111111111111111111111111111"
+	C_BASEADDR = "11000101100000000000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "00000000000000000000000000000000"
+	C_HIGHADDR = "11000101100000001111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 0
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -294,12 +294,12 @@ Analyzing hierarchy for entity <banner> in library <banner_v1_00_a> (architectur
 WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
 
 Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000101100000000000000000000000",
+	                          "0000000000000000000000000000000011000101100000000000000011111111",
+	                          "0000000000000000000000000000000011000101100000000000000100000000",
+	                          "0000000000000000000000000000000011000101100000000000000111111111",
+	                          "0000000000000000000000000000000011000101100000000000001000000000",
+	                          "0000000000000000000000000000000011000101100000000000001011111111")
 	C_ARD_NUM_CE_ARRAY = (1,4,1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -329,12 +329,12 @@ Analyzing hierarchy for entity <user_logic> in library <banner_v1_00_a> (archite
 	C_SLV_DWIDTH = 32
 
 Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000101100000000000000000000000",
+	                          "0000000000000000000000000000000011000101100000000000000011111111",
+	                          "0000000000000000000000000000000011000101100000000000000100000000",
+	                          "0000000000000000000000000000000011000101100000000000000111111111",
+	                          "0000000000000000000000000000000011000101100000000000001000000000",
+	                          "0000000000000000000000000000000011000101100000000000001011111111")
 	C_ARD_NUM_CE_ARRAY = (1,4,1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -374,12 +374,12 @@ Analyzing hierarchy for entity <pf_dpram_select> in library <proc_common_v3_00_a
 Analyzing hierarchy for entity <bannerDesp> in library <banner_v1_00_a> (architecture <banner_arch>).
 
 Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000101100000000000000000000000",
+	                          "0000000000000000000000000000000011000101100000000000000011111111",
+	                          "0000000000000000000000000000000011000101100000000000000100000000",
+	                          "0000000000000000000000000000000011000101100000000000000111111111",
+	                          "0000000000000000000000000000000011000101100000000000001000000000",
+	                          "0000000000000000000000000000000011000101100000000000001011111111")
 	C_ARD_NUM_CE_ARRAY = (1,4,1)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
@@ -395,9 +395,15 @@ Analyzing hierarchy for entity <pf_counter_top> in library <proc_common_v3_00_a>
 	C_COUNT_WIDTH = 9
 
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
-	C_AB = 32
+	C_AB = 24
 	C_AW = 32
-	C_BAR = "11111111111111111111111111111111"
+	C_BAR = "11000101100000000000000000000000"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 24
+	C_AW = 32
+	C_BAR = "11000101100000000000000100000000"
 	C_FAMILY = "nofamily"
 
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
@@ -422,6 +428,12 @@ Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (arc
 	C_AB = 2
 	C_AW = 2
 	C_BAR = "11"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 24
+	C_AW = 32
+	C_BAR = "11000101100000000000001000000000"
 	C_FAMILY = "nofamily"
 
 Analyzing hierarchy for entity <or_gate128> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
@@ -453,9 +465,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <practica05_banner_0_wrapper> analyzed. Unit <practica05_banner_0_wrapper> generated.
 
 Analyzing generic Entity <banner> in library <banner_v1_00_a> (Architecture <IMP>).
-	C_BASEADDR = "11111111111111111111111111111111"
+	C_BASEADDR = "11000101100000000000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "00000000000000000000000000000000"
+	C_HIGHADDR = "11000101100000001111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 0
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -481,12 +493,12 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <banner> analyzed. Unit <banner> generated.
 
 Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000101100000000000000000000000",
+	                          "0000000000000000000000000000000011000101100000000000000011111111",
+	                          "0000000000000000000000000000000011000101100000000000000100000000",
+	                          "0000000000000000000000000000000011000101100000000000000111111111",
+	                          "0000000000000000000000000000000011000101100000000000001000000000",
+	                          "0000000000000000000000000000000011000101100000000000001011111111")
 	C_ARD_NUM_CE_ARRAY = (1,4,1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -500,12 +512,12 @@ Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v
 Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
 
 Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000101100000000000000000000000",
+	                          "0000000000000000000000000000000011000101100000000000000011111111",
+	                          "0000000000000000000000000000000011000101100000000000000100000000",
+	                          "0000000000000000000000000000000011000101100000000000000111111111",
+	                          "0000000000000000000000000000000011000101100000000000001000000000",
+	                          "0000000000000000000000000000000011000101100000000000001011111111")
 	C_ARD_NUM_CE_ARRAY = (1,4,1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -519,12 +531,12 @@ Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_
 Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
 
 Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (Architecture <IMP>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011000101100000000000000000000000",
+	                          "0000000000000000000000000000000011000101100000000000000011111111",
+	                          "0000000000000000000000000000000011000101100000000000000100000000",
+	                          "0000000000000000000000000000000011000101100000000000000111111111",
+	                          "0000000000000000000000000000000011000101100000000000001000000000",
+	                          "0000000000000000000000000000000011000101100000000000001011111111")
 	C_ARD_NUM_CE_ARRAY = (1,4,1)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
@@ -532,39 +544,53 @@ Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v
 Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
 
 Analyzing generic Entity <pselect_f.1> in library <proc_common_v3_00_a> (Architecture <imp>).
-	C_AB = 32
+	C_AB = 24
 	C_AW = 32
-	C_BAR = "11111111111111111111111111111111"
+	C_BAR = "11000101100000000000000000000000"
 	C_FAMILY = "nofamily"
 Entity <pselect_f.1> analyzed. Unit <pselect_f.1> generated.
 
 Analyzing generic Entity <pselect_f.2> in library <proc_common_v3_00_a> (Architecture <imp>).
-	C_AB = 2
-	C_AW = 2
-	C_BAR = "00"
+	C_AB = 24
+	C_AW = 32
+	C_BAR = "11000101100000000000000100000000"
 	C_FAMILY = "nofamily"
 Entity <pselect_f.2> analyzed. Unit <pselect_f.2> generated.
 
 Analyzing generic Entity <pselect_f.3> in library <proc_common_v3_00_a> (Architecture <imp>).
 	C_AB = 2
 	C_AW = 2
-	C_BAR = "01"
+	C_BAR = "00"
 	C_FAMILY = "nofamily"
 Entity <pselect_f.3> analyzed. Unit <pselect_f.3> generated.
 
 Analyzing generic Entity <pselect_f.4> in library <proc_common_v3_00_a> (Architecture <imp>).
 	C_AB = 2
 	C_AW = 2
-	C_BAR = "10"
+	C_BAR = "01"
 	C_FAMILY = "nofamily"
 Entity <pselect_f.4> analyzed. Unit <pselect_f.4> generated.
 
 Analyzing generic Entity <pselect_f.5> in library <proc_common_v3_00_a> (Architecture <imp>).
 	C_AB = 2
 	C_AW = 2
-	C_BAR = "11"
+	C_BAR = "10"
 	C_FAMILY = "nofamily"
 Entity <pselect_f.5> analyzed. Unit <pselect_f.5> generated.
+
+Analyzing generic Entity <pselect_f.6> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "11"
+	C_FAMILY = "nofamily"
+Entity <pselect_f.6> analyzed. Unit <pselect_f.6> generated.
+
+Analyzing generic Entity <pselect_f.7> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 24
+	C_AW = 32
+	C_BAR = "11000101100000000000001000000000"
+	C_FAMILY = "nofamily"
+Entity <pselect_f.7> analyzed. Unit <pselect_f.7> generated.
 
 Analyzing generic Entity <or_gate128> in library <proc_common_v3_00_a> (Architecture <imp>).
 	C_BUS_WIDTH = 1
@@ -706,11 +732,13 @@ INFO:Xst:2679 - Register <burst_sh> in unit <ipif_control_wr_dre> has a constant
 
 Synthesizing Unit <pselect_f_1>.
     Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:Xst:647 - Input <A<24:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <pselect_f_1> synthesized.
 
 
 Synthesizing Unit <pselect_f_2>.
     Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:Xst:647 - Input <A<24:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <pselect_f_2> synthesized.
 
 
@@ -727,6 +755,17 @@ Unit <pselect_f_4> synthesized.
 Synthesizing Unit <pselect_f_5>.
     Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
 Unit <pselect_f_5> synthesized.
+
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+Unit <pselect_f_6> synthesized.
+
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:Xst:647 - Input <A<24:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <pselect_f_7> synthesized.
 
 
 Synthesizing Unit <or_muxcy>.
@@ -1230,13 +1269,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1989 - Unit <plb_address_decoder>: instances <MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I>, <MEM_DECODE_GEN[1].GEN_PLB_SHARED.MEM_SELECT_I> of unit <pselect_f_1> are equivalent, second instance is removed
-WARNING:Xst:1989 - Unit <plb_address_decoder>: instances <MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I>, <MEM_DECODE_GEN[2].GEN_PLB_SHARED.MEM_SELECT_I> of unit <pselect_f_1> are equivalent, second instance is removed
 INFO:Xst:2261 - The FF/Latch <currentStateLectura_0> in Unit <user_logic> is equivalent to the following FF/Latch, which will be removed : <IP2WFIFO_RdReq> 
-INFO:Xst:2261 - The FF/Latch <cs_out_s_h1_2> in Unit <plb_address_decoder> is equivalent to the following 2 FFs/Latches, which will be removed : <cs_out_s_h0_1> <cs_out_s_h_0> 
-INFO:Xst:2261 - The FF/Latch <wrce_out_i_5> in Unit <plb_address_decoder> is equivalent to the following FF/Latch, which will be removed : <wrce_out_i_0> 
-INFO:Xst:2261 - The FF/Latch <rdce_out_i_0> in Unit <plb_address_decoder> is equivalent to the following FF/Latch, which will be removed : <rdce_out_i_5> 
-INFO:Xst:2261 - The FF/Latch <cs_out_i_0> in Unit <plb_address_decoder> is equivalent to the following 2 FFs/Latches, which will be removed : <cs_out_i_1> <cs_out_i_2> 
 INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
 INFO:Xst:1901 - Instance WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
 
@@ -1300,6 +1333,12 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLA
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_13> (without init value) has a constant value of 0 in block <practica05_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/int_rdack> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
 WARNING:Xst:2677 - Node <banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/rdack_dly1> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
 WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
 WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
 WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
@@ -1335,20 +1374,12 @@ WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2i
 WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
 WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_4> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
 WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_4> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
-WARNING:Xst:1710 - FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6> (without init value) has a constant value of 0 in block <practica05_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5> (without init value) has a constant value of 0 in block <practica05_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_2> (without init value) has a constant value of 0 in block <practica05_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_1> (without init value) has a constant value of 0 in block <practica05_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0> (without init value) has a constant value of 0 in block <practica05_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_deadlock> is unconnected in block <practica05_banner_0_wrapper>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_almostfull> is unconnected in block <practica05_banner_0_wrapper>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h1_2> is unconnected in block <practica05_banner_0_wrapper>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> is unconnected in block <practica05_banner_0_wrapper>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_status_rdce> is unconnected in block <practica05_banner_0_wrapper>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_full> is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> of sequential type is unconnected in block <practica05_banner_0_wrapper>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6> in Unit <practica05_banner_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5> 
 
 Final Macro Processing ...
 
@@ -1356,8 +1387,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 304
- Flip-Flops                                            : 304
+# Registers                                            : 310
+ Flip-Flops                                            : 310
 
 =========================================================================
 
@@ -1385,34 +1416,35 @@ Design Statistics
 # IOs                              : 206
 
 Cell Usage :
-# BELS                             : 630
+# BELS                             : 636
 #      GND                         : 2
-#      INV                         : 11
-#      LUT1                        : 28
-#      LUT2                        : 72
-#      LUT3                        : 189
-#      LUT3_D                      : 2
+#      INV                         : 12
+#      LUT1                        : 27
+#      LUT2                        : 76
+#      LUT3                        : 199
+#      LUT3_D                      : 1
 #      LUT3_L                      : 1
-#      LUT4                        : 97
-#      LUT4_D                      : 3
+#      LUT4                        : 93
+#      LUT4_D                      : 4
 #      LUT4_L                      : 1
-#      MUXCY                       : 92
-#      MUXF5                       : 55
+#      MUXCY                       : 89
+#      MUXF5                       : 54
 #      MUXF6                       : 5
 #      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 1
 #      XORCY                       : 68
-# FlipFlops/Latches                : 304
+# FlipFlops/Latches                : 310
 #      FDC                         : 46
 #      FDCE                        : 56
 #      FDE                         : 1
 #      FDP                         : 3
-#      FDR                         : 100
-#      FDRE                        : 93
+#      FDR                         : 98
+#      FDRE                        : 100
 #      FDRS                        : 2
 #      FDRSE                       : 1
 #      FDS                         : 2
+#      FDSE                        : 1
 # RAMS                             : 161
 #      RAM16X1D                    : 160
 #      RAMB16                      : 1
@@ -1425,10 +1457,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      333  out of   7680     4%  
- Number of Slice Flip Flops:            304  out of  15360     1%  
- Number of 4 input LUTs:                724  out of  15360     4%  
-    Number used as logic:               404
+ Number of Slices:                      335  out of   7680     4%  
+ Number of Slice Flip Flops:            310  out of  15360     2%  
+ Number of 4 input LUTs:                734  out of  15360     4%  
+    Number used as logic:               414
     Number used as RAMs:                320
  Number of IOs:                         206
  Number of bonded IOBs:                   0  out of    173     0%  
@@ -1456,7 +1488,7 @@ Clock Information:
 ---------------------------------------+----------------------------------------------------------------------+-------+
 Clock Signal                           | Clock buffer(FF name)                                                | Load  |
 ---------------------------------------+----------------------------------------------------------------------+-------+
-SPLB_Clk                               | NONE(banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/valid_read)| 398   |
+SPLB_Clk                               | NONE(banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/valid_read)| 404   |
 banner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                 | 67    |
 ---------------------------------------+----------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1474,7 +1506,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 8.611ns (Maximum Frequency: 116.135MHz)
-   Minimum input arrival time before clock: 2.519ns
+   Minimum input arrival time before clock: 2.621ns
    Maximum output required time after clock: 7.004ns
    Maximum combinational path delay: 0.479ns
 
@@ -1485,7 +1517,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
   Clock period: 8.611ns (frequency: 116.135MHz)
-  Total number of paths / destination ports: 6393 / 530
+  Total number of paths / destination ports: 6474 / 559
 -------------------------------------------------------------------------
 Delay:               8.611ns (Levels of Logic = 16)
   Source:            banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_I/FDRE_I (FF)
@@ -1567,7 +1599,7 @@ Delay:               6.957ns (Levels of Logic = 23)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
   Total number of paths / destination ports: 229 / 229
 -------------------------------------------------------------------------
-Offset:              2.519ns (Levels of Logic = 1)
+Offset:              2.621ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
   Destination:       banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0 (FF)
   Destination Clock: SPLB_Clk rising
@@ -1576,15 +1608,15 @@ Offset:              2.519ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT3:I0->O            6   0.479   0.853  banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0_or00001 (banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h1_2_or0000)
+     LUT3:I0->O            9   0.479   0.955  banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0_or00001 (banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h1_2_or0000)
      FDRE:R                    0.892          banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h
     ----------------------------------------
-    Total                      2.519ns (1.666ns logic, 0.853ns route)
-                                       (66.1% logic, 33.9% route)
+    Total                      2.621ns (1.666ns logic, 0.955ns route)
+                                       (63.6% logic, 36.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 104 / 14
+  Total number of paths / destination ports: 108 / 18
 -------------------------------------------------------------------------
 Offset:              7.004ns (Levels of Logic = 7)
   Source:            banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (FF)
@@ -1652,14 +1684,14 @@ Delay:               0.479ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.85 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.34 secs
  
 --> 
 
-Total memory usage is 4803640 kilobytes
+Total memory usage is 4884540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  198 (   0 filtered)
-Number of infos    :   17 (   0 filtered)
+Number of warnings :  196 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
 

@@ -12,18 +12,6 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../practica04_tes
 ../src/pantalla.c:109:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
 Finished building: ../src/pantalla.c
 ' '
-Building file: ../src/pantalla_selftest.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../practica04_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/pantalla_selftest.d" -MT"src/pantalla_selftest.d" -o"src/pantalla_selftest.o" "../src/pantalla_selftest.c"
-../src/pantalla_selftest.c: In function 'PANTALLA_SelfTest':
-../src/pantalla_selftest.c:57:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-../src/pantalla_selftest.c:46:11: warning: unused variable 'Reg32Value' [-Wunused-variable]
-../src/pantalla_selftest.c:45:11: warning: unused variable 'Reg16Value' [-Wunused-variable]
-../src/pantalla_selftest.c:44:11: warning: unused variable 'Reg8Value' [-Wunused-variable]
-../src/pantalla_selftest.c:43:11: warning: variable 'baseaddr' set but not used [-Wunused-but-set-variable]
-../src/pantalla_selftest.c:42:11: warning: unused variable 'Index' [-Wunused-variable]
-Finished building: ../src/pantalla_selftest.c
-' '
 Building target: practica04_tests_0.elf
 Invoking: MicroBlaze gcc linker
 mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../practica04_tests_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"practica04_tests_0.elf"  ./src/pantalla.o ./src/pantalla_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group

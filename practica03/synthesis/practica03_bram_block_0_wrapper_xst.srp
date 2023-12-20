@@ -1,10 +1,10 @@
 Release 14.1 - xst P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to U:\hlocal\temp\SE\practica03\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\aluqu\Desktop\uni\SE\practica03\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 TABLE OF CONTENTS
@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "practica03_bram_block_0_wrapper_xst.prj"
-Verilog Include Directory          : {"U:\hlocal\temp\SE\practica03\pcores\" "C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\aluqu\Desktop\uni\SE\practica03\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1000ft256-5
@@ -57,10 +57,10 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" in Library bram_block_0_elaborate_v1_00_a.
+Compiling vhdl file "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" in Library bram_block_0_elaborate_v1_00_a.
 Entity <bram_block_0_elaborate> compiled.
 Entity <bram_block_0_elaborate> (Architecture <STRUCTURE>) compiled.
-Compiling vhdl file "U:/hlocal/temp/SE/practica03/hdl/practica03_bram_block_0_wrapper.vhd" in Library work.
+Compiling vhdl file "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/practica03_bram_block_0_wrapper.vhd" in Library work.
 Entity <practica03_bram_block_0_wrapper> compiled.
 Entity <practica03_bram_block_0_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -91,52 +91,52 @@ Analyzing generic Entity <bram_block_0_elaborate> in library <bram_block_0_elabo
 	C_NUM_WE = 4
 	C_PORT_AWIDTH = 32
 	C_PORT_DWIDTH = 32
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 81: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 81: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_0> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_0> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 103: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 103: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_1> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_1> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 125: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 125: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_2> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_2> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 147: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 147: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_3> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_3> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 169: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 169: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_4> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_4> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 191: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 191: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_5> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_5> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 213: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 213: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_6> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_6> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 235: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 235: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_7> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_7> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 257: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 257: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_8> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_8> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 279: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 279: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_9> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_9> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 301: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 301: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_10> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_10> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 323: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 323: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_11> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_11> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 345: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 345: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_12> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_12> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 367: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 367: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_13> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_13> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 389: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 389: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_14> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_14> in unit <bram_block_0_elaborate>.
-WARNING:Xst:2211 - "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 411: Instantiating black box module <RAMB16_S2_S2>.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 411: Instantiating black box module <RAMB16_S2_S2>.
     Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_15> in unit <bram_block_0_elaborate>.
     Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_15> in unit <bram_block_0_elaborate>.
 Entity <bram_block_0_elaborate> analyzed. Unit <bram_block_0_elaborate> generated.
@@ -149,7 +149,7 @@ Entity <bram_block_0_elaborate> analyzed. Unit <bram_block_0_elaborate> generate
 Performing bidirectional port resolution...
 
 Synthesizing Unit <bram_block_0_elaborate>.
-    Related source file is "U:/hlocal/temp/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd".
+    Related source file is "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd".
 WARNING:Xst:647 - Input <BRAM_Addr_A<0:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BRAM_Addr_A<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BRAM_Addr_B<0:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -158,7 +158,7 @@ Unit <bram_block_0_elaborate> synthesized.
 
 
 Synthesizing Unit <practica03_bram_block_0_wrapper>.
-    Related source file is "U:/hlocal/temp/SE/practica03/hdl/practica03_bram_block_0_wrapper.vhd".
+    Related source file is "C:/Users/aluqu/Desktop/uni/SE/practica03/hdl/practica03_bram_block_0_wrapper.vhd".
 Unit <practica03_bram_block_0_wrapper> synthesized.
 
 
@@ -341,11 +341,11 @@ Offset:              0.432ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.76 secs
+Total CPU time to Xst completion: 4.13 secs
  
 --> 
 
-Total memory usage is 4511448 kilobytes
+Total memory usage is 4511064 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   20 (   0 filtered)

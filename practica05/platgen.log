@@ -39,6 +39,7 @@ Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
 Address Map for Processor microblaze_0
   (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
   (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xc5800000-0xc580ffff) banner_0	plb_v46_0
   (0xc7200000-0xc720ffff) leds_rgb_0	plb_v46_0
   (0xc9600000-0xc960ffff) keypad_0	plb_v46_0
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
@@ -198,6 +199,9 @@ Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
 C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 21 - Copying cache
 implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 29 - Copying cache
+implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
 C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 36 - Copying cache
 implementation netlist
@@ -237,8 +241,6 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:plb_v46_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs
-line 29 - Running XST synthesis
 INSTANCE:keypad_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line
 64 - Running XST synthesis
 INSTANCE:leds_rgb_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs
@@ -253,4 +255,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 35.00 seconds
+Total run time: 46.00 seconds

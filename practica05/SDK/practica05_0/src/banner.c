@@ -12,6 +12,7 @@
 
 /************************** Function Definitions ***************************/
 
+
 void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum)
 {
 	while (BANNER_mWriteFIFOFull(XPAR_BANNER_0_BASEADDR))
@@ -25,7 +26,7 @@ void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum)
 void banner_init()
 {
 	Xuint32 row, col, datum, data;
-	datum = 0x05;
+	datum = 0x00;
 	for (row = 0; row < 7; ++row)
 	{
 		for (col = 0; col < 8; ++col)

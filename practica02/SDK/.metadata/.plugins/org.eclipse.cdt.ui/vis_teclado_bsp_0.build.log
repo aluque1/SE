@@ -38,6 +38,7 @@ Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
 "Compiling common"
 "Compiling standalone";
 "Compiling bram"
+"Compiling gpio"
 "Compiling uartlite"
 "Compiling cpu"
 Running execs_generate.

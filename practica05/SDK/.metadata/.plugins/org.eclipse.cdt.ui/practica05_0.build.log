@@ -2,26 +2,14 @@
 **** Build of configuration Debug for project practica05_0 ****
 
 make all 
-Building file: ../src/keypad.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../practica05_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/keypad.d" -MT"src/keypad.d" -o"src/keypad.o" "../src/keypad.c"
-../src/keypad.c: In function 'do_keypad':
-../src/keypad.c:18:5: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
-../src/keypad.c:20:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-Finished building: ../src/keypad.c
-' '
 Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../practica05_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
 ../src/testperiph.c: In function 'main':
-../src/testperiph.c:48:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
-../src/testperiph.c: In function 'hex':
-../src/testperiph.c:94:11: warning: unused variable 'pressed' [-Wunused-variable]
-../src/testperiph.c:89:22: warning: unused variable 'TeclaOld' [-Wunused-variable]
-../src/testperiph.c:89:10: warning: unused variable 'Reg32Value' [-Wunused-variable]
+../src/testperiph.c:51:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
 ../src/testperiph.c: In function 'getNumber':
-../src/testperiph.c:136:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
-../src/testperiph.c:138:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:157:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:159:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
 Finished building: ../src/testperiph.c
 ' '
 Building target: practica05_0.elf
@@ -32,7 +20,7 @@ Finished building target: practica05_0.elf
 Invoking: MicroBlaze Print Size
 mb-size practica05_0.elf  |tee "practica05_0.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   8598	    296	   2088	  10982	   2ae6	practica05_0.elf
+   8602	    296	   2094	  10992	   2af0	practica05_0.elf
 Finished building: practica05_0.elf.size
 ' '
 Invoking: Xilinx ELF Check

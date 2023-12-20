@@ -96,56 +96,58 @@ int main()
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x00);
 	XGpio_SetDataDirection(&Gpio_SWs, 1, 0xFFFFFFFF);
 
-	print("-- Bienvenido --\n\r");
-	print(" Elija una opcion:\n\r");
-	print("1  : Visualizar dato introducido por teclado\n\r");
-	print("2  : Restador con operandos introducidos por teclado\n\r");
-	print("3  : Visualizar dato introducio por switches\n\r");
+	while(1){
+		print("-- Bienvenido --\n\r");
+			print(" Elija una opcion:\n\r");
+			print("1  : Visualizar dato introducido por teclado\n\r");
+			print("2  : Restador con operandos introducidos por teclado\n\r");
+			print("3  : Visualizar dato introducio por switches\n\r");
 
-	option = getNumber();
-	switch(option){
+			option = getNumber();
+			switch(option){
 
-	case 1:
-		print("Visualizacion de dato introducido por teclado\n\r");
-		while(operando1 < 0 || operando1 > 9){
-			print("Introduzca un numero. Tiene que estar entre 0-9\n\r");
-			operando1 = getNumber();
-		}
-		gpio_write(Gpio_LEDs, operando1);
-		break;
-	case 2:
-		print("Restador con operandos escrito por teclado\n\r");
-		while(operando1 < 0 || operando1 > 9){
-			print("Introduzca el primer operando. Tiene que estar entre 0-9\n\r");
-			operando1 = getNumber();
-		}
-		gpio_write(Gpio_LEDs, operando1);
+			case 1:
+				print("Visualizacion de dato introducido por teclado\n\r");
+				while(operando1 < 0 || operando1 > 9){
+					print("Introduzca un numero. Tiene que estar entre 0-9\n\r");
+					operando1 = getNumber();
+				}
+				gpio_write(Gpio_LEDs, operando1);
+				break;
+			case 2:
+				print("Restador con operandos escrito por teclado\n\r");
+				while(operando1 < 0 || operando1 > 9){
+					print("Introduzca el primer operando. Tiene que estar entre 0-9\n\r");
+					operando1 = getNumber();
+				}
+				gpio_write(Gpio_LEDs, operando1);
 
-		while(operando2 <= 0 || operando2 >= 9){
-			print("Introduzca el segundo operando. Tiene que estar entre 0-9\n\r");
-			operando2 = getNumber();
-		}
-		gpio_write(Gpio_LEDs, operando2);
+				while(operando2 <= 0 || operando2 >= 9){
+					print("Introduzca el segundo operando. Tiene que estar entre 0-9\n\r");
+					operando2 = getNumber();
+				}
+				gpio_write(Gpio_LEDs, operando2);
 
-		while(wait != 0){
-			xil_printf("Introduzca 0 para obtener el resultado de %d - %d\n\r", operando1, operando2);
-			wait = getNumber();
-		}
+				while(wait != 0){
+					xil_printf("Introduzca 0 para obtener el resultado de %d - %d\n\r", operando1, operando2);
+					wait = getNumber();
+				}
 
-		int result = operando1 - operando2;
-		gpio_write(Gpio_LEDs, result);
+				int result = operando1 - operando2;
+				gpio_write(Gpio_LEDs, result);
 
-		break;
-	case 3:
+				break;
+			case 3:
 
-		while(operando1 != 0){
-			print("Use los switches para elegir su numero. Introduzca 0 cuando este elegido.\n\r");
-			operando1 = getNumber();
-		}
-		operando2 = XGpio_DiscreteRead(&Gpio_SWs, 1);
-		gpio_write(Gpio_LEDs, operando2);
-		break;
-	// do default
+				while(operando1 != 0){
+					print("Use los switches para elegir su numero. Introduzca 0 cuando este elegido.\n\r");
+					operando1 = getNumber();
+				}
+				operando2 = XGpio_DiscreteRead(&Gpio_SWs, 1);
+				gpio_write(Gpio_LEDs, operando2);
+				break;
+			// do default
+			}
 	}
 
 	print("-- Exiting main() --\r\n");

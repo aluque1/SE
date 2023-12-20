@@ -17,12 +17,6 @@
 
 /******************************************************************/
 
-
-/* Definitions for peripheral BANNER_0 */
-
-
-/******************************************************************/
-
 /* Definitions for driver BRAM */
 #define XPAR_XBRAM_NUM_INSTANCES 1
 
@@ -58,6 +52,27 @@
 #define XPAR_BRAM_0_WRITE_ACCESS 0
 #define XPAR_BRAM_0_BASEADDR 0x00000000
 #define XPAR_BRAM_0_HIGHADDR 0x00007FFF
+
+
+/******************************************************************/
+
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 2
+
+/* Definitions for peripheral XPS_GPIO_0 */
+#define XPAR_XPS_GPIO_0_BASEADDR 0x81420000
+#define XPAR_XPS_GPIO_0_HIGHADDR 0x8142FFFF
+#define XPAR_XPS_GPIO_0_DEVICE_ID 0
+#define XPAR_XPS_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_XPS_GPIO_0_IS_DUAL 0
+
+
+/* Definitions for peripheral XPS_GPIO_1 */
+#define XPAR_XPS_GPIO_1_BASEADDR 0x81400000
+#define XPAR_XPS_GPIO_1_HIGHADDR 0x8140FFFF
+#define XPAR_XPS_GPIO_1_DEVICE_ID 1
+#define XPAR_XPS_GPIO_1_INTERRUPT_PRESENT 0
+#define XPAR_XPS_GPIO_1_IS_DUAL 0
 
 
 /******************************************************************/

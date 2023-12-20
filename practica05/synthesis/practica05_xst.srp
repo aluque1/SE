@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> 
 TABLE OF CONTENTS
@@ -554,41 +554,41 @@ Design Statistics
 # IOs                              : 20
 
 Cell Usage :
-# BELS                             : 3968
+# BELS                             : 3974
 #      GND                         : 25
-#      INV                         : 40
-#      LUT1                        : 118
-#      LUT2                        : 327
+#      INV                         : 41
+#      LUT1                        : 117
+#      LUT2                        : 331
 #      LUT2_D                      : 12
 #      LUT2_L                      : 26
-#      LUT3                        : 995
-#      LUT3_D                      : 28
+#      LUT3                        : 1005
+#      LUT3_D                      : 27
 #      LUT3_L                      : 30
-#      LUT4                        : 1102
-#      LUT4_D                      : 32
+#      LUT4                        : 1098
+#      LUT4_D                      : 33
 #      LUT4_L                      : 37
 #      MULT_AND                    : 34
-#      MUXCY                       : 276
+#      MUXCY                       : 273
 #      MUXCY_L                     : 161
-#      MUXF5                       : 453
+#      MUXF5                       : 452
 #      MUXF6                       : 5
 #      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 7
 #      XORCY                       : 257
-# FlipFlops/Latches                : 2394
+# FlipFlops/Latches                : 2400
 #      FD                          : 5
 #      FDC                         : 82
 #      FDCE                        : 73
 #      FDE                         : 200
 #      FDP                         : 6
 #      FDPE                        : 8
-#      FDR                         : 971
-#      FDRE                        : 949
+#      FDR                         : 969
+#      FDRE                        : 956
 #      FDRS                        : 15
 #      FDRSE                       : 4
 #      FDS                         : 37
-#      FDSE                        : 44
+#      FDSE                        : 45
 # RAMS                             : 369
 #      RAM16X1D                    : 352
 #      RAMB16                      : 17
@@ -609,10 +609,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     2286  out of   7680    29%  
- Number of Slice Flip Flops:           2394  out of  15360    15%  
- Number of 4 input LUTs:               3535  out of  15360    23%  
-    Number used as logic:              2747
+ Number of Slices:                     2282  out of   7680    29%  
+ Number of Slice Flip Flops:           2400  out of  15360    15%  
+ Number of 4 input LUTs:               3545  out of  15360    23%  
+    Number used as logic:              2757
     Number used as Shift registers:      84
     Number used as RAMs:                704
  Number of IOs:                          20
@@ -642,7 +642,7 @@ Clock Information:
 ------------------------------------------------+--------------------------------------------------------------+-------+
 Clock Signal                                    | Clock buffer(FF name)                                        | Load  |
 ------------------------------------------------+--------------------------------------------------------------+-------+
-clk                                             | BUFGP                                                        | 2748  |
+clk                                             | BUFGP                                                        | 2754  |
 N0                                              | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
 keypad_0/keypad_0/USER_LOGIC_I/reloj121         | BUFG                                                         | 35    |
 banner_0/banner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                         | 67    |
@@ -677,7 +677,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 185156 / 8003
+  Total number of paths / destination ports: 185245 / 8023
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -894,12 +894,12 @@ Offset:              8.027ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 49.00 secs
-Total CPU time to Xst completion: 48.97 secs
+Total REAL time to Xst completion: 83.00 secs
+Total CPU time to Xst completion: 82.63 secs
  
 --> 
 
-Total memory usage is 4609308 kilobytes
+Total memory usage is 4577960 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

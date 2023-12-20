@@ -39,10 +39,13 @@
 int getNumber();
 void hex();
 
+
 int main()
 {
 	Xuint32 opt;
+	int row, col, datum;
 
+	banner_init();
 	leds_init();
 
 	print("---Entering main---\n\r");
@@ -53,7 +56,7 @@ int main()
 		print(" 1  : LEDs \n\r");
 		print(" 2  : KEYPAD \n\r");
 		print(" 3  : BANNER \n\r");
-		print(" 4  : HEX-COLOR \n\r");
+		//print(" 4  : HEX-COLOR \n\r");
 		print(" 0  : Salir \n\r");
 		opt = getNumber();
 		switch (opt)
@@ -70,11 +73,18 @@ int main()
 			break;
 		case 3:
 			print("Banner time!\n\r");
-			banner_init();
+			for (row = 0; row < 7; ++row)
+			{
+				for (col = 0; col < 8; ++col)
+				{
+					datum = col % 2;
+					banner_write(row, col, datum);
+				}
+			}
 			break;
-		case 4:
-			hex();
-			break;
+		//case 4:
+			//hex();
+			//break;
 		default:
 			print("No es una opcion valida.\n\r");
 			break;
@@ -85,6 +95,7 @@ int main()
 	return 0;
 }
 
+/*
 void hex()
 {
 	Xuint32 Reg32Value, TeclaOld;
@@ -97,13 +108,9 @@ void hex()
 	// Read 6 numbers from the keypad
 	while (cont < 6)
 	{
-		print(" Pulse una tecla cualquiera \n\r");
-		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
-		xil_printf("   Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
 		KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 99);
-		TeclaOld = Reg32Value;
-
-		if (Reg32Value != TeclaOld)
+		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0) >> 28;
+		if (Reg32Value != 99)
 			xil_printf("    Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
 		TeclaOld = Reg32Value;
 		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0) >> 28;
@@ -124,6 +131,7 @@ void hex()
 
 	print(" MIRA LOS LEDs \n\r");
 }
+*/
 
 int getNumber()
 {
