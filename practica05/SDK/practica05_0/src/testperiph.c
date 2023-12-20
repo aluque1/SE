@@ -70,7 +70,7 @@ int main()
 			break;
 		case 3:
 			print("Banner time!\n\r");
-			banner_init();	
+			banner_init();
 			break;
 		case 4:
 			hex();
@@ -85,7 +85,8 @@ int main()
 	return 0;
 }
 
-void hex(){
+void hex()
+{
 	Xuint32 Reg32Value, TeclaOld;
 
 	print("##### Testing keypad and hexcodes #####\n\r");
@@ -96,9 +97,22 @@ void hex(){
 	// Read 6 numbers from the keypad
 	while (cont < 6)
 	{
-				
+		print(" Pulse una tecla cualquiera \n\r");
+		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
+		xil_printf("   Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
+		KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 99);
+		TeclaOld = Reg32Value;
+
+		if (Reg32Value != TeclaOld)
+			xil_printf("    Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
+		TeclaOld = Reg32Value;
+		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0) >> 28;
+		KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 99); // Se escribe un 0 en el registro del teclado para borrar la ultima tecla leida
+		
+		hex_color[cont] = Reg32Value;
+		cont++;
 	}
-	
+
 	// convert hex to decimal for red, green and blue components
 	Xuint32 red = (hex_color[0] * 16) + hex_color[1];
 	Xuint32 green = (hex_color[2] * 16) + hex_color[3];
@@ -110,7 +124,6 @@ void hex(){
 
 	print(" MIRA LOS LEDs \n\r");
 }
-
 
 int getNumber()
 {
