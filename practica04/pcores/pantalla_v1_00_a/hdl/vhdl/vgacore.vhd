@@ -240,9 +240,9 @@ begin
 	if reset = '1' then
 		desp <= "000000000";
 	elsif rising_edge(clkDiv) then
-		if buttonDeb = '1' then
+		if buttDeb1 = '1' then
 			desp <= desp + 1;
-		elsif buttons(1) = '0' and desp > 0 then
+		elsif buttDeb2 = '1' and desp > 0 then
 			desp <= desp - 1;
 		end if;
 	end if;
