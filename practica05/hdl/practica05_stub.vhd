@@ -17,7 +17,12 @@ entity practica05_stub is
     red : out std_logic;
     green : out std_logic;
     blue : out std_logic;
-    clk : in std_logic
+    clk : in std_logic;
+    row_clk : out std_logic;
+    reset_out : out std_logic;
+    row_serial_out : out std_logic;
+    col_serial_out : out std_logic;
+    col_clk : out std_logic
   );
 end practica05_stub;
 
@@ -33,7 +38,12 @@ architecture STRUCTURE of practica05_stub is
       red : out std_logic;
       green : out std_logic;
       blue : out std_logic;
-      clk : in std_logic
+      clk : in std_logic;
+      row_clk : out std_logic;
+      reset_out : out std_logic;
+      row_serial_out : out std_logic;
+      col_serial_out : out std_logic;
+      col_clk : out std_logic
     );
   end component;
 
@@ -52,7 +62,12 @@ begin
       red => red,
       green => green,
       blue => blue,
-      clk => clk
+      clk => clk,
+      row_clk => row_clk,
+      reset_out => reset_out,
+      row_serial_out => row_serial_out,
+      col_serial_out => col_serial_out,
+      col_clk => col_clk
     );
 
 end architecture STRUCTURE;

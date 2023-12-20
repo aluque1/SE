@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="182" y="182">
 <fastViewData fastViewLocation="1024"/>
-<intro standby="true"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="157" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
-<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="183" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="97" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="141" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="80" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -47,13 +46,13 @@
 <editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="U:/hlocal/temp/SE/practica05/SDK/practica05_bsp_0/system.mss" title="system.mss" tooltip="practica05_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_bsp_0/system.mss"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="U:/hlocal/temp/SE/practica05/SDK/practica05_0/src/testperiph.c" title="testperiph.c" tooltip="practica05_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_0/src/testperiph.c" title="testperiph.c" tooltip="practica05_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_0/src/testperiph.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1799" selectionTopPixel="765"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2966" selectionTopPixel="2180"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="leds_rgb.c" partName="leds_rgb.c" path="U:/hlocal/temp/SE/practica05/SDK/practica05_0/src/leds_rgb.c" title="leds_rgb.c" tooltip="practica05_0/src/leds_rgb.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="leds_rgb.c" partName="leds_rgb.c" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_0/src/leds_rgb.c" title="leds_rgb.c" tooltip="practica05_0/src/leds_rgb.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_0/src/leds_rgb.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="638" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1882" selectionTopPixel="243"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="U:/hlocal/temp/SE/practica05/SDK/practica05_bsp_0/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="practica05_bsp_0/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
@@ -82,12 +81,6 @@
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
-</view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="file:///C:/software/electronica/xilinx/14.1/ISE_DS/EDK/eclipse/nt64/eclipse/plugins/com.xilinx.sdk.product_1.0.0/intro/index.html" restore="true"/>
-<standbyPart/>
-</viewState>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -150,7 +143,6 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
-<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -166,13 +158,11 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@5880394f" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
@@ -209,164 +199,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/banner.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/testperiph.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/practica05_hw_platform/system.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/testperiph.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/testperiph.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
 </editors>
-<item historyLabel="testperiph.c" index="4">
-<position/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="829" y="0"/>
-</item>
-<item historyLabel="leds_rgb.h" index="2">
-<position info="not_deleted" x="3312" y="24"/>
-</item>
-<item historyLabel="leds_rgb.h" index="2">
-<position info="not_deleted" x="4573" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="829" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="leds_rgb.h" index="2">
-<position info="not_deleted" x="553" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="banner.h" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="xparameters.h" index="3">
-<position info="not_deleted" x="842" y="24"/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="4">
-<position/>
-</item>
-<item historyLabel="testperiph.c" index="4">
-<position/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="289" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="4">
-<position info="not_deleted" x="1348" y="0"/>
-</item>
-<item historyLabel="leds_rgb.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="1">
-<position info="not_deleted" x="831" y="0"/>
-</item>
-<item historyLabel="system.xml" index="5"/>
-<item historyLabel="testperiph.c" index="4">
-<position info="not_deleted" x="1348" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position info="not_deleted" x="1602" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position info="not_deleted" x="2049" y="0"/>
 </item>
-<item historyLabel="leds_rgb.h" index="2">
+<item historyLabel="leds_rgb.h" index="1">
 <position info="not_deleted" x="3312" y="24"/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position/>
 </item>
-<item historyLabel="leds_rgb.c" index="1">
+<item historyLabel="leds_rgb.c" index="0">
 <position info="not_deleted" x="538" y="0"/>
 </item>
-<item historyLabel="leds_rgb.h" index="2">
+<item historyLabel="leds_rgb.h" index="1">
 <position info="not_deleted" x="3087" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position info="not_deleted" x="1232" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="3">
+<item historyLabel="xparameters.h" index="2">
 <position info="not_deleted" x="842" y="24"/>
 </item>
-<item historyLabel="leds_rgb.h" index="2">
+<item historyLabel="leds_rgb.h" index="1">
 <position info="not_deleted" x="3087" y="0"/>
 </item>
-<item historyLabel="leds_rgb.c" index="1">
+<item historyLabel="leds_rgb.c" index="0">
 <position info="not_deleted" x="538" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position info="not_deleted" x="1868" y="0"/>
 </item>
-<item historyLabel="leds_rgb.c" index="1">
+<item historyLabel="leds_rgb.c" index="0">
 <position/>
 </item>
-<item historyLabel="xparameters.h" index="3">
+<item historyLabel="xparameters.h" index="2">
 <position info="not_deleted" x="842" y="24"/>
 </item>
-<item historyLabel="leds_rgb.h" index="2">
+<item historyLabel="leds_rgb.h" index="1">
 <position info="not_deleted" x="3087" y="0"/>
 </item>
-<item historyLabel="leds_rgb.h" index="2">
+<item historyLabel="leds_rgb.h" index="1">
 <position info="not_deleted" x="4378" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="3">
+<item historyLabel="xparameters.h" index="2">
 <position info="not_deleted" x="842" y="24"/>
 </item>
-<item historyLabel="leds_rgb.c" index="1">
+<item historyLabel="leds_rgb.c" index="0">
 <position info="not_deleted" x="640" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position info="not_deleted" x="2031" y="65"/>
 </item>
-<item historyLabel="leds_rgb.c" index="1">
+<item historyLabel="leds_rgb.c" index="0">
 <position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="4">
+<item historyLabel="testperiph.c" index="3">
 <position info="not_deleted" x="2031" y="65"/>
+</item>
+<item historyLabel="leds_rgb.c" index="4">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="5">
+<position info="not_deleted" x="842" y="24"/>
 </item>
 <item historyLabel="leds_rgb.c" index="6">
 <position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="7">
-<position info="not_deleted" x="842" y="24"/>
+<item historyLabel="testperiph.c" index="7">
+<position info="not_deleted" x="850" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="leds_rgb.c" index="8">
 <position info="not_deleted" x="638" y="0"/>
 </item>
-<item active="true" historyLabel="testperiph.c" index="9">
-<position info="not_deleted" x="850" y="0"/>
+<item historyLabel="leds_rgb.c" index="8">
+<position info="not_deleted" x="831" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="7">
+<position info="not_deleted" x="1492" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="7">
+<position info="not_deleted" x="0" y="4274"/>
+</item>
+<item historyLabel="leds_rgb.c" index="9">
+<position info="not_deleted" x="2070" y="0"/>
+</item>
+<item historyLabel="leds_rgb.c" index="9">
+<position info="not_deleted" x="0" y="2070"/>
+</item>
+<item historyLabel="testperiph.c" index="7">
+<position info="not_deleted" x="1778" y="0"/>
+</item>
+<item historyLabel="leds_rgb.c" index="9">
+<position info="not_deleted" x="1125" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="7">
+<position info="not_deleted" x="1494" y="0"/>
+</item>
+<item historyLabel="leds_rgb.c" index="9">
+<position info="not_deleted" x="1143" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="10">
+<position info="not_deleted" x="1494" y="0"/>
+</item>
+<item historyLabel="leds_rgb.c" index="9">
+<position info="not_deleted" x="1121" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="10">
+<position info="not_deleted" x="1494" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="10">
+<position/>
+</item>
+<item historyLabel="testperiph.c" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="10">
+<position info="not_deleted" x="1507" y="0"/>
+</item>
+<item historyLabel="leds_rgb.c" index="11">
+<position info="not_deleted" x="1121" y="0"/>
+</item>
+<item historyLabel="leds_rgb.c" index="11">
+<position info="not_deleted" x="1882" y="0"/>
+</item>
+<item active="true" historyLabel="testperiph.c" index="10">
+<position info="not_deleted" x="2966" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

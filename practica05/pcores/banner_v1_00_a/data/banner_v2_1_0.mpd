@@ -85,7 +85,5 @@ PORT row_clk = "", DIR = O
 PORT reset_out = "", DIR = O
 PORT col_serial_out = "", DIR = O
 PORT col_clk = "", DIR = O
-PORT reset2_out = "", DIR = O
-
 
 END
