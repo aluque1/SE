@@ -11,3 +11,4 @@ lib pantalla_v1_00_a counter2 vhdl
 lib pantalla_v1_00_a vgacore vhdl
 lib pantalla_v1_00_a user_logic vhdl
 lib pantalla_v1_00_a pantalla vhdl
+lib pantalla_v1_00_a debouncer vhdl

@@ -44,12 +44,31 @@ end vgacore;
 
 architecture vgacore_arch of vgacore is
 
+	component debouncer
+		port
+		(
+			reset: IN std_logic;
+			clock: IN std_logic;
+			x: IN std_logic;
+			xDeb: OUT std_logic;
+			xDebFallingEdge: OUT std_logic;
+			xDebRisingEdge: OUT std_logic
+		);
+	end component;
+
 signal hcnt: std_logic_vector(8 downto 0);	-- horizontal pixel counter
 signal vcnt: std_logic_vector(9 downto 0);	-- vertical line counter
 signal desp: std_logic_vector(8 downto 0); -- desplazamiento
 signal cuentaDiv: std_logic_vector(23 downto 0); -- cuenta divisor
 signal cuentaAux: std_logic_vector(23 downto 0); -- cuenta actual
 signal clkDiv: std_logic; -- clock divisor
+signal buttDeb1: std_logic; -- boton 1 debounced
+signal buttDeb2: std_logic; -- boton 2 debounced
+signal buttDeb1FallingEdge: std_logic; -- boton 1 debounced falling edge
+signal buttDeb2FallingEdge: std_logic; -- boton 2 debounced falling edge
+signal buttDeb1RisingEdge: std_logic; -- boton 1 debounced rising edge
+signal buttDeb2RisingEdge: std_logic; -- boton 2 debounced rising edge
+
 type ram_type is array (0 to 127) of std_logic_vector(8 downto 0);
 signal RAM : ram_type :=
 (
@@ -181,11 +200,11 @@ end process;
 divisorFreq: process(clock, reset)
 begin
 	if reset = '1' then
-		cuentaAux <= "000000000000000000000000";
+		cuentaAux <= (others => '0');
 		clkDiv <= '0';
 	elsif rising_edge(clock) then
 		if cuentaAux = cuentaDiv then
-			cuentaAux <= "000000000000000000000000";
+			cuentaAux <= (others => '0');
 			clkDiv <= not(clkDiv);
 		else
 			cuentaAux <= cuentaAux + 1;
@@ -193,14 +212,37 @@ begin
 	end if;
 end process;
 
+debouncer1: debouncer 
+	port map
+	(
+		reset => not(reset),
+		clock => clock,
+		x => not(buttons(0)),
+		xDeb => buttDeb1,
+		xDebFallingEdge => buttDeb1FallingEdge,
+		xDebRisingEdge => buttDeb1RisingEdge
+	);
+
+debouncer2: debouncer
+	port map
+	(
+		reset => not(reset),
+		clock => clock,
+		x => not(buttons(1)),
+		xDeb => buttDeb2,
+		xDebFallingEdge => buttDeb2FallingEdge,
+		xDebRisingEdge => buttDeb2RisingEdge
+	);
+
+
 desplazamiento: process(clkDiv, reset)
 begin
 	if reset = '1' then
 		desp <= "000000000";
 	elsif rising_edge(clkDiv) then
-		if buttons(0) = '0' then
+		if buttonDeb = '1' then
 			desp <= desp + 1;
-		elsif buttons(1) = '0' then
+		elsif buttons(1) = '0' and desp > 0 then
 			desp <= desp - 1;
 		end if;
 	end if;

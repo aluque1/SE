@@ -168,6 +168,8 @@ component counter2 IS
 			d_out		: OUT STD_LOGIC_VECTOR (numBits_g-1 DOWNTO 0)
 		);
 	END component;
+
+
 	type statesLectura is (estadoEsperaLectura, estadoEnviarDato);
 	signal currentStateLectura, nextStateLectura : statesLectura;
 
