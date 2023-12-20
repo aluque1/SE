@@ -215,8 +215,8 @@ end process;
 debouncer1: debouncer 
 	port map
 	(
-		reset => not(reset),
-		clock => clock,
+		rst => not(reset),
+		clk => clock,
 		x => not(buttons(0)),
 		xDeb => buttDeb1,
 		xDebFallingEdge => buttDeb1FallingEdge,
@@ -226,8 +226,8 @@ debouncer1: debouncer
 debouncer2: debouncer
 	port map
 	(
-		reset => not(reset),
-		clock => clock,
+		rst => not(reset),
+		clk => clock,
 		x => not(buttons(1)),
 		xDeb => buttDeb2,
 		xDebFallingEdge => buttDeb2FallingEdge,
