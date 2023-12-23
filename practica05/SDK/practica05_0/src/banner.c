@@ -11,8 +11,6 @@
 #include "xparameters.h"
 
 /************************** Function Definitions ***************************/
-
-
 void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum)
 {
 	while (BANNER_mWriteFIFOFull(XPAR_BANNER_0_BASEADDR))
