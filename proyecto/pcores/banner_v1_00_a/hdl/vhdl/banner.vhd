@@ -170,6 +170,7 @@ entity banner is
     row_serial_out                  : out  std_logic;
     row_clk                         : out  std_logic;
     reset_out                       : out  std_logic;
+    reset2_out                      : out  std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -506,7 +507,7 @@ begin
       row_serial_out                 => row_serial_out,
       row_clk                        => row_clk,
       reset_out                      => reset_out,
-      reset2_out                     => reset_out,
+      reset2_out                     => reset2_out,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

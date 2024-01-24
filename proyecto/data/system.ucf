@@ -24,6 +24,8 @@ net row_clk loc =G2;
 net row_clk iostandard = LVCMOS25 ;
 net reset_out loc = H1 ;
 net reset_out iostandard = LVCMOS25 ;
+net reset2_out loc = K15 ;
+net reset2_out iostandard = LVCMOS25 ;
 
 #### LEDS COLORES
 #NET red LOC=P12;
