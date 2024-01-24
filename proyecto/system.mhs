@@ -1,0 +1,71 @@
+
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT clk = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+ PORT rx = xps_uartlite_0_RX, DIR = I
+ PORT tx = xps_uartlite_0_TX, DIR = O
+ PORT rst = net_rst, DIR = I, SIGIS = RST
+ PORT col_serial_out = banner_0_col_serial_out, DIR = O
+ PORT col_clk = banner_0_col_clk, DIR = O
+ PORT row_serial_out = banner_0_row_serial_out, DIR = O
+ PORT row_clk = banner_0_row_clk, DIR = O
+ PORT reset_out = banner_0_reset_out, DIR = O
+
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.30.a
+ BUS_INTERFACE DPLB = plb_v46_0
+ BUS_INTERFACE IPLB = plb_v46_0
+ PORT MB_RESET = net_rst
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = plb_v46_0
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = plb_v46_0_PLB_Clk
+ PORT SYS_Rst = net_rst
+END
+
+BEGIN xps_bram_if_cntlr
+ PARAMETER INSTANCE = xps_bram_if_cntlr_0
+ PARAMETER HW_VER = 1.00.b
+ PARAMETER C_SPLB_NATIVE_DWIDTH = 32
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00007fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN xps_uartlite
+ PARAMETER INSTANCE = xps_uartlite_0
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_SPLB_CLK_FREQ_HZ = 50000000
+ PARAMETER C_BASEADDR = 0x84000000
+ PARAMETER C_HIGHADDR = 0x8400ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT RX = xps_uartlite_0_RX
+ PORT TX = xps_uartlite_0_TX
+END
+
+BEGIN banner
+ PARAMETER INSTANCE = banner_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xc5800000
+ PARAMETER C_HIGHADDR = 0xc580ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT col_serial_out = banner_0_col_serial_out
+ PORT col_clk = banner_0_col_clk
+ PORT row_serial_out = banner_0_row_serial_out
+ PORT row_clk = banner_0_row_clk
+ PORT reset_out = banner_0_reset_out
+END
+

@@ -35,7 +35,7 @@
 -- Filename:          banner.vhd
 -- Version:           1.00.a
 -- Description:       Top level design, instantiates library components and user logic.
--- Date:              Sat Dec 16 19:06:46 2023 (by Create and Import Peripheral Wizard)
+-- Date:              Tue Jan 09 10:53:52 2024 (by Create and Import Peripheral Wizard)
 -- VHDL Standard:     VHDL'93
 ------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -165,7 +165,7 @@ entity banner is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-		col_serial_out: out std_logic;	
+    col_serial_out: out std_logic;	
 		col_clk: out std_logic;
 		row_serial_out: out std_logic; 
 		row_clk: out std_logic; 
@@ -501,11 +501,13 @@ begin
     port map
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
-		  col_serial_out => col_serial_out,
-      col_clk => col_clk,
-      row_serial_out => row_serial_out,
-      row_clk => row_clk,
-      reset_out => reset_out,
+      
+      col_serial_out => col_serial_out,	
+		  col_clk => col_clk,
+  		row_serial_out => row_serial_out, 
+	  	row_clk => row_clk,
+	  	reset_out => reset_out,
+		  reset2_out => reset2_out,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

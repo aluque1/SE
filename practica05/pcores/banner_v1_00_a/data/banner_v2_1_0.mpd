@@ -14,6 +14,7 @@ OPTION IMP_NETLIST = TRUE
 OPTION HDL = VHDL
 OPTION IP_GROUP = MICROBLAZE:PPC:USER
 OPTION DESC = BANNER
+OPTION LONG_DESC = Para controlar la matriz de puntos de la placa extendida
 OPTION ARCH_SUPPORT_MAP = (others=DEVELOPMENT)
 
 
@@ -79,11 +80,11 @@ PORT Sl_MWrErr = Sl_MWrErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPL
 PORT Sl_MRdErr = Sl_MRdErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MIRQ = Sl_MIRQ, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 
-## User added aluque1
+PORT col_serial_out = "", DIR = O
+PORT col_clk = "", DIR = O
 PORT row_serial_out = "", DIR = O
 PORT row_clk = "", DIR = O
 PORT reset_out = "", DIR = O
-PORT col_serial_out = "", DIR = O
-PORT col_clk = "", DIR = O
+PORT reset2_out = "", DIR = O
 
 END

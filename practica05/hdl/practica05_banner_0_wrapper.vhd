@@ -54,11 +54,12 @@ entity practica05_banner_0_wrapper is
     Sl_MWrErr : out std_logic_vector(0 to 1);
     Sl_MRdErr : out std_logic_vector(0 to 1);
     Sl_MIRQ : out std_logic_vector(0 to 1);
+    col_serial_out : out std_logic;
+    col_clk : out std_logic;
     row_serial_out : out std_logic;
     row_clk : out std_logic;
     reset_out : out std_logic;
-    col_serial_out : out std_logic;
-    col_clk : out std_logic
+    reset2_out : out std_logic
   );
 end practica05_banner_0_wrapper;
 
@@ -123,11 +124,12 @@ architecture STRUCTURE of practica05_banner_0_wrapper is
       Sl_MWrErr : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       Sl_MRdErr : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       Sl_MIRQ : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
+      col_serial_out : out std_logic;
+      col_clk : out std_logic;
       row_serial_out : out std_logic;
       row_clk : out std_logic;
       reset_out : out std_logic;
-      col_serial_out : out std_logic;
-      col_clk : out std_logic
+      reset2_out : out std_logic
     );
   end component;
 
@@ -192,11 +194,12 @@ begin
       Sl_MWrErr => Sl_MWrErr,
       Sl_MRdErr => Sl_MRdErr,
       Sl_MIRQ => Sl_MIRQ,
+      col_serial_out => col_serial_out,
+      col_clk => col_clk,
       row_serial_out => row_serial_out,
       row_clk => row_clk,
       reset_out => reset_out,
-      col_serial_out => col_serial_out,
-      col_clk => col_clk
+      reset2_out => reset2_out
     );
 
 end architecture STRUCTURE;

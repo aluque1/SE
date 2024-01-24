@@ -93,15 +93,15 @@ INFO:EDK:4130 - IPNAME: leds_rgb, INSTANCE:leds_rgb_0 - tool is overriding
 INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
    C_SPLB_DWIDTH value to 32 -
    C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\banner_v1_00_a\data\banner_v2
-   _1_0.mpd line 27 
+   _1_0.mpd line 28 
 INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
    C_SPLB_NUM_MASTERS value to 2 -
    C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\banner_v1_00_a\data\banner_v2
-   _1_0.mpd line 28 
+   _1_0.mpd line 29 
 INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
    C_SPLB_MID_WIDTH value to 1 -
    C:\Users\aluqu\Desktop\uni\SE\practica05\pcores\banner_v1_00_a\data\banner_v2
-   _1_0.mpd line 29 
+   _1_0.mpd line 30 
 
 Checking platform address map ...
 
@@ -197,30 +197,33 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 21 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 22 - Copying cache
 implementation netlist
 IPNAME:plb_v46 INSTANCE:plb_v46_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 29 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 30 - Copying cache
 implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 36 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 37 - Copying cache
 implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 46 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 47 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 52 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 53 - Copying cache
 implementation netlist
 IPNAME:keypad INSTANCE:keypad_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 64 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 65 - Copying cache
 implementation netlist
 IPNAME:leds_rgb INSTANCE:leds_rgb_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 74 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 75 - Copying cache
+implementation netlist
+IPNAME:banner INSTANCE:banner_0 -
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 86 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 46 - elaborating IP
+C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line 47 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -242,11 +245,11 @@ INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 INSTANCE:keypad_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line
-64 - Running XST synthesis
+65 - Running XST synthesis
 INSTANCE:leds_rgb_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs
-line 74 - Running XST synthesis
+line 75 - Running XST synthesis
 INSTANCE:banner_0 - C:\Users\aluqu\Desktop\uni\SE\practica05\practica05.mhs line
-85 - Running XST synthesis
+86 - Running XST synthesis
 
 Running NGCBUILD ...
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
@@ -255,4 +258,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 46.00 seconds
+Total run time: 27.00 seconds

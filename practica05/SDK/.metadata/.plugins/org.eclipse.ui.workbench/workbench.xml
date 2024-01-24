@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="182" y="182">
+<window height="768" maximized="true" width="1024" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -34,29 +34,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="U:/hlocal/temp/SE/practica05/SDK/practica05_hw_platform/system.xml" title="system.xml" tooltip="practica05_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_hw_platform/system.xml"/>
-</editor>
-<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="U:/hlocal/temp/SE/practica05/SDK/practica05_bsp_0/system.mss" title="system.mss" tooltip="practica05_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_bsp_0/system.mss"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_0/src/testperiph.c" title="testperiph.c" tooltip="practica05_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_0/src/testperiph.c" title="testperiph.c" tooltip="practica05_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_0/src/testperiph.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1954" selectionTopPixel="1216"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2232" selectionTopPixel="592"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="banner.c" partName="banner.c" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_0/src/banner.c" title="banner.c" tooltip="practica05_0/src/banner.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.c" partName="banner.c" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_0/src/banner.c" title="banner.c" tooltip="practica05_0/src/banner.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_0/src/banner.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="548" selectionTopPixel="39"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2424" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_bsp_0/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="practica05_bsp_0/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="180"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="banner.h" partName="banner.h" path="C:/Users/aluqu/Desktop/uni/SE/practica05/SDK/practica05_0/src/banner.h" title="banner.h" tooltip="practica05_0/src/banner.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica05_0/src/banner.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="618" selectionTopPixel="160"/>
 </editor>
 </editors>
 <views>
@@ -198,169 +190,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/testperiph.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/testperiph.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/banner_selftest.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/banner.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/testperiph.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/banner.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/banner.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/leds_rgb.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/practica05_hw_platform/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/testperiph.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/practica05_0/src/banner.c"/>
 </editors>
-<item historyLabel="leds_rgb.c" index="0">
-<position info="not_deleted" x="638" y="0"/>
-</item>
-<item historyLabel="xparameters.h" index="1">
-<position info="not_deleted" x="842" y="24"/>
-</item>
-<item historyLabel="leds_rgb.c" index="2">
-<position info="not_deleted" x="638" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="3">
-<position info="not_deleted" x="850" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="3">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="leds_rgb.c" index="4">
-<position info="not_deleted" x="638" y="0"/>
+<item historyLabel="banner_selftest.c" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="leds_rgb.c" index="4">
-<position info="not_deleted" x="831" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="3">
-<position info="not_deleted" x="1492" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="3">
-<position info="not_deleted" x="0" y="4274"/>
-</item>
-<item historyLabel="leds_rgb.c" index="5">
-<position info="not_deleted" x="2070" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="5">
-<position info="not_deleted" x="0" y="2070"/>
-</item>
-<item historyLabel="testperiph.c" index="3">
-<position info="not_deleted" x="1778" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="5">
-<position info="not_deleted" x="1125" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="3">
-<position info="not_deleted" x="1494" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="5">
-<position info="not_deleted" x="1143" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="6">
-<position info="not_deleted" x="1494" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="5">
-<position info="not_deleted" x="1121" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="6">
-<position info="not_deleted" x="1494" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="6">
-<position info="not_deleted" x="1507" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="7">
-<position info="not_deleted" x="1121" y="0"/>
-</item>
-<item historyLabel="leds_rgb.c" index="7">
-<position info="not_deleted" x="1882" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="6">
-<position info="not_deleted" x="2966" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="banner_selftest.c" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="banner.c" index="2">
 <position/>
 </item>
-<item historyLabel="banner.c" index="9">
-<position/>
-</item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1967" y="0"/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1977" y="0"/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position/>
 </item>
-<item historyLabel="leds_rgb.c" index="10">
+<item historyLabel="leds_rgb.c" index="3">
 <position info="not_deleted" x="1882" y="0"/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position info="not_deleted" x="1076" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1960" y="0"/>
 </item>
-<item historyLabel="leds_rgb.c" index="10">
+<item historyLabel="leds_rgb.c" index="3">
 <position info="not_deleted" x="1882" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="11">
+<item historyLabel="xparameters.h" index="4">
 <position info="not_deleted" x="842" y="24"/>
 </item>
-<item historyLabel="leds_rgb.c" index="10">
+<item historyLabel="leds_rgb.c" index="3">
 <position info="not_deleted" x="1882" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position info="not_deleted" x="640" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1547" y="0"/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position info="not_deleted" x="17" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1949" y="0"/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position info="not_deleted" x="642" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="6">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="2020" y="0"/>
 </item>
-<item historyLabel="banner.c" index="9">
+<item historyLabel="banner.c" index="2">
 <position info="not_deleted" x="548" y="0"/>
 </item>
-<item historyLabel="xparameters.h" index="11">
+<item historyLabel="xparameters.h" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="testperiph.c" index="12">
+<item historyLabel="testperiph.c" index="5">
 <position info="not_deleted" x="2016" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="548" y="0"/>
+</item>
+<item historyLabel="banner.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="8">
+<position info="not_deleted" x="652" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="3492" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="5">
+<position info="not_deleted" x="3420" y="0"/>
+</item>
+<item historyLabel="leds_rgb.c" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="5">
+<position info="not_deleted" x="3420" y="0"/>
+</item>
+<item historyLabel="system.xml" index="10"/>
+<item historyLabel="testperiph.c" index="5">
+<position info="not_deleted" x="3420" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="3492" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="5">
+<position info="not_deleted" x="3420" y="0"/>
+</item>
+<item historyLabel="system.xml" index="10"/>
+<item historyLabel="testperiph.c" index="5">
+<position info="not_deleted" x="3420" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="3492" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="8">
+<position info="not_deleted" x="652" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="3492" y="0"/>
+</item>
+<item historyLabel="banner.h" index="7">
+<position info="not_deleted" x="2235" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="3704" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="5">
+<position info="not_deleted" x="1479" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="525" y="0"/>
+</item>
+<item historyLabel="banner.h" index="7">
+<position info="not_deleted" x="618" y="0"/>
+</item>
+<item historyLabel="banner.c" index="6">
+<position info="not_deleted" x="525" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="1479" y="0"/>
+</item>
+<item active="true" historyLabel="banner.c" index="12">
+<position info="not_deleted" x="1678" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -379,6 +367,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.h" tooltip="practica05_0/src/banner.h">
+<persistable path="/practica05_0/src/banner.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="leds_rgb.c" tooltip="practica05_0/src/leds_rgb.c">
+<persistable path="/practica05_0/src/leds_rgb.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="practica05_bsp_0/microblaze_0/include/xparameters.h">
 <persistable path="/practica05_bsp_0/microblaze_0/include/xparameters.h"/>
 </file>
@@ -390,12 +384,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="leds_rgb.h" tooltip="practica05_0/src/leds_rgb.h">
 <persistable path="/practica05_0/src/leds_rgb.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="leds_rgb.c" tooltip="practica05_0/src/leds_rgb.c">
-<persistable path="/practica05_0/src/leds_rgb.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.h" tooltip="practica05_0/src/banner.h">
-<persistable path="/practica05_0/src/banner.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="practica05_0/src/testperiph.c">
 <persistable path="/practica05_0/src/testperiph.c"/>

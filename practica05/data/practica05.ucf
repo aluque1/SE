@@ -35,6 +35,9 @@ NET blue LOC=J16;
 #NET red LOC=J14;
 #NET green LOC=N15;
 #NET blue LOC=G16;
+NET "red" FLOAT;
+NET "green" FLOAT;
+NET "blue" FLOAT;
 
 
 #### para el keypad

@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 TABLE OF CONTENTS
@@ -481,13 +481,13 @@ Analyzing generic Entity <banner> in library <banner_v1_00_a> (Architecture <IMP
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 Entity <banner> analyzed. Unit <banner> generated.
@@ -710,16 +710,16 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <bannerDesp> in library <banner_v1_00_a> (Architecture <banner_arch>).
-WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 96: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 252: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 253: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 98: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 254: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 255: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 256: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 257: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 258: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 259: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 277: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 260: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 261: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/aluqu/Desktop/uni/SE/practica05/pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 279: Index value(s) does not match array range, simulation mismatch.
 Entity <bannerDesp> analyzed. Unit <bannerDesp> generated.
 
 
@@ -829,20 +829,20 @@ Synthesizing Unit <bannerDesp>.
     Found 27-bit up counter for signal <count2>.
     Found 6-bit up counter for signal <desplazamiento>.
     Found 1-bit register for signal <fin_per>.
-    Found 13-bit comparator less for signal <fin_per$cmp_lt0000> created at line 165.
+    Found 13-bit comparator less for signal <fin_per$cmp_lt0000> created at line 167.
     Found 1-bit register for signal <fin_pixel_cont>.
-    Found 6-bit comparator less for signal <fin_pixel_cont$cmp_lt0000> created at line 183.
+    Found 6-bit comparator less for signal <fin_pixel_cont$cmp_lt0000> created at line 185.
     Found 40-bit register for signal <miregistro>.
-    Found 6-bit adder for signal <miregistro$sub0000> created at line 277.
+    Found 6-bit adder for signal <miregistro$sub0000> created at line 279.
     Found 6-bit register for signal <pixel_count>.
-    Found 6-bit adder for signal <pixel_count$addsub0000> created at line 184.
-    Found 6-bit adder for signal <RAM$add0000> created at line 253.
-    Found 6-bit adder for signal <RAM$add0001> created at line 254.
-    Found 6-bit adder for signal <RAM$add0002> created at line 255.
-    Found 6-bit adder for signal <RAM$add0003> created at line 256.
-    Found 6-bit adder for signal <RAM$add0004> created at line 257.
-    Found 6-bit adder for signal <RAM$add0005> created at line 258.
-    Found 6-bit adder for signal <RAM$add0006> created at line 259.
+    Found 6-bit adder for signal <pixel_count$addsub0000> created at line 186.
+    Found 6-bit adder for signal <RAM$add0000> created at line 255.
+    Found 6-bit adder for signal <RAM$add0001> created at line 256.
+    Found 6-bit adder for signal <RAM$add0002> created at line 257.
+    Found 6-bit adder for signal <RAM$add0003> created at line 258.
+    Found 6-bit adder for signal <RAM$add0004> created at line 259.
+    Found 6-bit adder for signal <RAM$add0005> created at line 260.
+    Found 6-bit adder for signal <RAM$add0006> created at line 261.
     Found 1-bit register for signal <reloj12>.
     Found 3-bit up counter for signal <row_number>.
     Found 13-bit up counter for signal <t_persistencia>.
@@ -1413,7 +1413,7 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 206
+# IOs                              : 207
 
 Cell Usage :
 # BELS                             : 636
@@ -1457,12 +1457,12 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      335  out of   7680     4%  
+ Number of Slices:                      349  out of   7680     4%  
  Number of Slice Flip Flops:            310  out of  15360     2%  
  Number of 4 input LUTs:                734  out of  15360     4%  
     Number used as logic:               414
     Number used as RAMs:                320
- Number of IOs:                         206
+ Number of IOs:                         207
  Number of bonded IOBs:                   0  out of    173     0%  
  Number of BRAMs:                         1  out of     24     4%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -1666,7 +1666,7 @@ Offset:              5.062ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Delay:               0.479ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
@@ -1676,7 +1676,7 @@ Delay:               0.479ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     INV:I->O              1   0.479   0.000  banner_0/USER_LOGIC_I/mybanner/reset_out1_INV_0 (reset_out)
+     INV:I->O              1   0.479   0.000  banner_0/USER_LOGIC_I/mybanner/reset_in_inv1_INV_0 (reset2_out)
     ----------------------------------------
     Total                      0.479ns (0.479ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
@@ -1684,12 +1684,12 @@ Delay:               0.479ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 16.34 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.99 secs
  
 --> 
 
-Total memory usage is 4884540 kilobytes
+Total memory usage is 4884528 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  196 (   0 filtered)

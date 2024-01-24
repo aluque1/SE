@@ -1,13 +1,14 @@
 CipWiz::SetVersion "14.1";
 CipWiz::SetFlow "CREATE";
 CipWiz::SetParameter "ProjectDir" "C:\Users\aluqu\Desktop\uni\SE\practica05";
+CipWiz::SetParameter "IpLongDescription" "Para controlar la matriz de puntos de la placa extendida";
 CipWiz::SetParameter "IpName" "banner";
 CipWiz::SetParameter "IpVersion" "1.00.a";
 CipWiz::SetParameter "HdlLanguage" "1";
 CipWiz::SetParameter "BusType" "64";
 CipWiz::SetParameter "IncludeIseFile" "FALSE";
 CipWiz::SetParameter "IncludeXpsFile" "TRUE";
-CipWiz::SetParameter "IncludeSoftwareDriverFile" "TRUE";
+CipWiz::SetParameter "IncludeSoftwareDriverFile" "FALSE";
 CipWiz::SetParameter "IncludeBFMSimulationFile" "FALSE";
 CipWiz::SetParameter "IncludeSlaveAttachmentSupport" "TRUE";
 CipWiz::SetParameter "IncludeMasterAttachmentSupport" "FALSE";

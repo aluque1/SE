@@ -37,6 +37,7 @@ entity bannerDesp is
 		row_serial_out: out std_logic; 
 		row_clk: out std_logic; 
 		reset_out: out std_logic;
+		reset2_out: out std_logic;
 		fila: in std_logic_vector (2 downto 0);
 		columna: in std_logic_vector ( 2 downto 0);
 		dato: in std_logic_vector (4 downto 0);
@@ -84,6 +85,7 @@ signal posicion: std_logic_vector(5 downto 0);
 begin
 reset <=  reset_in;
 reset_out <= not reset_in;
+reset2_out<= not reset_in;
 reloj<=clock;
  posicion(5 downto 3)<= fila;
   posicion(2 downto 0)<=columna;

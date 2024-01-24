@@ -6,4 +6,3 @@
 -bus plbv46 s 
 -wfifo 1 512 
 -xps 
--driver 

@@ -11,11 +11,12 @@
  PORT green = leds_rgb_0_green, DIR = O
  PORT blue = leds_rgb_0_blue, DIR = O
  PORT clk = net_clk, DIR = I, SIGIS = CLK
- PORT row_clk = banner_0_row_clk, DIR = O
  PORT reset_out = banner_0_reset_out, DIR = O
  PORT row_serial_out = banner_0_row_serial_out, DIR = O
  PORT col_serial_out = banner_0_col_serial_out, DIR = O
  PORT col_clk = banner_0_col_clk, DIR = O
+ PORT row_clk = banner_0_row_clk, DIR = O
+ PORT reset2_out = banner_0_reset2_out, DIR = O
 
 
 BEGIN microblaze
@@ -88,10 +89,11 @@ BEGIN banner
  PARAMETER C_BASEADDR = 0xc5800000
  PARAMETER C_HIGHADDR = 0xc580ffff
  BUS_INTERFACE SPLB = plb_v46_0
- PORT row_serial_out = banner_0_row_serial_out
- PORT row_clk = banner_0_row_clk
  PORT reset_out = banner_0_reset_out
+ PORT row_serial_out = banner_0_row_serial_out
  PORT col_serial_out = banner_0_col_serial_out
  PORT col_clk = banner_0_col_clk
+ PORT row_clk = banner_0_row_clk
+ PORT reset2_out = banner_0_reset2_out
 END
 

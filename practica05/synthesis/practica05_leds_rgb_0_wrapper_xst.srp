@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 TABLE OF CONTENTS
@@ -940,12 +940,12 @@ Offset:              3.203ns (Levels of Logic = 9)
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.77 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.17 secs
  
 --> 
 
-Total memory usage is 4755000 kilobytes
+Total memory usage is 4755052 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  113 (   0 filtered)

@@ -45,7 +45,6 @@ int main()
 	Xuint32 opt;
 	int row, col, datum;
 
-	banner_init();
 	leds_init();
 
 	print("---Entering main---\n\r");
@@ -73,14 +72,7 @@ int main()
 			break;
 		case 3:
 			print("Banner time!\n\r");
-			for (row = 0; row < 7; ++row)
-			{
-				for (col = 0; col < 8; ++col)
-				{
-					datum = col % 2;
-					banner_write(row, col, datum);
-				}
-			}
+
 			break;
 		//case 4:
 			//hex();

@@ -18,11 +18,12 @@ entity practica05 is
     green : out std_logic;
     blue : out std_logic;
     clk : in std_logic;
-    row_clk : out std_logic;
     reset_out : out std_logic;
     row_serial_out : out std_logic;
     col_serial_out : out std_logic;
-    col_clk : out std_logic
+    col_clk : out std_logic;
+    row_clk : out std_logic;
+    reset2_out : out std_logic
   );
 end practica05;
 
@@ -998,11 +999,12 @@ architecture STRUCTURE of practica05 is
       Sl_MWrErr : out std_logic_vector(0 to 1);
       Sl_MRdErr : out std_logic_vector(0 to 1);
       Sl_MIRQ : out std_logic_vector(0 to 1);
+      col_serial_out : out std_logic;
+      col_clk : out std_logic;
       row_serial_out : out std_logic;
       row_clk : out std_logic;
       reset_out : out std_logic;
-      col_serial_out : out std_logic;
-      col_clk : out std_logic
+      reset2_out : out std_logic
     );
   end component;
 
@@ -1010,6 +1012,7 @@ architecture STRUCTURE of practica05 is
 
   signal banner_0_col_clk : std_logic;
   signal banner_0_col_serial_out : std_logic;
+  signal banner_0_reset2_out : std_logic;
   signal banner_0_reset_out : std_logic;
   signal banner_0_row_clk : std_logic;
   signal banner_0_row_serial_out : std_logic;
@@ -1132,11 +1135,12 @@ begin
   green <= leds_rgb_0_green;
   blue <= leds_rgb_0_blue;
   net_clk <= clk;
-  row_clk <= banner_0_row_clk;
   reset_out <= banner_0_reset_out;
   row_serial_out <= banner_0_row_serial_out;
   col_serial_out <= banner_0_col_serial_out;
   col_clk <= banner_0_col_clk;
+  row_clk <= banner_0_row_clk;
+  reset2_out <= banner_0_reset2_out;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -2109,11 +2113,12 @@ begin
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(8 to 9),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(8 to 9),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(8 to 9),
+      col_serial_out => banner_0_col_serial_out,
+      col_clk => banner_0_col_clk,
       row_serial_out => banner_0_row_serial_out,
       row_clk => banner_0_row_clk,
       reset_out => banner_0_reset_out,
-      col_serial_out => banner_0_col_serial_out,
-      col_clk => banner_0_col_clk
+      reset2_out => banner_0_reset2_out
     );
 
 end architecture STRUCTURE;

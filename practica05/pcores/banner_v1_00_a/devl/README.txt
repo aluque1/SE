@@ -61,39 +61,6 @@ Address Block for User Logic and IPIF Predefined Services
     This Peripheral Analysis Order file defines the analysis order of all the HDL
     source files that are used to compile your peripheral.
 
-- Driver source file(s)
-
-  src/banner.h
-
-    This is the software driver header template file, which contains address offset of
-    software addressable registers in your peripheral, as well as some common masks and
-    simple register access macros or function declaration.
-
-  src/banner.c
-
-    This is the software driver source template file, to define all applicable driver
-    functions.
-
-  src/banner_selftest.c
-
-    This is the software driver self test example file, which contain self test example
-    code to test various hardware features of your peripheral.
-
-  src/Makefile
-
-    This is the software driver makefile to compile drivers.
-
-- Driver interface file(s)
--user needs to add these to repositories path in SDK (Xilinx Tools-->Repositories)
-
-  data/banner_v2_1_0.mdd
-
-    This is the Microprocessor Driver Definition file.
-
-  data/banner_v2_1_0.tcl
-
-    This is the Microprocessor Driver Command file.
-
 - Other misc file(s)
 
   devl/ipwiz.opt
