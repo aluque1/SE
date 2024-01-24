@@ -129,14 +129,19 @@ C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhd
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd \
 pcores/banner_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd \
-pcores/banner_v1_00_a/hdl/vhdl/banner.vhd
+pcores/banner_v1_00_a/hdl/vhdl/banner.vhd \
+pcores/kbd_ps2_v1_00_a/hdl/vhdl/user_logic.vhd \
+pcores/kbd_ps2_v1_00_a/hdl/vhdl/kbd_ps2.vhd \
+pcores/kbd_ps2_v1_00_a/hdl/vhdl/keyboard.vhd \
+pcores/kbd_ps2_v1_00_a/hdl/vhdl/ps2_kdb.vhd
 
 WRAPPER_NGC_FILES = implementation/system_microblaze_0_wrapper.ngc \
 implementation/system_plb_v46_0_wrapper.ngc \
 implementation/system_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/system_bram_block_0_wrapper.ngc \
 implementation/system_xps_uartlite_0_wrapper.ngc \
-implementation/system_banner_0_wrapper.ngc
+implementation/system_banner_0_wrapper.ngc \
+implementation/system_kbd_ps2_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

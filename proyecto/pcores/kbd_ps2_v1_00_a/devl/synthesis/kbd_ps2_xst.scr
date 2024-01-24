@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Users\aluqu\Desktop\uni\SE\proyecto\pcores\kbd_ps2_v1_00_a\devl\synthesis\kbd_ps2_xst.prj"
+-top kbd_ps2
+-p virtex6
+-ofn "C:\Users\aluqu\Desktop\uni\SE\proyecto\pcores\kbd_ps2_v1_00_a\devl\synthesis\kbd_ps2_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib kbd_ps2_v1_00_a

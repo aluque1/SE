@@ -11,6 +11,9 @@
  PORT row_serial_out = banner_0_row_serial_out, DIR = O
  PORT row_clk = banner_0_row_clk, DIR = O
  PORT reset_out = banner_0_reset_out, DIR = O
+ PORT reset2_out = banner_0_reset2_out, DIR = O
+ PORT ps2Clk = net_ps2Clk, DIR = I
+ PORT ps2Data = net_ps2Data, DIR = I
 
 
 BEGIN microblaze
@@ -67,5 +70,16 @@ BEGIN banner
  PORT row_serial_out = banner_0_row_serial_out
  PORT row_clk = banner_0_row_clk
  PORT reset_out = banner_0_reset_out
+ PORT reset2_out = banner_0_reset2_out
+END
+
+BEGIN kbd_ps2
+ PARAMETER INSTANCE = kbd_ps2_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xcb800000
+ PARAMETER C_HIGHADDR = 0xcb80ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT ps2Clk = net_ps2Clk
+ PORT ps2Data = net_ps2Data
 END
 

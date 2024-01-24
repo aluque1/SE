@@ -40,12 +40,13 @@ Address Map for Processor microblaze_0
   (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
   (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
   (0xc5800000-0xc580ffff) banner_0	plb_v46_0
+  (0xcb800000-0xcb80ffff) kbd_ps2_0	plb_v46_0
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
    PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
    C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 78 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
-   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
    C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 79 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
@@ -76,11 +77,23 @@ INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
    C_SPLB_MID_WIDTH value to 1 -
    C:\Users\aluqu\Desktop\uni\SE\proyecto\pcores\banner_v1_00_a\data\banner_v2_1
    _0.mpd line 30 
+INFO:EDK:4130 - IPNAME: kbd_ps2, INSTANCE:kbd_ps2_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   C:\Users\aluqu\Desktop\uni\SE\proyecto\pcores\kbd_ps2_v1_00_a\data\kbd_ps2_v2
+   _1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: kbd_ps2, INSTANCE:kbd_ps2_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Users\aluqu\Desktop\uni\SE\proyecto\pcores\kbd_ps2_v1_00_a\data\kbd_ps2_v2
+   _1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: kbd_ps2, INSTANCE:kbd_ps2_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\Users\aluqu\Desktop\uni\SE\proyecto\pcores\kbd_ps2_v1_00_a\data\kbd_ps2_v2
+   _1_0.mpd line 30 
 
 Checking platform address map ...
 
 Checking platform configuration ...
-IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
@@ -102,6 +115,10 @@ INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
    propagated to this IP. Please make sure that you have specified the frequency
    of the top-level clock port, and that the clocks are properly connected.
 INFO:EDK:4060 - INSTANCE: banner_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
+   implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: kbd_ps2_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
    implement clock DRCs for the parameter. Top-level frequency could not be
    propagated to this IP. Please make sure that you have specified the frequency
    of the top-level clock port, and that the clocks are properly connected.
@@ -163,27 +180,27 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 16 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 19 - Copying cache
 implementation netlist
 IPNAME:plb_v46 INSTANCE:plb_v46_0 -
-C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 24 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 27 - Copying cache
 implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 31 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 34 - Copying cache
 implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 41 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 44 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 47 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 50 - Copying cache
 implementation netlist
 IPNAME:banner INSTANCE:banner_0 -
-C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 59 - Copying cache
+C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 62 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
-C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 41 - elaborating IP
+C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 44 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -204,7 +221,9 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:banner_0 - C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 59 -
+INSTANCE:banner_0 - C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 62 -
+Running XST synthesis
+INSTANCE:kbd_ps2_0 - C:\Users\aluqu\Desktop\uni\SE\proyecto\system.mhs line 76 -
 Running XST synthesis
 
 Running NGCBUILD ...
@@ -214,4 +233,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 21.00 seconds
+Total run time: 36.00 seconds

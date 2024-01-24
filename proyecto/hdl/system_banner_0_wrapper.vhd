@@ -58,7 +58,8 @@ entity system_banner_0_wrapper is
     col_clk : out std_logic;
     row_serial_out : out std_logic;
     row_clk : out std_logic;
-    reset_out : out std_logic
+    reset_out : out std_logic;
+    reset2_out : out std_logic
   );
 end system_banner_0_wrapper;
 
@@ -127,7 +128,8 @@ architecture STRUCTURE of system_banner_0_wrapper is
       col_clk : out std_logic;
       row_serial_out : out std_logic;
       row_clk : out std_logic;
-      reset_out : out std_logic
+      reset_out : out std_logic;
+      reset2_out : out std_logic
     );
   end component;
 
@@ -196,7 +198,8 @@ begin
       col_clk => col_clk,
       row_serial_out => row_serial_out,
       row_clk => row_clk,
-      reset_out => reset_out
+      reset_out => reset_out,
+      reset2_out => reset2_out
     );
 
 end architecture STRUCTURE;

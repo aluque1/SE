@@ -1,0 +1,10 @@
+-batch 
+-create kbd_ps2 
+-ver 1.00.a 
+-dir "C:\Users\aluqu\Desktop\uni\SE\proyecto" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 1 
+-xps 
+-ise 
+-driver 

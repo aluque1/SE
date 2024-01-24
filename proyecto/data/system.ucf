@@ -27,6 +27,10 @@ net reset_out iostandard = LVCMOS25 ;
 net reset2_out loc = K15 ;
 net reset2_out iostandard = LVCMOS25 ;
 
+#PS2 KDB
+net ps2clk LOC = B16 ;
+net ps2Data LOC =E13;
+
 #### LEDS COLORES
 #NET red LOC=P12;
 #NET green LOC=H1;

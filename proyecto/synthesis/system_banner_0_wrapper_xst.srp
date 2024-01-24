@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> 
 TABLE OF CONTENTS
@@ -481,13 +481,13 @@ Analyzing generic Entity <banner> in library <banner_v1_00_a> (Architecture <IMP
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 440: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/pcores/banner_v1_00_a/hdl/vhdl/banner.vhd" line 441: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 Entity <banner> analyzed. Unit <banner> generated.
@@ -1292,92 +1292,94 @@ Optimizing unit <plb_slave_attachment> ...
 Optimizing unit <pf_occ_counter_top> ...
 
 Optimizing unit <wrpfifo_dp_cntl> ...
-WARNING:Xst:1710 - FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_14> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_15> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_16> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_17> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_18> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_19> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_20> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_21> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_22> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_23> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_0> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_1> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_2> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_3> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_4> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_5> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_6> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_7> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_8> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_9> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_3> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_4> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_7> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_8> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_9> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_10> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <banner> ...
+WARNING:Xst:1710 - FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_12> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_11> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_12> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_10> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_9> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_8> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_7> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_4> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_3> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_9> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_8> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_7> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_6> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_5> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_4> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_3> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_2> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_1> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/reg_vacancy_0> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_23> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_22> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_21> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_20> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_19> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_18> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_17> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_16> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_15> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_14> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_13> (without init value) has a constant value of 0 in block <system_banner_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_4> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_4> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <system_banner_0_wrapper>.
-WARNING:Xst:2677 - Node <banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/rdack_dly1> of sequential type is unconnected in block <system_banner_0_wrapper>.
 WARNING:Xst:2677 - Node <banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/int_rdack> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/rdack_dly1> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_4> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_4> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0> of sequential type is unconnected in block <system_banner_0_wrapper>.
+WARNING:Xst:2677 - Node <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> of sequential type is unconnected in block <system_banner_0_wrapper>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2261 - The FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5> in Unit <system_banner_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6> 
+INFO:Xst:2261 - The FF/Latch <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_6> in Unit <system_banner_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_5> 
 
 Final Macro Processing ...
 
@@ -1411,7 +1413,7 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 206
+# IOs                              : 207
 
 Cell Usage :
 # BELS                             : 636
@@ -1455,12 +1457,12 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      335  out of   7680     4%  
+ Number of Slices:                      333  out of   7680     4%  
  Number of Slice Flip Flops:            310  out of  15360     2%  
  Number of 4 input LUTs:                734  out of  15360     4%  
     Number used as logic:               414
     Number used as RAMs:                320
- Number of IOs:                         206
+ Number of IOs:                         207
  Number of bonded IOBs:                   0  out of    173     0%  
  Number of BRAMs:                         1  out of     24     4%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -1483,12 +1485,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                           | Clock buffer(FF name)                                                                                                                                                                                                             | Load  |
----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-SPLB_Clk                               | NONE(banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32)| 404   |
-banner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                                                                                                                                                                              | 67    |
----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+---------------------------------------+----------------------------------------------------------------------+-------+
+Clock Signal                           | Clock buffer(FF name)                                                | Load  |
+---------------------------------------+----------------------------------------------------------------------+-------+
+SPLB_Clk                               | NONE(banner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/valid_read)| 404   |
+banner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                 | 67    |
+---------------------------------------+----------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1599,10 +1601,10 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
 -------------------------------------------------------------------------
 Offset:              2.621ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
-  Destination:       banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h (FF)
+  Destination:       banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0 (FF)
   Destination Clock: SPLB_Clk rising
 
-  Data Path: SPLB_Rst to banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h
+  Data Path: SPLB_Rst to banner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1664,7 +1666,7 @@ Offset:              5.062ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Delay:               0.479ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
@@ -1674,7 +1676,7 @@ Delay:               0.479ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     INV:I->O              1   0.479   0.000  banner_0/USER_LOGIC_I/mybanner/reset_in_inv1_INV_0 (reset_out)
+     INV:I->O              1   0.479   0.000  banner_0/USER_LOGIC_I/mybanner/reset_in_inv1_INV_0 (reset2_out)
     ----------------------------------------
     Total                      0.479ns (0.479ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
@@ -1682,12 +1684,12 @@ Delay:               0.479ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.85 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.40 secs
  
 --> 
 
-Total memory usage is 4884740 kilobytes
+Total memory usage is 4884736 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  196 (   0 filtered)

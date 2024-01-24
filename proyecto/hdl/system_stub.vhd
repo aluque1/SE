@@ -17,7 +17,10 @@ entity system_stub is
     col_clk : out std_logic;
     row_serial_out : out std_logic;
     row_clk : out std_logic;
-    reset_out : out std_logic
+    reset_out : out std_logic;
+    reset2_out : out std_logic;
+    ps2Clk : in std_logic;
+    ps2Data : in std_logic
   );
 end system_stub;
 
@@ -33,7 +36,10 @@ architecture STRUCTURE of system_stub is
       col_clk : out std_logic;
       row_serial_out : out std_logic;
       row_clk : out std_logic;
-      reset_out : out std_logic
+      reset_out : out std_logic;
+      reset2_out : out std_logic;
+      ps2Clk : in std_logic;
+      ps2Data : in std_logic
     );
   end component;
 
@@ -52,7 +58,10 @@ begin
       col_clk => col_clk,
       row_serial_out => row_serial_out,
       row_clk => row_clk,
-      reset_out => reset_out
+      reset_out => reset_out,
+      reset2_out => reset2_out,
+      ps2Clk => ps2Clk,
+      ps2Data => ps2Data
     );
 
 end architecture STRUCTURE;
