@@ -115,7 +115,8 @@
  *
  */
 XStatus KBD_PS2_SelfTest(void * baseaddr_p);
-void do_ps2();
+
+void record_passPS2(Xuint32 *pass);
 
 #endif /** KBD_PS2_H */
 

@@ -114,6 +114,6 @@
  */
 XStatus KEYPAD_SelfTest(void *baseaddr_p);
 
-void do_keypad();
+void record_passKP(Xuint32 *pass);
 
 #endif /** KEYPAD_H */

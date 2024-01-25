@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="1038" maximized="true" width="976" x="952" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -38,17 +38,19 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
+<part id="7"/>
+<part id="8"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="C:/Users/aluqu/Desktop/uni/SE/proyecto/SDK/proyecto/src/testperiph.c" title="testperiph.c" tooltip="proyecto/src/testperiph.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="C:/Users/aluqu/Desktop/uni/SE/proyecto/SDK/proyecto/src/testperiph.c" title="testperiph.c" tooltip="proyecto/src/testperiph.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto/src/testperiph.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="779" selectionTopPixel="116"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1526" selectionTopPixel="581"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="C:/Users/aluqu/Desktop/uni/SE/proyecto/SDK/proyecto_bsp_0/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="proyecto_bsp_0/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto_bsp_0/microblaze_0/include/xparameters.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="1346" selectionTopPixel="625"/>
+<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="1346" selectionTopPixel="729"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_ps2.h" partName="kbd_ps2.h" path="C:/Users/aluqu/Desktop/uni/SE/proyecto/SDK/proyecto/src/kbd_ps2.h" title="kbd_ps2.h" tooltip="proyecto/src/kbd_ps2.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto/src/kbd_ps2.h"/>
@@ -68,7 +70,15 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="buzzer.c" partName="buzzer.c" path="C:/Users/aluqu/Desktop/uni/SE/proyecto/SDK/proyecto/src/buzzer.c" title="buzzer.c" tooltip="proyecto/src/buzzer.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto/src/buzzer.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="932" selectionTopPixel="614"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="932" selectionTopPixel="375"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="banner.h" partName="banner.h" path="C:/Users/aluqu/Desktop/uni/SE/proyecto/SDK/proyecto/src/banner.h" title="banner.h" tooltip="proyecto/src/banner.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto/src/banner.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6529" selectionTopPixel="3540"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.c" partName="banner.c" path="C:/Users/aluqu/Desktop/uni/SE/proyecto/SDK/proyecto/src/banner.c" title="banner.c" tooltip="proyecto/src/banner.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto/src/banner.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="559" selectionTopPixel="37"/>
 </editor>
 </editors>
 <views>
@@ -81,7 +91,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -217,7 +226,6 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/buzzer.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/testperiph.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto_bsp_0/microblaze_0/include/xparameters.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/buzzer.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/kbd_ps2.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/keypad.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/keypad.c"/>
@@ -225,71 +233,33 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/leds_rgb.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/leds_rgb.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/buzzer.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto_bsp_0/microblaze_0/include/xparameters.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/banner.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/buzzer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/proyecto/src/banner.c"/>
 </editors>
-<item historyLabel="buzzer.h" index="3">
-<position info="not_deleted" x="255" y="0"/>
-</item>
-<item historyLabel="buzzer.c" index="0">
-<position/>
-</item>
-<item historyLabel="buzzer.h" index="3">
-<position info="not_deleted" x="165" y="0"/>
-</item>
-<item historyLabel="buzzer.c" index="0">
-<position/>
-</item>
-<item historyLabel="testperiph.c" index="1">
-<position info="not_deleted" x="1926" y="0"/>
-</item>
-<item historyLabel="kbd_ps2.h" index="4">
-<position info="not_deleted" x="4029" y="0"/>
-</item>
-<item historyLabel="keypad.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="kbd_ps2.h" index="4">
-<position info="not_deleted" x="4029" y="0"/>
-</item>
-<item historyLabel="kbd_ps2.h" index="4">
-<position info="not_deleted" x="4029" y="0"/>
-</item>
-<item historyLabel="keypad.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="buzzer.c" index="0">
-<position/>
-</item>
-<item historyLabel="keypad.h" index="5">
-<position info="not_deleted" x="3859" y="0"/>
-</item>
-<item historyLabel="kbd_ps2.h" index="4">
-<position info="not_deleted" x="4031" y="0"/>
-</item>
-<item historyLabel="keypad.c" index="6">
-<position info="not_deleted" x="0" y="1447"/>
-</item>
-<item historyLabel="kbd_ps2.c" index="7">
+<item historyLabel="kbd_ps2.c" index="6">
 <position info="not_deleted" x="0" y="1383"/>
 </item>
-<item historyLabel="keypad.c" index="6">
+<item historyLabel="keypad.c" index="5">
 <position/>
 </item>
-<item historyLabel="leds_rgb.c" index="8">
+<item historyLabel="leds_rgb.c" index="7">
 <position info="not_deleted" x="2092" y="0"/>
 </item>
-<item historyLabel="leds_rgb.h" index="9">
+<item historyLabel="leds_rgb.h" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="leds_rgb.c" index="8">
+<item historyLabel="leds_rgb.c" index="7">
 <position info="not_deleted" x="1977" y="0"/>
 </item>
-<item historyLabel="keypad.c" index="6">
+<item historyLabel="keypad.c" index="5">
 <position/>
 </item>
-<item historyLabel="keypad.h" index="5">
+<item historyLabel="keypad.h" index="4">
 <position info="not_deleted" x="3859" y="0"/>
 </item>
-<item historyLabel="kbd_ps2.h" index="4">
+<item historyLabel="kbd_ps2.h" index="3">
 <position info="not_deleted" x="4031" y="0"/>
 </item>
 <item historyLabel="xparameters.h" index="2">
@@ -310,10 +280,10 @@
 <item historyLabel="testperiph.c" index="1">
 <position info="not_deleted" x="1454" y="0"/>
 </item>
-<item historyLabel="keypad.c" index="6">
+<item historyLabel="keypad.c" index="5">
 <position info="not_deleted" x="687" y="8"/>
 </item>
-<item historyLabel="keypad.c" index="6">
+<item historyLabel="keypad.c" index="5">
 <position info="not_deleted" x="1254" y="0"/>
 </item>
 <item historyLabel="testperiph.c" index="1">
@@ -322,16 +292,16 @@
 <item historyLabel="testperiph.c" index="1">
 <position info="not_deleted" x="1524" y="0"/>
 </item>
-<item historyLabel="keypad.c" index="6">
+<item historyLabel="keypad.c" index="5">
 <position info="not_deleted" x="1007" y="0"/>
 </item>
-<item historyLabel="kbd_ps2.c" index="7">
+<item historyLabel="kbd_ps2.c" index="6">
 <position info="not_deleted" x="0" y="1383"/>
 </item>
-<item historyLabel="kbd_ps2.h" index="4">
+<item historyLabel="kbd_ps2.h" index="3">
 <position info="not_deleted" x="4031" y="0"/>
 </item>
-<item historyLabel="kbd_ps2.c" index="7">
+<item historyLabel="kbd_ps2.c" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="testperiph.c" index="1">
@@ -340,7 +310,7 @@
 <item historyLabel="testperiph.c" index="1">
 <position info="not_deleted" x="1699" y="0"/>
 </item>
-<item historyLabel="kbd_ps2.c" index="7">
+<item historyLabel="kbd_ps2.c" index="6">
 <position info="not_deleted" x="972" y="0"/>
 </item>
 <item historyLabel="testperiph.c" index="1">
@@ -352,13 +322,13 @@
 <item historyLabel="testperiph.c" index="1">
 <position info="not_deleted" x="1398" y="0"/>
 </item>
-<item historyLabel="buzzer.h" index="10">
+<item historyLabel="buzzer.h" index="9">
 <position info="not_deleted" x="165" y="0"/>
 </item>
 <item historyLabel="buzzer.c" index="0">
 <position info="not_deleted" x="1321" y="0"/>
 </item>
-<item historyLabel="buzzer.h" index="10">
+<item historyLabel="buzzer.h" index="9">
 <position info="not_deleted" x="165" y="0"/>
 </item>
 <item historyLabel="buzzer.c" index="0">
@@ -373,8 +343,50 @@
 <item historyLabel="testperiph.c" index="1">
 <position info="not_deleted" x="2130" y="0"/>
 </item>
-<item active="true" historyLabel="testperiph.c" index="1">
+<item historyLabel="testperiph.c" index="1">
 <position info="not_deleted" x="2117" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="10">
+<position info="not_deleted" x="1346" y="23"/>
+</item>
+<item historyLabel="testperiph.c" index="1">
+<position info="not_deleted" x="1582" y="0"/>
+</item>
+<item historyLabel="banner.h" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="buzzer.c" index="12">
+<position info="not_deleted" x="932" y="0"/>
+</item>
+<item historyLabel="banner.c" index="13">
+<position info="not_deleted" x="3796" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="1">
+<position info="not_deleted" x="1602" y="0"/>
+</item>
+<item historyLabel="banner.h" index="11">
+<position info="not_deleted" x="6529" y="0"/>
+</item>
+<item historyLabel="banner.c" index="13">
+<position info="not_deleted" x="688" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="10">
+<position info="not_deleted" x="1346" y="23"/>
+</item>
+<item historyLabel="testperiph.c" index="1">
+<position info="not_deleted" x="1602" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="1">
+<position info="not_deleted" x="1512" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="1">
+<position info="not_deleted" x="1526" y="0"/>
+</item>
+<item active="true" historyLabel="banner.c" index="13">
+<position info="not_deleted" x="688" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -396,6 +408,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.c" tooltip="proyecto/src/banner.c">
+<persistable path="/proyecto/src/banner.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.h" tooltip="proyecto/src/banner.h">
+<persistable path="/proyecto/src/banner.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buzzer.c" tooltip="proyecto/src/buzzer.c">
 <persistable path="/proyecto/src/buzzer.c"/>
 </file>
@@ -420,9 +438,6 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_ps2.h" tooltip="proyecto/src/kbd_ps2.h">
 <persistable path="/proyecto/src/kbd_ps2.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.h" tooltip="proyecto/src/banner.h">
-<persistable path="/proyecto/src/banner.h"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="proyecto_bsp_0/microblaze_0/include/xparameters.h">
 <persistable path="/proyecto_bsp_0/microblaze_0/include/xparameters.h"/>
 </file>
@@ -434,9 +449,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite_l.c" tooltip="proyecto_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c">
 <persistable path="/proyecto_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="banner.c" tooltip="proyecto/src/banner.c">
-<persistable path="/proyecto/src/banner.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="proyecto_hw_platform/system.xml">
 <persistable path="/proyecto_hw_platform/system.xml"/>

@@ -5,14 +5,14 @@
 #include "xgpio.h"
 
 //===============================================================================
-// PRÁCTICA : Zumbador
+// PRï¿½CTICA : Zumbador
 //===============================================================================
 
 
 void ZUMBADOR_init(XGpio* Gpio_zumbador, Xuint32 zumbador) {
 	Xuint32 status;
 
-	// Configuración de la GPIO para el zumbador de la placa de expansión
+	// Configuraciï¿½n de la GPIO para el zumbador de la placa de expansiï¿½n
 	status = XGpio_Initialize(Gpio_zumbador, zumbador);
 
 	if (status != XST_SUCCESS)
@@ -37,10 +37,10 @@ void ZUMBADOR_oscila() {
 
    unsigned int i;
 
-	// La instancia del zumbador usada para la comunicación con el propio zumbador
+	// La instancia del zumbador usada para la comunicaciï¿½n con el propio zumbador
 	XGpio Gpio_zumbador;
 
-	// Los Device IDs del zumbador para la comunicación con el propio zumbador
+	// Los Device IDs del zumbador para la comunicaciï¿½n con el propio zumbador
 	Xuint32 zumbador = XPAR_BUZZER_0_DEVICE_ID;
 
 	ZUMBADOR_init(&Gpio_zumbador, zumbador);

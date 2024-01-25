@@ -39,84 +39,61 @@
 
 //** Function Definitions **//
 int getNumber();
-char ps2ToAscii(int scanCode);
-
-//** Function Definitions **//
-int getNumber();
 const int A[7] = {0x04, 0x05, 0x11, 0x1F, 0x11, 0x11, 0x11};
 
 int main()
 {
-	Xuint32 opt = -1;
-	Xuint32 keypadPass[4];
-	Xuint32 ps2Pass[8];
-	Xuint32 keypadTry[4];
-	Xuint32 ps2Try[8];
-	short cont = 3;
-
+	//Xuint32 opt = 1;
 	leds_init();
 	banner_init();
+
+	banner_put(0,);
+	// aplicacion de cerrojo 
+
+	/*
 	print("---Entering main---\n\r");
 
-	banner_put_phrase(START);
 	do
 	{
 		print(" Eliga una opcion: \n\r");
-		print(" 1  : KEYPAD (password of length 4)\n\r");
-		print(" 2  : TECLADO (password of length 8)\n\r");
+		print(" 1  : LEDs \n\r");
+		print(" 2  : KEYPAD \n\r");
+		print(" 3  : BANNER \n\r");
+		print(" 4  : PS2 \n\r");
+		print(" 5  : BUZZER \n\r");
 		print(" 0  : Salir \n\r");
-
 		opt = getNumber();
-
-		if (0 < opt || opt > 2)
+		switch (opt)
+		{
+		case 0:
+			print("Saliendo ...\n\r");
+			break;
+		case 1:
+			leds_init();
+			do_leds();
+			break;
+		case 2:
+			do_keypad();
+			break;
+		case 3:
+			print("Banner time!\n\r");
+			banner_init();
+			break;
+		case 4:
+			do_ps2();
+			break;
+		case 5:
+			ZUMBADOR_oscila();
+			break;
+		default:
 			print("No es una opcion valida.\n\r");
-		while (opt != 0)
-
-		if(opt == 1){
-			// record password
-			record_passKP(keypadPass);
-			print(" Passowrd saved\n\r");
-			while(cont > 0){
-				switch (cont)
-				{
-				case 3:	
-					banner_put_phrase(INTENTO_1);
-					break;
-				case 2:
-					banner_put_phrase(INTENTO_2);
-					break;
-				case 1:
-					banner_put_phrase(INTENTO_3);
-					break;
-				default:
-					// llamar a funcion de alarma
-					break;
-				}
-				// try password
-				record_passKP(keypadTry);
-				int i;
-				if(keypadTry[0] == keypadPass[0] && keypadTry[1] == keypadPass[1] && keypadTry[2] == keypadPass[2] && keypadTry[3] == keypadPass[3]){
-					// llamar a la funcion de desbloqueo
-					cont = 0;
-				}
-				else{
-					--cont;
-				}
-			}
+			break;
 		}
-
-		print("Saliendo ...\n\r");
-
-		return 0;
-	}
+	} while (opt != 0);
+	*/
 
 	print("---Exiting main---\n\r");
 	return 0;
-}
-
-// Set 2 Make/Break codes to ASCII
-char ps2ToAscii(int scanCode)
-{
 }
 
 int getNumber()
