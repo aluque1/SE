@@ -1,0 +1,18 @@
+/*
+ * buzzer.h
+ *
+ *  Created on: Jan 25, 2024
+ *      Author: aluqu
+ */
+
+#ifndef BUZZER_H_
+#define BUZZER_H_
+
+#include "xparameters.h"
+#include "stdio.h"
+#include "xutil.h"
+
+#include "xgpio.h"
+
+
+#endif /* BUZZER_H_ */

@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> 
 TABLE OF CONTENTS
@@ -72,355 +72,359 @@ Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTU
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'INTERRUPT_ACK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'MB_Halted' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'MB_Error' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'LOCKSTEP_OUT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'INSTR_ADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'IFETCH' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'I_AS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DATA_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DATA_ADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'D_AS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'READ_STROBE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'WRITE_STROBE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'BYTE_ENABLE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IP_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DP_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_AWUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_WUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_ARUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_IC_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_AWUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_WUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_ARUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M_AXI_DC_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DBG_TDO' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Instruction' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Valid_Instr' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_PC' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Reg_Write' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Reg_Addr' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_MSR_Reg' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_PID_Reg' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_New_Reg_Value' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Exception_Taken' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Exception_Kind' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Jump_Taken' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Delay_Slot' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Data_Address' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Data_Access' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Data_Read' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Data_Write' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Data_Write_Value' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Data_Byte_Enable' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_DCache_Req' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_DCache_Hit' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_DCache_Rdy' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_DCache_Read' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_ICache_Req' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_ICache_Hit' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_ICache_Rdy' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_OF_PipeRun' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_EX_PipeRun' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_MEM_PipeRun' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_MB_Halted' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'Trace_Jump_Hit' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL0_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL0_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL0_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL0_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL0_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL0_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL1_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL1_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL1_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL1_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL1_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL1_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL2_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL2_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL2_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL2_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL2_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL2_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL3_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL3_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL3_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL3_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL3_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL3_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL4_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL4_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL4_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL4_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL4_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL4_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL5_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL5_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL5_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL5_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL5_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL5_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL6_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL6_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL6_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL6_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL6_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL6_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL7_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL7_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL7_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL7_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL7_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL7_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL8_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL8_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL8_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL8_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL8_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL8_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL9_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL9_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL9_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL9_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL9_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL9_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL10_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL10_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL10_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL10_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL10_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL10_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL11_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL11_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL11_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL11_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL11_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL11_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL12_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL12_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL12_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL12_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL12_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL12_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL13_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL13_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL13_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL13_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL13_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL13_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL14_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL14_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL14_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL14_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL14_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL14_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL15_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL15_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL15_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL15_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL15_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'FSL15_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M0_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M0_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M0_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S0_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M1_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M1_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M1_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S1_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M2_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M2_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M2_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S2_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M3_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M3_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M3_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S3_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M4_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M4_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M4_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S4_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M5_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M5_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M5_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S5_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M6_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M6_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M6_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S6_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M7_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M7_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M7_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S7_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M8_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M8_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M8_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S8_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M9_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M9_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M9_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S9_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M10_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M10_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M10_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S10_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M11_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M11_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M11_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S11_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M12_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M12_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M12_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S12_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M13_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M13_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M13_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S13_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M14_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M14_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M14_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S14_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M15_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M15_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'M15_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'S15_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1093: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_Rst' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'MPLB_Rst' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_dcrAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_dcrDBus' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SaddrAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SMRdErr' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SMWrErr' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SMBusy' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SrdBTerm' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SrdComp' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SrdDAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SrdDBus' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SrdWdAddr' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_Srearbitrate' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_Sssize' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_Swait' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SwrBTerm' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SwrComp' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'PLB_SwrDAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1694: Unconnected output port 'Bus_Error_Det' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1848: Unconnected output port 'BRAM_Din_B' of component 'system_bram_block_0_wrapper'.
-WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1866: Unconnected output port 'Interrupt' of component 'system_xps_uartlite_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'INTERRUPT_ACK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'MB_Halted' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'MB_Error' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'LOCKSTEP_OUT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'INSTR_ADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'IFETCH' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'I_AS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DATA_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DATA_ADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'D_AS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'READ_STROBE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'WRITE_STROBE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'BYTE_ENABLE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IP_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DP_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_AWUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_WUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_ARUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_IC_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_AWUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_WUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_ARUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M_AXI_DC_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DBG_TDO' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Instruction' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Valid_Instr' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_PC' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Reg_Write' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Reg_Addr' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_MSR_Reg' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_PID_Reg' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_New_Reg_Value' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Exception_Taken' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Exception_Kind' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Jump_Taken' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Delay_Slot' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Data_Address' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Data_Access' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Data_Read' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Data_Write' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Data_Write_Value' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Data_Byte_Enable' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_DCache_Req' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_DCache_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_DCache_Rdy' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_DCache_Read' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_ICache_Req' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_ICache_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_ICache_Rdy' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_OF_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_EX_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_MEM_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_MB_Halted' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'Trace_Jump_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL0_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL0_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL0_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL0_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL0_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL0_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL1_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL1_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL1_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL1_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL1_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL1_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL2_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL2_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL2_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL2_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL2_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL2_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL3_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL3_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL3_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL3_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL3_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL3_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL4_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL4_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL4_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL4_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL4_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL4_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL5_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL5_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL5_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL5_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL5_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL5_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL6_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL6_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL6_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL6_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL6_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL6_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL7_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL7_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL7_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL7_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL7_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL7_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL8_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL8_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL8_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL8_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL8_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL8_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL9_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL9_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL9_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL9_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL9_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL9_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL10_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL10_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL10_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL10_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL10_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL10_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL11_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL11_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL11_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL11_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL11_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL11_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL12_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL12_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL12_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL12_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL12_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL12_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL13_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL13_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL13_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL13_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL13_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL13_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL14_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL14_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL14_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL14_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL14_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL14_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL15_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL15_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL15_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL15_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL15_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'FSL15_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M0_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M0_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M0_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S0_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M1_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M1_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M1_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S1_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M2_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M2_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M2_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S2_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M3_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M3_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M3_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S3_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M4_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M4_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M4_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S4_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M5_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M5_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M5_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S5_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M6_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M6_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M6_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S6_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M7_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M7_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M7_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S7_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M8_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M8_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M8_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S8_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M9_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M9_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M9_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S9_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M10_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M10_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M10_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S10_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M11_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M11_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M11_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S11_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M12_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M12_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M12_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S12_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M13_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M13_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M13_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S13_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M14_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M14_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M14_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S14_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M15_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M15_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'M15_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'S15_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1277: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_Rst' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'MPLB_Rst' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_dcrAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_dcrDBus' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SaddrAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SMRdErr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SMWrErr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SMBusy' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SrdBTerm' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SrdComp' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SrdDAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SrdDBus' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SrdWdAddr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_Srearbitrate' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_Sssize' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_Swait' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SwrBTerm' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SwrComp' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'PLB_SwrDAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 1878: Unconnected output port 'Bus_Error_Det' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 2032: Unconnected output port 'BRAM_Din_B' of component 'system_bram_block_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 2050: Unconnected output port 'Interrupt' of component 'system_xps_uartlite_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 2199: Unconnected output port 'IP2INTC_Irpt' of component 'system_buzzer_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 2199: Unconnected output port 'GPIO2_IO_O' of component 'system_buzzer_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 2199: Unconnected output port 'GPIO2_IO_T' of component 'system_buzzer_0_wrapper'.
+WARNING:Xst:2211 - "C:/Users/aluqu/Desktop/uni/SE/proyecto/hdl/system.vhd" line 2349: Instantiating black box module <IOBUF>.
 Entity <system> analyzed. Unit <system> generated.
 
 
@@ -452,6 +456,9 @@ Reading core <../implementation/system_bram_block_0_wrapper.ngc>.
 Reading core <../implementation/system_xps_uartlite_0_wrapper.ngc>.
 Reading core <../implementation/system_banner_0_wrapper.ngc>.
 Reading core <../implementation/system_kbd_ps2_0_wrapper.ngc>.
+Reading core <../implementation/system_buzzer_0_wrapper.ngc>.
+Reading core <../implementation/system_keypad_0_wrapper.ngc>.
+Reading core <../implementation/system_leds_rgb_0_wrapper.ngc>.
 Loading core <system_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
 Loading core <system_plb_v46_0_wrapper> for timing and area information for instance <plb_v46_0>.
 Loading core <system_xps_bram_if_cntlr_0_wrapper> for timing and area information for instance <xps_bram_if_cntlr_0>.
@@ -459,6 +466,9 @@ Loading core <system_bram_block_0_wrapper> for timing and area information for i
 Loading core <system_xps_uartlite_0_wrapper> for timing and area information for instance <xps_uartlite_0>.
 Loading core <system_banner_0_wrapper> for timing and area information for instance <banner_0>.
 Loading core <system_kbd_ps2_0_wrapper> for timing and area information for instance <kbd_ps2_0>.
+Loading core <system_buzzer_0_wrapper> for timing and area information for instance <buzzer_0>.
+Loading core <system_keypad_0_wrapper> for timing and area information for instance <keypad_0>.
+Loading core <system_leds_rgb_0_wrapper> for timing and area information for instance <leds_rgb_0>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -496,12 +506,15 @@ INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2> 
-INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 6 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 9 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
 INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
@@ -511,8 +524,11 @@ INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENC
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
 INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
-INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 6 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 9 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
 INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1> 
+INFO:Xst:2260 - The FF/Latch <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> in Unit <leds_rgb_0> is equivalent to the following FF/Latch : <leds_rgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1> 
 
 Final Macro Processing ...
 
@@ -543,55 +559,57 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 12
+# IOs                              : 24
 
 Cell Usage :
-# BELS                             : 3545
-#      GND                         : 24
-#      INV                         : 38
-#      LUT1                        : 96
-#      LUT2                        : 310
+# BELS                             : 4131
+#      GND                         : 27
+#      INV                         : 45
+#      LUT1                        : 117
+#      LUT2                        : 396
 #      LUT2_D                      : 12
-#      LUT2_L                      : 21
-#      LUT3                        : 936
+#      LUT2_L                      : 26
+#      LUT3                        : 1031
 #      LUT3_D                      : 27
-#      LUT3_L                      : 29
-#      LUT4                        : 1005
-#      LUT4_D                      : 22
-#      LUT4_L                      : 37
+#      LUT3_L                      : 30
+#      LUT4                        : 1189
+#      LUT4_D                      : 36
+#      LUT4_L                      : 42
 #      MULT_AND                    : 34
-#      MUXCY                       : 199
+#      MUXCY                       : 286
 #      MUXCY_L                     : 161
-#      MUXF5                       : 367
+#      MUXF5                       : 398
 #      MUXF6                       : 5
 #      MUXF7                       : 2
 #      MUXF8                       : 1
-#      VCC                         : 6
-#      XORCY                       : 213
-# FlipFlops/Latches                : 2153
-#      FD                          : 5
-#      FDC                         : 48
-#      FDCE                        : 74
+#      VCC                         : 9
+#      XORCY                       : 257
+# FlipFlops/Latches                : 2657
+#      FD                          : 7
+#      FDC                         : 84
+#      FDCE                        : 91
 #      FDE                         : 200
-#      FDP                         : 7
-#      FDPE                        : 11
-#      FDR                         : 867
-#      FDRE                        : 841
-#      FDRS                        : 15
+#      FDP                         : 10
+#      FDPE                        : 19
+#      FDR                         : 1121
+#      FDRE                        : 1012
+#      FDRS                        : 17
 #      FDRSE                       : 4
-#      FDS                         : 36
-#      FDSE                        : 45
+#      FDS                         : 46
+#      FDSE                        : 46
 # RAMS                             : 369
 #      RAM16X1D                    : 352
 #      RAMB16                      : 17
-# Shift Registers                  : 84
+# Shift Registers                  : 85
+#      SRL16                       : 1
 #      SRL16E                      : 84
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 11
-#      IBUF                        : 4
-#      OBUF                        : 7
+# IO Buffers                       : 23
+#      IBUF                        : 8
+#      IOBUF                       : 1
+#      OBUF                        : 14
 # MULTs                            : 3
 #      MULT18X18S                  : 3
 =========================================================================
@@ -601,17 +619,17 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     2058  out of   7680    26%  
- Number of Slice Flip Flops:           2153  out of  15360    14%  
- Number of 4 input LUTs:               3321  out of  15360    21%  
-    Number used as logic:              2533
-    Number used as Shift registers:      84
+ Number of Slices:                     2435  out of   7680    31%  
+ Number of Slice Flip Flops:           2657  out of  15360    17%  
+ Number of 4 input LUTs:               3740  out of  15360    24%  
+    Number used as logic:              2951
+    Number used as Shift registers:      85
     Number used as RAMs:                704
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    173     6%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    173    13%  
  Number of BRAMs:                        17  out of     24    70%  
  Number of MULT18X18s:                    3  out of     24    12%  
- Number of GCLKs:                         2  out of      8    25%  
+ Number of GCLKs:                         3  out of      8    37%  
 
 ---------------------------
 Partition Resource Summary:
@@ -634,9 +652,10 @@ Clock Information:
 ------------------------------------------------+--------------------------------------------------------------+-------+
 Clock Signal                                    | Clock buffer(FF name)                                        | Load  |
 ------------------------------------------------+--------------------------------------------------------------+-------+
-clk                                             | BUFGP                                                        | 2542  |
+clk                                             | BUFGP                                                        | 3012  |
 N0                                              | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
 banner_0/banner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                         | 67    |
+keypad_0/keypad_0/USER_LOGIC_I/reloj121         | BUFG                                                         | 35    |
 ------------------------------------------------+--------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -646,7 +665,9 @@ Asynchronous Control Signals Information:
 Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                      | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 plb_v46_0/SPLB_Rst<2>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST:Q)                                                                            | NONE(banner_0/banner_0/USER_LOGIC_I/mybanner/ce_row_clk)                                                                                             | 105   |
+plb_v46_0/SPLB_Rst<5>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST:Q)                                                                            | NONE(keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/aux1)                                                                                             | 40    |
 plb_v46_0/SPLB_Rst<3>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST:Q)                                                                            | NONE(kbd_ps2_0/kbd_ps2_0/USER_LOGIC_I/TecladoPort/ldDatas)                                                                                           | 35    |
+plb_v46_0/SPLB_Rst<6>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST:Q)                                                                            | NONE(leds_rgb_0/leds_rgb_0/USER_LOGIC_I/cnt_blue_0)                                                                                                  | 24    |
 microblaze_0/Trace_EX_PipeRun(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I:LO)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
 microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1(microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1:Q)                               | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -656,7 +677,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 11.888ns (Maximum Frequency: 84.119MHz)
-   Minimum input arrival time before clock: 4.463ns
+   Minimum input arrival time before clock: 5.481ns
    Maximum output required time after clock: 12.594ns
    Maximum combinational path delay: No path found
 
@@ -667,7 +688,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 183371 / 7510
+  Total number of paths / destination ports: 186896 / 8577
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -736,10 +757,38 @@ Delay:               6.957ns (Levels of Logic = 23)
                                        (60.7% logic, 39.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 299 / 299
+Timing constraint: Default period analysis for Clock 'keypad_0/keypad_0/USER_LOGIC_I/reloj121'
+  Clock period: 6.134ns (frequency: 163.038MHz)
+  Total number of paths / destination ports: 1533 / 58
 -------------------------------------------------------------------------
-Offset:              4.463ns (Levels of Logic = 2)
+Delay:               6.134ns (Levels of Logic = 7)
+  Source:            keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 (FF)
+  Destination:       keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/count_1 (FF)
+  Source Clock:      keypad_0/keypad_0/USER_LOGIC_I/reloj121 rising
+  Destination Clock: keypad_0/keypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 to keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  keypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 (keypad_0/USER_LOGIC_I/TeclaDetecInst/count<7>)
+     LUT4:I0->O            1   0.479   0.000  keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0> (keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0> (keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1> (keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2> (keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3> (keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           5   0.265   0.806  keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<4> (keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd)
+     LUT4:I3->O           20   0.479   1.313  keypad_0/USER_LOGIC_I/TeclaDetecInst/count_not00011 (keypad_0/USER_LOGIC_I/TeclaDetecInst/count_not0001)
+     FDCE:CE                   0.524          keypad_0/USER_LOGIC_I/TeclaDetecInst/count_1
+    ----------------------------------------
+    Total                      6.134ns (2.974ns logic, 3.160ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 303 / 303
+-------------------------------------------------------------------------
+Offset:              4.477ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       microblaze_0/microblaze_0/LOCKSTEP_Out_3765 (FF)
   Destination Clock: clk rising
@@ -748,12 +797,62 @@ Offset:              4.463ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           295   0.715   2.856  rst_IBUF (rst_IBUF)
+     IBUF:I->O           298   0.715   2.870  rst_IBUF (rst_IBUF)
      begin scope: 'microblaze_0'
      FDR:R                     0.892          microblaze_0/LOCKSTEP_Out_111
     ----------------------------------------
-    Total                      4.463ns (1.607ns logic, 2.856ns route)
-                                       (36.0% logic, 64.0% route)
+    Total                      4.477ns (1.607ns logic, 2.870ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'keypad_0/keypad_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 73 / 16
+-------------------------------------------------------------------------
+Offset:              5.481ns (Levels of Logic = 5)
+  Source:            r<1> (PAD)
+  Destination:       keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3 (FF)
+  Destination Clock: keypad_0/keypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: r<1> to keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  r_1_IBUF (r_1_IBUF)
+     begin scope: 'keypad_0'
+     LUT2:I0->O            1   0.479   0.976  keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>4 (keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>4)
+     LUT4:I0->O            1   0.479   0.976  keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10 (keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10)
+     LUT2:I0->O            1   0.479   0.000  keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>21 (keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>)
+     FDCE:D                    0.176          keypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3
+    ----------------------------------------
+    Total                      5.481ns (2.328ns logic, 3.153ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 169 / 9
+-------------------------------------------------------------------------
+Offset:              12.594ns (Levels of Logic = 9)
+  Source:            banner_0/banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (FF)
+  Destination:       row_serial_out (PAD)
+  Source Clock:      clk rising
+
+  Data Path: banner_0/banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 to row_serial_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            25   0.626   1.711  banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (banner_0/USER_LOGIC_I/mybanner/desplazamiento<3>)
+     LUT2:I1->O            8   0.479   0.921  banner_0/USER_LOGIC_I/mybanner/Madd_miregistro_sub0000_xor<4>11 (banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<4>)
+     MUXF5:S->O            1   0.540   0.000  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5)
+     MUXF6:I1->O           1   0.298   0.000  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6)
+     MUXF7:I1->O           1   0.298   0.000  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7)
+     MUXF8:I1->O           2   0.298   1.040  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.000  banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<5>2 (banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<5>1)
+     MUXF5:I0->O           1   0.314   0.681  banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<5>_f5 (row_serial_out)
+     end scope: 'banner_0'
+     OBUF:I->O                 4.909          row_serial_out_OBUF (row_serial_out)
+    ----------------------------------------
+    Total                     12.594ns (8.241ns logic, 4.353ns route)
+                                       (65.4% logic, 34.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'banner_0/banner_0/USER_LOGIC_I/mybanner/reloj121'
@@ -783,43 +882,37 @@ Offset:              10.652ns (Levels of Logic = 9)
                                        (75.2% logic, 24.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 95 / 5
+Timing constraint: Default OFFSET OUT AFTER for Clock 'keypad_0/keypad_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 12 / 4
 -------------------------------------------------------------------------
-Offset:              12.594ns (Levels of Logic = 9)
-  Source:            banner_0/banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (FF)
-  Destination:       row_serial_out (PAD)
-  Source Clock:      clk rising
+Offset:              8.027ns (Levels of Logic = 3)
+  Source:            keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 (FF)
+  Destination:       s<2> (PAD)
+  Source Clock:      keypad_0/keypad_0/USER_LOGIC_I/reloj121 rising
 
-  Data Path: banner_0/banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 to row_serial_out
+  Data Path: keypad_0/keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 to s<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            25   0.626   1.711  banner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (banner_0/USER_LOGIC_I/mybanner/desplazamiento<3>)
-     LUT2:I1->O            8   0.479   0.921  banner_0/USER_LOGIC_I/mybanner/Madd_miregistro_sub0000_xor<4>11 (banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<4>)
-     MUXF5:S->O            1   0.540   0.000  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5)
-     MUXF6:I1->O           1   0.298   0.000  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6)
-     MUXF7:I1->O           1   0.298   0.000  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7)
-     MUXF8:I1->O           2   0.298   1.040  banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (banner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
-     LUT4:I0->O            1   0.479   0.000  banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<5>2 (banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<5>1)
-     MUXF5:I0->O           1   0.314   0.681  banner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<5>_f5 (row_serial_out)
-     end scope: 'banner_0'
-     OBUF:I->O                 4.909          row_serial_out_OBUF (row_serial_out)
+     FDC:C->Q             11   0.626   1.267  keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 (keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3)
+     LUT3:I0->O            2   0.479   0.745  keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_Out91 (S<2>)
+     end scope: 'keypad_0'
+     OBUF:I->O                 4.909          s_2_OBUF (s<2>)
     ----------------------------------------
-    Total                     12.594ns (8.241ns logic, 4.353ns route)
-                                       (65.4% logic, 34.6% route)
+    Total                      8.027ns (6.014ns logic, 2.013ns route)
+                                       (74.9% logic, 25.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 87.00 secs
-Total CPU time to Xst completion: 87.49 secs
+Total REAL time to Xst completion: 95.00 secs
+Total CPU time to Xst completion: 94.75 secs
  
 --> 
 
-Total memory usage is 4578116 kilobytes
+Total memory usage is 4594288 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  349 (   0 filtered)
-Number of infos    :   40 (   0 filtered)
+Number of warnings :  353 (   0 filtered)
+Number of infos    :   46 (   0 filtered)
 

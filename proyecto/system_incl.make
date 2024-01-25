@@ -133,7 +133,14 @@ pcores/banner_v1_00_a/hdl/vhdl/banner.vhd \
 pcores/kbd_ps2_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/kbd_ps2_v1_00_a/hdl/vhdl/kbd_ps2.vhd \
 pcores/kbd_ps2_v1_00_a/hdl/vhdl/keyboard.vhd \
-pcores/kbd_ps2_v1_00_a/hdl/vhdl/ps2_kdb.vhd
+pcores/kbd_ps2_v1_00_a/hdl/vhdl/ps2_kdb.vhd \
+pcores/keypad_v1_00_a/hdl/vhdl/user_logic.vhd \
+pcores/keypad_v1_00_a/hdl/vhdl/keypad.vhd \
+pcores/keypad_v1_00_a/hdl/vhdl/teclaDetect.vhd \
+pcores/keypad_v1_00_a/hdl/vhdl/practica05_keypad_0_wrapper.vhd \
+pcores/leds_rgb_v1_00_a/hdl/vhdl/user_logic.vhd \
+pcores/leds_rgb_v1_00_a/hdl/vhdl/leds_rgb.vhd \
+pcores/leds_rgb_v1_00_a/hdl/vhdl/practica05_leds_rgb_0_wrapper.vhd
 
 WRAPPER_NGC_FILES = implementation/system_microblaze_0_wrapper.ngc \
 implementation/system_plb_v46_0_wrapper.ngc \
@@ -141,7 +148,10 @@ implementation/system_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/system_bram_block_0_wrapper.ngc \
 implementation/system_xps_uartlite_0_wrapper.ngc \
 implementation/system_banner_0_wrapper.ngc \
-implementation/system_kbd_ps2_0_wrapper.ngc
+implementation/system_kbd_ps2_0_wrapper.ngc \
+implementation/system_buzzer_0_wrapper.ngc \
+implementation/system_keypad_0_wrapper.ngc \
+implementation/system_leds_rgb_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

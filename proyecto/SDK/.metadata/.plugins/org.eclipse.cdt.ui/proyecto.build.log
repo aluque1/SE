@@ -2,34 +2,25 @@
 **** Build of configuration Debug for project proyecto ****
 
 make all 
-Building file: ../src/kbd_ps2.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../proyecto_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/kbd_ps2.d" -MT"src/kbd_ps2.d" -o"src/kbd_ps2.o" "../src/kbd_ps2.c"
-Finished building: ../src/kbd_ps2.c
-' '
 Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../proyecto_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
 ../src/testperiph.c: In function 'main':
-../src/testperiph.c:54:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
-../src/testperiph.c:59:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-../src/testperiph.c:46:16: warning: unused variable 'datum' [-Wunused-variable]
-../src/testperiph.c:46:11: warning: unused variable 'col' [-Wunused-variable]
-../src/testperiph.c:46:6: warning: unused variable 'row' [-Wunused-variable]
+../src/testperiph.c:51:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
 ../src/testperiph.c: In function 'getNumber':
-../src/testperiph.c:159:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
-../src/testperiph.c:161:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:116:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:118:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
 Finished building: ../src/testperiph.c
 ' '
 Building target: proyecto.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../proyecto_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"proyecto.elf"  ./src/banner.o ./src/banner_selftest.o ./src/kbd_ps2.o ./src/keypad.o ./src/leds_rgb.o ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../proyecto_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"proyecto.elf"  ./src/banner.o ./src/buzzer.o ./src/kbd_ps2.o ./src/keypad.o ./src/leds_rgb.o ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: proyecto.elf
 ' '
 Invoking: MicroBlaze Print Size
 mb-size proyecto.elf  |tee "proyecto.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   7674	    296	   2094	  10064	   2750	proyecto.elf
+  11586	    316	   2106	  14008	   36b8	proyecto.elf
 Finished building: proyecto.elf.size
 ' '
 Invoking: Xilinx ELF Check

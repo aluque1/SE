@@ -35,34 +35,29 @@
 #include "keypad.h"
 #include "leds_rgb.h"
 #include "kbd_ps2.h"
+#include "buzzer.h"
 
 //** Function Definitions **//
 int getNumber();
-void hex();
+
 
 int main()
 {
 	Xuint32 opt = 1;
-	int row, col, datum;
 
-
-	Xuint32 valor, baseaddr;
-	baseaddr = 0xCB800000;
-
-	//leds_init();
+	leds_init();
+	banner_init();
 
 	print("---Entering main---\n\r");
 
 	do
 	{
-		valor = KBD_PS2_mReadReg(baseaddr, 0);
-		xil_printf("Escrito: %d en reg0\n\r", valor);
-		/*
 		print(" Eliga una opcion: \n\r");
 		print(" 1  : LEDs \n\r");
 		print(" 2  : KEYPAD \n\r");
 		print(" 3  : BANNER \n\r");
-		//print(" 4  : HEX-COLOR \n\r");
+		print(" 4  : PS2 \n\r");
+		print(" 5  : BUZZER \n\r");
 		print(" 0  : Salir \n\r");
 		opt = getNumber();
 		switch (opt)
@@ -71,69 +66,31 @@ int main()
 			print("Saliendo ...\n\r");
 			break;
 		case 1:
-			//leds_init();
-			//do_leds();
+			leds_init();
+			do_leds();
 			break;
 		case 2:
-			//do_keypad();
+			do_keypad();
 			break;
 		case 3:
 			print("Banner time!\n\r");
 			banner_init();
-
-
 			break;
-		//case 4:
-			//hex();
-			//break;
+		case 4:
+			do_ps2();
+			break;
+		case 5:
+			ZUMBADOR_oscila();
+			break;
 		default:
 			print("No es una opcion valida.\n\r");
 			break;
 		}
-		*/
 	} while (opt != 0);
 
 	print("---Exiting main---\n\r");
 	return 0;
 }
-
-/*
-void hex()
-{
-	Xuint32 Reg32Value, TeclaOld;
-
-	print("##### Testing keypad and hexcodes #####\n\r");
-	Xuint32 hex_color[6];
-	int cont = 0;
-	Xboolean pressed = XFALSE;
-
-	// Read 6 numbers from the keypad
-	while (cont < 6)
-	{
-		KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 99);
-		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0) >> 28;
-		if (Reg32Value != 99)
-			xil_printf("    Se ha leido %d del registro 0 del teclado \n\r", Reg32Value);
-		TeclaOld = Reg32Value;
-		Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0) >> 28;
-		KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 99); // Se escribe un 0 en el registro del teclado para borrar la ultima tecla leida
-		
-		hex_color[cont] = Reg32Value;
-		cont++;
-	}
-
-	// convert hex to decimal for red, green and blue components
-	Xuint32 red = (hex_color[0] * 16) + hex_color[1];
-	Xuint32 green = (hex_color[2] * 16) + hex_color[3];
-	Xuint32 blue = (hex_color[4] * 16) + hex_color[5];
-	// change the intensity of the color
-	LEDS_RGB_mWriteSlaveReg0(XPAR_LEDS_RGB_0_BASEADDR, 0, (255 - red));
-	LEDS_RGB_mWriteSlaveReg1(XPAR_LEDS_RGB_0_BASEADDR, 0, (255 - green));
-	LEDS_RGB_mWriteSlaveReg2(XPAR_LEDS_RGB_0_BASEADDR, 0, (255 - blue));
-
-	print(" MIRA LOS LEDs \n\r");
-}
-*/
 
 int getNumber()
 {

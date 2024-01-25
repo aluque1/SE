@@ -7,7 +7,7 @@
 NET clk LOC=P8;
 NET "clk" FLOAT;
 
-# entradas /salidas puerto serie
+#### entradas /salidas puerto serie
 NET rx LOC=G5;
 NET "rx" FLOAT;
 NET tx LOC=J2;
@@ -27,44 +27,48 @@ net reset_out iostandard = LVCMOS25 ;
 net reset2_out loc = K15 ;
 net reset2_out iostandard = LVCMOS25 ;
 
-#PS2 KDB
+#### PS2 KDB
 net ps2clk LOC = B16 ;
-net ps2Data LOC =E13;
+net ps2Data LOC =E13 ;
+
+#### Buzzer
+net zumba loc = N15 ;
+net "zumba" FLOAT;
 
 #### LEDS COLORES
 #NET red LOC=P12;
 #NET green LOC=H1;
 #NET blue LOC=J1;
-#NET red LOC=E15;
-#NET green LOC=D16;
-#NET blue LOC=J16;
+NET red LOC=E15;
+NET green LOC=D16;
+NET blue LOC=J16;
 #NET red LOC=J14;
 #NET green LOC=N15;
 #NET blue LOC=G16;
-#NET "red" FLOAT;
-#NET "green" FLOAT;
-#NET "blue" FLOAT;
+NET "red" FLOAT;
+NET "green" FLOAT;
+NET "blue" FLOAT;
 
-#### para el keypad
-#net s<3> loc=F2;
-#net s<3> iostandard=LVCMOS25;
-#net s<2> loc=G4;
-#net s<2> iostandard=LVCMOS25;
-#net s<1> loc=G3;
-#net s<1> iostandard=LVCMOS25;
-#net s<0> loc=G1;
-#net s<0> iostandard=LVCMOS25;
+### Para el keypad
+net s<3> loc=F2;
+net s<3> iostandard=LVCMOS25;
+net s<2> loc=G4;
+net s<2> iostandard=LVCMOS25;
+net s<1> loc=G3;
+net s<1> iostandard=LVCMOS25;
+net s<0> loc=G1;
+net s<0> iostandard=LVCMOS25;
 
-#net r<3> loc=J14;
-#net r<3> iostandard=LVCMOS25;
-#net r<2> loc=H14;
-#net r<2> iostandard=LVCMOS25;
-#net r<1> loc=M4;
-#net r<1> iostandard=LVCMOS25;
-#net r<0> loc=P1;
-#net r<0> iostandard=LVCMOS25;
+net r<3> loc=J14;
+net r<3> iostandard=LVCMOS25;
+net r<2> loc=H14;
+net r<2> iostandard=LVCMOS25;
+net r<1> loc=M4;
+net r<1> iostandard=LVCMOS25;
+net r<0> loc=P1;
+net r<0> iostandard=LVCMOS25;
 
-	#switches placa superior
+#### switches placa superior
 
 NET rst LOC=K4;
 NET "rst" FLOAT;

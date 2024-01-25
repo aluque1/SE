@@ -20,7 +20,13 @@ entity system_stub is
     reset_out : out std_logic;
     reset2_out : out std_logic;
     ps2Clk : in std_logic;
-    ps2Data : in std_logic
+    ps2Data : in std_logic;
+    zumba : inout std_logic;
+    s : out std_logic_vector(3 downto 0);
+    r : in std_logic_vector(3 downto 0);
+    red : out std_logic;
+    green : out std_logic;
+    blue : out std_logic
   );
 end system_stub;
 
@@ -39,7 +45,13 @@ architecture STRUCTURE of system_stub is
       reset_out : out std_logic;
       reset2_out : out std_logic;
       ps2Clk : in std_logic;
-      ps2Data : in std_logic
+      ps2Data : in std_logic;
+      zumba : inout std_logic;
+      s : out std_logic_vector(3 downto 0);
+      r : in std_logic_vector(3 downto 0);
+      red : out std_logic;
+      green : out std_logic;
+      blue : out std_logic
     );
   end component;
 
@@ -61,7 +73,13 @@ begin
       reset_out => reset_out,
       reset2_out => reset2_out,
       ps2Clk => ps2Clk,
-      ps2Data => ps2Data
+      ps2Data => ps2Data,
+      zumba => zumba,
+      s => s,
+      r => r,
+      red => red,
+      green => green,
+      blue => blue
     );
 
 end architecture STRUCTURE;

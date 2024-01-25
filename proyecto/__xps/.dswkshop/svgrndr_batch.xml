@@ -15,6 +15,12 @@
 
   <RENDERIMG RASNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\kbd_ps2_0.jpg" SVGNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\kbd_ps2_0.svg" TMPSVGFN="C:\Users\aluqu\Desktop\uni\SE\proyecto\__xps\.dswkshop\kbd_ps2_0.svg"/>
 
+  <RENDERIMG RASNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\buzzer_0.jpg" SVGNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\buzzer_0.svg" TMPSVGFN="C:\Users\aluqu\Desktop\uni\SE\proyecto\__xps\.dswkshop\buzzer_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\keypad_0.jpg" SVGNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\keypad_0.svg" TMPSVGFN="C:\Users\aluqu\Desktop\uni\SE\proyecto\__xps\.dswkshop\keypad_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\leds_rgb_0.jpg" SVGNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\leds_rgb_0.svg" TMPSVGFN="C:\Users\aluqu\Desktop\uni\SE\proyecto\__xps\.dswkshop\leds_rgb_0.svg"/>
+
   <RENDERIMG RASNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="C:\Users\aluqu\Desktop\uni\SE\proyecto\__xps\.dswkshop\system_blkd.svg"/>
 
 </RENDERBATCH>

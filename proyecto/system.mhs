@@ -14,6 +14,12 @@
  PORT reset2_out = banner_0_reset2_out, DIR = O
  PORT ps2Clk = net_ps2Clk, DIR = I
  PORT ps2Data = net_ps2Data, DIR = I
+ PORT zumba = buzzer_0_GPIO_IO, DIR = IO
+ PORT s = keypad_0_S, DIR = O, VEC = [3:0]
+ PORT r = net_r, DIR = I, VEC = [3:0]
+ PORT red = leds_rgb_0_red, DIR = O
+ PORT green = leds_rgb_0_green, DIR = O
+ PORT blue = leds_rgb_0_blue, DIR = O
 
 
 BEGIN microblaze
@@ -81,5 +87,37 @@ BEGIN kbd_ps2
  BUS_INTERFACE SPLB = plb_v46_0
  PORT ps2Clk = net_ps2Clk
  PORT ps2Data = net_ps2Data
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = buzzer_0
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 1
+ PARAMETER C_BASEADDR = 0x81400000
+ PARAMETER C_HIGHADDR = 0x8140ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT GPIO_IO_O = buzzer_0_GPIO_IO_O
+ PORT GPIO_IO = buzzer_0_GPIO_IO
+END
+
+BEGIN keypad
+ PARAMETER INSTANCE = keypad_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xc9600000
+ PARAMETER C_HIGHADDR = 0xc960ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT S = keypad_0_S
+ PORT R = net_r
+END
+
+BEGIN leds_rgb
+ PARAMETER INSTANCE = leds_rgb_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xc7200000
+ PARAMETER C_HIGHADDR = 0xc720ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT red = leds_rgb_0_red
+ PORT green = leds_rgb_0_green
+ PORT blue = leds_rgb_0_blue
 END
 

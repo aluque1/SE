@@ -23,6 +23,34 @@
 #define XPAR_BANNER_0_HIGHADDR 0xC580FFFF
 
 
+/* Definitions for peripheral KBD_PS2_0 */
+#define XPAR_KBD_PS2_0_BASEADDR 0xCB800000
+#define XPAR_KBD_PS2_0_HIGHADDR 0xCB80FFFF
+
+
+/* Definitions for peripheral KEYPAD_0 */
+#define XPAR_KEYPAD_0_BASEADDR 0xC9600000
+#define XPAR_KEYPAD_0_HIGHADDR 0xC960FFFF
+
+
+/* Definitions for peripheral LEDS_RGB_0 */
+#define XPAR_LEDS_RGB_0_BASEADDR 0xC7200000
+#define XPAR_LEDS_RGB_0_HIGHADDR 0xC720FFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 1
+
+/* Definitions for peripheral BUZZER_0 */
+#define XPAR_BUZZER_0_BASEADDR 0x81400000
+#define XPAR_BUZZER_0_HIGHADDR 0x8140FFFF
+#define XPAR_BUZZER_0_DEVICE_ID 0
+#define XPAR_BUZZER_0_INTERRUPT_PRESENT 0
+#define XPAR_BUZZER_0_IS_DUAL 0
+
+
 /******************************************************************/
 
 /* Definitions for driver BRAM */

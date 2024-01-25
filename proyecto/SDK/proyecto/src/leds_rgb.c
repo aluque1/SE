@@ -10,7 +10,7 @@
 #include "leds_rgb.h"
 
 /************************** Function Definitions ***************************/
-/*
+
 void leds_init()
 {
 	LEDS_RGB_mWriteSlaveReg0(XPAR_LEDS_RGB_0_BASEADDR, 0, 255);
@@ -67,4 +67,3 @@ void do_leds()
 		led_color = -1;
 	} while (opt != 0);
 }
-*/

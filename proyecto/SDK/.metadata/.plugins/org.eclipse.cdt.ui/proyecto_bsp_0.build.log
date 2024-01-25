@@ -37,6 +37,7 @@ Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
 "EXTRA_COMPILER_FLAGS=-g"'.
 "Compiling common"
 "Compiling standalone";
+"Compiling gpio"
 "Compiling bram"
 "Compiling uartlite"
 "Compiling cpu"
