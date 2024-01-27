@@ -14,18 +14,26 @@
 
 void record_passKP(Xuint32 *pass)
 {
-    int i;
-    Xuint32 Reg32Value, TeclaHome;
-    TeclaHome = 0x16 << 27;
-    KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, TeclaHome);
-    print(" Introduzca el password: (longitud 4)\n\r");
-    for (i = 0; i < 4; ++i)
+    Xuint32 Reg32Value, TeclaOld;
+    short i = 0;
+    print("Enter the password(4 digits)\n\r");
+    Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
+    KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 0);
+    TeclaOld = Reg32Value;
+    while (i < 4)
     {
-        Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
-        if (Reg32Value != TeclaHome){
-            xil_printf("----> Se ha leido %d\n\r", Reg32Value >> 28);
-            pass[i] = Reg32Value;
+        if (Reg32Value != TeclaOld && Reg32Value >> 28 != 0)
+        {
+            xil_printf("----> The number read was: %d\n\r", Reg32Value >> 28);
+            pass[i] = Reg32Value >> 28;
+            TeclaOld = Reg32Value;
+            ++i;
         }
-        KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, TeclaHome); // Escribimos rango fuera de rango para que no se repita se pone como 0 no se porque
+        Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
+        KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, 0);
     }
+    print("The password is:");
+    for (i = 0; i < 4; ++i)
+        xil_printf("%d", pass[i]);
+    print("\n\r");
 }

@@ -11,35 +11,24 @@
 #include "xparameters.h"
 
 /************************** Function Definitions ***************************/
-void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum)
-{
-	while (BANNER_mWriteFIFOFull(XPAR_BANNER_0_BASEADDR))
-	{
-	}
-	Xuint32 data;
-	data = ((row & 0xFF) << (31 - 7)) + ((col & 0xFF) << (31 - 15)) + ((datum & 0xFF) << (31 - 23));
-	BANNER_mWriteToFIFO(XPAR_BANNER_0_BASEADDR, 0, data);
+void banner_write(Xuint32 row, Xuint32 col, Xuint32 datum){
+		while (BANNER_mWriteFIFOFull(XPAR_BANNER_0_BASEADDR))
+		{
+		}
+		Xuint32 data;
+		data = ((row & 0xFF) << (31 - 7)) + ((col & 0xFF) << (31 - 15)) + ((datum & 0xFF) << (31 - 23));
+		BANNER_mWriteToFIFO(XPAR_BANNER_0_BASEADDR, 0, data);
+
 }
 
-void banner_put(Xuint32 col, int dato[7]){
+void banner_put(Xuint32 col, const int dato[])
+{
 	int i;
 	for (i = 0; i < 7; ++i)
 	{
 		banner_write(i, col, dato[i]);
 	}
 }
-
-void banner_put_phrase(int phrase[8][7]){
-	int col, row;
-	for (col = 0; col < 8; ++col)
-	{
-		for(row = 0; row < 7; ++row)
-		{
-			banner_write(row, col, phrase[col][row]);
-		}
-	}
-}
-
 
 void banner_init()
 {
@@ -54,4 +43,3 @@ void banner_init()
 		}
 	}
 }
-

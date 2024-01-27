@@ -1,0 +1,41 @@
+/*****************************************************************************
+ * Filename:          C:\Users\aluqu\Desktop\uni\SE\practica05/drivers/keypad_v1_00_a/src/keypad.c
+ * Version:           1.00.a
+ * Description:       keypad Driver Source File
+ * Date:              Sun Dec 17 18:10:30 2023 (by Create and Import Peripheral Wizard)
+ *****************************************************************************/
+
+/***************************** Include Files *******************************/
+
+#include "keypad.h"
+#include "xparameters.h"
+
+/************************** Function Definitions ***************************/
+
+void record_passKP(Xuint32 *pass)
+{
+    int i;
+    Xuint32 Reg32Value, TeclaHome;
+    TeclaHome = 0x16 << 27;
+    KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, TeclaHome);
+    print(" Introduzca el password: (longitud 4)\n\r");
+    for (i = 0; i < 4; ++i)
+    {
+        Reg32Value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR, 0);
+        if (Reg32Value != TeclaHome)
+        {
+            xil_printf("----> Se ha leido %d\n\r", Reg32Value >> 28);
+            pass[i] = Reg32Value;
+        }
+        KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR, 0, TeclaHome); // Escribimos rango fuera de rango para que no se repita se pone como 0 no se porque
+    }
+}
+
+void keypad_debug()
+{
+    Xuint32 Reg32Value, TeclaHome;
+    TeclaHome = 0x01;
+    short i = 4;
+    }
+
+}

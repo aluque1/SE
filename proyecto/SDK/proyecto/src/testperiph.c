@@ -37,86 +37,231 @@
 #include "kbd_ps2.h"
 #include "buzzer.h"
 
-//** Function Definitions **//
-int getNumber();
-char ps2ToAscii(int scanCode);
+/**
+ * User definitions for the banner
+ */
+const int A[7] = {0x04, 0x0A, 0x11, 0x11, 0x1F, 0x11, 0x11}; 
+const int C[7] = {0x0E, 0x11, 0x10, 0x10, 0x10, 0x11, 0x0E}; 
+const int D[7] = {0x1E, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1E}; 
+const int E[7] = {0x1F, 0x10, 0x10, 0x1E, 0x10, 0x10, 0x1F}; 
+const int K[7] = {0x11, 0x12, 0x14, 0x18, 0x14, 0x12, 0x11}; 
+const int L[7] = {0x10, 0x10, 0x10, 0x10, 0x10, 0x11, 0x1F}; 
+const int M[7] = {0x11, 0x1B, 0x15, 0x15, 0x11, 0x11, 0x11}; 
+const int N[7] = {0x11, 0x11, 0x19, 0x15, 0x13, 0x11, 0x11}; 
+const int O[7] = {0x0E, 0x11, 0x11, 0x11, 0x11, 0x11, 0x0E}; 
+const int R[7] = {0x1E, 0x11, 0x11, 0x1E, 0x14, 0x12, 0x11}; 
+const int S[7] = {0x0E, 0x11, 0x10, 0x0E, 0x01, 0x11, 0x0E}; 
+const int T[7] = {0x1F, 0x04, 0x04, 0x04, 0x04, 0x04, 0x04}; 
+const int U[7] = {0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x0E}; 
+const int Y[7] = {0x11, 0x11, 0x11, 0x0A, 0x04, 0x04, 0x04}; 
+const int ONE[7] = {0x04, 0x0C, 0x14, 0x04, 0x04, 0x04, 0x1F};
+const int TWO[7] = {0x0E, 0x11, 0x01, 0x02, 0x04, 0x08, 0x1F};
+const int THREE[7] = {0x0E, 0x11, 0x01, 0x06, 0x01, 0x11, 0x0E};
 
 //** Function Definitions **//
 int getNumber();
-const int A[7] = {0x04, 0x05, 0x11, 0x1F, 0x11, 0x11, 0x11};
+void doKeypadPW();
+void doPs2PW();
+void soundAlarm();
+void unlock();
+
+void put_start(){
+	banner_init();
+	banner_put(0, S);
+	banner_put(1, T);
+	banner_put(2, A);
+	banner_put(3, R);
+	banner_put(4, T);
+}
+void put_alarm(){
+	banner_init();
+	banner_put(0, A);
+	banner_put(1, L);
+	banner_put(2, A);
+	banner_put(3, R);
+	banner_put(4, M);
+	banner_put(5, A);
+}
+void put_unlocked(){
+	banner_init();
+	banner_put(0, U);
+	banner_put(1, N);
+	banner_put(2, L);
+	banner_put(3, O);
+	banner_put(4, C);
+	banner_put(5, K);
+	banner_put(6, E);
+	banner_put(7, D);
+}
+void put_intento1()
+{
+	banner_init();
+	banner_put(3, T);
+	banner_put(4, R);
+	banner_put(5, Y);
+	banner_put(7, ONE);
+}
+void put_intento2()
+{
+	banner_init();
+	banner_put(3, T);
+	banner_put(4, R);
+	banner_put(5, Y);
+	banner_put(7, TWO);
+}
+void put_intento3()
+{
+	banner_init();
+	banner_put(3, T);
+	banner_put(4, R);
+	banner_put(5, Y);
+	banner_put(7, THREE);
+}
 
 int main()
 {
 	Xuint32 opt = -1;
-	Xuint32 keypadPass[4];
-	Xuint32 ps2Pass[8];
-	Xuint32 keypadTry[4];
-	Xuint32 ps2Try[8];
-	short cont = 3;
 
 	leds_init();
 	banner_init();
 	print("---Entering main---\n\r");
 
-	banner_put_phrase(START);
+	put_start();
 	do
 	{
 		print(" Eliga una opcion: \n\r");
 		print(" 1  : KEYPAD (password of length 4)\n\r");
 		print(" 2  : TECLADO (password of length 8)\n\r");
 		print(" 0  : Salir \n\r");
-
 		opt = getNumber();
 
-		if (0 < opt || opt > 2)
-			print("No es una opcion valida.\n\r");
-		while (opt != 0)
+	} while (opt < 0 || opt > 2);
 
-		if(opt == 1){
-			// record password
-			record_passKP(keypadPass);
-			print(" Passowrd saved\n\r");
-			while(cont > 0){
-				switch (cont)
-				{
-				case 3:	
-					banner_put_phrase(INTENTO_1);
-					break;
-				case 2:
-					banner_put_phrase(INTENTO_2);
-					break;
-				case 1:
-					banner_put_phrase(INTENTO_3);
-					break;
-				default:
-					// llamar a funcion de alarma
-					break;
-				}
-				// try password
-				record_passKP(keypadTry);
-				int i;
-				if(keypadTry[0] == keypadPass[0] && keypadTry[1] == keypadPass[1] && keypadTry[2] == keypadPass[2] && keypadTry[3] == keypadPass[3]){
-					// llamar a la funcion de desbloqueo
-					cont = 0;
-				}
-				else{
-					--cont;
-				}
-			}
-		}
-
-		print("Saliendo ...\n\r");
-
-		return 0;
+	switch (opt)
+	{
+	case 0:
+		print("Saliendo... \n\r");
+		break;
+	case 1:
+		doKeypadPW();
+		break;
+	case 2:
+		doPs2PW();
+		break;
+	default:
+		print("Opcion no valida\n\r");
+		break;
 	}
 
-	print("---Exiting main---\n\r");
+	print("Saliendo ...\n\r");
+
 	return 0;
 }
-
-// Set 2 Make/Break codes to ASCII
-char ps2ToAscii(int scanCode)
+void doKeypadPW()
 {
+	short cont = 3;
+	Xuint32 keypadPass[4];
+	Xuint32 keypadTry[4];
+
+	record_passKP(keypadPass);
+	print(" Passoword saved\n\r");
+	while (cont > -1)
+	{
+		if(cont == 3){
+			put_intento1();
+		}
+		else if(cont == 2){
+			put_intento2();
+		}
+		else if(cont == 1){
+			put_intento3();
+		}
+		else{
+			soundAlarm();
+		}
+		record_passKP(keypadTry);
+		if (keypadTry[0] == keypadPass[0] && keypadTry[1] == keypadPass[1] && keypadTry[2] == keypadPass[2] && keypadTry[3] == keypadPass[3])
+		{
+			unlock();
+			cont = -1;
+		}
+		else
+		{
+			--cont;
+		}
+	}
+}
+
+void doPs2PW()
+{
+	short cont = 3;
+	Xuint32 ps2Pass[8];
+	Xuint32 ps2Try[8];
+
+	record_passPS2(ps2Pass);
+	print(" Passoword saved\n\r");
+	while (cont > -1)
+	{
+		if(cont == 3){
+			put_intento1();
+		}
+		else if(cont == 2){
+			put_intento2();
+		}
+		else if(cont == 1){
+			put_intento3();
+		}
+		else{
+			soundAlarm();
+		}
+		record_passPS2(ps2Try);
+		if (ps2Try[0] == ps2Pass[0] && ps2Try[1] == ps2Pass[1] && ps2Try[2] == ps2Pass[2] && ps2Try[3] == ps2Pass[3] && ps2Try[4] == ps2Pass[4] && ps2Try[5] == ps2Pass[5] && ps2Try[6] == ps2Pass[6] && ps2Try[7] == ps2Pass[7])
+		{
+			unlock();
+			cont = -1;
+		}
+		else
+		{
+			--cont;
+		}
+	}
+}
+
+void soundAlarm()
+{
+	unsigned int i;
+	XGpio Gpio_zumbador;
+	Xuint32 zumbador = XPAR_BUZZER_0_DEVICE_ID;
+	ZUMBADOR_init(&Gpio_zumbador, zumbador);
+	put_alarm();
+
+	while (1)
+	{
+		ZUMBADOR_suena(&Gpio_zumbador);
+		xil_printf("Suena\r\n");
+		LEDS_RGB_mWriteSlaveReg0(XPAR_LEDS_RGB_0_BASEADDR, 0, 0); // encender led rojo
+		for (i = 0; i < 0x00070000; i++)
+		{
+		} // retardo
+
+		ZUMBADOR_calla(&Gpio_zumbador);
+		xil_printf("Calla\r\n");
+		LEDS_RGB_mWriteSlaveReg0(XPAR_LEDS_RGB_0_BASEADDR, 0, 255); // apagar led rojo
+		for (i = 0; i < 0x00070000; i++)
+		{
+		} // retardo
+	}
+}
+
+void unlock()
+{
+	unsigned int i;
+	put_unlocked();						  // imprimir mensaje de desbloqueo
+	LEDS_RGB_mWriteSlaveReg1(XPAR_LEDS_RGB_0_BASEADDR, 0, 0); // encender led verde
+	for (i = 0; i < 0x0007F000; i++)
+	{
+	}															// retardo
+	LEDS_RGB_mWriteSlaveReg1(XPAR_LEDS_RGB_0_BASEADDR, 0, 255); // apagar led verde
 }
 
 int getNumber()

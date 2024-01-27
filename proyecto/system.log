@@ -11644,3 +11644,122 @@ Done writing filter settings to:
 	C:\Users\aluqu\Desktop\uni\SE\proyecto\etc\system.filters
 Done writing Tab View settings to:
 	C:\Users\aluqu\Desktop\uni\SE\proyecto\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:17:25 2024
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:17:25 2024
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:22:27 2024
+ make -f system.make bits started...
+make: Nothing to be done for `bits'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:22:38 2024
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:22:38 2024
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:28:44 2024
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:28:44 2024
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:44:06 2024
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:44:06 2024
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:52:21 2024
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 11:52:22 2024
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 12:32:11 2024
+ make -f system.make bits started...
+make: Nothing to be done for `bits'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 12:32:19 2024
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 12:32:19 2024
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 13:14:00 2024
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jan 27 13:14:00 2024
+ xsdk.exe -hwspec C:\Users\aluqu\Desktop\uni\SE\proyecto\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\aluqu\Desktop\uni\SE\proyecto\etc\system.filters
+Done writing Tab View settings to:
+	C:\Users\aluqu\Desktop\uni\SE\proyecto\etc\system.gui

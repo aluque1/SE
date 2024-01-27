@@ -2,10 +2,17 @@
 **** Build of configuration Debug for project proyecto ****
 
 make all 
-Building file: ../src/banner.c
+Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../proyecto_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/banner.d" -MT"src/banner.d" -o"src/banner.o" "../src/banner.c"
-Finished building: ../src/banner.c
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../proyecto_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:127:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c: In function 'soundAlarm':
+../src/testperiph.c:241:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c: In function 'getNumber':
+../src/testperiph.c:288:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:290:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+Finished building: ../src/testperiph.c
 ' '
 Building target: proyecto.elf
 Invoking: MicroBlaze gcc linker
@@ -15,7 +22,7 @@ Finished building target: proyecto.elf
 Invoking: MicroBlaze Print Size
 mb-size proyecto.elf  |tee "proyecto.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  11118	    316	   2096	  13530	   34da	proyecto.elf
+  13826	    316	   2106	  16248	   3f78	proyecto.elf
 Finished building: proyecto.elf.size
 ' '
 Invoking: Xilinx ELF Check
